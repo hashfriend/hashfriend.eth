@@ -1,0 +1,46 @@
+{
+  "linter": {
+    "domains": {
+      "test": "all",
+      "react": "recommended",
+      "next": "recommended",
+      "solid": "none"
+    }
+  },
+  "formatter": {
+    "indentStyle": "space"
+  },
+  "javascript": {
+    "formatter": {
+      "trailingCommas": "none",
+      "semicolons": "asNeeded",
+      "quoteStyle": "single"
+    }
+  },
+  "css": {
+    "formatter": { "enabled": true, "quoteStyle": "single" },
+    "parser": { "cssModules": true }
+  },
+  "html": {
+    "formatter": { "enabled": true }
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "overrides": [
+    {
+      "includes": ["**/*.astro"],
+      "linter": {
+        "rules": {
+          "style": { "useConst": "off" },
+          "correctness": {
+            "noUnusedImports": "off",
+            "noUnusedVariables": "off"
+          }
+        }
+      }
+    }
+  ]
+}
