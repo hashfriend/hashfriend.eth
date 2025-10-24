@@ -4,12 +4,14 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "bunx --bun astro dev",
-    "build": "bunx --bun astro build"
+    "build": "bunx --bun astro build",
+    "deploy": "bun run build && bunx pinme upload ./dist"
   },
   "dependencies": {
     "@astrojs/mdx": "4.3.8",
     "@biomejs/biome": "2.2.7",
     "@lucide/astro": "0.546.0",
-    "astro": "5.15.1"
+    "astro": "5.15.1",
+    "pinme": "1.1.4"
   }
 }
