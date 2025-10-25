@@ -5,8 +5,8 @@ import { Image } from 'astro:assets'
 <header class="header">
   <div class="avatar">
     <Image
-      width="48"
-      height="48"
+      width="64"
+      height="64"
       alt="hashfriend.eth"
       src="https://ipfs.euc.li/ipfs/QmcnH4s1y7PJjcgmwDriH5a5TK1nqYSwLCT8gYNrZ8ett1/993.png"
     />
@@ -24,14 +24,15 @@ import { Image } from 'astro:assets'
 
     h1 {
       font-size: 1.2rem;
+      margin: 0;
     }
   }
 
   .avatar {
     border-radius: 50%;
     overflow: hidden;
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     flex-shrink: 0;
     border: 2px solid var(--text-color);
   }
