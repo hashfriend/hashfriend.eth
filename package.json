@@ -5,12 +5,15 @@
   "scripts": {
     "dev": "bunx --bun astro dev",
     "build": "bunx --bun astro build",
-    "deploy": "bun run build && bunx pinme upload ./dist"
+    "deploy": "bun run build && bunx pinme upload ./dist",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "typecheck": "tsc --noEmit && bunx --bun astro check"
   },
   "dependencies": {
     "@astrojs/mdx": "4.3.8",
-    "@biomejs/biome": "2.2.7",
-    "@lucide/astro": "0.546.0",
+    "@biomejs/biome": "2.3.0",
+    "@lucide/astro": "0.548.0",
     "astro": "5.15.1",
     "pinme": "1.1.4"
   }
