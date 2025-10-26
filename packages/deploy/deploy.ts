@@ -41,7 +41,7 @@ async function addToIpfs(): Promise<string> {
 
 async function updateIpns(cid: string) {
   try {
-    await $`ipfs name publish /ipfs/${cid}`
+    await $`ipfs name publish --ttl=1m /ipfs/${cid}`
   } catch (error) {
     throw new Error(
       `Deployment step failed: ${error instanceof Error ? error.message : String(error)}`
