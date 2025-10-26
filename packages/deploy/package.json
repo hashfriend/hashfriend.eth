@@ -1,0 +1,15 @@
+{
+  "name": "@hashfriend/deploy",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "typecheck": "tsc --noEmit && bun run --bun astro check",
+    "deploy": "bun deploy.ts",
+    "pinme": "pinme"
+  },
+  "dependencies": {
+    "pinme": "1.1.4"
+  }
+}
