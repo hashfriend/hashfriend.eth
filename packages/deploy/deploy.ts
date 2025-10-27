@@ -1,5 +1,13 @@
 import { $ } from 'bun'
 
+const DEPLOY_DIR = '../web/dist'
+const argKey = process.argv.find((arg) => arg.startsWith('--key='))
+const IPFS_KEY = argKey ? argKey.split('=')[1] : ''
+if (!IPFS_KEY) {
+  console.error('❌ IPFS key not provided. Use --key=<key-name> to specify it.')
+  process.exit(1)
+}
+
 async function main() {
   try {
     console.log('📦 Starting deployment process...\n')
@@ -23,7 +31,7 @@ await main()
 async function addToIpfs(): Promise<string> {
   try {
     const uploadOutput =
-      await $`pinme upload ../web/dist && pinme ls -l 1`.text()
+      await $`pinme upload ${DEPLOY_DIR} && pinme ls -l 1`.text()
 
     // Extract CID from the output
     const cidMatch = uploadOutput.match(/IPFS CID:\s+([a-z0-9]+)/)
@@ -41,7 +49,7 @@ async function addToIpfs(): Promise<string> {
 
 async function updateIpns(cid: string) {
   try {
-    await $`ipfs name publish --ttl=1m /ipfs/${cid}`
+    await $`ipfs name publish --ttl=1m /ipfs/${cid} --key=${IPFS_KEY}`
   } catch (error) {
     throw new Error(
       `Deployment step failed: ${error instanceof Error ? error.message : String(error)}`
