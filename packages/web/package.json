@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/mdx": "4.3.8",
     "@lucide/astro": "0.548.0",
-    "astro": "5.15.1"
+    "astro": "5.15.1",
+    "astro-relative-links": "0.4.2"
   }
 }
