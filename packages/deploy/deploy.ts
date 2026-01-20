@@ -30,11 +30,18 @@ await main()
 
 async function addToIpfs(): Promise<string> {
   try {
-    const uploadOutput =
-      await $`pinme upload ${DEPLOY_DIR} && pinme ls -l 1`.text()
+    // Run upload separately and check output for failure
+    const uploadResult = await $`pinme upload ${DEPLOY_DIR}`.quiet().nothrow()
+    const uploadOutput = uploadResult.stdout.toString() + uploadResult.stderr.toString()
+    if (uploadResult.exitCode !== 0 || uploadOutput.includes('Upload failed')) {
+      throw new Error(`pinme upload failed: ${uploadOutput}`)
+    }
+
+    // Only fetch CID if upload succeeded
+    const lsOutput = await $`pinme ls -l 1`.text()
 
     // Extract CID from the output
-    const cidMatch = uploadOutput.match(/IPFS CID:\s+([a-z0-9]+)/)
+    const cidMatch = lsOutput.match(/IPFS CID:\s+([a-z0-9]+)/)
     const cid = cidMatch?.[1]
     if (!cid) throw new Error('Failed to extract CID from upload output')
 
