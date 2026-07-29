@@ -10,10 +10,10 @@
     "typecheck": "tsc --noEmit && bun run --bun astro check"
   },
   "dependencies": {
-    "@astrojs/check": "0.9.6",
-    "@astrojs/mdx": "4.3.13",
-    "@lucide/astro": "0.562.0",
-    "astro": "5.16.11",
+    "@astrojs/check": "0.9.10",
+    "@astrojs/mdx": "7.0.5",
+    "@lucide/astro": "1.27.0",
+    "astro": "7.1.6",
     "astro-relative-links": "0.4.2"
   }
 }
