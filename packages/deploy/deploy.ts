@@ -107,7 +107,50 @@ async function pinRemote(cid: string) {
 // Long lifetime so the record outlives this machine being asleep, short TTL so
 // gateways pick up the next deploy quickly.
 async function updateIpns(cid: string) {
+  const before = await currentRecord()
+
+  await publish(cid)
+  const after = await currentRecord()
+
+  // Two records at the same sequence with different values cannot be ordered by
+  // consumers, so gateways serve whichever they saw first. Publishing the old
+  // value forces the counter to move, then the real one lands above it.
+  if (before && after && before.value !== cid && after.seq <= before.seq) {
+    console.log(`⚠️  Sequence stuck at ${after.seq}, bumping it`)
+    await publish(before.value)
+    await publish(cid)
+
+    const fixed = await currentRecord()
+    if (!fixed || fixed.seq <= before.seq) {
+      throw new Error(`IPNS sequence will not advance past ${before.seq}`)
+    }
+    console.log(`✅ Sequence now ${fixed.seq}`)
+  }
+}
+
+async function publish(cid: string) {
   await $`ipfs name publish --lifetime=8760h --ttl=1m /ipfs/${cid} --key=${IPFS_KEY}`.quiet()
+}
+
+async function currentRecord(): Promise<{ seq: number; value: string } | null> {
+  const name = (await $`ipfs key list -l`.text())
+    .split('\n')
+    .find((line) => line.trim().endsWith(` ${IPFS_KEY}`))
+    ?.split(/\s+/)[0]
+  if (!name) return null
+
+  const inspected = await $`ipfs routing get /ipns/${name} | ipfs name inspect`
+    .nothrow()
+    .quiet()
+  if (inspected.exitCode !== 0) return null
+
+  const lines = inspected.stdout.toString().split('\n')
+  const seq = lines.find((l) => l.startsWith('Sequence:'))?.split(/\s+/)[1]
+  const value = lines
+    .find((l) => l.startsWith('Value:'))
+    ?.match(/\/ipfs\/(\w+)/)?.[1]
+
+  return seq && value ? { seq: Number(seq), value } : null
 }
 
 // Streaming the DAG over ssh is faster than leaving the host to find the blocks
