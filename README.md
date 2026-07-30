@@ -1,33 +1,30 @@
-# hashfriend.eth.limo
+# hashfriend.eth
+
+Personal site, published to IPFS and served over ENS at [hashfriend.eth.limo](https://hashfriend.eth.limo).
+
+`packages/web` is the Astro site, pages are Markdown/MDX in `src/pages`. `packages/deploy` adds the build to a local IPFS node, pins it to Pinata, then republishes the IPNS record.
 
 ```bash
 bun run dev
 bun run build
-
-# needs running `ipfs daemon` and a logged-in pinme (`pinme login`)
+bun run lint
+bun run typecheck
 bun run deploy
 ```
 
-`bun run deploy` builds nothing — run `bun run build` first. It pins
-`packages/web/dist` via `pinme`, then points the IPNS name at the resulting CID.
-
-The ENS contenthash for hashfriend.eth is a static `ipns://` pointer and never
-changes; only the record it resolves to gets republished on each deploy. That
-IPNS name is derived from the `hashfriend.eth` key in the local IPFS keystore,
-so it must be the same key on every machine that deploys — generating a new one
-yields a different name that the ENS record does not point to.
+`bun run deploy` builds nothing, so run `bun run build` first. It needs a running `ipfs daemon` with the `hashfriend.eth` key in the keystore and a `Pinata` remote pinning service configured. The script checks both before touching the network.
 
 ```bash
-ipfs key list -l                 # local key name -> IPNS name
-ipfs name resolve /ipns/<name>   # what the site currently serves
+ipfs key list -l
+ipfs pin remote service ls
+ipfs pin remote service add Pinata https://api.pinata.cloud/psa <jwt>
 ```
 
-To set up a new machine, export the key from one that has it and import it:
+## The IPNS key
+
+The ENS contenthash is a static `ipns://` pointer and never changes, only the record it resolves to gets republished. That name is derived from the `hashfriend.eth` keystore key, so every machine that deploys needs the same key. A new key yields a different name that the ENS record does not point to.
 
 ```bash
 ipfs key export hashfriend.eth -o hashfriend.eth.key   # on the old machine
 ipfs key import hashfriend.eth hashfriend.eth.key      # on the new one
 ```
-
-Keep the key in exactly one place — two daemons publishing under the same key
-can race on IPNS sequence numbers and revert the site to an older CID.
