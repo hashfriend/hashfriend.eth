@@ -2,9 +2,6 @@ import { $ } from 'bun'
 
 const DEPLOY_DIR = '../web/dist'
 
-// the package manager is not on the PATH of a non-interactive ssh shell on macOS, so the
-// remote binary is addressed absolutely.
-const REMOTE_IPFS = 'ipfs'
 const SSH_OPTS = ['-o', 'BatchMode=yes', '-o', 'ConnectTimeout=10']
 
 const arg = (name: string) =>
@@ -13,19 +10,14 @@ const arg = (name: string) =>
 const IPFS_KEY = arg('key')
 const PIN_SERVICE = arg('service')
 
-// Kept out of the repo: the publishing host is private infrastructure.
+// Kept out of the repo, along with where the remote binary lives when a
+// non-interactive ssh shell does not have it on the PATH.
 const HOST = process.env.DEPLOY_HOST ?? ''
+const REMOTE_IPFS = process.env.DEPLOY_IPFS ?? 'ipfs'
 
 if (!IPFS_KEY || !PIN_SERVICE) {
   console.error(
     '❌ Usage: bun deploy.ts --key=<ipns-key> --service=<pin-service>'
-  )
-  process.exit(1)
-}
-
-if (!HOST) {
-  console.error(
-    '❌ DEPLOY_HOST is not set. Put it in packages/deploy/.env — see README.'
   )
   process.exit(1)
 }
@@ -37,14 +29,13 @@ async function main() {
 
     const cid = await addToIpfs()
 
-    console.log(`🚚 Shipping ${cid} to ${HOST}...`)
-    await shipToHost(cid)
-
     console.log(`\n📌 Pinning ${cid} to ${PIN_SERVICE}...`)
     await pinRemote(cid)
 
-    console.log(`\n🔗 Updating IPNS record on ${HOST} with CID ${cid}\n`)
+    console.log(`\n🔗 Publishing IPNS record for ${cid}`)
     await updateIpns(cid)
+
+    await shipToHost(cid)
 
     console.log('\n🎉 Deployment completed successfully!')
   } catch (error) {
@@ -58,8 +49,7 @@ async function main() {
 
 await main()
 
-// Fail before touching the network if anything this deploy leans on is missing:
-// the local pinning service, or the host that ends up serving and signing.
+// Fail before touching the network if anything this deploy leans on is missing.
 async function preflight() {
   const services = await $`ipfs pin remote service ls`.text()
   if (
@@ -70,33 +60,19 @@ async function preflight() {
     )
   }
 
-  const binary = await $`ssh ${SSH_OPTS} ${HOST} test -x ${REMOTE_IPFS}`
-    .quiet()
-    .nothrow()
-  if (binary.exitCode !== 0) {
-    throw new Error(
-      `Cannot reach '${REMOTE_IPFS}' on ${HOST} over ssh. Check the host is up, that key-based ssh works, and that kubo is installed there — see README.`
-    )
-  }
-
-  // Most ipfs subcommands happily run against a stopped repo, but publishing
-  // needs a daemon and serving needs peers, so require both up front.
-  const peers = await $`ssh ${SSH_OPTS} ${HOST} ${REMOTE_IPFS} swarm peers`
-    .quiet()
-    .nothrow()
-  if (peers.exitCode !== 0) {
-    throw new Error(
-      `The IPFS daemon on ${HOST} is not running. Start it with 'the ipfs daemon' there — see README.`
-    )
-  }
-
-  // Only the host holds the signing key. A second keystore with the same key
-  // would fork the IPNS sequence counter and the two records would clobber
-  // each other, which is how this deploy used to break.
-  const keys = await $`ssh ${SSH_OPTS} ${HOST} ${REMOTE_IPFS} key list`.text()
+  const keys = await $`ipfs key list`.text()
   if (!keys.split('\n').includes(IPFS_KEY)) {
     throw new Error(
-      `IPFS key '${IPFS_KEY}' not found in the keystore on ${HOST}. Import it there with 'ipfs key import ${IPFS_KEY} <file>' — see README.`
+      `IPFS key '${IPFS_KEY}' not found in the local keystore. Import it with 'ipfs key import ${IPFS_KEY} <file>' — see README.`
+    )
+  }
+
+  // A daemon with no peers accepts a publish and propagates nothing, so the
+  // deploy would report success while the network kept serving the old build.
+  const peers = await $`ipfs swarm peers`.nothrow().text()
+  if (peers.trim() === '') {
+    throw new Error(
+      'The local IPFS daemon has no peers, so nothing would propagate. Start it with "ipfs daemon" and give it a moment to bootstrap.'
     )
   }
 }
@@ -108,16 +84,8 @@ async function addToIpfs(): Promise<string> {
 
   if (!cid) throw new Error('ipfs add returned no CID')
 
-  console.log(`✅ Added to the local node with CID: ${cid}\n`)
+  console.log(`✅ Added to the local node with CID: ${cid}`)
   return cid
-}
-
-// Streaming the DAG over ssh keeps the transfer exact and at LAN speed rather
-// than leaving the host to discover the blocks over the p2p network. Runs
-// before the remote pin so the pinning service has two providers to fetch
-// from, the better connected of which is the host.
-async function shipToHost(cid: string) {
-  await $`ipfs dag export ${cid} | ssh ${SSH_OPTS} ${HOST} ${REMOTE_IPFS} dag import --pin-roots --fast-provide-root`
 }
 
 // Blocks until the service reports 'pinned', so the content is retrievable
@@ -136,10 +104,31 @@ async function pinRemote(cid: string) {
   }
 }
 
-// Long lifetime so the record outlives daemon downtime, short TTL so gateways
-// pick up the next deploy quickly. Published on the host because it is the only
-// machine with the key, and the only one awake often enough to keep the record
-// alive in the DHT.
+// Long lifetime so the record outlives this machine being asleep, short TTL so
+// gateways pick up the next deploy quickly.
 async function updateIpns(cid: string) {
-  await $`ssh ${SSH_OPTS} ${HOST} ${REMOTE_IPFS} name publish --lifetime=8760h --ttl=1m /ipfs/${cid} --key=${IPFS_KEY}`
+  await $`ipfs name publish --lifetime=8760h --ttl=1m /ipfs/${cid} --key=${IPFS_KEY}`.quiet()
+}
+
+// Streaming the DAG over ssh is faster than leaving the host to find the blocks
+// over the p2p network. Allowed to fail: it only serves, it does not publish.
+async function shipToHost(cid: string) {
+  if (!HOST) {
+    console.log('\n⏭️  DEPLOY_HOST is not set, skipping the serving host.')
+    return
+  }
+
+  console.log(`\n🚚 Shipping ${cid} to ${HOST}...`)
+
+  const shipped =
+    await $`ipfs dag export ${cid} | ssh ${SSH_OPTS} ${HOST} ${REMOTE_IPFS} dag import --pin-roots --fast-provide-root`
+      .quiet()
+      .nothrow()
+
+  if (shipped.exitCode !== 0) {
+    console.warn(`⚠️  Could not reach ${HOST}. The deploy stands without it.`)
+    return
+  }
+
+  console.log(`✅ ${HOST} is serving ${cid}`)
 }

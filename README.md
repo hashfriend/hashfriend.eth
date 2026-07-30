@@ -2,7 +2,7 @@
 
 Personal site, published to IPFS and served over ENS at [hashfriend.eth.limo](https://hashfriend.eth.limo).
 
-`packages/web` is the Astro site, pages are Markdown/MDX in `src/pages`. `packages/deploy` adds the build to a local IPFS node, hands it to the serving host, pins it to Pinata, then republishes the IPNS record.
+`packages/web` is the Astro site, pages are Markdown/MDX in `src/pages`. `packages/deploy` adds the build to the local IPFS node, pins it to Pinata, publishes the IPNS record, then hands the build to an serving host to serve as well.
 
 ```bash
 bun run dev
