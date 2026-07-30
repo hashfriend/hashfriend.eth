@@ -3,29 +3,42 @@ import { Image } from 'astro:assets'
 ---
 
 <header class="header">
-  <div class="avatar">
-    <Image
-      width="64"
-      height="64"
-      alt="hashfriend.eth"
-      src="https://ipfs.euc.li/ipfs/QmcnH4s1y7PJjcgmwDriH5a5TK1nqYSwLCT8gYNrZ8ett1/993.png"
-    />
-  </div>
-  <h1 class="title">hashfriend.eth</h1>
+  <a href="/" class="home">
+    <div class="avatar">
+      <Image
+        width="64"
+        height="64"
+        alt="hashfriend.eth"
+        src="https://ipfs.euc.li/ipfs/QmcnH4s1y7PJjcgmwDriH5a5TK1nqYSwLCT8gYNrZ8ett1/993.png"
+      />
+    </div>
+    <span class="title">hashfriend.eth</span>
+  </a>
 </header>
 
 <style>
   .header {
     width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .home {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 1.5rem;
+    width: fit-content;
+    color: var(--title-color);
+    text-decoration: none;
+  }
 
-    h1 {
-      font-size: 1rem;
-      margin: 0;
-    }
+  .title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .home:hover .title {
+    text-decoration: underline;
   }
 
   .avatar {

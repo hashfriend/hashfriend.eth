@@ -2,13 +2,23 @@
 import '../styles/global.css'
 import { Font } from 'astro:assets'
 import Header from '../components/Header.astro'
+
+const { title, description, date } = Astro.props.frontmatter ?? Astro.props
+const pageTitle = title ? `${title} · hashfriend.eth` : 'hashfriend.eth'
+const isoDate = date ? new Date(date).toISOString().slice(0, 10) : undefined
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>hashfriend.eth</title>
+    <title>{pageTitle}</title>
+    {description && <meta name="description" content={description} />}
+
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:type" content={title ? 'article' : 'website'} />
+    {description && <meta property="og:description" content={description} />}
+    <meta name="twitter:card" content="summary" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -21,8 +31,40 @@ import Header from '../components/Header.astro'
     <div class="container">
       <Header />
       <main class="content">
+        {
+          title && (
+            <div class="page-header">
+              <h1>{title}</h1>
+              {description && <p class="lede">{description}</p>}
+              {isoDate && <time datetime={isoDate}>{isoDate}</time>}
+            </div>
+          )
+        }
         <slot />
       </main>
     </div>
   </body>
 </html>
+
+<style>
+  .page-header {
+    margin-bottom: 1rem;
+
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .lede {
+    margin: 0;
+    color: var(--lede-color);
+  }
+
+  time {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    opacity: 0.6;
+  }
+</style>
