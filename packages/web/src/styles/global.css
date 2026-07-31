@@ -47,9 +47,12 @@ h6 {
 
 blockquote {
   margin-inline: 0;
+  padding-block: 0.4em;
   padding-inline-start: 2ch;
+  font-size: 0.9em;
+  font-style: italic;
   border-inline-start: 2px solid
-    color-mix(in srgb, currentcolor 25%, transparent);
+    color-mix(in srgb, var(--link-color) 35%, transparent);
 }
 
 ul,
