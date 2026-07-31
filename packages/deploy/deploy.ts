@@ -15,6 +15,9 @@ const PIN_SERVICE = arg('service')
 const HOST = process.env.DEPLOY_HOST ?? ''
 const REMOTE_IPFS = process.env.DEPLOY_IPFS ?? 'ipfs'
 
+// Delegated routing endpoint the record is handed to and then read back from.
+const ROUTER = process.env.DEPLOY_ROUTER || 'https://delegated-ipfs.dev'
+
 if (!IPFS_KEY || !PIN_SERVICE) {
   console.error(
     '❌ Usage: bun deploy.ts --key=<ipns-key> --service=<pin-service>'
@@ -34,6 +37,7 @@ async function main() {
 
     console.log(`\n🔗 Publishing IPNS record for ${cid}`)
     await updateIpns(cid)
+    await announceRecord(cid)
 
     await shipToHost(cid)
 
@@ -132,16 +136,53 @@ async function publish(cid: string) {
   await $`ipfs name publish --lifetime=8760h --ttl=1m /ipfs/${cid} --key=${IPFS_KEY}`.quiet()
 }
 
-async function currentRecord(): Promise<{ seq: number; value: string } | null> {
+// `ipfs name publish` exits zero once the record exists locally, whatever the
+// DHT put managed to reach, and every local read agrees with it. Handing the
+// record to a router and reading it back from there is the only check that
+// speaks for what everyone else can resolve.
+async function announceRecord(cid: string) {
+  const name = await ipnsName()
+  const url = `${ROUTER}/routing/v1/ipns/${name}`
+
+  const put = await fetch(url, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/vnd.ipfs.ipns-record' },
+    body: await $`ipfs routing get /ipns/${name}`.arrayBuffer()
+  })
+  if (!put.ok) throw new Error(`${ROUTER} rejected the record: ${put.status}`)
+
+  // Records signed at different moments differ byte for byte, so it is the
+  // value they carry that has to match, not the bytes.
+  const back = await fetch(url, {
+    headers: { Accept: 'application/vnd.ipfs.ipns-record' }
+  })
+  const served = Buffer.from(await back.arrayBuffer())
+  const inspected = await $`ipfs name inspect < ${served}`.nothrow().text()
+
+  if (!inspected.includes(`/ipfs/${cid}`)) {
+    throw new Error(
+      `${ROUTER} does not resolve ${name} to ${cid}, nor would anyone else`
+    )
+  }
+
+  console.log(`✅ Resolvable as /ipns/${name}`)
+}
+
+async function ipnsName(): Promise<string> {
   const name = (await $`ipfs key list -l`.text())
     .split('\n')
     .find((line) => line.trim().endsWith(` ${IPFS_KEY}`))
     ?.split(/\s+/)[0]
-  if (!name) return null
 
-  const inspected = await $`ipfs routing get /ipns/${name} | ipfs name inspect`
-    .nothrow()
-    .quiet()
+  if (!name) throw new Error(`No IPNS name for key '${IPFS_KEY}'`)
+  return name
+}
+
+async function currentRecord(): Promise<{ seq: number; value: string } | null> {
+  const inspected =
+    await $`ipfs routing get /ipns/${await ipnsName()} | ipfs name inspect`
+      .nothrow()
+      .quiet()
   if (inspected.exitCode !== 0) return null
 
   const lines = inspected.stdout.toString().split('\n')
