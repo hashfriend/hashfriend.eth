@@ -4,9 +4,14 @@ import { Font } from 'astro:assets'
 import Footer from '../components/Footer.astro'
 import Header from '../components/Header.astro'
 
-const { title, description, date } = Astro.props.frontmatter ?? Astro.props
+const { title, description, date, updated } =
+  Astro.props.frontmatter ?? Astro.props
 const pageTitle = title ? `${title} · hashfriend.eth` : 'hashfriend.eth'
 const isoDate = date ? new Date(date).toISOString().slice(0, 10) : undefined
+// Full timestamps for the machines, the plain day for the page.
+const publishedTime = date ? new Date(date).toISOString() : undefined
+// A post that was never revised was last modified when it was published.
+const modifiedTime = updated ? new Date(updated).toISOString() : publishedTime
 ---
 
 <html lang="en">
@@ -19,6 +24,14 @@ const isoDate = date ? new Date(date).toISOString().slice(0, 10) : undefined
     <meta property="og:title" content={pageTitle} />
     <meta property="og:type" content={title ? 'article' : 'website'} />
     {description && <meta property="og:description" content={description} />}
+    {
+      publishedTime && (
+        <>
+          <meta property="article:published_time" content={publishedTime} />
+          <meta property="article:modified_time" content={modifiedTime} />
+        </>
+      )
+    }
     <meta name="twitter:card" content="summary" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
