@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css'
 import { Font } from 'astro:assets'
+import Footer from '../components/Footer.astro'
 import Header from '../components/Header.astro'
 
 const { title, description, date } = Astro.props.frontmatter ?? Astro.props
@@ -42,6 +43,7 @@ const isoDate = date ? new Date(date).toISOString().slice(0, 10) : undefined
         }
         <slot />
       </main>
+      <Footer />
     </div>
   </body>
 </html>

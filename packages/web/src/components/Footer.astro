@@ -1,0 +1,39 @@
+---
+import { execSync } from 'node:child_process'
+
+const REPO_URL = 'https://github.com/hashfriend/hashfriend.eth'
+
+// Resolved at build time: the deployed site is a static snapshot of one commit.
+let commit: string | null = null
+try {
+  commit = execSync('git rev-parse --short HEAD', {
+    encoding: 'utf8',
+    stdio: ['ignore', 'pipe', 'ignore']
+  }).trim()
+} catch {
+  commit = null
+}
+---
+
+<footer class="footer">
+  {
+    commit && (
+      <a href={`${REPO_URL}/commit/${commit}`} rel="noopener">
+        {commit}
+      </a>
+    )
+  }
+</footer>
+
+<style>
+  .footer {
+    margin-block-start: auto;
+    padding-block-start: 3rem;
+    font-size: 0.75rem;
+    opacity: 0.6;
+  }
+
+  a {
+    color: inherit;
+  }
+</style>
