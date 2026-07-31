@@ -151,21 +151,25 @@ async function announceRecord(cid: string) {
   })
   if (!put.ok) throw new Error(`${ROUTER} rejected the record: ${put.status}`)
 
-  // Records signed at different moments differ byte for byte, so it is the
-  // value they carry that has to match, not the bytes.
-  const back = await fetch(url, {
-    headers: { Accept: 'application/vnd.ipfs.ipns-record' }
-  })
-  const served = Buffer.from(await back.arrayBuffer())
-  const inspected = await $`ipfs name inspect < ${served}`.nothrow().text()
+  // The router serves what it accepted about a minute later. Records signed at
+  // different moments differ byte for byte, so compare the value they carry.
+  for (let waited = 0; waited < 120_000; waited += 5000) {
+    const back = await fetch(url, {
+      headers: { Accept: 'application/vnd.ipfs.ipns-record' }
+    })
+    const served = Buffer.from(await back.arrayBuffer())
+    const inspected = await $`ipfs name inspect < ${served}`.nothrow().text()
 
-  if (!inspected.includes(`/ipfs/${cid}`)) {
-    throw new Error(
-      `${ROUTER} does not resolve ${name} to ${cid}, nor would anyone else`
-    )
+    if (inspected.includes(`/ipfs/${cid}`)) {
+      console.log(`✅ Resolvable as /ipns/${name}`)
+      return
+    }
+    await Bun.sleep(5000)
   }
 
-  console.log(`✅ Resolvable as /ipns/${name}`)
+  throw new Error(
+    `${ROUTER} does not resolve ${name} to ${cid}, nor would anyone else`
+  )
 }
 
 async function ipnsName(): Promise<string> {
