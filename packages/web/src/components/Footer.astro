@@ -16,9 +16,13 @@ try {
 ---
 
 <footer class="footer">
+  <nav class="links">
+    <a href="https://x.com/hashfriend" rel="noopener">x</a>
+    <a href="https://github.com/hashfriend" rel="noopener">github</a>
+  </nav>
   {
     commit && (
-      <a href={`${REPO_URL}/commit/${commit}`} rel="noopener">
+      <a class="commit" href={`${REPO_URL}/commit/${commit}`} rel="noopener">
         {commit}
       </a>
     )
@@ -29,11 +33,30 @@ try {
   .footer {
     margin-block-start: auto;
     padding-block-start: 3rem;
-    font-size: 0.75rem;
-    opacity: 0.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .links {
+    display: flex;
+    gap: 1rem;
   }
 
   a {
     color: inherit;
+    opacity: 0.6;
+    font-size: 0.7rem;
+    text-decoration: none;
+  }
+
+  a:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+
+  .commit {
+    font-size: 0.6rem;
   }
 </style>
