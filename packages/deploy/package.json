@@ -6,6 +6,7 @@
     "lint": "biome check .",
     "format": "biome check --write .",
     "typecheck": "tsc --noEmit",
-    "deploy": "bun deploy.ts --key=hashfriend.eth --service=Pinata"
+    "deploy": "bun deploy.ts --key=hashfriend.eth --service=Pinata",
+    "indexnow": "bun indexnow.ts"
   }
 }
