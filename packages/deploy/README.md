@@ -21,6 +21,8 @@ bun run indexnow https://hashfriend.eth.limo/singularity-finance-exploit/
 
 It waits for `packages/web/public/<key>.txt` to resolve on eth.limo, then POSTs the batch. Ownership is proven by that key file, so it must stay in `public/`. This reaches Bing, Yandex, Seznam, Naver, and Yep — not Google, which does not participate in IndexNow.
 
+Google has no push protocol; the only lever is Search Console. The build emits `sitemap-index.xml` (via `@astrojs/sitemap`, with `site` set in `astro.config.mjs`) and a `robots.txt` pointing at it. Without a verified Search Console property, Google finds the sitemap only if it reads that `robots.txt` — and eth.limo may serve its own gateway-wide `robots.txt` instead. To notify Google directly, verify `https://hashfriend.eth.limo/` in Search Console (meta tag in `Base.astro` or an HTML file in `public/`; DNS is not an option on the shared `limo` domain), submit the sitemap, and use URL Inspection → Request Indexing.
+
 ## Setup
 
 Copy `.env.example` to `.env`. You need a running `ipfs daemon`, the `hashfriend.eth` key in its keystore, and the Pinata pinning service:
