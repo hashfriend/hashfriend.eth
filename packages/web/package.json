@@ -15,5 +15,8 @@
     "@lucide/astro": "1.27.0",
     "astro": "7.1.6",
     "astro-relative-links": "0.4.2"
+  },
+  "devDependencies": {
+    "@astrojs/sitemap": "^3.7.3"
   }
 }
