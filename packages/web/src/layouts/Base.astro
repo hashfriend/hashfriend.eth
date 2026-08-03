@@ -7,6 +7,11 @@ import Header from '../components/Header.astro'
 const { title, description, date, updated } =
   Astro.props.frontmatter ?? Astro.props
 const pageTitle = title ? `${title} · hashfriend.eth` : 'hashfriend.eth'
+// Social crawlers resolve nothing relative, so these two stay absolute even
+// though every link on the page is relative.
+const slug = Astro.url.pathname.replace(/^\/+|\/+$/g, '') || 'index'
+const canonical = new URL(Astro.url.pathname, Astro.site).href
+const ogImage = new URL(`/og/${slug}.png`, Astro.site).href
 const isoDate = date ? new Date(date).toISOString().slice(0, 10) : undefined
 // Full timestamps for the machines, the plain day for the page.
 const publishedTime = date ? new Date(date).toISOString() : undefined
@@ -23,7 +28,11 @@ const modifiedTime = updated ? new Date(updated).toISOString() : publishedTime
 
     <meta property="og:title" content={pageTitle} />
     <meta property="og:type" content={title ? 'article' : 'website'} />
+    <meta property="og:site_name" content="hashfriend.eth" />
+    <meta property="og:url" content={canonical} />
     {description && <meta property="og:description" content={description} />}
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:alt" content={pageTitle} />
     {
       publishedTime && (
         <>
@@ -32,8 +41,13 @@ const modifiedTime = updated ? new Date(updated).toISOString() : publishedTime
         </>
       )
     }
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    {description && <meta name="twitter:description" content={description} />}
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image:alt" content={pageTitle} />
 
+    <link rel="canonical" href={canonical} />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
