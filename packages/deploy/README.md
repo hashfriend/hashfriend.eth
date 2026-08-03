@@ -36,4 +36,4 @@ ipfs pin remote service add Pinata https://api.pinata.cloud/psa <jwt>
 
 `preflight()` checks all of it, including that the daemon has peers, before anything touches the network.
 
-The ENS contenthash is a static `ipns://` pointer derived from the `hashfriend.eth` key. Exactly one machine may hold that key, the one you deploy from. Keep an offline backup of it — losing it means repointing the ENS record by hand.
+The ENS contenthash is a static `ipns://` pointer derived from the `hashfriend.eth` key.
