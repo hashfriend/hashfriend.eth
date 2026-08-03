@@ -1,16 +1,12 @@
 ---
 import { Image } from 'astro:assets'
+import avatar from '../assets/avatar.png'
 ---
 
 <header class="header">
   <a href="/" class="home">
     <div class="avatar">
-      <Image
-        width="64"
-        height="64"
-        alt="hashfriend.eth"
-        src="https://ipfs.euc.li/ipfs/QmcnH4s1y7PJjcgmwDriH5a5TK1nqYSwLCT8gYNrZ8ett1/993.png"
-      />
+      <Image src={avatar} width={64} height={64} alt="hashfriend.eth" />
     </div>
     <span class="title">hashfriend.eth</span>
   </a>

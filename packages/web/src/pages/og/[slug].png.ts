@@ -1,22 +1,13 @@
-/**
- * The Open Graph card for every page, rasterised at build time.
- *
- * Satori lays the card out with real font metrics and outlines the text, then
- * resvg turns that SVG into the PNG the social crawlers actually accept.
- */
-
 import { createRequire } from 'node:module'
 import { Resvg } from '@resvg/resvg-js'
 import type { APIRoute, GetStaticPaths } from 'astro'
 import satori from 'satori'
-// Satori resolves no paths, so the avatar comes in as a data URI.
 import avatar from '../../assets/avatar.png?inline'
 
 const WIDTH = 1200
 const HEIGHT = 630
 const PADDING = 88
 const SITE_NAME = 'hashfriend.eth'
-// The dark theme's background, lifted towards its link blue across the card.
 const BACKGROUND =
   'linear-gradient(120deg, #121212 0%, #16191f 45%, #1b2634 100%)'
 const TITLE_COLOR = '#e5e7eb'
@@ -40,7 +31,6 @@ const fonts = Promise.all(
 
 type Card = { title: string; date?: string }
 
-// The pages are the only source of titles, so the cards are built from them.
 const pages = import.meta.glob<{
   url?: string
   frontmatter: { title?: string; date?: string }
@@ -69,7 +59,6 @@ export const GET: APIRoute<Card> = async ({ props }) => {
   })
 }
 
-// Satori takes the shape JSX compiles to, which an endpoint cannot author.
 type Node = { type: string; props: Record<string, unknown> }
 const el = (
   style: Record<string, unknown>,
@@ -77,9 +66,7 @@ const el = (
 ): Node => ({ type: 'div', props: { style, children } })
 
 function card({ title, date }: Card): Node {
-  // Long titles step down so they keep filling the card without overflowing.
   const fontSize = title.length > 56 ? 60 : title.length > 30 ? 74 : 88
-  // The untitled home card is the site name already; the wordmark would repeat it.
   const wordmark = title !== SITE_NAME
 
   return el(

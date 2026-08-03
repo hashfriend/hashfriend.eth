@@ -16,8 +16,11 @@ It adds the build, pins the CID to Pinata, publishes the IPNS record, then hands
 After a deploy has propagated to eth.limo, ping IndexNow with the URLs that changed:
 
 ```bash
+cd packages/deploy
 bun run indexnow https://hashfriend.eth.limo/singularity-finance-exploit/
 ```
+
+The repo root forwards `build`, `deploy` and the rest, but not this one — it takes URLs, so it is run from here.
 
 It waits for `packages/web/public/<key>.txt` to resolve on eth.limo, then POSTs the batch. Ownership is proven by that key file, so it must stay in `public/`. This reaches Bing, Yandex, Seznam, Naver, and Yep — not Google, which does not participate in IndexNow.
 

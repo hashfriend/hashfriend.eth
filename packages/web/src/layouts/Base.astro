@@ -7,8 +7,6 @@ import Header from '../components/Header.astro'
 const { title, description, date, updated } =
   Astro.props.frontmatter ?? Astro.props
 const pageTitle = title ? `${title} · hashfriend.eth` : 'hashfriend.eth'
-// Social crawlers resolve nothing relative, so these two stay absolute even
-// though every link on the page is relative.
 const slug = Astro.url.pathname.replace(/^\/+|\/+$/g, '') || 'index'
 const canonical = new URL(Astro.url.pathname, Astro.site).href
 const ogImage = new URL(`/og/${slug}.png`, Astro.site).href
