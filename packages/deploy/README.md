@@ -1,6 +1,6 @@
 # @hashfriend/deploy
 
-Publishes `packages/web/dist` to IPFS and points the ENS contenthash at it. Builds nothing itself.
+Publishes `packages/web/dist` to IPFS and points the ENS contenthash at it.
 
 ```bash
 bun run build
@@ -16,7 +16,7 @@ It adds the build, pins the CID to Pinata, publishes the IPNS record, then hands
 Once the deploy has reached eth.limo, from this package:
 
 ```bash
-bun run indexnow https://hashfriend.eth.limo/singularity-finance-exploit/
+bun run indexnow <url>...
 ```
 
 Ownership is proven by `packages/web/public/<key>.txt`, so it must stay in `public/`. Google does not take IndexNow; it only reads the sitemap.
