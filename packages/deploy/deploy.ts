@@ -32,14 +32,12 @@ async function main() {
 
     const cid = await addToIpfs()
 
-    console.log(`\n📌 Pinning ${cid} to ${PIN_SERVICE}...`)
-    await pinRemote(cid)
-
     console.log(`\n🔗 Publishing IPNS record for ${cid}`)
     await updateIpns(cid)
     await announceRecord(cid)
 
     await shipToHost(cid)
+    await requestPin(cid)
 
     console.log('\n🎉 Deployment completed successfully!')
   } catch (error) {
@@ -92,11 +90,13 @@ async function addToIpfs(): Promise<string> {
   return cid
 }
 
-// Blocks until the service reports 'pinned', so the content is retrievable
-// independently of this machine before IPNS starts pointing at it.
-async function pinRemote(cid: string) {
+// Durability, not a gate: waiting on the service wedges the deploy when its
+// queue stalls, and the build is already live by this point.
+async function requestPin(cid: string) {
+  console.log(`\n📌 Requesting a ${PIN_SERVICE} pin for ${cid}...`)
+
   const result =
-    await $`ipfs pin remote add --service=${PIN_SERVICE} --name=${IPFS_KEY} /ipfs/${cid}`
+    await $`ipfs pin remote add --service=${PIN_SERVICE} --name=${IPFS_KEY} --background /ipfs/${cid}`
       .quiet()
       .nothrow()
 
@@ -104,8 +104,15 @@ async function pinRemote(cid: string) {
     const output = result.stderr.toString() + result.stdout.toString()
     // Re-pinning an unchanged build is a no-op, not a failure.
     if (output.includes('already pinned')) return
-    throw new Error(`Remote pin failed: ${output.trim()}`)
+    console.warn(`⚠️  ${PIN_SERVICE} did not take the pin: ${output.trim()}`)
+    console.warn('   The deploy stands; the build is live and served.')
+    return
   }
+
+  console.log(`✅ Queued with ${PIN_SERVICE}. Check it later with:`)
+  console.log(
+    `   ipfs pin remote ls --service=${PIN_SERVICE} --name=${IPFS_KEY} --status=queued,pinning,pinned`
+  )
 }
 
 // Long lifetime so the record outlives this machine being asleep, short TTL so

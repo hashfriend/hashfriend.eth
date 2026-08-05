@@ -7,7 +7,7 @@ bun run build
 bun run deploy
 ```
 
-It adds the build, pins the CID to Pinata, publishes the IPNS record, then hands the build to `DEPLOY_HOST`. That last step is allowed to fail.
+It adds the build, publishes the IPNS record, hands the build to `DEPLOY_HOST`, then asks Pinata to pin the CID. Those last two are allowed to fail; the record is what makes the build live.
 
 `ipfs name publish` reports success once the record exists locally, however few peers its DHT put reached. So the deploy also hands the record to a delegated router and reads it back from there — that read is what decides success. Override with `DEPLOY_ROUTER`.
 
