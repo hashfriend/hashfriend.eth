@@ -15,7 +15,6 @@ const PIN_SERVICE = arg('service')
 const HOST = process.env.DEPLOY_HOST ?? ''
 const REMOTE_IPFS = process.env.DEPLOY_IPFS ?? 'ipfs'
 
-// Delegated routing endpoint the record is handed to and then read back from.
 const ROUTER = process.env.DEPLOY_ROUTER || 'https://delegated-ipfs.dev'
 
 if (!IPFS_KEY || !PIN_SERVICE) {
@@ -51,7 +50,6 @@ async function main() {
 
 await main()
 
-// Fail before touching the network if anything this deploy leans on is missing.
 async function preflight() {
   const services = await $`ipfs pin remote service ls`.text()
   if (
@@ -160,8 +158,10 @@ async function announceRecord(cid: string) {
 
   // The router serves what it accepted about a minute later. Records signed at
   // different moments differ byte for byte, so compare the value they carry.
+  // The CDN in front serves stale records for up to a year, so the read needs
+  // a unique query string to reach the router at all.
   for (let waited = 0; waited < 120_000; waited += 5000) {
-    const back = await fetch(url, {
+    const back = await fetch(`${url}?t=${Date.now()}`, {
       headers: { Accept: 'application/vnd.ipfs.ipns-record' }
     })
     const served = Buffer.from(await back.arrayBuffer())
