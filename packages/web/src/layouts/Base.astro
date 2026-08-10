@@ -11,6 +11,9 @@ const slug = Astro.url.pathname.replace(/^\/+|\/+$/g, '') || 'index'
 const canonical = new URL(Astro.url.pathname, Astro.site).href
 const ogImage = new URL(`/og/${slug}.png`, Astro.site).href
 const isoDate = date ? new Date(date).toISOString().slice(0, 10) : undefined
+const updatedDate = updated
+  ? new Date(updated).toISOString().slice(0, 10)
+  : undefined
 // Full timestamps for the machines, the plain day for the page.
 const publishedTime = date ? new Date(date).toISOString() : undefined
 // A post that was never revised was last modified when it was published.
@@ -67,6 +70,13 @@ const modifiedTime = updated ? new Date(updated).toISOString() : publishedTime
           )
         }
         <slot />
+        {
+          updatedDate && (
+            <p class="last-updated">
+              Last updated: <time datetime={updatedDate}>{updatedDate}</time>
+            </p>
+          )
+        }
       </main>
       <Footer />
     </div>
@@ -88,9 +98,15 @@ const modifiedTime = updated ? new Date(updated).toISOString() : publishedTime
     color: var(--lede-color);
   }
 
-  time {
+  .page-header time {
     display: block;
     margin-top: 1rem;
+    font-size: 0.8rem;
+    opacity: 0.6;
+  }
+
+  .last-updated {
+    margin-top: 2rem;
     font-size: 0.8rem;
     opacity: 0.6;
   }
