@@ -12,7 +12,6 @@ const BACKGROUND =
   'linear-gradient(120deg, #121212 0%, #16191f 45%, #1b2634 100%)'
 const TITLE_COLOR = '#e5e7eb'
 const TEXT_COLOR = '#b9c0cb'
-const ACCENT_COLOR = 'rgba(108, 182, 255, 0.35)'
 
 const require = createRequire(import.meta.url)
 const fonts = Promise.all(
@@ -29,22 +28,17 @@ const fonts = Promise.all(
   }))
 )
 
-type Card = { title: string; date?: string }
+type Card = { title: string }
 
 const pages = import.meta.glob<{
   url?: string
-  frontmatter: { title?: string; date?: string }
+  frontmatter: { title?: string }
 }>('../*.{md,mdx}', { eager: true })
 
 export const getStaticPaths = (() =>
   Object.values(pages).map(({ url, frontmatter }) => ({
     params: { slug: url?.replace(/^\/+|\/+$/g, '') || 'index' },
-    props: {
-      title: frontmatter.title ?? SITE_NAME,
-      date: frontmatter.date
-        ? new Date(frontmatter.date).toISOString().slice(0, 10)
-        : undefined
-    }
+    props: { title: frontmatter.title ?? SITE_NAME }
   }))) satisfies GetStaticPaths
 
 export const GET: APIRoute<Card> = async ({ props }) => {
@@ -65,7 +59,7 @@ const el = (
   children?: string | Node[]
 ): Node => ({ type: 'div', props: { style, children } })
 
-function card({ title, date }: Card): Node {
+function card({ title }: Card): Node {
   const fontSize = title.length > 56 ? 60 : title.length > 30 ? 74 : 88
   const wordmark = title !== SITE_NAME
 
@@ -109,15 +103,7 @@ function card({ title, date }: Card): Node {
           letterSpacing: -1
         },
         title
-      ),
-
-      el({ display: 'flex', flexDirection: 'column' }, [
-        el({ height: 2, backgroundColor: ACCENT_COLOR }),
-        el(
-          { marginTop: 22, fontSize: 28, color: TEXT_COLOR },
-          date ?? 'hashfriend.eth.limo'
-        )
-      ])
+      )
     ]
   )
 }
