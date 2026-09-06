@@ -17,11 +17,16 @@ const require = createRequire(import.meta.url)
 const fonts = Promise.all(
   (
     [
-      ['firacode/distr/ttf/FiraCode-Regular.ttf', 400],
-      ['firacode/distr/ttf/FiraCode-SemiBold.ttf', 600]
+      ['Geist', '@fontsource/geist/files/geist-latin-400-normal.woff', 400],
+      ['Geist', '@fontsource/geist/files/geist-latin-600-normal.woff', 600],
+      [
+        'Geist Mono',
+        '@fontsource/geist-mono/files/geist-mono-latin-600-normal.woff',
+        600
+      ]
     ] as const
-  ).map(async ([path, weight]) => ({
-    name: 'Fira Code',
+  ).map(async ([name, path, weight]) => ({
+    name,
     weight,
     style: 'normal' as const,
     data: await Bun.file(require.resolve(path)).arrayBuffer()
@@ -73,7 +78,7 @@ function card({ title }: Card): Node {
       padding: PADDING,
       backgroundImage: BACKGROUND,
       color: TITLE_COLOR,
-      fontFamily: 'Fira Code'
+      fontFamily: 'Geist'
     },
     [
       el({ display: 'flex', alignItems: 'center' }, [
@@ -90,7 +95,17 @@ function card({ title }: Card): Node {
           }
         },
         ...(wordmark
-          ? [el({ marginLeft: 24, fontSize: 32, fontWeight: 600 }, SITE_NAME)]
+          ? [
+              el(
+                {
+                  marginLeft: 24,
+                  fontSize: 32,
+                  fontWeight: 600,
+                  fontFamily: 'Geist Mono'
+                },
+                SITE_NAME
+              )
+            ]
           : [])
       ]),
 
@@ -100,7 +115,7 @@ function card({ title }: Card): Node {
           fontSize,
           fontWeight: 600,
           lineHeight: 1.18,
-          letterSpacing: -1
+          letterSpacing: -2
         },
         title
       )

@@ -13,8 +13,16 @@ export default defineConfig({
   fonts: [
     {
       provider: fontProviders.google(),
-      name: 'Fira Code',
-      cssVariable: '--font-fira-code',
+      name: 'Geist',
+      cssVariable: '--font-geist',
+      weights: ['400', '600'],
+      // Blockquotes and <em> are italic; without this they get synthesized.
+      styles: ['normal', 'italic']
+    },
+    {
+      provider: fontProviders.google(),
+      name: 'Geist Mono',
+      cssVariable: '--font-geist-mono',
       weights: ['400', '600']
     }
   ]

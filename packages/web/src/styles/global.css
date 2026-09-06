@@ -6,7 +6,6 @@
   --lede-color: #111827;
   --title-color: #1f2937;
   --text-color: #4b5563;
-  --code-color: #111827;
   --code-background: #eceef1;
 }
 
@@ -17,7 +16,6 @@
     --lede-color: #f3f4f6;
     --title-color: #e5e7eb;
     --text-color: #b9c0cb;
-    --code-color: #f3f4f6;
     --code-background: #22262c;
   }
 }
@@ -27,7 +25,8 @@ html {
 }
 
 body {
-  font-family: var(--font-fira-code), ui-monospace, monospace;
+  font-family: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.65;
   margin: 0;
   background-color: var(--background-color);
   color: var(--text-color);
@@ -43,6 +42,22 @@ h5,
 h6 {
   color: var(--title-color);
   font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+}
+
+h2 {
+  font-size: 1.35rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1rem;
 }
 
 blockquote {
@@ -119,18 +134,27 @@ a:hover {
   text-decoration-color: currentcolor;
 }
 
+pre,
+code,
+kbd,
+samp {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+pre {
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+
+/* Mono runs optically larger than Geist at the same size; 0.9em matches them. */
 :not(pre) > code {
-  font-family: inherit;
+  font-size: 0.9em;
   font-weight: inherit;
   font-style: normal;
-  color: var(--code-color);
+  color: inherit;
   background-color: var(--code-background);
   padding: 0.1em 0.3em;
   border-radius: 4px;
-}
-
-a code {
-  color: inherit;
 }
 
 /* Column so the footer can push itself to the bottom of short pages. */

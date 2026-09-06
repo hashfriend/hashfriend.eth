@@ -57,7 +57,8 @@ const modifiedTime = updated ? new Date(updated).toISOString() : publishedTime
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <Font cssVariable="--font-fira-code" preload />
+    <Font cssVariable="--font-geist" preload />
+    <Font cssVariable="--font-geist-mono" preload />
   </head>
   <body>
     <!-- For fetchers that read the rendered text and never look at <head>. -->
@@ -109,13 +110,16 @@ const modifiedTime = updated ? new Date(updated).toISOString() : publishedTime
   .page-header time {
     display: block;
     margin-top: 1rem;
-    font-size: 0.8rem;
+  }
+
+  .page-header time,
+  .last-updated {
+    font-family: var(--font-geist-mono), ui-monospace, monospace;
+    font-size: 0.75rem;
     opacity: 0.6;
   }
 
   .last-updated {
     margin-top: 2rem;
-    font-size: 0.8rem;
-    opacity: 0.6;
   }
 </style>
