@@ -5,8 +5,8 @@
   "version": "0.0.1",
   "scripts": {
     "research": "bun src/cli.ts",
-    "lint": "biome check --error-on-warnings .",
-    "format": "biome check --write .",
+    "lint": "biome check --error-on-warnings src package.json tsconfig.json",
+    "format": "biome check --write src package.json tsconfig.json",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

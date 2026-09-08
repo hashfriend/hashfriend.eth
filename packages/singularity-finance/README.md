@@ -1,6 +1,6 @@
 # Singularity Finance research
 
-Read-only viem tooling for the [DynaVault post](../web/src/pages/singularity-finance-exploit.md). Start with [NOTEBOOK.md](NOTEBOOK.md) for existing evidence, addresses and unresolved checks. Registry addresses and public RPC defaults live in [src/config.ts](src/config.ts).
+Read-only viem tooling for the [DynaVault post](https://hashfriend.eth.limo/singularity-finance-exploit/). Start with [NOTEBOOK.md](NOTEBOOK.md) for existing evidence, addresses and unresolved checks. Registry addresses and public RPC defaults live in [src/config.ts](src/config.ts).
 
 ## Run
 
@@ -24,6 +24,7 @@ SFI_RPC_8453=https://mainnet.base.org bun run research call 0x67b93f6676bd1911c5
 ## Output and failures
 
 - JSON goes to stdout or a new `--out` file; diagnostics go to stderr. Existing files are never overwritten. Amounts are decimal strings.
+- Name evidence files by the event or pinned-state date, using `START_to_END` for multiple dates. Keep retrieval timestamps inside the records. Reads at earlier blocks are historical onchain reads.
 - Exit 1 means a failed command or incomplete snapshot/transaction decoding. Inspect the saved errors before retrying. Older evidence remains unchanged in `evidence/`.
 - History always reports `complete: false`, even on exit 0: successful page retrieval never establishes a complete chain scan. `document.retrievedAt` is a retrieval time, not a publication date.
 - For RPC failures, override `SFI_RPC_<chainId>` with an archive-capable endpoint. BNB history requires `SFI_3XPL_TOKEN`. Keep credentials out of commands, output and commits. Rate-limited runs can reuse cached contracts on retry; choose a new output filename.

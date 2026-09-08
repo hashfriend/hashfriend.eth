@@ -1,0 +1,374 @@
+{
+  "chain": "base",
+  "address": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+  "retrievedAt": "2026-09-08T13:33:57.689Z",
+  "pages": [
+    {
+      "items": [
+        {
+          "priority_fee": "78295000000",
+          "raw_input": "0x6a76120200000000000000000000000003301480ab204c92c8927d76bba989c6400860c60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e00000000000000000000000000000000000000000000000000000000000000064f8dc5dd9000000000000000000000000c114d7a75b20df6222b86d552c53de754d965834000000000000000000000000947f0d7b9f5c89937e438bcdec4039348283b9b00000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000082cc5e1729f334e0f4777fff49f7c6a70b1df23914f95919e0d71e50b790d2bb9e25aec696bf75aecbf31fe90722affb0d1d76dd53553fd1b141f5a369662d71c11c62cfb1daf9fda83ab8113ea491c248e38955a97817051e94eac48586795c8d0514b673b62847879edee94e7bb6b708103779d4a1d91e375e937887af4a7b27a61b000000000000000000000000000000000000000000000000000000000000",
+          "is_pending_update": false,
+          "result": "success",
+          "hash": "0x6b1e282554b45170690bb6e868037588322e32bfc7eac7b8a1f33fc67cdfcf40",
+          "max_fee_per_gas": "14331865",
+          "revert_reason": null,
+          "confirmation_duration": [
+            0,
+            2000
+          ],
+          "transaction_burnt_fee": "745584572495",
+          "type": 2,
+          "token_transfers_overflow": null,
+          "confirmations": 10152843,
+          "position": 113,
+          "max_priority_fee_per_gas": "1000000",
+          "transaction_tag": null,
+          "created_contract": null,
+          "value": "0",
+          "from": {
+            "ens_domain_name": null,
+            "hash": "0x8De14E014402C0677B075A69122F94C0425Cc179",
+            "implementations": [],
+            "is_contract": false,
+            "is_scam": false,
+            "is_verified": false,
+            "metadata": {
+              "tags": [
+                {
+                  "meta": {},
+                  "name": "Bundler: 0x8de...179",
+                  "ordinal": 10,
+                  "slug": "bundler-0x8de179",
+                  "tagType": "name"
+                },
+                {
+                  "meta": {
+                    "tooltipDescription": "Deployer address for Telco.",
+                    "tooltipUrl": "https://app.pendle.finance"
+                  },
+                  "name": "Pendle: Deployer 8",
+                  "ordinal": 10,
+                  "slug": "pendle-deployer-8",
+                  "tagType": "name"
+                },
+                {
+                  "meta": {},
+                  "name": "Contract Deployer",
+                  "ordinal": 0,
+                  "slug": "contract-deployer",
+                  "tagType": "generic"
+                },
+                {
+                  "meta": {},
+                  "name": "Bundler",
+                  "ordinal": 0,
+                  "slug": "bundler",
+                  "tagType": "protocol"
+                },
+                {
+                  "meta": {
+                    "appActionButtonText": "Pendle",
+                    "appID": "pendle"
+                  },
+                  "name": "Pendle",
+                  "ordinal": 0,
+                  "slug": "pendle",
+                  "tagType": "protocol"
+                }
+              ]
+            },
+            "name": null,
+            "private_tags": [],
+            "proxy_type": null,
+            "public_tags": [],
+            "reputation": "ok",
+            "watchlist_names": []
+          },
+          "gas_used": "78295",
+          "status": "ok",
+          "to": {
+            "ens_domain_name": null,
+            "hash": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "implementations": [
+              {
+                "address_hash": "0x29fcB43b46531BcA003ddC8FCB67FFE91900C762",
+                "name": "SafeL2"
+              }
+            ],
+            "is_contract": true,
+            "is_scam": false,
+            "is_verified": true,
+            "metadata": null,
+            "name": "SafeProxy",
+            "private_tags": [],
+            "proxy_type": "master_copy",
+            "public_tags": [],
+            "reputation": "ok",
+            "watchlist_names": []
+          },
+          "authorization_list": [],
+          "method": "execTransaction",
+          "fee": {
+            "type": "actual",
+            "value": "825082337091"
+          },
+          "gas_limit": "230785",
+          "gas_price": "10522761",
+          "decoded_input": {
+            "method_call": "execTransaction(address to, uint256 value, bytes data, uint8 operation, uint256 safeTxGas, uint256 baseGas, uint256 gasPrice, address gasToken, address refundReceiver, bytes signatures)",
+            "method_id": "6a761202",
+            "parameters": [
+              {
+                "name": "to",
+                "type": "address",
+                "value": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+              },
+              {
+                "name": "value",
+                "type": "uint256",
+                "value": "0"
+              },
+              {
+                "name": "data",
+                "type": "bytes",
+                "value": "0xf8dc5dd9000000000000000000000000c114d7a75b20df6222b86d552c53de754d965834000000000000000000000000947f0d7b9f5c89937e438bcdec4039348283b9b00000000000000000000000000000000000000000000000000000000000000002"
+              },
+              {
+                "name": "operation",
+                "type": "uint8",
+                "value": "0"
+              },
+              {
+                "name": "safeTxGas",
+                "type": "uint256",
+                "value": "0"
+              },
+              {
+                "name": "baseGas",
+                "type": "uint256",
+                "value": "0"
+              },
+              {
+                "name": "gasPrice",
+                "type": "uint256",
+                "value": "0"
+              },
+              {
+                "name": "gasToken",
+                "type": "address",
+                "value": "0x0000000000000000000000000000000000000000"
+              },
+              {
+                "name": "refundReceiver",
+                "type": "address",
+                "value": "0x0000000000000000000000000000000000000000"
+              },
+              {
+                "name": "signatures",
+                "type": "bytes",
+                "value": "0xcc5e1729f334e0f4777fff49f7c6a70b1df23914f95919e0d71e50b790d2bb9e25aec696bf75aecbf31fe90722affb0d1d76dd53553fd1b141f5a369662d71c11c62cfb1daf9fda83ab8113ea491c248e38955a97817051e94eac48586795c8d0514b673b62847879edee94e7bb6b708103779d4a1d91e375e937887af4a7b27a61b"
+              }
+            ]
+          },
+          "fhe_operations_count": 0,
+          "token_transfers": null,
+          "base_fee_per_gas": "9522761",
+          "timestamp": "2026-01-16T13:05:39.000000Z",
+          "nonce": 946023,
+          "historic_exchange_rate": "3295.3",
+          "transaction_types": [
+            "contract_call"
+          ],
+          "exchange_rate": "2469.26",
+          "block_number": 40889696,
+          "has_error_in_internal_transactions": null
+        },
+        {
+          "priority_fee": "118475000000",
+          "raw_input": "0x6a76120200000000000000000000000003301480ab204c92c8927d76bba989c6400860c60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001c000000000000000000000000000000000000000000000000000000000000000440d582f1300000000000000000000000096ee226a8f49e815b87e307c295350d07e921f4d0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000082fbe97781d60cd15a51b4b308b4492a85023d4dafe8cb9f67c431c0497acd9ff3370dd79dc90ad9d077ff08d3c1d02d853c12e967fae0f97b99c577bab6930a7a1ca86b09da038c586eac463be46cba2c85e6c9f0c199461e24c3c499c3a072fa3327bd1462e157782d6178ecab1f7e4e67732e15fe1a33505fb4ec0d1934f58b5b1c000000000000000000000000000000000000000000000000000000000000",
+          "is_pending_update": false,
+          "result": "success",
+          "hash": "0x82165f1c7f076464438faab4ad88ab82d1e66c404020989337b831c0d40f80bd",
+          "max_fee_per_gas": "13476812",
+          "revert_reason": null,
+          "confirmation_duration": [
+            0,
+            2000
+          ],
+          "transaction_burnt_fee": "1055850266275",
+          "type": 2,
+          "token_transfers_overflow": null,
+          "confirmations": 10152871,
+          "position": 103,
+          "max_priority_fee_per_gas": "1000000",
+          "transaction_tag": null,
+          "created_contract": null,
+          "value": "0",
+          "from": {
+            "ens_domain_name": null,
+            "hash": "0xba9A3c0a22bAebE8c4926227BdE32d6EdC0D5d28",
+            "implementations": [],
+            "is_contract": false,
+            "is_scam": false,
+            "is_verified": false,
+            "metadata": {
+              "tags": [
+                {
+                  "meta": {},
+                  "name": "Fake_Phishing308",
+                  "ordinal": 10,
+                  "slug": "fakephishing308",
+                  "tagType": "name"
+                },
+                {
+                  "meta": {
+                    "tooltipUrl": "https://gelato.network/"
+                  },
+                  "name": "Gelato: Executor",
+                  "ordinal": 10,
+                  "slug": "gelato-executor",
+                  "tagType": "name"
+                },
+                {
+                  "meta": {},
+                  "name": "Contract Deployer",
+                  "ordinal": 0,
+                  "slug": "contract-deployer",
+                  "tagType": "generic"
+                },
+                {
+                  "meta": {
+                    "info": [
+                      "Phish / Hack"
+                    ]
+                  },
+                  "name": "SCAM",
+                  "ordinal": 0,
+                  "slug": "scam",
+                  "tagType": "generic"
+                },
+                {
+                  "meta": {
+                    "appID": "gelato"
+                  },
+                  "name": "Gelato",
+                  "ordinal": 0,
+                  "slug": "gelato",
+                  "tagType": "protocol"
+                }
+              ]
+            },
+            "name": null,
+            "private_tags": [],
+            "proxy_type": null,
+            "public_tags": [],
+            "reputation": "ok",
+            "watchlist_names": []
+          },
+          "gas_used": "118475",
+          "status": "ok",
+          "to": {
+            "ens_domain_name": null,
+            "hash": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "implementations": [
+              {
+                "address_hash": "0x29fcB43b46531BcA003ddC8FCB67FFE91900C762",
+                "name": "SafeL2"
+              }
+            ],
+            "is_contract": true,
+            "is_scam": false,
+            "is_verified": true,
+            "metadata": null,
+            "name": "SafeProxy",
+            "private_tags": [],
+            "proxy_type": "master_copy",
+            "public_tags": [],
+            "reputation": "ok",
+            "watchlist_names": []
+          },
+          "authorization_list": [],
+          "method": "execTransaction",
+          "fee": {
+            "type": "actual",
+            "value": "1175339584711"
+          },
+          "gas_limit": "267785",
+          "gas_price": "9912009",
+          "decoded_input": {
+            "method_call": "execTransaction(address to, uint256 value, bytes data, uint8 operation, uint256 safeTxGas, uint256 baseGas, uint256 gasPrice, address gasToken, address refundReceiver, bytes signatures)",
+            "method_id": "6a761202",
+            "parameters": [
+              {
+                "name": "to",
+                "type": "address",
+                "value": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+              },
+              {
+                "name": "value",
+                "type": "uint256",
+                "value": "0"
+              },
+              {
+                "name": "data",
+                "type": "bytes",
+                "value": "0x0d582f1300000000000000000000000096ee226a8f49e815b87e307c295350d07e921f4d0000000000000000000000000000000000000000000000000000000000000002"
+              },
+              {
+                "name": "operation",
+                "type": "uint8",
+                "value": "0"
+              },
+              {
+                "name": "safeTxGas",
+                "type": "uint256",
+                "value": "0"
+              },
+              {
+                "name": "baseGas",
+                "type": "uint256",
+                "value": "0"
+              },
+              {
+                "name": "gasPrice",
+                "type": "uint256",
+                "value": "0"
+              },
+              {
+                "name": "gasToken",
+                "type": "address",
+                "value": "0x0000000000000000000000000000000000000000"
+              },
+              {
+                "name": "refundReceiver",
+                "type": "address",
+                "value": "0x0000000000000000000000000000000000000000"
+              },
+              {
+                "name": "signatures",
+                "type": "bytes",
+                "value": "0xfbe97781d60cd15a51b4b308b4492a85023d4dafe8cb9f67c431c0497acd9ff3370dd79dc90ad9d077ff08d3c1d02d853c12e967fae0f97b99c577bab6930a7a1ca86b09da038c586eac463be46cba2c85e6c9f0c199461e24c3c499c3a072fa3327bd1462e157782d6178ecab1f7e4e67732e15fe1a33505fb4ec0d1934f58b5b1c"
+              }
+            ]
+          },
+          "fhe_operations_count": 0,
+          "token_transfers": null,
+          "base_fee_per_gas": "8912009",
+          "timestamp": "2026-01-16T13:04:43.000000Z",
+          "nonce": 1009740,
+          "historic_exchange_rate": "3295.3",
+          "transaction_types": [
+            "contract_call"
+          ],
+          "exchange_rate": "2469.26",
+          "block_number": 40889668,
+          "has_error_in_internal_transactions": null
+        }
+      ],
+      "next_page_params": null
+    }
+  ],
+  "hasMore": false,
+  "complete": false
+}

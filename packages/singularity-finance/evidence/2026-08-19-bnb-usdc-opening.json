@@ -1,0 +1,62 @@
+{
+  "chain": "bnb",
+  "block": {
+    "number": "116808615",
+    "hash": "0xaf460705d3aaeea00a646aee6f0f532707d918394cfaf4e93c543f6ca1d625f5",
+    "time": "2026-08-19T07:30:57.000Z"
+  },
+  "transaction": {
+    "type": "legacy",
+    "chainId": 56,
+    "nonce": 1978,
+    "gasPrice": "50000000",
+    "gas": "71633",
+    "to": "0xa42c06e4700280330dcc1ac9e2b37fd3159200b7",
+    "value": "0",
+    "input": "0x23447d4e0000000000000000000000000000000000000000000000000000000000000001",
+    "r": "0xd0cf48751a9341067143244451a53fa0523a374c7567e67253c150f6e273c6d5",
+    "s": "0x730a62a011b3df2c51cd7586e5921256425003fb3a56217a42c5078c01e9642",
+    "v": "148",
+    "hash": "0xd384d4ad4dd3a6cf9a71c11bbd195f605fb25e8e04b81c946783f703052466bb",
+    "blockHash": "0xaf460705d3aaeea00a646aee6f0f532707d918394cfaf4e93c543f6ca1d625f5",
+    "blockNumber": "116808615",
+    "transactionIndex": 80,
+    "from": "0xcd231d4ba7b15a4722ac057419d9cd7689e7b8db",
+    "blockTimestamp": "1787124657",
+    "typeHex": "0x0"
+  },
+  "receipt": {
+    "type": "legacy",
+    "from": "0xcd231d4ba7b15a4722ac057419d9cd7689e7b8db",
+    "to": "0xa42c06e4700280330dcc1ac9e2b37fd3159200b7",
+    "status": "success",
+    "cumulativeGasUsed": "17518351",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020004000000000000000400000008000000000",
+    "logs": [
+      {
+        "address": "0xa42c06e4700280330dcc1ac9e2b37fd3159200b7",
+        "topics": [
+          "0x4607ffed3a3ca9aaf5765dbc02464f6b7f57bc0d9aeb2bd25018205a0972e7c6"
+        ],
+        "data": "0x000000000000000000000000cd231d4ba7b15a4722ac057419d9cd7689e7b8db0000000000000000000000000000000000000000000000000000000000000001",
+        "blockNumber": "116808615",
+        "transactionHash": "0xd384d4ad4dd3a6cf9a71c11bbd195f605fb25e8e04b81c946783f703052466bb",
+        "transactionIndex": 80,
+        "blockHash": "0xaf460705d3aaeea00a646aee6f0f532707d918394cfaf4e93c543f6ca1d625f5",
+        "blockTimestamp": "1787124657",
+        "logIndex": 573,
+        "removed": false
+      }
+    ],
+    "transactionHash": "0xd384d4ad4dd3a6cf9a71c11bbd195f605fb25e8e04b81c946783f703052466bb",
+    "contractAddress": null,
+    "gasUsed": "47370",
+    "blockHash": "0xaf460705d3aaeea00a646aee6f0f532707d918394cfaf4e93c543f6ca1d625f5",
+    "blockNumber": "116808615",
+    "transactionIndex": 80,
+    "effectiveGasPrice": "50000000"
+  },
+  "complete": false,
+  "decodingError": "Invalid parameters were provided to the RPC method.\nDouble check you have provided the correct parameters.\n\nURL: https://bsc-rpc.publicnode.com\nRequest body: {\"method\":\"eth_getCode\",\"params\":[\"0xa42c06E4700280330DCC1Ac9E2b37fd3159200B7\",\"0x6f65ba7\"]}\n\nDetails: Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode\nVersion: viem@2.56.3",
+  "abiEvidence": []
+}

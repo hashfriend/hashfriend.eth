@@ -1,7 +1,6 @@
 {
   "schemaVersion": 1,
   "capturedAt": "2026-09-08T11:34:49.649Z",
-  "sdkVersion": "0.1.5",
   "chains": [
     {
       "chain": "ethereum",

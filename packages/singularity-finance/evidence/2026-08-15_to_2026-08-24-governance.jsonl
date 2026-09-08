@@ -1,0 +1,3 @@
+{"kind":"analysis","value":{"section":"governance","retrievedAt":"2026-09-08T13:40:53.918Z","chainId":8453,"provenance":"Historical onchain reads and transaction analysis"}}
+{"kind":"error","value":{"error":"HTTP request failed.\n\nURL: https://base.gateway.tenderly.co/\nRequest body: {\"method\":\"eth_chainId\"}\n\nDetails: getaddrinfo ENOTFOUND base.gateway.tenderly.co\nVersion: viem@2.56.3"}}
+{"kind":"runStatus","value":{"complete":false}}
