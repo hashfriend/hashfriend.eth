@@ -1,0 +1,207 @@
+{
+  "chain": "base",
+  "block": {
+    "number": "45183966",
+    "hash": "0x6e14a76f94c6d568d6a866aa6c97e24e3aea5dd7d28fd01db91407f8eb199e9f",
+    "time": "2026-04-25T22:47:59.000Z"
+  },
+  "sdkVersion": "0.1.5",
+  "review": {
+    "vault": {
+      "counts": {
+        "sdk": {
+          "function": 78,
+          "event": 8,
+          "error": 19
+        },
+        "deployed": {
+          "function": 77,
+          "event": 8,
+          "error": 19
+        }
+      },
+      "sdkOnly": [
+        {
+          "key": "function:toggleMerklOperator(address,address)",
+          "type": "function",
+          "name": "toggleMerklOperator",
+          "inputs": ["address", "address"],
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "indexed": []
+        }
+      ],
+      "deployedOnly": [],
+      "mismatched": []
+    },
+    "manager": {
+      "counts": {
+        "sdk": {
+          "function": 101,
+          "event": 4,
+          "error": 2
+        },
+        "deployed": {
+          "function": 93,
+          "event": 4,
+          "error": 2
+        }
+      },
+      "sdkOnly": [
+        {
+          "key": "function:checkAndTripDepositMintCircuitBreaker()",
+          "type": "function",
+          "name": "checkAndTripDepositMintCircuitBreaker",
+          "inputs": [],
+          "outputs": ["bool"],
+          "stateMutability": "nonpayable",
+          "indexed": []
+        },
+        {
+          "key": "function:checkDepositsAllowed()",
+          "type": "function",
+          "name": "checkDepositsAllowed",
+          "inputs": [],
+          "outputs": [],
+          "stateMutability": "view",
+          "indexed": []
+        },
+        {
+          "key": "function:depositMintCircuitBreakerActive()",
+          "type": "function",
+          "name": "depositMintCircuitBreakerActive",
+          "inputs": [],
+          "outputs": ["bool"],
+          "stateMutability": "view",
+          "indexed": []
+        },
+        {
+          "key": "function:depositMintCircuitBreakerInfo()",
+          "type": "function",
+          "name": "depositMintCircuitBreakerInfo",
+          "inputs": [],
+          "outputs": [
+            "bool",
+            "address",
+            "uint256",
+            "uint256",
+            "uint256",
+            "uint256"
+          ],
+          "stateMutability": "view",
+          "indexed": []
+        },
+        {
+          "key": "function:depositsAllowed()",
+          "type": "function",
+          "name": "depositsAllowed",
+          "inputs": [],
+          "outputs": ["bool"],
+          "stateMutability": "view",
+          "indexed": []
+        },
+        {
+          "key": "function:maxReferenceValueDropBps()",
+          "type": "function",
+          "name": "maxReferenceValueDropBps",
+          "inputs": [],
+          "outputs": ["uint256"],
+          "stateMutability": "view",
+          "indexed": []
+        },
+        {
+          "key": "function:setDepositMintCircuitBreaker(bool)",
+          "type": "function",
+          "name": "setDepositMintCircuitBreaker",
+          "inputs": ["bool"],
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "indexed": []
+        },
+        {
+          "key": "function:setMaxReferenceValueDropBps(uint256)",
+          "type": "function",
+          "name": "setMaxReferenceValueDropBps",
+          "inputs": ["uint256"],
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "indexed": []
+        }
+      ],
+      "deployedOnly": [],
+      "mismatched": []
+    }
+  },
+  "abiEvidence": [
+    {
+      "address": "0xb4d05063A4Cf978446181002cb524Fb3bCFe9D94",
+      "codeHash": "0xea26d30d5d1a0b1c9384dca1f700f70e98155c9d08764cd439391aef5de90157",
+      "sourceAddress": "0xb4d05063A4Cf978446181002cb524Fb3bCFe9D94"
+    },
+    {
+      "address": "0xb130375b543Bd919D85351B73636439C28D90Db6",
+      "codeHash": "0x28bf12d7082433af3a3d9cadbddbd4e153efad5d48004d7b513f54fd629f2fd8",
+      "sourceAddress": "0xb130375b543Bd919D85351B73636439C28D90Db6"
+    },
+    {
+      "address": "0x3CE426BB2fCB9E1300BbE03E2D34D7b3B7347Db5",
+      "codeHash": "0x708ab7a2062748234c8c1707e97b4d419d3131f487cdb0f48a8c208c8b79697c",
+      "sourceAddress": "0x3CE426BB2fCB9E1300BbE03E2D34D7b3B7347Db5"
+    },
+    {
+      "address": "0xD3109f87bd553B83f64a2972Effb034BfED8d2A0",
+      "codeHash": "0x8ad4a982e258b727289be029e2cbb9f0482f042d796457862a9270019263d3a8",
+      "sourceAddress": "0xD3109f87bd553B83f64a2972Effb034BfED8d2A0"
+    },
+    {
+      "address": "0x4c3DF500989DF0f6670b99018811B94d591CC5A0",
+      "codeHash": "0x385f9128cc350a0a0dbc682815e5740776d624799f26ef533519ccdf07711796",
+      "sourceAddress": "0x4c3DF500989DF0f6670b99018811B94d591CC5A0"
+    },
+    {
+      "address": "0xEa7975C2fEc1ae9E3058BB5f99d8E26dbC816811",
+      "codeHash": "0x37f71804c29ef7c42d3abe4b6b287ff2d19737753ad89a1301c16001d983b30f",
+      "sourceAddress": "0xEa7975C2fEc1ae9E3058BB5f99d8E26dbC816811"
+    },
+    {
+      "address": "0x67b93f6676bd1911c5FAe7Ffa90fFf5f35E14dCd",
+      "codeHash": "0x0e8762c5b6ccfcd3d63774df03ea3865dde72c426ebc41ec15c4c64b4a53c5bf",
+      "sourceAddress": null
+    },
+    {
+      "address": "0x48b1197dc8697aC86e2cce9e875A0B22ca3150F5",
+      "codeHash": "0xb4fcaed4f71a7aa47714feb2762919ab3143c39e9af933aa5e532334d6c89842",
+      "sourceAddress": "0x48b1197dc8697aC86e2cce9e875A0B22ca3150F5"
+    },
+    {
+      "address": "0x7e81c4022018Cae002F70817aA9A4035F7daf5C5",
+      "codeHash": "0x976b1dad280e13031005ed5691a903691c6bfc7ba707975b7d64b1061889cd43",
+      "sourceAddress": "0x7e81c4022018Cae002F70817aA9A4035F7daf5C5"
+    },
+    {
+      "address": "0x620978615e37f2c494cB9FcC2F9981029533fB39",
+      "codeHash": "0xad4a18d2c7edfdfa6d849546a75d365317ce015eb16b3f39ee34249bf745b0fc",
+      "sourceAddress": "0x620978615e37f2c494cB9FcC2F9981029533fB39"
+    },
+    {
+      "address": "0xf22Bd338Ccb6446a25920d1858E50D709B663e9E",
+      "codeHash": "0x1573f17c64c8349cf4321cedf145d304f921a0bb762c3f331d431623a3400703",
+      "sourceAddress": "0xf22Bd338Ccb6446a25920d1858E50D709B663e9E"
+    },
+    {
+      "address": "0x7B273c267B7De25811883D69D26BfFaEbf71C184",
+      "codeHash": "0x055b56bb8879c1743e5c49ac4777fac0cc5062301b380c5de02df321165bca77",
+      "sourceAddress": "0x7B273c267B7De25811883D69D26BfFaEbf71C184"
+    },
+    {
+      "address": "0x95cF606f7e499549D83BD3c8a1e5D97FDF36688B",
+      "codeHash": "0x186932b809c0aac756ab1e481c54ca91260302790bbfa58833dbef91f45153de",
+      "sourceAddress": "0x95cF606f7e499549D83BD3c8a1e5D97FDF36688B"
+    },
+    {
+      "address": "0x478675aA4121c07825167bBB25A44AADD22bEf7F",
+      "codeHash": "0x1f449573ce36de196193701153afb84e2c913bcf44fdb98abadf46cd42bf82ee",
+      "sourceAddress": null
+    }
+  ]
+}

@@ -1,0 +1,2996 @@
+{
+  "schemaVersion": 2,
+  "capturedAt": "2026-09-08T12:11:01.117Z",
+  "discoverySdkVersion": "0.1.5",
+  "abiPolicy": "verified-address-cache-v1",
+  "chains": [
+    {
+      "chain": "base",
+      "chainId": 8453,
+      "complete": false,
+      "block": {
+        "number": "51040047",
+        "hash": "0xba2d1527c14bc771e6f9460dea01b90558d6aa8f695ed4417353306da93fdbfb",
+        "time": "2026-09-08T12:10:41.000Z"
+      },
+      "registry": "0xe260c97949bB01E49c0af64a3525458197851657",
+      "entries": [
+        {
+          "vault": "0x1631CA6543adcB61e2B9e30189c8477981258274",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0xdf71487381Ab5bD5a6B17eAa61FE2E6045A0e805",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0xcb87331fd24000C70eF6b041DCdcBc3Ef824ea9e",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xE641e8B18ad842617a956a29A0b2c485Bd6871c0",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x460328F1fcb4E53e6E9BB8A5F4ec15dD724394af",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x5AE57ffedd7C250561C719097a4Ed41EAD98267B",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x619DD881EC9E5E08E67e641b9ab5Af3079DEfe11",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x44eE1F61045C389042C68d212074ef34d88679B9",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xCEDF4ee912d8469CBDd2Ab83b6Ca45aF2537a983",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x1ea76183a439802f588e859d7e1Cee71A3D6eE11",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xFc289A892f0423Dc9BB9Fe6c06fffaD71aA31aCE",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x40DcEE4d781e4e528C85DeA0ABb868C5639850dd",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x9bD997af11622FA6Cf2f9ab3ca4308E92c6C720c",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x718056B80316b65F0Cfaf671aD1155EE81c4C753",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x2F4dCE56eB89753988cdb158E3ce8641a00315C6",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6E0b01b992BB07a6C29e354ee766db81256C1B2D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xFB215556BcF1a1c97dCe3c35ED545F1540752Ca6",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xA775Fd0764b67D3509B309ca325615E73EAee76F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6AE9750De1e7eD6994d3Eae208a44e4b1f061D3C",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x977e337fFB8918a58bcC97C0CA5CDA08766F1467",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xD34bF8FBeb1c4E514B76449BBC0850D5A80c1632",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x12101d8B87838CDB0f8Fe61Fc4612c4809A01654",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xE35c3B16fe78a5eD30516b0EB34e0e69909CBA16",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x90315aa41162a0e3e398239C5CB36E789281039D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xAa6A5F4beA9762cF9052dFCb8B2FcA7A0692A364",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xD7ac3E4CFF0E8cc65aEf7646a0bB22F1a73aB2bb",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xA319a910B908E2Dd249fd6a87E257623A82a636E",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x029b7BEfa2BB385C263AD6Ba9917c859799801Ed",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x61D5478d803703B48390Be6C5D25Bb7250580114",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xDDCf6F2Fc1925Dd9AE77D403bDd0B95720CD133d",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x699be0f9ce812b454A53846e8E3B158bB8411A50",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x04C398001eafe1a464f7F9F4dD4426d345f2Ed0D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6AE40a99Fa21eEFD2C92CE40862BD2222347061f",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xbDc8B2ac60f3832adC4C2D0330395aBFdD45fEc0",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xddeD0699A5D3beA40179731EE9F87E95b0b6fF5A",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x9ABef9A578a46A76F161d9daAa77339Fd07da04E",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xC15e973120417894361A3E558D7CC7C1EEA29E72",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xC2D22feC220DeD0Ae9805d9e9B7C4DD93Ca91A64",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x559997E4a0346754D4f9e6f4E4F0C2c69085b970",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x11a50B418cd568dAB622Fe38517cfA9db9Cd86b8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x1ce983aA38728b1e7A08030072DB02102E392969",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x9A3fBa281B004882497D29B863c244619f2574b7",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xc9A736085e997B173228887B214Eb588eF7b693E",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x579E1f12e56C15e59862EBB4A7aA9609B4aD461F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x4F621a7C559869fE30f8b709FCaBb8049F17C13B",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x9803eb951930499BbDfD923d2e0C1b7625034Eb0",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x29e98D226eeaa20fbEcD6b6c668850BcaEac8628",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xB950D80C6759977Bb53d97B3a226c9B345247c82",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x1022E0D4B36EDf9Cf552FdC260101130ef1Dc131",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x75E0d5d511f663a4Def1B28d1226664ea3a72a15",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xA7Ad32028C7048d4BF2dc0A376cA94AB91F3A544",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x227DC2bdc5f747A58eeb79a182Dd5b296E90f22F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x0cd1CF79905897a50C45aaDE3A966eBcC46c991B",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xD536Db3A4e49189641B27Ed92C491eBF18792D7a",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xfD6CFF4Cc3BCbA7FBe1BACDc57B77DA5668Fc049",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xFBbfd4DAb5dd56909992cA077a807b72993461Db",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x108A5b19Ab08CD3b291e7B54A7878aDfa48FaB6D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xddcc531D07Cf068BE4619b8DA376f2a3729e3548",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6EAD885993A8b85558b52d3575eb4aaFb4E804a1",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xd41b1AB87C4B715E4D7001eddE32D79ee4eBa4Cb",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x675Ba680EbB61bDFa529Ec41094F08B36eBe2fAa",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xe087bAf104B316128eA2E140ee315d70865f14E8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x5B6f5890940228cdcFf682Ca17425977B235Ca45",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x26a17427532904650fda16B3472F98e891F34bC0",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xC30E55955262f5B714A2F14F63e17459c1722253",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x88DAa16322a456C3B193EDe94f10302762A10f5B",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x548bA2f92522391a4F88C0121C6f071A5807F665",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xaB58506555be5E09c8462850D8266619fC0eF014",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x302b232F45813E88539FFD7a8E9D28Df78c0b627",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x9065BdE967aE20819c5fA75731883c9c32fC60E8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xF0F1760E9E130508381cDc10FeEc09764a38e967",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x354F151248caF9DedE4Edf22f6954097E0755035",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x36237bae6CaCD057cC00b598182FD58785873D02",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x696A4ba5cFF354573CFE95647724068534CeD464",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xb4C000769f5fa257f975016611Bc508c662fC7BE",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf7C1592D0A32d1811A2261A407E8443c7a075153",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xd3647C178d8d7d6dF4a557bFCE73F4bBc406bED0",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xD1D2d7910A71bD7930A559885B82785e7A82B9CD",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xbDF03f4AD5085c59834C44430557D9Af05104b39",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x1fbae77255D572Baee0a1b274752e9a7b3b98110",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xaaF6fCB8285F7d8c12fd7eee98bc817198B7dACf",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x94847659F7f1eA5636eD9f988027bc926735aB89",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x42Ef6351AcC5d64a82d16057EC2091bCECCf3477",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x06205A5695f9eB3f1199fA81aD3231b3d122C26D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x717E8bD2Fa819427f969020fD7DB63644ce8c7ee",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xA532301b8fE1c08b512c4D3D2c4aB406a431cabc",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x0C3a5248c9133BFeD55676174bf454c087365583",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x7B67ab3600eff6BD2B593Bb9d8A7a310ed71126e",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x0Fbfd59a8b05296D881552f9472e82F3CeE531F5",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x8Ab531916036D47e8ADC2E4414597C75E80305EA",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x9DFa22d57A3374Da0e87EA95d98776cC19C5aEd3",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x36773Cc216D75EDf151fC0C86883941102d0da03",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x42AF46BEFb77fb0be58A44Bc24f7d9e2Bb141F96",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xcb3Fc245c3747d29e6b32dF0042aE911c28b3A8B",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x04fa389515f93D9627D56665060E8CA59f28dEcd",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xB15a805B086a8eDc15f172210e47BA17BA88baa7",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf2781389D9d84661fD8BBe047688d643C10133c1",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf3f81d261BBaEb82212211A15eb8eec616B1443D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x5CB8E906cB82b9e72f20FE163662de4b4f51699f",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xC12358718FFAd2257282Ab016bb08D6AD143291C",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x7278D0B023511D9C19a3131B28189600cc318c47",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x05185E9f9d50ad549Ec76d9B6D5F8273b078d7B8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x150817259ED6642a8eDdE674d81ba16603f4A7df",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xAc5A277789f9474849A10394fD19dbbB1Fe96d83",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6cf1Bb33632fe8BC9227882DdB72Dd44Ebda127c",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf9D6173d05cBa9f2a0C0Ab8fFDDe3bAe6a7ABB22",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xe4F5099c7123dDFf15C5bb73037c38d7bbDcE77b",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x1706dE48cd3C9fE05E8549b7247ffd99ce71Dc55",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x7a72f61ebb0785fdF35debEf36C6e77EDaa0cc53",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6FEA7Bfd2aF766Af59Aa80f3782f015a1af77A46",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xF4D10370EdB9Ab6EDA23c0e2Bb96c76Ac656c247",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x68C550549b6A07F36E441Ad1655F8909DA8B6e6A",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x01720FfEB0D461A0eF782ab18DAC905d745E6606",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x648f68110F636925eE62622e6A31b3BDC8118157",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x86Bcd704dBA9621d738Ef1f7Da8AbB500AF1B7f6",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x2f87c40F72CaAa0b25Ba60dB9c48905CFCf456B5",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xaA458849e891D005Bdbe66CBA2bFA45715dDA429",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xE185439fDEb25975261111183d55a1d828a17068",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xa2256FD892ABC7c8F75287cf0344788363e959B3",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xCc9f9F387da56436394285c990E7C17486dD1dA2",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x087350729F7A0cbDf89E87f963Cb2C659d476e69",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf8fAC7eF2069258857DA17D910F062F22054ec16",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xc0dbf664A8D78E2CE10556C75C0AF6a6c3d5A547",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf39f3c323F630104FF9eBa2AF4349F03CDd46A68",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x87C9a9Af4ed863976fEecf122c808Ab27AC7d8F5",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x7F7C24EB5Ce929fB22992C61F1094CAfd118878D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xBDD5CE32AC0cC91ECa83c93FFD0418f1Be258caE",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xEd7B0c1b0B3e85208373F053c06f6D6963C71F13",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6dEDda9FD0cABB03Ebd1e4dFb4644E7a99583772",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x01252a5c4Ac3Db15F59Bf0a3673297C3A3149363",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x0e7DB96384C4b4B34F450fdB2004bc1e46fD5ca8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x76097f2DCA682F32631462e16EA34FF72DdeB8eE",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xe978c334A3AB6269988Af138559aB1504a3Ec495",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x96E10Eb4c4595607FC2F6A04807eD198BF73Cf8E",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x8CF32aaDcD40C2Fd9a2E68Cb4Bd08Cd97610772F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xec65a3aA34f41abFa666EC856D357e26db52119c",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x84cF84540cbe519762f96D5CF48612da3Df29feb",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xFca3d4128308350ae7552A17ea0D177a5631e8Ba",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xe79cAF4a4e700F8e3430310322d2191eb0DEb628",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x135cc13Cc88e489eFF42C0ee4Bb056f541AA04eb",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x529Ff57FFeD5f65c57716d4268CF720d447Eb48F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x630257c5b7c4E8E62cb058890ae7Ca07BB268999",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xfa54Ed23af65DF421Db2ad8e131741e260328050",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x533b49485734bEb0A4B2BDA4d900466F6A85cb24",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x19110f157Abb7d53C14558336657DBA20574D49c",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x25b422BDad72Aab642E9820374C6fF90eBaD3c1f",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x1c9184818c7C53b23C4fA2D51fcb6CD6892D7DC0",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x117dF3B0E9DeE5C7A61638513E65bA902025E1c8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xb630e190f2A38F2e7fF0618facA270f67B69f10a",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6496D00D79F7068310a08e505488Dc6eee225fFd",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x8212e64a3F5A962F07f0d6781b8329bF4351A90F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x4cF17Ea9A9c14Ee26DE625Ea490f77E7a241b197",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xDe1Ed32576F5cAf7F54DF3Ec85fa6d5A5341E2F2",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x51296Fe764A2D1Ba1Bc35f759567d648951564b8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x5F932753F0725b3cE75CED6aFC921B410c0513E6",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x7b6eB9E0df27Dad9eae430CeEd0A6C4A019d301C",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xcFfDDAf09c8883cC6311179283aFb13124a32899",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xbD037d71B530a00faDAF8181fA4c66a9446D415B",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x326bd604E7c7c8e4Df759698e214243A1ac2Fffd",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xFE7a32a7e43dD6a852eB75CC1AADC194e7331e01",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x0bd1121d624a89B38dF103006b10995F540A6B7A",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xbF4Eeb9f9F97B71BA89e0B30CaD0f9F59756fBa9",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x2447D1be86b0C8C57241750b9DF49f318c623E2A",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x8cA4818876835A402588BA02b77545d8E581e7d3",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xCEbF4f02D8C5d9391255e9b954C69b2D40665403",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xbe6D22D314c2A055feaa1178b73A5372CBe15Cd7",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x8C7cfaC3baDFb7fD61f84441B4DbE1904968a840",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xe55709b0E6888961a61C6B43f17757d453fF31f3",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xcE1Aa9653481C0064342f2470a3Be7a043a95076",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x2311EB9425b19205e3cFcFd4B2016358CC8159c5",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf7386b6580744736c7218D876fa17Caf79d5dCE4",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x0D6862C7896233D4244cE746c368049B87c98B37",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0x792c1438356128f882340880f2f4d8e7a7912dAc",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x22097a0B69b72b960D107aCa280755C5b447508F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xd8d294714F5b1A1104CFE75C0Bb4ceF547a05124",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0x7Fe44a8305df0d8F8d25f66cBd4212eA570c7882",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0xBba362347a4C2acCe05228b01249c42Ee0BEe29C",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0x5e0EA8c9801497758294755f6e85724b41417667",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0x67b93f6676bd1911c5FAe7Ffa90fFf5f35E14dCd",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0x4C1fa73Ebc7Aa7C88006D51414fC5387dE3bfE26",
+          "vaultType": 3,
+          "active": true
+        }
+      ],
+      "excluded": [
+        {
+          "address": "0xcb87331fd24000C70eF6b041DCdcBc3Ef824ea9e",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xE641e8B18ad842617a956a29A0b2c485Bd6871c0",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x460328F1fcb4E53e6E9BB8A5F4ec15dD724394af",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x5AE57ffedd7C250561C719097a4Ed41EAD98267B",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x619DD881EC9E5E08E67e641b9ab5Af3079DEfe11",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x44eE1F61045C389042C68d212074ef34d88679B9",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xCEDF4ee912d8469CBDd2Ab83b6Ca45aF2537a983",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x1ea76183a439802f588e859d7e1Cee71A3D6eE11",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xFc289A892f0423Dc9BB9Fe6c06fffaD71aA31aCE",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x40DcEE4d781e4e528C85DeA0ABb868C5639850dd",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x9bD997af11622FA6Cf2f9ab3ca4308E92c6C720c",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x718056B80316b65F0Cfaf671aD1155EE81c4C753",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x2F4dCE56eB89753988cdb158E3ce8641a00315C6",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x6E0b01b992BB07a6C29e354ee766db81256C1B2D",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xFB215556BcF1a1c97dCe3c35ED545F1540752Ca6",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xA775Fd0764b67D3509B309ca325615E73EAee76F",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x6AE9750De1e7eD6994d3Eae208a44e4b1f061D3C",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x977e337fFB8918a58bcC97C0CA5CDA08766F1467",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xD34bF8FBeb1c4E514B76449BBC0850D5A80c1632",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x12101d8B87838CDB0f8Fe61Fc4612c4809A01654",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xE35c3B16fe78a5eD30516b0EB34e0e69909CBA16",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x90315aa41162a0e3e398239C5CB36E789281039D",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xAa6A5F4beA9762cF9052dFCb8B2FcA7A0692A364",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xD7ac3E4CFF0E8cc65aEf7646a0bB22F1a73aB2bb",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xA319a910B908E2Dd249fd6a87E257623A82a636E",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x029b7BEfa2BB385C263AD6Ba9917c859799801Ed",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x61D5478d803703B48390Be6C5D25Bb7250580114",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xDDCf6F2Fc1925Dd9AE77D403bDd0B95720CD133d",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x699be0f9ce812b454A53846e8E3B158bB8411A50",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x04C398001eafe1a464f7F9F4dD4426d345f2Ed0D",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x6AE40a99Fa21eEFD2C92CE40862BD2222347061f",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xbDc8B2ac60f3832adC4C2D0330395aBFdD45fEc0",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xddeD0699A5D3beA40179731EE9F87E95b0b6fF5A",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x9ABef9A578a46A76F161d9daAa77339Fd07da04E",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xC15e973120417894361A3E558D7CC7C1EEA29E72",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xC2D22feC220DeD0Ae9805d9e9B7C4DD93Ca91A64",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x559997E4a0346754D4f9e6f4E4F0C2c69085b970",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x11a50B418cd568dAB622Fe38517cfA9db9Cd86b8",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x1ce983aA38728b1e7A08030072DB02102E392969",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x9A3fBa281B004882497D29B863c244619f2574b7",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xc9A736085e997B173228887B214Eb588eF7b693E",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x579E1f12e56C15e59862EBB4A7aA9609B4aD461F",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x4F621a7C559869fE30f8b709FCaBb8049F17C13B",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x9803eb951930499BbDfD923d2e0C1b7625034Eb0",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x29e98D226eeaa20fbEcD6b6c668850BcaEac8628",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xB950D80C6759977Bb53d97B3a226c9B345247c82",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x1022E0D4B36EDf9Cf552FdC260101130ef1Dc131",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x75E0d5d511f663a4Def1B28d1226664ea3a72a15",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xA7Ad32028C7048d4BF2dc0A376cA94AB91F3A544",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x227DC2bdc5f747A58eeb79a182Dd5b296E90f22F",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x0cd1CF79905897a50C45aaDE3A966eBcC46c991B",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xD536Db3A4e49189641B27Ed92C491eBF18792D7a",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xfD6CFF4Cc3BCbA7FBe1BACDc57B77DA5668Fc049",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xFBbfd4DAb5dd56909992cA077a807b72993461Db",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x108A5b19Ab08CD3b291e7B54A7878aDfa48FaB6D",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xddcc531D07Cf068BE4619b8DA376f2a3729e3548",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x6EAD885993A8b85558b52d3575eb4aaFb4E804a1",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xd41b1AB87C4B715E4D7001eddE32D79ee4eBa4Cb",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x675Ba680EbB61bDFa529Ec41094F08B36eBe2fAa",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xe087bAf104B316128eA2E140ee315d70865f14E8",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x5B6f5890940228cdcFf682Ca17425977B235Ca45",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x26a17427532904650fda16B3472F98e891F34bC0",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xC30E55955262f5B714A2F14F63e17459c1722253",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x88DAa16322a456C3B193EDe94f10302762A10f5B",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x548bA2f92522391a4F88C0121C6f071A5807F665",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xaB58506555be5E09c8462850D8266619fC0eF014",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x302b232F45813E88539FFD7a8E9D28Df78c0b627",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x9065BdE967aE20819c5fA75731883c9c32fC60E8",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xF0F1760E9E130508381cDc10FeEc09764a38e967",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x354F151248caF9DedE4Edf22f6954097E0755035",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x36237bae6CaCD057cC00b598182FD58785873D02",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x696A4ba5cFF354573CFE95647724068534CeD464",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xb4C000769f5fa257f975016611Bc508c662fC7BE",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xf7C1592D0A32d1811A2261A407E8443c7a075153",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xd3647C178d8d7d6dF4a557bFCE73F4bBc406bED0",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xD1D2d7910A71bD7930A559885B82785e7A82B9CD",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xbDF03f4AD5085c59834C44430557D9Af05104b39",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x1fbae77255D572Baee0a1b274752e9a7b3b98110",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xaaF6fCB8285F7d8c12fd7eee98bc817198B7dACf",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x94847659F7f1eA5636eD9f988027bc926735aB89",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x42Ef6351AcC5d64a82d16057EC2091bCECCf3477",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x06205A5695f9eB3f1199fA81aD3231b3d122C26D",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x717E8bD2Fa819427f969020fD7DB63644ce8c7ee",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xA532301b8fE1c08b512c4D3D2c4aB406a431cabc",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x0C3a5248c9133BFeD55676174bf454c087365583",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x7B67ab3600eff6BD2B593Bb9d8A7a310ed71126e",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x0Fbfd59a8b05296D881552f9472e82F3CeE531F5",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x8Ab531916036D47e8ADC2E4414597C75E80305EA",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x9DFa22d57A3374Da0e87EA95d98776cC19C5aEd3",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x36773Cc216D75EDf151fC0C86883941102d0da03",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x42AF46BEFb77fb0be58A44Bc24f7d9e2Bb141F96",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xcb3Fc245c3747d29e6b32dF0042aE911c28b3A8B",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x04fa389515f93D9627D56665060E8CA59f28dEcd",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xB15a805B086a8eDc15f172210e47BA17BA88baa7",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xf2781389D9d84661fD8BBe047688d643C10133c1",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xf3f81d261BBaEb82212211A15eb8eec616B1443D",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x5CB8E906cB82b9e72f20FE163662de4b4f51699f",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xC12358718FFAd2257282Ab016bb08D6AD143291C",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x7278D0B023511D9C19a3131B28189600cc318c47",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x05185E9f9d50ad549Ec76d9B6D5F8273b078d7B8",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x150817259ED6642a8eDdE674d81ba16603f4A7df",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xAc5A277789f9474849A10394fD19dbbB1Fe96d83",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x6cf1Bb33632fe8BC9227882DdB72Dd44Ebda127c",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xf9D6173d05cBa9f2a0C0Ab8fFDDe3bAe6a7ABB22",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xe4F5099c7123dDFf15C5bb73037c38d7bbDcE77b",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x1706dE48cd3C9fE05E8549b7247ffd99ce71Dc55",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x7a72f61ebb0785fdF35debEf36C6e77EDaa0cc53",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x6FEA7Bfd2aF766Af59Aa80f3782f015a1af77A46",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xF4D10370EdB9Ab6EDA23c0e2Bb96c76Ac656c247",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x68C550549b6A07F36E441Ad1655F8909DA8B6e6A",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x01720FfEB0D461A0eF782ab18DAC905d745E6606",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x648f68110F636925eE62622e6A31b3BDC8118157",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x86Bcd704dBA9621d738Ef1f7Da8AbB500AF1B7f6",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x2f87c40F72CaAa0b25Ba60dB9c48905CFCf456B5",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xaA458849e891D005Bdbe66CBA2bFA45715dDA429",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xE185439fDEb25975261111183d55a1d828a17068",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xa2256FD892ABC7c8F75287cf0344788363e959B3",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xCc9f9F387da56436394285c990E7C17486dD1dA2",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x087350729F7A0cbDf89E87f963Cb2C659d476e69",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xf8fAC7eF2069258857DA17D910F062F22054ec16",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xc0dbf664A8D78E2CE10556C75C0AF6a6c3d5A547",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xf39f3c323F630104FF9eBa2AF4349F03CDd46A68",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x87C9a9Af4ed863976fEecf122c808Ab27AC7d8F5",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x7F7C24EB5Ce929fB22992C61F1094CAfd118878D",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xBDD5CE32AC0cC91ECa83c93FFD0418f1Be258caE",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xEd7B0c1b0B3e85208373F053c06f6D6963C71F13",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x6dEDda9FD0cABB03Ebd1e4dFb4644E7a99583772",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x01252a5c4Ac3Db15F59Bf0a3673297C3A3149363",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x0e7DB96384C4b4B34F450fdB2004bc1e46fD5ca8",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x76097f2DCA682F32631462e16EA34FF72DdeB8eE",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xe978c334A3AB6269988Af138559aB1504a3Ec495",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x96E10Eb4c4595607FC2F6A04807eD198BF73Cf8E",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x8CF32aaDcD40C2Fd9a2E68Cb4Bd08Cd97610772F",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xec65a3aA34f41abFa666EC856D357e26db52119c",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x84cF84540cbe519762f96D5CF48612da3Df29feb",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xFca3d4128308350ae7552A17ea0D177a5631e8Ba",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xe79cAF4a4e700F8e3430310322d2191eb0DEb628",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x135cc13Cc88e489eFF42C0ee4Bb056f541AA04eb",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x529Ff57FFeD5f65c57716d4268CF720d447Eb48F",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x630257c5b7c4E8E62cb058890ae7Ca07BB268999",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xfa54Ed23af65DF421Db2ad8e131741e260328050",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x533b49485734bEb0A4B2BDA4d900466F6A85cb24",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x19110f157Abb7d53C14558336657DBA20574D49c",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x25b422BDad72Aab642E9820374C6fF90eBaD3c1f",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x1c9184818c7C53b23C4fA2D51fcb6CD6892D7DC0",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x117dF3B0E9DeE5C7A61638513E65bA902025E1c8",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xb630e190f2A38F2e7fF0618facA270f67B69f10a",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x6496D00D79F7068310a08e505488Dc6eee225fFd",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x8212e64a3F5A962F07f0d6781b8329bF4351A90F",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x4cF17Ea9A9c14Ee26DE625Ea490f77E7a241b197",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xDe1Ed32576F5cAf7F54DF3Ec85fa6d5A5341E2F2",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x51296Fe764A2D1Ba1Bc35f759567d648951564b8",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x5F932753F0725b3cE75CED6aFC921B410c0513E6",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x7b6eB9E0df27Dad9eae430CeEd0A6C4A019d301C",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xcFfDDAf09c8883cC6311179283aFb13124a32899",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xbD037d71B530a00faDAF8181fA4c66a9446D415B",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x326bd604E7c7c8e4Df759698e214243A1ac2Fffd",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xFE7a32a7e43dD6a852eB75CC1AADC194e7331e01",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x0bd1121d624a89B38dF103006b10995F540A6B7A",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xbF4Eeb9f9F97B71BA89e0B30CaD0f9F59756fBa9",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x2447D1be86b0C8C57241750b9DF49f318c623E2A",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x8cA4818876835A402588BA02b77545d8E581e7d3",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xCEbF4f02D8C5d9391255e9b954C69b2D40665403",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xbe6D22D314c2A055feaa1178b73A5372CBe15Cd7",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x8C7cfaC3baDFb7fD61f84441B4DbE1904968a840",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xe55709b0E6888961a61C6B43f17757d453fF31f3",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xcE1Aa9653481C0064342f2470a3Be7a043a95076",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x2311EB9425b19205e3cFcFd4B2016358CC8159c5",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xf7386b6580744736c7218D876fa17Caf79d5dCE4",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x792c1438356128f882340880f2f4d8e7a7912dAc",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x22097a0B69b72b960D107aCa280755C5b447508F",
+          "reason": "Base registry type outside 3/4"
+        }
+      ],
+      "vaults": [
+        {
+          "address": "0x1631CA6543adcB61e2B9e30189c8477981258274",
+          "symbol": "dynBaseUSDC",
+          "manager": "0xa41263d0910e2daEDC993a8ac31c2b7A9f931A66",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "fees": {
+            "managementFee": "200",
+            "performanceFee": "1000",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0x6E03c0B5ed1B16a8fD3F04346846EF986CbfC0F1",
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444463975665965",
+            "permitted": false
+          },
+          "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+          "assetSymbol": "USDC",
+          "assetDecimals": 6,
+          "shareDecimals": 18,
+          "assets": "58846930",
+          "supply": "55895810177559602753",
+          "formattedAssets": "58.84693",
+          "formattedSupply": "55.895810177559602753",
+          "tokens": [
+            {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "tokenIdle": "4997",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1786805415",
+              "lastReportedValue": "1000000",
+              "watermark": "1000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786805415",
+              "strategies": []
+            },
+            {
+              "address": "0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc",
+              "tokenIdle": "3000000",
+              "tokenDebt": "0",
+              "depositDebt": "3418505",
+              "depositDebtRatio": "262745408970741351",
+              "totalProfit": "4705190",
+              "totalLoss": "1",
+              "lastReport": "1786805415",
+              "lastReportedValue": "1142368",
+              "watermark": "1142368",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786805415",
+              "strategies": []
+            },
+            {
+              "address": "0xe9F2a5F9f3c846f29066d7fB3564F8E6B6b2D65b",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "13114611",
+              "totalLoss": "2",
+              "lastReport": "1786805415",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786805415",
+              "strategies": []
+            },
+            {
+              "address": "0x0d877Dc7C8Fa3aD980DfDb18B48eC9F8768359C4",
+              "tokenIdle": "5054423362",
+              "tokenDebt": "0",
+              "depositDebt": "55011033",
+              "depositDebtRatio": "737254591029258649",
+              "totalProfit": "47010666",
+              "totalLoss": "178314",
+              "lastReport": "1788758187",
+              "lastReportedValue": "1095961",
+              "watermark": "1095961",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788758187",
+              "strategies": []
+            },
+            {
+              "address": "0x0A1a3b5f2041F33522C4efc754a7D096f880eE16",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "7272274",
+              "totalLoss": "2",
+              "lastReport": "1786805415",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786805415",
+              "strategies": []
+            }
+          ]
+        },
+        {
+          "address": "0xdf71487381Ab5bD5a6B17eAa61FE2E6045A0e805",
+          "symbol": "dynBaseUSDCv2",
+          "manager": "0xa2B5F4eAb526f0Bc2BA394345b76CC737988242F",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "fees": {
+            "managementFee": "200",
+            "performanceFee": "1000",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0x6E03c0B5ed1B16a8fD3F04346846EF986CbfC0F1",
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444462444090500",
+            "permitted": false
+          },
+          "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+          "assetSymbol": "USDC",
+          "assetDecimals": 6,
+          "shareDecimals": 18,
+          "assets": "1590422395",
+          "supply": "1375659116583860129465",
+          "formattedAssets": "1590.422395",
+          "formattedSupply": "1375.659116583860129465",
+          "tokens": [
+            {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "tokenIdle": "10000",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1788797039",
+              "lastReportedValue": "1000000",
+              "watermark": "1000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788797039",
+              "strategies": []
+            },
+            {
+              "address": "0x0d877Dc7C8Fa3aD980DfDb18B48eC9F8768359C4",
+              "tokenIdle": "6237444511",
+              "tokenDebt": "0",
+              "depositDebt": "67863969",
+              "depositDebtRatio": "76949258573232231",
+              "totalProfit": "53261746",
+              "totalLoss": "598945",
+              "lastReport": "1788797039",
+              "lastReportedValue": "1096033",
+              "watermark": "1096033",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788797039",
+              "strategies": []
+            },
+            {
+              "address": "0x0A1a3b5f2041F33522C4efc754a7D096f880eE16",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "485882",
+              "totalLoss": "0",
+              "lastReport": "1788797039",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788797039",
+              "strategies": []
+            },
+            {
+              "address": "0xbc10718571fcB3c3F67800e7C0887E450D2Ff398",
+              "tokenIdle": "1195262019",
+              "tokenDebt": "0",
+              "depositDebt": "1505547335",
+              "depositDebtRatio": "401144927783693290",
+              "totalProfit": "646012954",
+              "totalLoss": "0",
+              "lastReport": "1788797039",
+              "lastReportedValue": "1273230",
+              "watermark": "1273230",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788797039",
+              "strategies": []
+            },
+            {
+              "address": "0xd5428B889621Eee8060fc105AA0AB0Fa2e344468",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "616161888",
+              "totalLoss": "0",
+              "lastReport": "1788797039",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788797039",
+              "strategies": []
+            },
+            {
+              "address": "0x1C4a802FD6B591BB71dAA01D8335e43719048B24",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "54408818344502198",
+              "totalProfit": "398607915",
+              "totalLoss": "115785",
+              "lastReport": "1788797039",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788797039",
+              "strategies": []
+            },
+            {
+              "address": "0x1D3b1Cd0a0f242d598834b3F2d126dC6bd774657",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "25264926",
+              "totalLoss": "0",
+              "lastReport": "1788797039",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788797039",
+              "strategies": []
+            },
+            {
+              "address": "0xcdDCDd18A16ED441F6CB10c3909e5e7ec2B9e8f3",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "467496995298572281",
+              "totalProfit": "17243868",
+              "totalLoss": "0",
+              "lastReport": "1788797039",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788797039",
+              "strategies": []
+            }
+          ]
+        },
+        {
+          "address": "0x0D6862C7896233D4244cE746c368049B87c98B37",
+          "symbol": "dynBaseWETH",
+          "manager": "0x799B6778D7148e25D5f90A8aaC47981D25a6c337",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "fees": {
+            "managementFee": "25",
+            "performanceFee": "1000",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0x9dDC18BF74b47458F790c11d0810886A15BA8652",
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416101682386720117719866",
+            "permitted": false
+          },
+          "asset": "0x4200000000000000000000000000000000000006",
+          "assetSymbol": "WETH",
+          "assetDecimals": 18,
+          "shareDecimals": 18,
+          "assets": "673057743916793029",
+          "supply": "657725049212514984",
+          "formattedAssets": "0.673057743916793029",
+          "formattedSupply": "0.657725049212514984",
+          "tokens": [
+            {
+              "address": "0x4200000000000000000000000000000000000006",
+              "tokenIdle": "10000000000000",
+              "tokenDebt": "0",
+              "depositDebt": "8413818475667",
+              "depositDebtRatio": "0",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1787832235",
+              "lastReportedValue": "1000000000000000000",
+              "watermark": "1000000000000000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1787832235",
+              "strategies": []
+            },
+            {
+              "address": "0x468973e3264F2aEba0417A8f2cD0Ec397E738898",
+              "tokenIdle": "31156934721519839",
+              "tokenDebt": "0",
+              "depositDebt": "32646737677531746",
+              "depositDebtRatio": "47090106371501282",
+              "totalProfit": "6590184130648951",
+              "totalLoss": "0",
+              "lastReport": "1787832235",
+              "lastReportedValue": "1049509183625227325",
+              "watermark": "1049509183625227325",
+              "watermarkDuration": "0",
+              "lastWatermark": "1787832235",
+              "strategies": []
+            },
+            {
+              "address": "0x7872893e528Fe2c0829e405960db5B742112aa97",
+              "tokenIdle": "59227661889788992989",
+              "tokenDebt": "0",
+              "depositDebt": "618939960036858763",
+              "depositDebtRatio": "911468510242231051",
+              "totalProfit": "81590134206305119",
+              "totalLoss": "979663675489668641",
+              "lastReport": "1788797003",
+              "lastReportedValue": "1050737590877882922",
+              "watermark": "1050737590877882922",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788797003",
+              "strategies": []
+            },
+            {
+              "address": "0x859160DB5841E5cfB8D3f144C6b3381A85A4b410",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "31367528582985504",
+              "totalLoss": "0",
+              "lastReport": "1787832235",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1787832235",
+              "strategies": []
+            },
+            {
+              "address": "0x27D8c7273fd3fcC6956a0B370cE5Fd4A7fc65c18",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "19151193587087361",
+              "totalLoss": "0",
+              "lastReport": "1787832235",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1787832235",
+              "strategies": []
+            },
+            {
+              "address": "0x6b13c060F13Af1fdB319F52315BbbF3fb1D88844",
+              "tokenIdle": "17000000000000000",
+              "tokenDebt": "0",
+              "depositDebt": "17897520109087515",
+              "depositDebtRatio": "0",
+              "totalProfit": "25207559698372230",
+              "totalLoss": "0",
+              "lastReport": "1787832235",
+              "lastReportedValue": "1054431385231575738",
+              "watermark": "1054431385231575738",
+              "watermarkDuration": "0",
+              "lastWatermark": "1787832235",
+              "strategies": []
+            },
+            {
+              "address": "0x7FcD174E80f264448ebeE8c88a7C4476AAF58Ea6",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "41441383386267667",
+              "totalProfit": "2350356546214050",
+              "totalLoss": "422096815235462",
+              "lastReport": "1787832235",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1787832235",
+              "strategies": []
+            }
+          ]
+        },
+        {
+          "address": "0xd8d294714F5b1A1104CFE75C0Bb4ceF547a05124",
+          "symbol": "dynBaseBTC",
+          "manager": "0x8A6B10e614228D80F69E2E50780e2FA3878f1AF3",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "fees": {
+            "managementFee": "10",
+            "performanceFee": "1000",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0x00De8B6953b6C15684c9a20528Dd0a61c8C54482",
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444464030789421",
+            "permitted": false
+          },
+          "asset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+          "assetSymbol": "cbBTC",
+          "assetDecimals": 8,
+          "shareDecimals": 18,
+          "assets": "3723474",
+          "supply": "35955123033481250",
+          "formattedAssets": "0.03723474",
+          "formattedSupply": "0.03595512303348125",
+          "tokens": [
+            {
+              "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+              "tokenIdle": "41",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1788818107",
+              "lastReportedValue": "100000000",
+              "watermark": "100000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788818107",
+              "strategies": []
+            },
+            {
+              "address": "0x31A421271414641cb5063B71594b642D2666dB6B",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "127",
+              "totalLoss": "63",
+              "lastReport": "1788818107",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788818107",
+              "strategies": []
+            },
+            {
+              "address": "0x7Cc8013e784418dc9771403DD057f55cEb34Ba3A",
+              "tokenIdle": "3577376",
+              "tokenDebt": "0",
+              "depositDebt": "3721047",
+              "depositDebtRatio": "783331014573157402",
+              "totalProfit": "289527",
+              "totalLoss": "0",
+              "lastReport": "1788818107",
+              "lastReportedValue": "104081338",
+              "watermark": "104081338",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788818107",
+              "strategies": []
+            },
+            {
+              "address": "0x6770216aC60F634483Ec073cBABC4011c94307Cb",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "81239596361479656",
+              "totalProfit": "2519",
+              "totalLoss": "7",
+              "lastReport": "1788818107",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788818107",
+              "strategies": []
+            },
+            {
+              "address": "0x5a47C803488FE2BB0A0EAaf346b420e4dF22F3C7",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "135429389065362942",
+              "totalProfit": "283",
+              "totalLoss": "8",
+              "lastReport": "1788818107",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788818107",
+              "strategies": []
+            }
+          ]
+        },
+        {
+          "address": "0x7Fe44a8305df0d8F8d25f66cBd4212eA570c7882",
+          "symbol": "dynBaseEURC",
+          "manager": "0x4a82DCe425C1e4725B780742Ef95510BD6DB60aD",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "fees": {
+            "managementFee": "50",
+            "performanceFee": "1000",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0x158961d88aD551585Bda75f42e484A30371793dC",
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444463821191694",
+            "permitted": false
+          },
+          "asset": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+          "assetSymbol": "EURC",
+          "assetDecimals": 6,
+          "shareDecimals": 18,
+          "assets": "213321201",
+          "supply": "200488759994001730518",
+          "formattedAssets": "213.321201",
+          "formattedSupply": "200.488759994001730518",
+          "tokens": [
+            {
+              "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+              "tokenIdle": "10281",
+              "tokenDebt": "0",
+              "depositDebt": "4817",
+              "depositDebtRatio": "0",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1786804693",
+              "lastReportedValue": "1000000",
+              "watermark": "1000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786804693",
+              "strategies": []
+            },
+            {
+              "address": "0x985CC9c306Bfe075F7c67EC275fb0b80F0b21976",
+              "tokenIdle": "195754843",
+              "tokenDebt": "0",
+              "depositDebt": "211944863",
+              "depositDebtRatio": "849295956007206608",
+              "totalProfit": "6196800",
+              "totalLoss": "0",
+              "lastReport": "1788758337",
+              "lastReportedValue": "1089570",
+              "watermark": "1089570",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788758337",
+              "strategies": []
+            },
+            {
+              "address": "0x1c155be6bC51F2c37d472d4C2Eba7a637806e122",
+              "tokenIdle": "5944",
+              "tokenDebt": "0",
+              "depositDebt": "1",
+              "depositDebtRatio": "14716586423581820",
+              "totalProfit": "1397628",
+              "totalLoss": "0",
+              "lastReport": "1786804693",
+              "lastReportedValue": "2106564",
+              "watermark": "2106564",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786804693",
+              "strategies": []
+            },
+            {
+              "address": "0x9ECD9fbbdA32b81dee51AdAed28c5C5039c87117",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "24517068",
+              "totalLoss": "0",
+              "lastReport": "1786804693",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786804693",
+              "strategies": []
+            },
+            {
+              "address": "0xf24608E0CCb972b0b0f4A6446a0BBf58c701a026",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "43076989009694319",
+              "totalProfit": "70067",
+              "totalLoss": "1",
+              "lastReport": "1786804693",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786804693",
+              "strategies": []
+            },
+            {
+              "address": "0x1943FA26360f038230442525Cf1B9125b5DCB401",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "92910468559517253",
+              "totalProfit": "104285",
+              "totalLoss": "0",
+              "lastReport": "1786804693",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786804693",
+              "strategies": []
+            }
+          ]
+        },
+        {
+          "address": "0xBba362347a4C2acCe05228b01249c42Ee0BEe29C",
+          "symbol": "dynBaseEURCv2",
+          "manager": "0xBF081c322c8E51Cda77048Abfe895968f5822bA7",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "fees": {
+            "managementFee": "75",
+            "performanceFee": "1500",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0x158961d88aD551585Bda75f42e484A30371793dC",
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444463774067293",
+            "permitted": false
+          },
+          "asset": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+          "assetSymbol": "EURC",
+          "assetDecimals": 6,
+          "shareDecimals": 18,
+          "assets": "260445602",
+          "supply": "245843488634141551281",
+          "formattedAssets": "260.445602",
+          "formattedSupply": "245.843488634141551281",
+          "tokens": [
+            {
+              "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+              "tokenIdle": "549785",
+              "tokenDebt": "0",
+              "depositDebt": "542718",
+              "depositDebtRatio": "2092392210156095",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1788758415",
+              "lastReportedValue": "1000000",
+              "watermark": "1000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788758415",
+              "strategies": []
+            },
+            {
+              "address": "0x5c9258FFBb93d0d99e18b5e72aF6C19B579806B0",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "260",
+              "totalLoss": "2",
+              "lastReport": "1788758415",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788758415",
+              "strategies": []
+            },
+            {
+              "address": "0xeb042DEE6f7Ff3B45eF0A71686653D168FB02477",
+              "tokenIdle": "100479273603072086344",
+              "tokenDebt": "0",
+              "depositDebt": "103611686",
+              "depositDebtRatio": "484375967003003635",
+              "totalProfit": "2327563",
+              "totalLoss": "0",
+              "lastReport": "1788758415",
+              "lastReportedValue": "1035630",
+              "watermark": "1035630",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788758415",
+              "strategies": []
+            },
+            {
+              "address": "0x9ECD9fbbdA32b81dee51AdAed28c5C5039c87117",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "4679389",
+              "totalLoss": "0",
+              "lastReport": "1788758415",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788758415",
+              "strategies": []
+            },
+            {
+              "address": "0x985CC9c306Bfe075F7c67EC275fb0b80F0b21976",
+              "tokenIdle": "143000000",
+              "tokenDebt": "0",
+              "depositDebt": "155217398",
+              "depositDebtRatio": "513531640786840270",
+              "totalProfit": "7517876",
+              "totalLoss": "0",
+              "lastReport": "1788758415",
+              "lastReportedValue": "1089570",
+              "watermark": "1089570",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788758415",
+              "strategies": []
+            },
+            {
+              "address": "0x64Db8f51f1bf7064BB5A361a7265F602d348E0f0",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "1021174",
+              "totalLoss": "56",
+              "lastReport": "1788758415",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788758415",
+              "strategies": []
+            }
+          ]
+        },
+        {
+          "address": "0x5e0EA8c9801497758294755f6e85724b41417667",
+          "symbol": "dynBaseWETHv2",
+          "manager": "0x94FbD5fCecAEe13a1f4B52846Bcb605297974F30",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "fees": {
+            "managementFee": "50",
+            "performanceFee": "1500",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0x9dDC18BF74b47458F790c11d0810886A15BA8652",
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416101698947980657499372",
+            "permitted": false
+          },
+          "asset": "0x4200000000000000000000000000000000000006",
+          "assetSymbol": "WETH",
+          "assetDecimals": 18,
+          "shareDecimals": 18,
+          "assets": "656496483377013523",
+          "supply": "599750596205480950",
+          "formattedAssets": "0.656496483377013523",
+          "formattedSupply": "0.59975059620548095",
+          "tokens": [
+            {
+              "address": "0x4200000000000000000000000000000000000006",
+              "tokenIdle": "29547858333962",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1788614461",
+              "lastReportedValue": "1000000000000000000",
+              "watermark": "1000000000000000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788614461",
+              "strategies": []
+            },
+            {
+              "address": "0x27D8c7273fd3fcC6956a0B370cE5Fd4A7fc65c18",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "241801011728164233",
+              "totalProfit": "9776336884949",
+              "totalLoss": "0",
+              "lastReport": "1788614461",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788614461",
+              "strategies": []
+            },
+            {
+              "address": "0x2bb9ad69FEBA5547b7cD57aAfe8457D40bF834af",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "97425932100989",
+              "totalLoss": "0",
+              "lastReport": "1788614461",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788614461",
+              "strategies": []
+            },
+            {
+              "address": "0xD82BFa27D49e5a394ba371B293DaE65E9B7a8C60",
+              "tokenIdle": "584227801770065851",
+              "tokenDebt": "0",
+              "depositDebt": "653272094906789628",
+              "depositDebtRatio": "722270073831836810",
+              "totalProfit": "12306506740939012",
+              "totalLoss": "0",
+              "lastReport": "1788758439",
+              "lastReportedValue": "1123541073252527335",
+              "watermark": "1123541073252527335",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788758439",
+              "strategies": []
+            },
+            {
+              "address": "0x197D5C29072C1444Acb4F0935C219738A47E4a18",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "35928914439998957",
+              "totalProfit": "81301842262504",
+              "totalLoss": "0",
+              "lastReport": "1788614461",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788614461",
+              "strategies": []
+            }
+          ]
+        },
+        {
+          "address": "0x67b93f6676bd1911c5FAe7Ffa90fFf5f35E14dCd",
+          "symbol": "dynBaseUSDCv3",
+          "manager": "0x478675aA4121c07825167bBB25A44AADD22bEf7F",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "fees": {
+            "managementFee": "200",
+            "performanceFee": "2000",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0x6E03c0B5ed1B16a8fD3F04346846EF986CbfC0F1",
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444463932449340",
+            "permitted": false
+          },
+          "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+          "assetSymbol": "USDC",
+          "assetDecimals": 6,
+          "shareDecimals": 18,
+          "assets": "102063555",
+          "supply": "427447333328653155777678",
+          "formattedAssets": "102.063555",
+          "formattedSupply": "427447.333328653155777678",
+          "tokens": [
+            {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "tokenIdle": "10000",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1786525097",
+              "lastReportedValue": "1000000",
+              "watermark": "1000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786525097",
+              "strategies": []
+            },
+            {
+              "address": "0x19f233B2953275196e6343F17b76dA098c478E21",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "117615278",
+              "totalLoss": "5",
+              "lastReport": "1786525097",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786525097",
+              "strategies": []
+            },
+            {
+              "address": "0xEbC997B855B9a4E0b6cd06E4758801E6Ff068e07",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "425301650836337304",
+              "totalProfit": "2043421763",
+              "totalLoss": "2112310945",
+              "lastReport": "1786525097",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786525097",
+              "strategies": []
+            },
+            {
+              "address": "0xC8adBFCFaC975583c8684C4e12633907315Ca610",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "3533035240558",
+              "totalProfit": "103873581",
+              "totalLoss": "4255044530",
+              "lastReport": "1786525097",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786525097",
+              "strategies": []
+            },
+            {
+              "address": "0x3094b241AaDe60F91f1c82b0628A10d9501462F9",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "72748357625802841",
+              "totalProfit": "3931763846",
+              "totalLoss": "113892089121",
+              "lastReport": "1786525097",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786525097",
+              "strategies": []
+            },
+            {
+              "address": "0xee05dbdcAf0CA060b973D5FC5B31e9B8327EDB39",
+              "tokenIdle": "327",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "7967828390538003",
+              "totalProfit": "35865945",
+              "totalLoss": "1456005907",
+              "lastReport": "1786525097",
+              "lastReportedValue": "1055876",
+              "watermark": "1055876",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786525097",
+              "strategies": []
+            },
+            {
+              "address": "0x0FF79b6D6c0FB5faf54BD26db5Ce97062A105f81",
+              "tokenIdle": "92719593",
+              "tokenDebt": "0",
+              "depositDebt": "101291536",
+              "depositDebtRatio": "493978630112081294",
+              "totalProfit": "6827856940",
+              "totalLoss": "327703433503",
+              "lastReport": "1788758475",
+              "lastReportedValue": "1100278",
+              "watermark": "1100278",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788758475",
+              "strategies": []
+            }
+          ]
+        },
+        {
+          "address": "0x4C1fa73Ebc7Aa7C88006D51414fC5387dE3bfE26",
+          "symbol": "dynBaseUSDCv4",
+          "manager": "0x077Fb8b4b5a749CF9Ea922373F3cbCc46aD4b9C6",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "fees": {
+            "managementFee": "200",
+            "performanceFee": "2000",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0x6E03c0B5ed1B16a8fD3F04346846EF986CbfC0F1",
+          "permissionDisabled": false,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444462859192742",
+            "permitted": false
+          },
+          "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+          "assetSymbol": "USDC",
+          "assetDecimals": 6,
+          "shareDecimals": 18,
+          "assets": "1175320153",
+          "supply": "1056056475902249034392",
+          "formattedAssets": "1175.320153",
+          "formattedSupply": "1056.056475902249034392",
+          "tokens": [
+            {
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "tokenIdle": "100000",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1788860761",
+              "lastReportedValue": "1000000",
+              "watermark": "1000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788860761",
+              "strategies": []
+            },
+            {
+              "address": "0x0FF79b6D6c0FB5faf54BD26db5Ce97062A105f81",
+              "tokenIdle": "864212534",
+              "tokenDebt": "0",
+              "depositDebt": "949450720",
+              "depositDebtRatio": "861772270901180781",
+              "totalProfit": "2872304",
+              "totalLoss": "1",
+              "lastReport": "1788860761",
+              "lastReportedValue": "1100635",
+              "watermark": "1100635",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788860761",
+              "strategies": []
+            },
+            {
+              "address": "0xEbC997B855B9a4E0b6cd06E4758801E6Ff068e07",
+              "tokenIdle": "23158826992245868800",
+              "tokenDebt": "0",
+              "depositDebt": "31655548",
+              "depositDebtRatio": "138227729098819219",
+              "totalProfit": "106774",
+              "totalLoss": "1",
+              "lastReport": "1788860761",
+              "lastReportedValue": "1368776",
+              "watermark": "1368776",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788860761",
+              "strategies": []
+            },
+            {
+              "address": "0xC8adBFCFaC975583c8684C4e12633907315Ca610",
+              "tokenIdle": "58563424470170093814",
+              "tokenDebt": "0",
+              "depositDebt": "78143015",
+              "depositDebtRatio": "0",
+              "totalProfit": "2873481",
+              "totalLoss": "1",
+              "lastReport": "1788860761",
+              "lastReportedValue": "1345399",
+              "watermark": "1345399",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788860761",
+              "strategies": []
+            },
+            {
+              "address": "0x3094b241AaDe60F91f1c82b0628A10d9501462F9",
+              "tokenIdle": "22794921870634609906",
+              "tokenDebt": "0",
+              "depositDebt": "32603865",
+              "depositDebtRatio": "0",
+              "totalProfit": "287214",
+              "totalLoss": "1",
+              "lastReport": "1788860761",
+              "lastReportedValue": "1434202",
+              "watermark": "1434202",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788860761",
+              "strategies": []
+            },
+            {
+              "address": "0x7eB26c03015Df1Dd7C84913C70B77e5aC8E94Eba",
+              "tokenIdle": "863956",
+              "tokenDebt": "0",
+              "depositDebt": "900000",
+              "depositDebtRatio": "0",
+              "totalProfit": "6985856",
+              "totalLoss": "4",
+              "lastReport": "1788860761",
+              "lastReportedValue": "1041718",
+              "watermark": "1041718",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788860761",
+              "strategies": []
+            },
+            {
+              "address": "0x4C1aeda9B43EfcF1da1d1755b18802aAbe90f61E",
+              "tokenIdle": "74354657",
+              "tokenDebt": "0",
+              "depositDebt": "79688471",
+              "depositDebtRatio": "0",
+              "totalProfit": "2193457",
+              "totalLoss": "1",
+              "lastReport": "1788860761",
+              "lastReportedValue": "1074920",
+              "watermark": "1074920",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788860761",
+              "strategies": []
+            }
+          ]
+        }
+      ],
+      "safes": [
+        {
+          "address": "0x5bfc34fba904b7d93a13c381adcc47de657599ff",
+          "threshold": "2",
+          "owners": [
+            "0xB10E5A27A9f4c8eFdeB1AE1B415A0fBa019a609E",
+            "0x8C26B989c81d298CD4FEA49732bd7b3155aCFfc9",
+            "0xc114d7a75b20Df6222b86D552c53de754D965834"
+          ],
+          "nonce": "3"
+        }
+      ],
+      "oracles": [],
+      "abiEvidence": [
+        {
+          "address": "0xe260c97949bB01E49c0af64a3525458197851657",
+          "codeHash": "0xa61b4b487cc0472596c91e3c4ca78f5523505189fe9fc19efd600fa5e9ff6297",
+          "sourceAddress": "0xe260c97949bB01E49c0af64a3525458197851657"
+        },
+        {
+          "address": "0x3CE426BB2fCB9E1300BbE03E2D34D7b3B7347Db5",
+          "codeHash": "0x708ab7a2062748234c8c1707e97b4d419d3131f487cdb0f48a8c208c8b79697c",
+          "sourceAddress": "0x3CE426BB2fCB9E1300BbE03E2D34D7b3B7347Db5"
+        },
+        {
+          "address": "0xD3109f87bd553B83f64a2972Effb034BfED8d2A0",
+          "codeHash": "0x8ad4a982e258b727289be029e2cbb9f0482f042d796457862a9270019263d3a8",
+          "sourceAddress": "0xD3109f87bd553B83f64a2972Effb034BfED8d2A0"
+        },
+        {
+          "address": "0x3B94AfA809b113eF118C6D4ffC009FdF1A51ee08",
+          "codeHash": "0x035818002ad695f4751665d6f6c187a80c4f8413551383e4f97508ab379a5de6",
+          "sourceAddress": "0x3B94AfA809b113eF118C6D4ffC009FdF1A51ee08"
+        },
+        {
+          "address": "0x8bB92D108d957810fC048D8AEe346336925d507E",
+          "codeHash": "0x612fac15ecc23b2f3ab2bd7ba96c9ab999afb374eb6d51b57b370ebae8bb6cf4",
+          "sourceAddress": "0x8bB92D108d957810fC048D8AEe346336925d507E"
+        },
+        {
+          "address": "0x1631CA6543adcB61e2B9e30189c8477981258274",
+          "codeHash": "0xd39e883d1945ad8cec7ac4f50d5f58131500be6ce0868027ef44e55bdfeea4f1",
+          "sourceAddress": null
+        },
+        {
+          "address": "0xb4d05063A4Cf978446181002cb524Fb3bCFe9D94",
+          "codeHash": "0xea26d30d5d1a0b1c9384dca1f700f70e98155c9d08764cd439391aef5de90157",
+          "sourceAddress": "0xb4d05063A4Cf978446181002cb524Fb3bCFe9D94"
+        },
+        {
+          "address": "0xb130375b543Bd919D85351B73636439C28D90Db6",
+          "codeHash": "0x28bf12d7082433af3a3d9cadbddbd4e153efad5d48004d7b513f54fd629f2fd8",
+          "sourceAddress": "0xb130375b543Bd919D85351B73636439C28D90Db6"
+        },
+        {
+          "address": "0x48b1197dc8697aC86e2cce9e875A0B22ca3150F5",
+          "codeHash": "0xb4fcaed4f71a7aa47714feb2762919ab3143c39e9af933aa5e532334d6c89842",
+          "sourceAddress": "0x48b1197dc8697aC86e2cce9e875A0B22ca3150F5"
+        },
+        {
+          "address": "0x7e81c4022018Cae002F70817aA9A4035F7daf5C5",
+          "codeHash": "0x976b1dad280e13031005ed5691a903691c6bfc7ba707975b7d64b1061889cd43",
+          "sourceAddress": "0x7e81c4022018Cae002F70817aA9A4035F7daf5C5"
+        },
+        {
+          "address": "0x620978615e37f2c494cB9FcC2F9981029533fB39",
+          "codeHash": "0xad4a18d2c7edfdfa6d849546a75d365317ce015eb16b3f39ee34249bf745b0fc",
+          "sourceAddress": "0x620978615e37f2c494cB9FcC2F9981029533fB39"
+        },
+        {
+          "address": "0xf22Bd338Ccb6446a25920d1858E50D709B663e9E",
+          "codeHash": "0x1573f17c64c8349cf4321cedf145d304f921a0bb762c3f331d431623a3400703",
+          "sourceAddress": "0xf22Bd338Ccb6446a25920d1858E50D709B663e9E"
+        },
+        {
+          "address": "0x7B273c267B7De25811883D69D26BfFaEbf71C184",
+          "codeHash": "0x055b56bb8879c1743e5c49ac4777fac0cc5062301b380c5de02df321165bca77",
+          "sourceAddress": "0x7B273c267B7De25811883D69D26BfFaEbf71C184"
+        },
+        {
+          "address": "0x95cF606f7e499549D83BD3c8a1e5D97FDF36688B",
+          "codeHash": "0x186932b809c0aac756ab1e481c54ca91260302790bbfa58833dbef91f45153de",
+          "sourceAddress": "0x95cF606f7e499549D83BD3c8a1e5D97FDF36688B"
+        },
+        {
+          "address": "0xa41263d0910e2daEDC993a8ac31c2b7A9f931A66",
+          "codeHash": "0x1f449573ce36de196193701153afb84e2c913bcf44fdb98abadf46cd42bf82ee",
+          "sourceAddress": null
+        },
+        {
+          "address": "0xdf71487381Ab5bD5a6B17eAa61FE2E6045A0e805",
+          "codeHash": "0xd39e883d1945ad8cec7ac4f50d5f58131500be6ce0868027ef44e55bdfeea4f1",
+          "sourceAddress": null
+        },
+        {
+          "address": "0xa2B5F4eAb526f0Bc2BA394345b76CC737988242F",
+          "codeHash": "0x1f449573ce36de196193701153afb84e2c913bcf44fdb98abadf46cd42bf82ee",
+          "sourceAddress": null
+        },
+        {
+          "address": "0x0D6862C7896233D4244cE746c368049B87c98B37",
+          "codeHash": "0xd39e883d1945ad8cec7ac4f50d5f58131500be6ce0868027ef44e55bdfeea4f1",
+          "sourceAddress": null
+        },
+        {
+          "address": "0x799B6778D7148e25D5f90A8aaC47981D25a6c337",
+          "codeHash": "0x1f449573ce36de196193701153afb84e2c913bcf44fdb98abadf46cd42bf82ee",
+          "sourceAddress": null
+        },
+        {
+          "address": "0x4c3DF500989DF0f6670b99018811B94d591CC5A0",
+          "codeHash": "0x385f9128cc350a0a0dbc682815e5740776d624799f26ef533519ccdf07711796",
+          "sourceAddress": "0x4c3DF500989DF0f6670b99018811B94d591CC5A0"
+        },
+        {
+          "address": "0xEa7975C2fEc1ae9E3058BB5f99d8E26dbC816811",
+          "codeHash": "0x37f71804c29ef7c42d3abe4b6b287ff2d19737753ad89a1301c16001d983b30f",
+          "sourceAddress": "0xEa7975C2fEc1ae9E3058BB5f99d8E26dbC816811"
+        },
+        {
+          "address": "0xd8d294714F5b1A1104CFE75C0Bb4ceF547a05124",
+          "codeHash": "0x0e8762c5b6ccfcd3d63774df03ea3865dde72c426ebc41ec15c4c64b4a53c5bf",
+          "sourceAddress": null
+        },
+        {
+          "address": "0x8A6B10e614228D80F69E2E50780e2FA3878f1AF3",
+          "codeHash": "0x1f449573ce36de196193701153afb84e2c913bcf44fdb98abadf46cd42bf82ee",
+          "sourceAddress": null
+        },
+        {
+          "address": "0x7Fe44a8305df0d8F8d25f66cBd4212eA570c7882",
+          "codeHash": "0x0e8762c5b6ccfcd3d63774df03ea3865dde72c426ebc41ec15c4c64b4a53c5bf",
+          "sourceAddress": null
+        },
+        {
+          "address": "0x4a82DCe425C1e4725B780742Ef95510BD6DB60aD",
+          "codeHash": "0x1f449573ce36de196193701153afb84e2c913bcf44fdb98abadf46cd42bf82ee",
+          "sourceAddress": null
+        },
+        {
+          "address": "0xBba362347a4C2acCe05228b01249c42Ee0BEe29C",
+          "codeHash": "0x0e8762c5b6ccfcd3d63774df03ea3865dde72c426ebc41ec15c4c64b4a53c5bf",
+          "sourceAddress": null
+        },
+        {
+          "address": "0xBF081c322c8E51Cda77048Abfe895968f5822bA7",
+          "codeHash": "0x1f449573ce36de196193701153afb84e2c913bcf44fdb98abadf46cd42bf82ee",
+          "sourceAddress": null
+        },
+        {
+          "address": "0x5e0EA8c9801497758294755f6e85724b41417667",
+          "codeHash": "0x0e8762c5b6ccfcd3d63774df03ea3865dde72c426ebc41ec15c4c64b4a53c5bf",
+          "sourceAddress": null
+        },
+        {
+          "address": "0x94FbD5fCecAEe13a1f4B52846Bcb605297974F30",
+          "codeHash": "0x1f449573ce36de196193701153afb84e2c913bcf44fdb98abadf46cd42bf82ee",
+          "sourceAddress": null
+        },
+        {
+          "address": "0x67b93f6676bd1911c5FAe7Ffa90fFf5f35E14dCd",
+          "codeHash": "0x0e8762c5b6ccfcd3d63774df03ea3865dde72c426ebc41ec15c4c64b4a53c5bf",
+          "sourceAddress": null
+        },
+        {
+          "address": "0x478675aA4121c07825167bBB25A44AADD22bEf7F",
+          "codeHash": "0x1f449573ce36de196193701153afb84e2c913bcf44fdb98abadf46cd42bf82ee",
+          "sourceAddress": null
+        },
+        {
+          "address": "0xcE51d81B356dE722380aaF3C87B072D1D1d0eCa1",
+          "codeHash": "0x3753f7db3b22659f75aeeb45d5f6a5ce57de32a87cee6ab860aa5788a7ce7cb8",
+          "sourceAddress": "0xcE51d81B356dE722380aaF3C87B072D1D1d0eCa1"
+        },
+        {
+          "address": "0x1f1933984A5e7f36A6fa8A454224d568Ab2bA257",
+          "codeHash": "0xcff8b7b7a62349fff1bfd4129804e5788cd1b49fc8be5813a297168196c6d638",
+          "sourceAddress": "0x1f1933984A5e7f36A6fa8A454224d568Ab2bA257"
+        },
+        {
+          "address": "0x4C1fa73Ebc7Aa7C88006D51414fC5387dE3bfE26",
+          "codeHash": "0x17195dec8cfcce0630d3d9d99f2cb82a439f1d20a91501776500010d1fa04608",
+          "sourceAddress": null
+        },
+        {
+          "address": "0xCa6619dEFEf383bf8741Bd9F8d8d7BeAF315C1af",
+          "codeHash": "0x0887b335514f0dbddcfdea67745d3e7940a061d6f9a402cf59848501430896fd",
+          "sourceAddress": "0xCa6619dEFEf383bf8741Bd9F8d8d7BeAF315C1af"
+        },
+        {
+          "address": "0xD91283A6d7C11E8C4190c232Fa7421Bb4d8898A0",
+          "codeHash": "0x1891a9a75cebbd51b415ba3887007ac6ef0e6395fcc3b204ee04dbe798871b6e",
+          "sourceAddress": "0xD91283A6d7C11E8C4190c232Fa7421Bb4d8898A0"
+        },
+        {
+          "address": "0x077Fb8b4b5a749CF9Ea922373F3cbCc46aD4b9C6",
+          "codeHash": "0xac8466673ea83942d3a64e50fe372cb2d74bc20ae7601fc24b9903fc60d43880",
+          "sourceAddress": null
+        },
+        {
+          "address": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "codeHash": "0xd7d408ebcd99b2b70be43e20253d6d92a8ea8fab29bd3be7f55b10032331fb4c",
+          "sourceAddress": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff"
+        }
+      ],
+      "errors": [
+        {
+          "target": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+          "message": "HTTP 429: {\"message\":\"Too many requests. Increase limits now at https://dev.blockscout.com\",\"result\":null,\"status\":\"0\"}"
+        },
+        {
+          "target": "0x184b2217fc07ecfa77c7a6df476b0814250be877",
+          "message": "HTTP 429: {\"message\":\"Too many requests. Increase limits now at https://dev.blockscout.com\",\"result\":null,\"status\":\"0\"}"
+        },
+        {
+          "target": "0x6e03c0b5ed1b16a8fd3f04346846ef986cbfc0f1",
+          "message": "HTTP 429: {\"message\":\"Too many requests. Increase limits now at https://dev.blockscout.com\",\"result\":null,\"status\":\"0\"}"
+        },
+        {
+          "target": "0x566bb935a22f6b18f351d79ea54e9fa83fc581fb",
+          "message": "HTTP 429: {\"message\":\"Too many requests. Increase limits now at https://dev.blockscout.com\",\"result\":null,\"status\":\"0\"}"
+        }
+      ]
+    }
+  ]
+}

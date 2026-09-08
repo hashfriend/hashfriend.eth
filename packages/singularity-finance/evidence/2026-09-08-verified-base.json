@@ -1,0 +1,1790 @@
+{
+  "schemaVersion": 2,
+  "capturedAt": "2026-09-08T12:08:48.625Z",
+  "discoverySdkVersion": "0.1.5",
+  "abiPolicy": "verified-address-cache-v1",
+  "chains": [
+    {
+      "chain": "base",
+      "chainId": 8453,
+      "complete": false,
+      "block": {
+        "number": "51039978",
+        "hash": "0xd8e975ecdefd75fbf18520e046a70982c0a25da99d3dfc77f9a18d96f44d5f22",
+        "time": "2026-09-08T12:08:23.000Z"
+      },
+      "registry": "0xe260c97949bB01E49c0af64a3525458197851657",
+      "entries": [
+        {
+          "vault": "0x1631CA6543adcB61e2B9e30189c8477981258274",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0xdf71487381Ab5bD5a6B17eAa61FE2E6045A0e805",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0xcb87331fd24000C70eF6b041DCdcBc3Ef824ea9e",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xE641e8B18ad842617a956a29A0b2c485Bd6871c0",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x460328F1fcb4E53e6E9BB8A5F4ec15dD724394af",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x5AE57ffedd7C250561C719097a4Ed41EAD98267B",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x619DD881EC9E5E08E67e641b9ab5Af3079DEfe11",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x44eE1F61045C389042C68d212074ef34d88679B9",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xCEDF4ee912d8469CBDd2Ab83b6Ca45aF2537a983",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x1ea76183a439802f588e859d7e1Cee71A3D6eE11",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xFc289A892f0423Dc9BB9Fe6c06fffaD71aA31aCE",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x40DcEE4d781e4e528C85DeA0ABb868C5639850dd",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x9bD997af11622FA6Cf2f9ab3ca4308E92c6C720c",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x718056B80316b65F0Cfaf671aD1155EE81c4C753",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x2F4dCE56eB89753988cdb158E3ce8641a00315C6",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6E0b01b992BB07a6C29e354ee766db81256C1B2D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xFB215556BcF1a1c97dCe3c35ED545F1540752Ca6",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xA775Fd0764b67D3509B309ca325615E73EAee76F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6AE9750De1e7eD6994d3Eae208a44e4b1f061D3C",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x977e337fFB8918a58bcC97C0CA5CDA08766F1467",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xD34bF8FBeb1c4E514B76449BBC0850D5A80c1632",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x12101d8B87838CDB0f8Fe61Fc4612c4809A01654",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xE35c3B16fe78a5eD30516b0EB34e0e69909CBA16",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x90315aa41162a0e3e398239C5CB36E789281039D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xAa6A5F4beA9762cF9052dFCb8B2FcA7A0692A364",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xD7ac3E4CFF0E8cc65aEf7646a0bB22F1a73aB2bb",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xA319a910B908E2Dd249fd6a87E257623A82a636E",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x029b7BEfa2BB385C263AD6Ba9917c859799801Ed",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x61D5478d803703B48390Be6C5D25Bb7250580114",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xDDCf6F2Fc1925Dd9AE77D403bDd0B95720CD133d",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x699be0f9ce812b454A53846e8E3B158bB8411A50",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x04C398001eafe1a464f7F9F4dD4426d345f2Ed0D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6AE40a99Fa21eEFD2C92CE40862BD2222347061f",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xbDc8B2ac60f3832adC4C2D0330395aBFdD45fEc0",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xddeD0699A5D3beA40179731EE9F87E95b0b6fF5A",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x9ABef9A578a46A76F161d9daAa77339Fd07da04E",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xC15e973120417894361A3E558D7CC7C1EEA29E72",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xC2D22feC220DeD0Ae9805d9e9B7C4DD93Ca91A64",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x559997E4a0346754D4f9e6f4E4F0C2c69085b970",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x11a50B418cd568dAB622Fe38517cfA9db9Cd86b8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x1ce983aA38728b1e7A08030072DB02102E392969",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x9A3fBa281B004882497D29B863c244619f2574b7",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xc9A736085e997B173228887B214Eb588eF7b693E",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x579E1f12e56C15e59862EBB4A7aA9609B4aD461F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x4F621a7C559869fE30f8b709FCaBb8049F17C13B",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x9803eb951930499BbDfD923d2e0C1b7625034Eb0",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x29e98D226eeaa20fbEcD6b6c668850BcaEac8628",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xB950D80C6759977Bb53d97B3a226c9B345247c82",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x1022E0D4B36EDf9Cf552FdC260101130ef1Dc131",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x75E0d5d511f663a4Def1B28d1226664ea3a72a15",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xA7Ad32028C7048d4BF2dc0A376cA94AB91F3A544",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x227DC2bdc5f747A58eeb79a182Dd5b296E90f22F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x0cd1CF79905897a50C45aaDE3A966eBcC46c991B",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xD536Db3A4e49189641B27Ed92C491eBF18792D7a",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xfD6CFF4Cc3BCbA7FBe1BACDc57B77DA5668Fc049",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xFBbfd4DAb5dd56909992cA077a807b72993461Db",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x108A5b19Ab08CD3b291e7B54A7878aDfa48FaB6D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xddcc531D07Cf068BE4619b8DA376f2a3729e3548",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6EAD885993A8b85558b52d3575eb4aaFb4E804a1",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xd41b1AB87C4B715E4D7001eddE32D79ee4eBa4Cb",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x675Ba680EbB61bDFa529Ec41094F08B36eBe2fAa",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xe087bAf104B316128eA2E140ee315d70865f14E8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x5B6f5890940228cdcFf682Ca17425977B235Ca45",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x26a17427532904650fda16B3472F98e891F34bC0",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xC30E55955262f5B714A2F14F63e17459c1722253",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x88DAa16322a456C3B193EDe94f10302762A10f5B",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x548bA2f92522391a4F88C0121C6f071A5807F665",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xaB58506555be5E09c8462850D8266619fC0eF014",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x302b232F45813E88539FFD7a8E9D28Df78c0b627",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x9065BdE967aE20819c5fA75731883c9c32fC60E8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xF0F1760E9E130508381cDc10FeEc09764a38e967",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x354F151248caF9DedE4Edf22f6954097E0755035",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x36237bae6CaCD057cC00b598182FD58785873D02",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x696A4ba5cFF354573CFE95647724068534CeD464",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xb4C000769f5fa257f975016611Bc508c662fC7BE",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf7C1592D0A32d1811A2261A407E8443c7a075153",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xd3647C178d8d7d6dF4a557bFCE73F4bBc406bED0",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xD1D2d7910A71bD7930A559885B82785e7A82B9CD",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xbDF03f4AD5085c59834C44430557D9Af05104b39",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x1fbae77255D572Baee0a1b274752e9a7b3b98110",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xaaF6fCB8285F7d8c12fd7eee98bc817198B7dACf",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x94847659F7f1eA5636eD9f988027bc926735aB89",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x42Ef6351AcC5d64a82d16057EC2091bCECCf3477",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x06205A5695f9eB3f1199fA81aD3231b3d122C26D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x717E8bD2Fa819427f969020fD7DB63644ce8c7ee",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xA532301b8fE1c08b512c4D3D2c4aB406a431cabc",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x0C3a5248c9133BFeD55676174bf454c087365583",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x7B67ab3600eff6BD2B593Bb9d8A7a310ed71126e",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x0Fbfd59a8b05296D881552f9472e82F3CeE531F5",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x8Ab531916036D47e8ADC2E4414597C75E80305EA",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x9DFa22d57A3374Da0e87EA95d98776cC19C5aEd3",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x36773Cc216D75EDf151fC0C86883941102d0da03",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x42AF46BEFb77fb0be58A44Bc24f7d9e2Bb141F96",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xcb3Fc245c3747d29e6b32dF0042aE911c28b3A8B",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x04fa389515f93D9627D56665060E8CA59f28dEcd",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xB15a805B086a8eDc15f172210e47BA17BA88baa7",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf2781389D9d84661fD8BBe047688d643C10133c1",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf3f81d261BBaEb82212211A15eb8eec616B1443D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x5CB8E906cB82b9e72f20FE163662de4b4f51699f",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xC12358718FFAd2257282Ab016bb08D6AD143291C",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x7278D0B023511D9C19a3131B28189600cc318c47",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x05185E9f9d50ad549Ec76d9B6D5F8273b078d7B8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x150817259ED6642a8eDdE674d81ba16603f4A7df",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xAc5A277789f9474849A10394fD19dbbB1Fe96d83",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6cf1Bb33632fe8BC9227882DdB72Dd44Ebda127c",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf9D6173d05cBa9f2a0C0Ab8fFDDe3bAe6a7ABB22",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xe4F5099c7123dDFf15C5bb73037c38d7bbDcE77b",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x1706dE48cd3C9fE05E8549b7247ffd99ce71Dc55",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x7a72f61ebb0785fdF35debEf36C6e77EDaa0cc53",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6FEA7Bfd2aF766Af59Aa80f3782f015a1af77A46",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xF4D10370EdB9Ab6EDA23c0e2Bb96c76Ac656c247",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x68C550549b6A07F36E441Ad1655F8909DA8B6e6A",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x01720FfEB0D461A0eF782ab18DAC905d745E6606",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x648f68110F636925eE62622e6A31b3BDC8118157",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x86Bcd704dBA9621d738Ef1f7Da8AbB500AF1B7f6",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x2f87c40F72CaAa0b25Ba60dB9c48905CFCf456B5",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xaA458849e891D005Bdbe66CBA2bFA45715dDA429",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xE185439fDEb25975261111183d55a1d828a17068",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xa2256FD892ABC7c8F75287cf0344788363e959B3",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xCc9f9F387da56436394285c990E7C17486dD1dA2",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x087350729F7A0cbDf89E87f963Cb2C659d476e69",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf8fAC7eF2069258857DA17D910F062F22054ec16",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xc0dbf664A8D78E2CE10556C75C0AF6a6c3d5A547",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf39f3c323F630104FF9eBa2AF4349F03CDd46A68",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x87C9a9Af4ed863976fEecf122c808Ab27AC7d8F5",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x7F7C24EB5Ce929fB22992C61F1094CAfd118878D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xBDD5CE32AC0cC91ECa83c93FFD0418f1Be258caE",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xEd7B0c1b0B3e85208373F053c06f6D6963C71F13",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6dEDda9FD0cABB03Ebd1e4dFb4644E7a99583772",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x01252a5c4Ac3Db15F59Bf0a3673297C3A3149363",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x0e7DB96384C4b4B34F450fdB2004bc1e46fD5ca8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x76097f2DCA682F32631462e16EA34FF72DdeB8eE",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xe978c334A3AB6269988Af138559aB1504a3Ec495",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x96E10Eb4c4595607FC2F6A04807eD198BF73Cf8E",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x8CF32aaDcD40C2Fd9a2E68Cb4Bd08Cd97610772F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xec65a3aA34f41abFa666EC856D357e26db52119c",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x84cF84540cbe519762f96D5CF48612da3Df29feb",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xFca3d4128308350ae7552A17ea0D177a5631e8Ba",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xe79cAF4a4e700F8e3430310322d2191eb0DEb628",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x135cc13Cc88e489eFF42C0ee4Bb056f541AA04eb",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x529Ff57FFeD5f65c57716d4268CF720d447Eb48F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x630257c5b7c4E8E62cb058890ae7Ca07BB268999",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xfa54Ed23af65DF421Db2ad8e131741e260328050",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x533b49485734bEb0A4B2BDA4d900466F6A85cb24",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x19110f157Abb7d53C14558336657DBA20574D49c",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x25b422BDad72Aab642E9820374C6fF90eBaD3c1f",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x1c9184818c7C53b23C4fA2D51fcb6CD6892D7DC0",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x117dF3B0E9DeE5C7A61638513E65bA902025E1c8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xb630e190f2A38F2e7fF0618facA270f67B69f10a",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6496D00D79F7068310a08e505488Dc6eee225fFd",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x8212e64a3F5A962F07f0d6781b8329bF4351A90F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x4cF17Ea9A9c14Ee26DE625Ea490f77E7a241b197",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xDe1Ed32576F5cAf7F54DF3Ec85fa6d5A5341E2F2",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x51296Fe764A2D1Ba1Bc35f759567d648951564b8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x5F932753F0725b3cE75CED6aFC921B410c0513E6",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x7b6eB9E0df27Dad9eae430CeEd0A6C4A019d301C",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xcFfDDAf09c8883cC6311179283aFb13124a32899",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xbD037d71B530a00faDAF8181fA4c66a9446D415B",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x326bd604E7c7c8e4Df759698e214243A1ac2Fffd",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xFE7a32a7e43dD6a852eB75CC1AADC194e7331e01",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x0bd1121d624a89B38dF103006b10995F540A6B7A",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xbF4Eeb9f9F97B71BA89e0B30CaD0f9F59756fBa9",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x2447D1be86b0C8C57241750b9DF49f318c623E2A",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x8cA4818876835A402588BA02b77545d8E581e7d3",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xCEbF4f02D8C5d9391255e9b954C69b2D40665403",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xbe6D22D314c2A055feaa1178b73A5372CBe15Cd7",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x8C7cfaC3baDFb7fD61f84441B4DbE1904968a840",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xe55709b0E6888961a61C6B43f17757d453fF31f3",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xcE1Aa9653481C0064342f2470a3Be7a043a95076",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x2311EB9425b19205e3cFcFd4B2016358CC8159c5",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf7386b6580744736c7218D876fa17Caf79d5dCE4",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x0D6862C7896233D4244cE746c368049B87c98B37",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0x792c1438356128f882340880f2f4d8e7a7912dAc",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x22097a0B69b72b960D107aCa280755C5b447508F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xd8d294714F5b1A1104CFE75C0Bb4ceF547a05124",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0x7Fe44a8305df0d8F8d25f66cBd4212eA570c7882",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0xBba362347a4C2acCe05228b01249c42Ee0BEe29C",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0x5e0EA8c9801497758294755f6e85724b41417667",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0x67b93f6676bd1911c5FAe7Ffa90fFf5f35E14dCd",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0x4C1fa73Ebc7Aa7C88006D51414fC5387dE3bfE26",
+          "vaultType": 3,
+          "active": true
+        }
+      ],
+      "excluded": [
+        {
+          "address": "0xcb87331fd24000C70eF6b041DCdcBc3Ef824ea9e",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xE641e8B18ad842617a956a29A0b2c485Bd6871c0",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x460328F1fcb4E53e6E9BB8A5F4ec15dD724394af",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x5AE57ffedd7C250561C719097a4Ed41EAD98267B",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x619DD881EC9E5E08E67e641b9ab5Af3079DEfe11",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x44eE1F61045C389042C68d212074ef34d88679B9",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xCEDF4ee912d8469CBDd2Ab83b6Ca45aF2537a983",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x1ea76183a439802f588e859d7e1Cee71A3D6eE11",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xFc289A892f0423Dc9BB9Fe6c06fffaD71aA31aCE",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x40DcEE4d781e4e528C85DeA0ABb868C5639850dd",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x9bD997af11622FA6Cf2f9ab3ca4308E92c6C720c",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x718056B80316b65F0Cfaf671aD1155EE81c4C753",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x2F4dCE56eB89753988cdb158E3ce8641a00315C6",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x6E0b01b992BB07a6C29e354ee766db81256C1B2D",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xFB215556BcF1a1c97dCe3c35ED545F1540752Ca6",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xA775Fd0764b67D3509B309ca325615E73EAee76F",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x6AE9750De1e7eD6994d3Eae208a44e4b1f061D3C",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x977e337fFB8918a58bcC97C0CA5CDA08766F1467",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xD34bF8FBeb1c4E514B76449BBC0850D5A80c1632",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x12101d8B87838CDB0f8Fe61Fc4612c4809A01654",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xE35c3B16fe78a5eD30516b0EB34e0e69909CBA16",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x90315aa41162a0e3e398239C5CB36E789281039D",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xAa6A5F4beA9762cF9052dFCb8B2FcA7A0692A364",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xD7ac3E4CFF0E8cc65aEf7646a0bB22F1a73aB2bb",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xA319a910B908E2Dd249fd6a87E257623A82a636E",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x029b7BEfa2BB385C263AD6Ba9917c859799801Ed",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x61D5478d803703B48390Be6C5D25Bb7250580114",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xDDCf6F2Fc1925Dd9AE77D403bDd0B95720CD133d",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x699be0f9ce812b454A53846e8E3B158bB8411A50",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x04C398001eafe1a464f7F9F4dD4426d345f2Ed0D",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x6AE40a99Fa21eEFD2C92CE40862BD2222347061f",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xbDc8B2ac60f3832adC4C2D0330395aBFdD45fEc0",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xddeD0699A5D3beA40179731EE9F87E95b0b6fF5A",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x9ABef9A578a46A76F161d9daAa77339Fd07da04E",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xC15e973120417894361A3E558D7CC7C1EEA29E72",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xC2D22feC220DeD0Ae9805d9e9B7C4DD93Ca91A64",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x559997E4a0346754D4f9e6f4E4F0C2c69085b970",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x11a50B418cd568dAB622Fe38517cfA9db9Cd86b8",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x1ce983aA38728b1e7A08030072DB02102E392969",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x9A3fBa281B004882497D29B863c244619f2574b7",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xc9A736085e997B173228887B214Eb588eF7b693E",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x579E1f12e56C15e59862EBB4A7aA9609B4aD461F",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x4F621a7C559869fE30f8b709FCaBb8049F17C13B",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x9803eb951930499BbDfD923d2e0C1b7625034Eb0",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x29e98D226eeaa20fbEcD6b6c668850BcaEac8628",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xB950D80C6759977Bb53d97B3a226c9B345247c82",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x1022E0D4B36EDf9Cf552FdC260101130ef1Dc131",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x75E0d5d511f663a4Def1B28d1226664ea3a72a15",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xA7Ad32028C7048d4BF2dc0A376cA94AB91F3A544",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x227DC2bdc5f747A58eeb79a182Dd5b296E90f22F",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x0cd1CF79905897a50C45aaDE3A966eBcC46c991B",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xD536Db3A4e49189641B27Ed92C491eBF18792D7a",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xfD6CFF4Cc3BCbA7FBe1BACDc57B77DA5668Fc049",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xFBbfd4DAb5dd56909992cA077a807b72993461Db",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x108A5b19Ab08CD3b291e7B54A7878aDfa48FaB6D",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xddcc531D07Cf068BE4619b8DA376f2a3729e3548",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x6EAD885993A8b85558b52d3575eb4aaFb4E804a1",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xd41b1AB87C4B715E4D7001eddE32D79ee4eBa4Cb",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x675Ba680EbB61bDFa529Ec41094F08B36eBe2fAa",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xe087bAf104B316128eA2E140ee315d70865f14E8",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x5B6f5890940228cdcFf682Ca17425977B235Ca45",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x26a17427532904650fda16B3472F98e891F34bC0",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xC30E55955262f5B714A2F14F63e17459c1722253",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x88DAa16322a456C3B193EDe94f10302762A10f5B",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x548bA2f92522391a4F88C0121C6f071A5807F665",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xaB58506555be5E09c8462850D8266619fC0eF014",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x302b232F45813E88539FFD7a8E9D28Df78c0b627",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x9065BdE967aE20819c5fA75731883c9c32fC60E8",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xF0F1760E9E130508381cDc10FeEc09764a38e967",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x354F151248caF9DedE4Edf22f6954097E0755035",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x36237bae6CaCD057cC00b598182FD58785873D02",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x696A4ba5cFF354573CFE95647724068534CeD464",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xb4C000769f5fa257f975016611Bc508c662fC7BE",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xf7C1592D0A32d1811A2261A407E8443c7a075153",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xd3647C178d8d7d6dF4a557bFCE73F4bBc406bED0",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xD1D2d7910A71bD7930A559885B82785e7A82B9CD",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xbDF03f4AD5085c59834C44430557D9Af05104b39",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x1fbae77255D572Baee0a1b274752e9a7b3b98110",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xaaF6fCB8285F7d8c12fd7eee98bc817198B7dACf",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x94847659F7f1eA5636eD9f988027bc926735aB89",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x42Ef6351AcC5d64a82d16057EC2091bCECCf3477",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x06205A5695f9eB3f1199fA81aD3231b3d122C26D",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x717E8bD2Fa819427f969020fD7DB63644ce8c7ee",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xA532301b8fE1c08b512c4D3D2c4aB406a431cabc",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x0C3a5248c9133BFeD55676174bf454c087365583",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x7B67ab3600eff6BD2B593Bb9d8A7a310ed71126e",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x0Fbfd59a8b05296D881552f9472e82F3CeE531F5",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x8Ab531916036D47e8ADC2E4414597C75E80305EA",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x9DFa22d57A3374Da0e87EA95d98776cC19C5aEd3",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x36773Cc216D75EDf151fC0C86883941102d0da03",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x42AF46BEFb77fb0be58A44Bc24f7d9e2Bb141F96",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xcb3Fc245c3747d29e6b32dF0042aE911c28b3A8B",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x04fa389515f93D9627D56665060E8CA59f28dEcd",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xB15a805B086a8eDc15f172210e47BA17BA88baa7",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xf2781389D9d84661fD8BBe047688d643C10133c1",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xf3f81d261BBaEb82212211A15eb8eec616B1443D",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x5CB8E906cB82b9e72f20FE163662de4b4f51699f",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xC12358718FFAd2257282Ab016bb08D6AD143291C",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x7278D0B023511D9C19a3131B28189600cc318c47",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x05185E9f9d50ad549Ec76d9B6D5F8273b078d7B8",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x150817259ED6642a8eDdE674d81ba16603f4A7df",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xAc5A277789f9474849A10394fD19dbbB1Fe96d83",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x6cf1Bb33632fe8BC9227882DdB72Dd44Ebda127c",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xf9D6173d05cBa9f2a0C0Ab8fFDDe3bAe6a7ABB22",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xe4F5099c7123dDFf15C5bb73037c38d7bbDcE77b",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x1706dE48cd3C9fE05E8549b7247ffd99ce71Dc55",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x7a72f61ebb0785fdF35debEf36C6e77EDaa0cc53",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x6FEA7Bfd2aF766Af59Aa80f3782f015a1af77A46",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xF4D10370EdB9Ab6EDA23c0e2Bb96c76Ac656c247",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x68C550549b6A07F36E441Ad1655F8909DA8B6e6A",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x01720FfEB0D461A0eF782ab18DAC905d745E6606",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x648f68110F636925eE62622e6A31b3BDC8118157",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x86Bcd704dBA9621d738Ef1f7Da8AbB500AF1B7f6",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x2f87c40F72CaAa0b25Ba60dB9c48905CFCf456B5",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xaA458849e891D005Bdbe66CBA2bFA45715dDA429",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xE185439fDEb25975261111183d55a1d828a17068",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xa2256FD892ABC7c8F75287cf0344788363e959B3",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xCc9f9F387da56436394285c990E7C17486dD1dA2",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x087350729F7A0cbDf89E87f963Cb2C659d476e69",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xf8fAC7eF2069258857DA17D910F062F22054ec16",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xc0dbf664A8D78E2CE10556C75C0AF6a6c3d5A547",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xf39f3c323F630104FF9eBa2AF4349F03CDd46A68",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x87C9a9Af4ed863976fEecf122c808Ab27AC7d8F5",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x7F7C24EB5Ce929fB22992C61F1094CAfd118878D",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xBDD5CE32AC0cC91ECa83c93FFD0418f1Be258caE",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xEd7B0c1b0B3e85208373F053c06f6D6963C71F13",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x6dEDda9FD0cABB03Ebd1e4dFb4644E7a99583772",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x01252a5c4Ac3Db15F59Bf0a3673297C3A3149363",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x0e7DB96384C4b4B34F450fdB2004bc1e46fD5ca8",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x76097f2DCA682F32631462e16EA34FF72DdeB8eE",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xe978c334A3AB6269988Af138559aB1504a3Ec495",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x96E10Eb4c4595607FC2F6A04807eD198BF73Cf8E",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x8CF32aaDcD40C2Fd9a2E68Cb4Bd08Cd97610772F",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xec65a3aA34f41abFa666EC856D357e26db52119c",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x84cF84540cbe519762f96D5CF48612da3Df29feb",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xFca3d4128308350ae7552A17ea0D177a5631e8Ba",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xe79cAF4a4e700F8e3430310322d2191eb0DEb628",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x135cc13Cc88e489eFF42C0ee4Bb056f541AA04eb",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x529Ff57FFeD5f65c57716d4268CF720d447Eb48F",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x630257c5b7c4E8E62cb058890ae7Ca07BB268999",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xfa54Ed23af65DF421Db2ad8e131741e260328050",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x533b49485734bEb0A4B2BDA4d900466F6A85cb24",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x19110f157Abb7d53C14558336657DBA20574D49c",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x25b422BDad72Aab642E9820374C6fF90eBaD3c1f",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x1c9184818c7C53b23C4fA2D51fcb6CD6892D7DC0",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x117dF3B0E9DeE5C7A61638513E65bA902025E1c8",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xb630e190f2A38F2e7fF0618facA270f67B69f10a",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x6496D00D79F7068310a08e505488Dc6eee225fFd",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x8212e64a3F5A962F07f0d6781b8329bF4351A90F",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x4cF17Ea9A9c14Ee26DE625Ea490f77E7a241b197",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xDe1Ed32576F5cAf7F54DF3Ec85fa6d5A5341E2F2",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x51296Fe764A2D1Ba1Bc35f759567d648951564b8",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x5F932753F0725b3cE75CED6aFC921B410c0513E6",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x7b6eB9E0df27Dad9eae430CeEd0A6C4A019d301C",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xcFfDDAf09c8883cC6311179283aFb13124a32899",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xbD037d71B530a00faDAF8181fA4c66a9446D415B",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x326bd604E7c7c8e4Df759698e214243A1ac2Fffd",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xFE7a32a7e43dD6a852eB75CC1AADC194e7331e01",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x0bd1121d624a89B38dF103006b10995F540A6B7A",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xbF4Eeb9f9F97B71BA89e0B30CaD0f9F59756fBa9",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x2447D1be86b0C8C57241750b9DF49f318c623E2A",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x8cA4818876835A402588BA02b77545d8E581e7d3",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xCEbF4f02D8C5d9391255e9b954C69b2D40665403",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xbe6D22D314c2A055feaa1178b73A5372CBe15Cd7",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x8C7cfaC3baDFb7fD61f84441B4DbE1904968a840",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xe55709b0E6888961a61C6B43f17757d453fF31f3",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xcE1Aa9653481C0064342f2470a3Be7a043a95076",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x2311EB9425b19205e3cFcFd4B2016358CC8159c5",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0xf7386b6580744736c7218D876fa17Caf79d5dCE4",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x792c1438356128f882340880f2f4d8e7a7912dAc",
+          "reason": "Base registry type outside 3/4"
+        },
+        {
+          "address": "0x22097a0B69b72b960D107aCa280755C5b447508F",
+          "reason": "Base registry type outside 3/4"
+        }
+      ],
+      "vaults": [],
+      "safes": [],
+      "oracles": [],
+      "abiEvidence": [
+        {
+          "address": "0xe260c97949bB01E49c0af64a3525458197851657",
+          "codeHash": "0xa61b4b487cc0472596c91e3c4ca78f5523505189fe9fc19efd600fa5e9ff6297",
+          "sourceAddress": "0xe260c97949bB01E49c0af64a3525458197851657"
+        },
+        {
+          "address": "0x3CE426BB2fCB9E1300BbE03E2D34D7b3B7347Db5",
+          "codeHash": "0x708ab7a2062748234c8c1707e97b4d419d3131f487cdb0f48a8c208c8b79697c",
+          "sourceAddress": "0x3CE426BB2fCB9E1300BbE03E2D34D7b3B7347Db5"
+        },
+        {
+          "address": "0xD3109f87bd553B83f64a2972Effb034BfED8d2A0",
+          "codeHash": "0x8ad4a982e258b727289be029e2cbb9f0482f042d796457862a9270019263d3a8",
+          "sourceAddress": "0xD3109f87bd553B83f64a2972Effb034BfED8d2A0"
+        },
+        {
+          "address": "0x3B94AfA809b113eF118C6D4ffC009FdF1A51ee08",
+          "codeHash": "0x035818002ad695f4751665d6f6c187a80c4f8413551383e4f97508ab379a5de6",
+          "sourceAddress": "0x3B94AfA809b113eF118C6D4ffC009FdF1A51ee08"
+        },
+        {
+          "address": "0x8bB92D108d957810fC048D8AEe346336925d507E",
+          "codeHash": "0x612fac15ecc23b2f3ab2bd7ba96c9ab999afb374eb6d51b57b370ebae8bb6cf4",
+          "sourceAddress": "0x8bB92D108d957810fC048D8AEe346336925d507E"
+        },
+        {
+          "address": "0x1631CA6543adcB61e2B9e30189c8477981258274",
+          "codeHash": "0xd39e883d1945ad8cec7ac4f50d5f58131500be6ce0868027ef44e55bdfeea4f1",
+          "sourceAddress": null
+        },
+        {
+          "address": "0xb4d05063A4Cf978446181002cb524Fb3bCFe9D94",
+          "codeHash": "0xea26d30d5d1a0b1c9384dca1f700f70e98155c9d08764cd439391aef5de90157",
+          "sourceAddress": "0xb4d05063A4Cf978446181002cb524Fb3bCFe9D94"
+        },
+        {
+          "address": "0xb130375b543Bd919D85351B73636439C28D90Db6",
+          "codeHash": "0x28bf12d7082433af3a3d9cadbddbd4e153efad5d48004d7b513f54fd629f2fd8",
+          "sourceAddress": "0xb130375b543Bd919D85351B73636439C28D90Db6"
+        },
+        {
+          "address": "0x48b1197dc8697aC86e2cce9e875A0B22ca3150F5",
+          "codeHash": "0xb4fcaed4f71a7aa47714feb2762919ab3143c39e9af933aa5e532334d6c89842",
+          "sourceAddress": "0x48b1197dc8697aC86e2cce9e875A0B22ca3150F5"
+        },
+        {
+          "address": "0x7e81c4022018Cae002F70817aA9A4035F7daf5C5",
+          "codeHash": "0x976b1dad280e13031005ed5691a903691c6bfc7ba707975b7d64b1061889cd43",
+          "sourceAddress": "0x7e81c4022018Cae002F70817aA9A4035F7daf5C5"
+        },
+        {
+          "address": "0x620978615e37f2c494cB9FcC2F9981029533fB39",
+          "codeHash": "0xad4a18d2c7edfdfa6d849546a75d365317ce015eb16b3f39ee34249bf745b0fc",
+          "sourceAddress": "0x620978615e37f2c494cB9FcC2F9981029533fB39"
+        },
+        {
+          "address": "0xf22Bd338Ccb6446a25920d1858E50D709B663e9E",
+          "codeHash": "0x1573f17c64c8349cf4321cedf145d304f921a0bb762c3f331d431623a3400703",
+          "sourceAddress": "0xf22Bd338Ccb6446a25920d1858E50D709B663e9E"
+        },
+        {
+          "address": "0x7B273c267B7De25811883D69D26BfFaEbf71C184",
+          "codeHash": "0x055b56bb8879c1743e5c49ac4777fac0cc5062301b380c5de02df321165bca77",
+          "sourceAddress": "0x7B273c267B7De25811883D69D26BfFaEbf71C184"
+        },
+        {
+          "address": "0x95cF606f7e499549D83BD3c8a1e5D97FDF36688B",
+          "codeHash": "0x186932b809c0aac756ab1e481c54ca91260302790bbfa58833dbef91f45153de",
+          "sourceAddress": "0x95cF606f7e499549D83BD3c8a1e5D97FDF36688B"
+        },
+        {
+          "address": "0xa41263d0910e2daEDC993a8ac31c2b7A9f931A66",
+          "codeHash": "0x1f449573ce36de196193701153afb84e2c913bcf44fdb98abadf46cd42bf82ee",
+          "sourceAddress": null
+        },
+        {
+          "address": "0xdf71487381Ab5bD5a6B17eAa61FE2E6045A0e805",
+          "codeHash": "0xd39e883d1945ad8cec7ac4f50d5f58131500be6ce0868027ef44e55bdfeea4f1",
+          "sourceAddress": null
+        },
+        {
+          "address": "0x0D6862C7896233D4244cE746c368049B87c98B37",
+          "codeHash": "0xd39e883d1945ad8cec7ac4f50d5f58131500be6ce0868027ef44e55bdfeea4f1",
+          "sourceAddress": null
+        },
+        {
+          "address": "0x4c3DF500989DF0f6670b99018811B94d591CC5A0",
+          "codeHash": "0x385f9128cc350a0a0dbc682815e5740776d624799f26ef533519ccdf07711796",
+          "sourceAddress": "0x4c3DF500989DF0f6670b99018811B94d591CC5A0"
+        },
+        {
+          "address": "0xEa7975C2fEc1ae9E3058BB5f99d8E26dbC816811",
+          "codeHash": "0x37f71804c29ef7c42d3abe4b6b287ff2d19737753ad89a1301c16001d983b30f",
+          "sourceAddress": "0xEa7975C2fEc1ae9E3058BB5f99d8E26dbC816811"
+        },
+        {
+          "address": "0xd8d294714F5b1A1104CFE75C0Bb4ceF547a05124",
+          "codeHash": "0x0e8762c5b6ccfcd3d63774df03ea3865dde72c426ebc41ec15c4c64b4a53c5bf",
+          "sourceAddress": null
+        },
+        {
+          "address": "0x7Fe44a8305df0d8F8d25f66cBd4212eA570c7882",
+          "codeHash": "0x0e8762c5b6ccfcd3d63774df03ea3865dde72c426ebc41ec15c4c64b4a53c5bf",
+          "sourceAddress": null
+        },
+        {
+          "address": "0xBba362347a4C2acCe05228b01249c42Ee0BEe29C",
+          "codeHash": "0x0e8762c5b6ccfcd3d63774df03ea3865dde72c426ebc41ec15c4c64b4a53c5bf",
+          "sourceAddress": null
+        },
+        {
+          "address": "0x5e0EA8c9801497758294755f6e85724b41417667",
+          "codeHash": "0x0e8762c5b6ccfcd3d63774df03ea3865dde72c426ebc41ec15c4c64b4a53c5bf",
+          "sourceAddress": null
+        },
+        {
+          "address": "0x67b93f6676bd1911c5FAe7Ffa90fFf5f35E14dCd",
+          "codeHash": "0x0e8762c5b6ccfcd3d63774df03ea3865dde72c426ebc41ec15c4c64b4a53c5bf",
+          "sourceAddress": null
+        }
+      ],
+      "errors": [
+        {
+          "target": "0x1631CA6543adcB61e2B9e30189c8477981258274",
+          "message": "RPC Request failed.\n\nURL: [redacted]\nRequest body: {\"method\":\"eth_call\",\"params\":[{\"data\":\"0x452a9320\",\"to\":\"0xa41263d0910e2daEDC993a8ac31c2b7A9f931A66\"},\"0x30aceea\"]}\n \nRaw Call Arguments:\n  to:    0xa41263d0910e2daEDC993a8ac31c2b7A9f931A66\n  data:  0x452a9320\n \nContract Call:\n  address:   0xa41263d0910e2daEDC993a8ac31c2b7A9f931A66\n  function:  guardian()\n\nDocs: https://viem.sh/docs/contract/readContract\nDetails: over rate limit\nVersion: viem@2.56.3"
+        },
+        {
+          "target": "0xdf71487381Ab5bD5a6B17eAa61FE2E6045A0e805",
+          "message": "RPC Request failed.\n\nURL: [redacted]\nRequest body: {\"method\":\"eth_call\",\"params\":[{\"data\":\"0x95d89b41\",\"to\":\"0xdf71487381Ab5bD5a6B17eAa61FE2E6045A0e805\"},\"0x30aceea\"]}\n \nRaw Call Arguments:\n  to:    0xdf71487381Ab5bD5a6B17eAa61FE2E6045A0e805\n  data:  0x95d89b41\n \nContract Call:\n  address:   0xdf71487381Ab5bD5a6B17eAa61FE2E6045A0e805\n  function:  symbol()\n\nDocs: https://viem.sh/docs/contract/readContract\nDetails: over rate limit\nVersion: viem@2.56.3"
+        },
+        {
+          "target": "0x0D6862C7896233D4244cE746c368049B87c98B37",
+          "message": "RPC Request failed.\n\nURL: [redacted]\nRequest body: {\"method\":\"eth_call\",\"params\":[{\"data\":\"0x95d89b41\",\"to\":\"0x0D6862C7896233D4244cE746c368049B87c98B37\"},\"0x30aceea\"]}\n \nRaw Call Arguments:\n  to:    0x0D6862C7896233D4244cE746c368049B87c98B37\n  data:  0x95d89b41\n \nContract Call:\n  address:   0x0D6862C7896233D4244cE746c368049B87c98B37\n  function:  symbol()\n\nDocs: https://viem.sh/docs/contract/readContract\nDetails: over rate limit\nVersion: viem@2.56.3"
+        },
+        {
+          "target": "0xd8d294714F5b1A1104CFE75C0Bb4ceF547a05124",
+          "message": "RPC Request failed.\n\nURL: [redacted]\nRequest body: {\"method\":\"eth_call\",\"params\":[{\"data\":\"0x95d89b41\",\"to\":\"0xd8d294714F5b1A1104CFE75C0Bb4ceF547a05124\"},\"0x30aceea\"]}\n \nRaw Call Arguments:\n  to:    0xd8d294714F5b1A1104CFE75C0Bb4ceF547a05124\n  data:  0x95d89b41\n \nContract Call:\n  address:   0xd8d294714F5b1A1104CFE75C0Bb4ceF547a05124\n  function:  symbol()\n\nDocs: https://viem.sh/docs/contract/readContract\nDetails: over rate limit\nVersion: viem@2.56.3"
+        },
+        {
+          "target": "0x7Fe44a8305df0d8F8d25f66cBd4212eA570c7882",
+          "message": "RPC Request failed.\n\nURL: [redacted]\nRequest body: {\"method\":\"eth_call\",\"params\":[{\"data\":\"0x95d89b41\",\"to\":\"0x7Fe44a8305df0d8F8d25f66cBd4212eA570c7882\"},\"0x30aceea\"]}\n \nRaw Call Arguments:\n  to:    0x7Fe44a8305df0d8F8d25f66cBd4212eA570c7882\n  data:  0x95d89b41\n \nContract Call:\n  address:   0x7Fe44a8305df0d8F8d25f66cBd4212eA570c7882\n  function:  symbol()\n\nDocs: https://viem.sh/docs/contract/readContract\nDetails: over rate limit\nVersion: viem@2.56.3"
+        },
+        {
+          "target": "0xBba362347a4C2acCe05228b01249c42Ee0BEe29C",
+          "message": "RPC Request failed.\n\nURL: [redacted]\nRequest body: {\"method\":\"eth_call\",\"params\":[{\"data\":\"0x95d89b41\",\"to\":\"0xBba362347a4C2acCe05228b01249c42Ee0BEe29C\"},\"0x30aceea\"]}\n \nRaw Call Arguments:\n  to:    0xBba362347a4C2acCe05228b01249c42Ee0BEe29C\n  data:  0x95d89b41\n \nContract Call:\n  address:   0xBba362347a4C2acCe05228b01249c42Ee0BEe29C\n  function:  symbol()\n\nDocs: https://viem.sh/docs/contract/readContract\nDetails: over rate limit\nVersion: viem@2.56.3"
+        },
+        {
+          "target": "0x5e0EA8c9801497758294755f6e85724b41417667",
+          "message": "RPC Request failed.\n\nURL: [redacted]\nRequest body: {\"method\":\"eth_call\",\"params\":[{\"data\":\"0x95d89b41\",\"to\":\"0x5e0EA8c9801497758294755f6e85724b41417667\"},\"0x30aceea\"]}\n \nRaw Call Arguments:\n  to:    0x5e0EA8c9801497758294755f6e85724b41417667\n  data:  0x95d89b41\n \nContract Call:\n  address:   0x5e0EA8c9801497758294755f6e85724b41417667\n  function:  symbol()\n\nDocs: https://viem.sh/docs/contract/readContract\nDetails: over rate limit\nVersion: viem@2.56.3"
+        },
+        {
+          "target": "0x67b93f6676bd1911c5FAe7Ffa90fFf5f35E14dCd",
+          "message": "RPC Request failed.\n\nURL: [redacted]\nRequest body: {\"method\":\"eth_call\",\"params\":[{\"data\":\"0x95d89b41\",\"to\":\"0x67b93f6676bd1911c5FAe7Ffa90fFf5f35E14dCd\"},\"0x30aceea\"]}\n \nRaw Call Arguments:\n  to:    0x67b93f6676bd1911c5FAe7Ffa90fFf5f35E14dCd\n  data:  0x95d89b41\n \nContract Call:\n  address:   0x67b93f6676bd1911c5FAe7Ffa90fFf5f35E14dCd\n  function:  symbol()\n\nDocs: https://viem.sh/docs/contract/readContract\nDetails: over rate limit\nVersion: viem@2.56.3"
+        },
+        {
+          "target": "0x4C1fa73Ebc7Aa7C88006D51414fC5387dE3bfE26",
+          "message": "HTTP 429: {\"message\":\"Too many requests. Increase limits now at https://dev.blockscout.com\",\"result\":null,\"status\":\"0\"}"
+        },
+        {
+          "target": "0x5bfc34fba904b7d93a13c381adcc47de657599ff",
+          "message": "HTTP 429: {\"message\":\"Too many requests. Increase limits now at https://dev.blockscout.com\",\"result\":null,\"status\":\"0\"}"
+        },
+        {
+          "target": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+          "message": "HTTP 429: {\"message\":\"Too many requests. Increase limits now at https://dev.blockscout.com\",\"result\":null,\"status\":\"0\"}"
+        },
+        {
+          "target": "0x184b2217fc07ecfa77c7a6df476b0814250be877",
+          "message": "HTTP 429: {\"message\":\"Too many requests. Increase limits now at https://dev.blockscout.com\",\"result\":null,\"status\":\"0\"}"
+        },
+        {
+          "target": "0x6e03c0b5ed1b16a8fd3f04346846ef986cbfc0f1",
+          "message": "HTTP 429: {\"message\":\"Too many requests. Increase limits now at https://dev.blockscout.com\",\"result\":null,\"status\":\"0\"}"
+        },
+        {
+          "target": "0x566bb935a22f6b18f351d79ea54e9fa83fc581fb",
+          "message": "HTTP 429: {\"message\":\"Too many requests. Increase limits now at https://dev.blockscout.com\",\"result\":null,\"status\":\"0\"}"
+        }
+      ]
+    }
+  ]
+}

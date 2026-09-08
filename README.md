@@ -4,6 +4,7 @@ Personal site, published to IPFS and served over ENS at [hashfriend.eth.limo](ht
 
 - [`packages/web`](packages/web) is the Astro site, pages are Markdown/MDX in `src/pages`. 
 - [`packages/deploy`](packages/deploy) adds the build to IPFS.
+- [`packages/singularity-finance`](packages/singularity-finance) contains the DynaVault research commands and evidence.
 
 ```bash
 bun run dev

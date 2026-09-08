@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "chainId": 8453,
+  "address": "0x48b1197dc8697aC86e2cce9e875A0B22ca3150F5",
+  "codeHash": "0xb4fcaed4f71a7aa47714feb2762919ab3143c39e9af933aa5e532334d6c89842",
+  "runtimeBytecode": "0x7348b1197dc8697ac86e2cce9e875a0b22ca3150f530146080604052600436106100565760003560e01c806315b3d4601461005b578063b388e65c1461007d578063c107ab781461009d578063d4fe85e1146100bd575b600080fd5b81801561006757600080fd5b5061007b61007636600461051c565b6100dd565b005b81801561008957600080fd5b5061007b61009836600461056e565b610149565b8180156100a957600080fd5b5061007b6100b836600461059a565b6101f1565b8180156100c957600080fd5b5061007b6100d836600461056e565b61028b565b815460ff191660ff8216908117835567ffffffffffffffff811115610104576101046105d6565b60405190808252806020026020018201604052801561012d578160200160208202803683370190505b508051610144916001850191602090910190610495565b505050565b60005b825460ff168110156101e357816001600160a01b0316836001018281548110610177576101776105ec565b6000918252602090912001546001600160a01b0316036101db5760008360010182815481106101a8576101a86105ec565b9060005260206000200160006101000a8154816001600160a01b0302191690836001600160a01b031602179055506101e3565b60010161014c565b506101ed8261039e565b5050565b60005b835460ff1681101561028557836001018181548110610215576102156105ec565b6000918252602090912001546001600160a01b039081169084160361027d578184600101828154811061024a5761024a6105ec565b9060005260206000200160006101000a8154816001600160a01b0302191690836001600160a01b03160217905550610285565b6001016101f4565b50505050565b6000805b835460ff1681101561031c5760008460010182815481106102b2576102b26105ec565b6000918252602090912001546001600160a01b03169050806102d4575061031c565b836001600160a01b0316816001600160a01b031603610306576040516378a1b52160e11b815260040160405180910390fd5b610311600184610618565b92505060010161028f565b50825460ff16811061034157604051638acb5f2760e01b815260040160405180910390fd5b82548290600180860191610358919060ff16610631565b60ff168154811061036b5761036b6105ec565b9060005260206000200160006101000a8154816001600160a01b0302191690836001600160a01b03160217905550610144835b6000805b825460ff168110156101445760008360010182815481106103c5576103c56105ec565b6000918252602090912001546001600160a01b03169050806103f3576103ec600184610618565b925061048c565b821561048c578060018501610408858561064a565b81548110610418576104186105ec565b9060005260206000200160006101000a8154816001600160a01b0302191690836001600160a01b03160217905550600084600101838154811061045d5761045d6105ec565b9060005260206000200160006101000a8154816001600160a01b0302191690836001600160a01b031602179055505b506001016103a2565b8280548282559060005260206000209081019282156104f7579160200282015b828111156104f7578251825473ffffffffffffffffffffffffffffffffffffffff19166001600160a01b039091161782556020909201916001909101906104b5565b50610503929150610507565b5090565b5b808211156105035760008155600101610508565b6000806040838503121561052f57600080fd5b82359150602083013560ff8116811461054757600080fd5b809150509250929050565b80356001600160a01b038116811461056957600080fd5b919050565b6000806040838503121561058157600080fd5b8235915061059160208401610552565b90509250929050565b6000806000606084860312156105af57600080fd5b833592506105bf60208501610552565b91506105cd60408501610552565b90509250925092565b634e487b7160e01b600052604160045260246000fd5b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052601160045260246000fd5b8082018082111561062b5761062b610602565b92915050565b60ff828116828216039081111561062b5761062b610602565b8181038181111561062b5761062b61060256fea2646970667358221220f40ce69e247259c9fe7f55848d8a58d976e2258b4dd98f9123a5e1027645e6ce64736f6c634300081a0033",
+  "observedBlock": {
+    "number": "45183966",
+    "hash": "0x6e14a76f94c6d568d6a866aa6c97e24e3aea5dd7d28fd01db91407f8eb199e9f",
+    "time": "2026-04-25T22:47:59.000Z"
+  },
+  "source": {
+    "provider": "blockscout",
+    "url": "https://base.blockscout.com/api?module=contract&action=getsourcecode&address=0x48b1197dc8697aC86e2cce9e875A0B22ca3150F5",
+    "address": "0x48b1197dc8697aC86e2cce9e875A0B22ca3150F5",
+    "contractName": "QueueLib",
+    "abi": [
+      {
+        "inputs": [],
+        "name": "IsInQueue",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "QueueFull",
+        "type": "error"
+      }
+    ],
+    "sources": {
+      "contracts/dynavaults/utils/QueueLib.sol": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.26;\n\nlibrary QueueLib {\n\taddress private constant ZERO_ADDRESS = address(0);\n\n\tstruct AddressQueue {\n\t\tuint8 size;\n\t\taddress[] queue;\n\t}\n\n\terror IsInQueue();\n\terror QueueFull();\n\n\tfunction initSize(AddressQueue storage queue, uint8 queueSize) external {\n\t\tqueue.size = queueSize;\n\t\tqueue.queue = new address[](queueSize);\n\t}\n\n\tfunction reorganize(AddressQueue storage queue) private {\n\t\t// Reorganize `Queue` based on premise that if there is an\n\t\t// empty value between two actual values, then the empty value should be\n\t\t// replaced by the later value.\n\t\t// NOTE: Relative ordering of non-zero values is maintained.\n\t\tuint256 offset = 0;\n\t\tfor (uint256 idx = 0; idx < queue.size; idx++) {\n\t\t\taddress _address = queue.queue[idx];\n\t\t\tif (_address == ZERO_ADDRESS) {\n\t\t\t\toffset += 1; // how many values we need to shift, always `<= idx`\n\t\t\t} else if (offset != 0) {\n\t\t\t\tqueue.queue[idx - offset] = _address;\n\t\t\t\tqueue.queue[idx] = ZERO_ADDRESS;\n\t\t\t}\n\t\t}\n\t}\n\n\tfunction add(AddressQueue storage queue, address _address) external {\n\t\tuint256 last_idx = 0;\n\t\tfor (uint256 s = 0; s < queue.size; s++) {\n\t\t\taddress member = queue.queue[s];\n\t\t\tif (member == ZERO_ADDRESS) break;\n\t\t\tif (member == _address) {\n\t\t\t\trevert IsInQueue();\n\t\t\t}\n\t\t\tlast_idx += 1;\n\t\t}\n\t\t// Check if queue is full\n\t\tif (last_idx >= queue.size) {\n\t\t\trevert QueueFull();\n\t\t}\n\t\t// Add address to the end of the queue\n\t\tqueue.queue[queue.size - 1] = _address;\n\t\treorganize(queue);\n\t}\n\n\tfunction replace(AddressQueue storage queue, address oldVersion, address newVersion) external {\n\t\t// replace oldVersion address with newVersion address in queue\n\t\tfor (uint256 idx = 0; idx < queue.size; idx++) {\n\t\t\tif (oldVersion == queue.queue[idx]) {\n\t\t\t\tqueue.queue[idx] = newVersion;\n\t\t\t\tbreak;\n\t\t\t}\n\t\t}\n\t}\n\n\tfunction remove(AddressQueue storage queue, address _address) external {\n\t\tfor (uint256 idx = 0; idx < queue.size; idx++) {\n\t\t\tif (queue.queue[idx] == _address) {\n\t\t\t\tqueue.queue[idx] = ZERO_ADDRESS;\n\t\t\t\tbreak;\n\t\t\t}\n\t\t}\n\t\treorganize(queue);\n\t}\n}\n"
+    },
+    "compiler": {
+      "version": "v0.8.26+commit.8a97fa7a",
+      "optimizationUsed": "true",
+      "runs": 250,
+      "evmVersion": "paris",
+      "settings": {
+        "evmVersion": "paris",
+        "libraries": {},
+        "optimizer": {
+          "enabled": true,
+          "runs": 250
+        },
+        "outputSelection": {
+          "*": {
+            "": ["*"],
+            "*": ["*"]
+          }
+        }
+      },
+      "fileName": "contracts/dynavaults/utils/QueueLib.sol"
+    },
+    "libraries": [],
+    "proxy": false,
+    "retrievedAt": "2026-09-08T12:07:35.358Z"
+  }
+}

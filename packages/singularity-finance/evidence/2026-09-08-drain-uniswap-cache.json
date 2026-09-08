@@ -1,0 +1,16 @@
+{
+  "chain": "base",
+  "block": {
+    "number": "45183966",
+    "hash": "0x6e14a76f94c6d568d6a866aa6c97e24e3aea5dd7d28fd01db91407f8eb199e9f",
+    "time": "2026-04-25T22:47:59.000Z"
+  },
+  "address": "0x73B8c192bFc323C3eA224c88219d55DfC319E89f",
+  "abiEvidence": [
+    {
+      "address": "0x73B8c192bFc323C3eA224c88219d55DfC319E89f",
+      "codeHash": "0x28e102107c6ec4daefcb4358c0578eca4a347962e5a2343e940e19719a15c5b6",
+      "sourceAddress": "0x73B8c192bFc323C3eA224c88219d55DfC319E89f"
+    }
+  ]
+}

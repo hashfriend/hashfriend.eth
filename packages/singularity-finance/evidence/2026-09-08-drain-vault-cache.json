@@ -1,0 +1,36 @@
+{
+  "chain": "base",
+  "block": {
+    "number": "45183966",
+    "hash": "0x6e14a76f94c6d568d6a866aa6c97e24e3aea5dd7d28fd01db91407f8eb199e9f",
+    "time": "2026-04-25T22:47:59.000Z"
+  },
+  "address": "0x67b93f6676bd1911c5FAe7Ffa90fFf5f35E14dCd",
+  "abiEvidence": [
+    {
+      "address": "0x3CE426BB2fCB9E1300BbE03E2D34D7b3B7347Db5",
+      "codeHash": "0x708ab7a2062748234c8c1707e97b4d419d3131f487cdb0f48a8c208c8b79697c",
+      "sourceAddress": "0x3CE426BB2fCB9E1300BbE03E2D34D7b3B7347Db5"
+    },
+    {
+      "address": "0xD3109f87bd553B83f64a2972Effb034BfED8d2A0",
+      "codeHash": "0x8ad4a982e258b727289be029e2cbb9f0482f042d796457862a9270019263d3a8",
+      "sourceAddress": "0xD3109f87bd553B83f64a2972Effb034BfED8d2A0"
+    },
+    {
+      "address": "0x4c3DF500989DF0f6670b99018811B94d591CC5A0",
+      "codeHash": "0x385f9128cc350a0a0dbc682815e5740776d624799f26ef533519ccdf07711796",
+      "sourceAddress": "0x4c3DF500989DF0f6670b99018811B94d591CC5A0"
+    },
+    {
+      "address": "0xEa7975C2fEc1ae9E3058BB5f99d8E26dbC816811",
+      "codeHash": "0x37f71804c29ef7c42d3abe4b6b287ff2d19737753ad89a1301c16001d983b30f",
+      "sourceAddress": "0xEa7975C2fEc1ae9E3058BB5f99d8E26dbC816811"
+    },
+    {
+      "address": "0x67b93f6676bd1911c5FAe7Ffa90fFf5f35E14dCd",
+      "codeHash": "0x0e8762c5b6ccfcd3d63774df03ea3865dde72c426ebc41ec15c4c64b4a53c5bf",
+      "sourceAddress": null
+    }
+  ]
+}

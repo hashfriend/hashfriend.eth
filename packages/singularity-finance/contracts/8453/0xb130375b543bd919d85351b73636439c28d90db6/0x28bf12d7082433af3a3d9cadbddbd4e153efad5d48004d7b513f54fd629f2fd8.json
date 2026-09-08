@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "chainId": 8453,
+  "address": "0xb130375b543Bd919D85351B73636439C28D90Db6",
+  "codeHash": "0x28bf12d7082433af3a3d9cadbddbd4e153efad5d48004d7b513f54fd629f2fd8",
+  "runtimeBytecode": "0x73b130375b543bd919d85351b73636439c28d90db630146080604052600436106100565760003560e01c80633a448afc1461005b578063c6616ba11461007d578063cf8b89d21461009d578063db8d55f1146100bd575b600080fd5b81801561006757600080fd5b5061007b610076366004610555565b6100db565b005b81801561008957600080fd5b5061007b610098366004610588565b610180565b8180156100a957600080fd5b5061007b6100b83660046105ba565b61028a565b6100c56103d7565b6040516100d2919061060e565b60405180910390f35b60006100e561048f565b60048101549091506100ff906001600160a01b03166104c3565b610111826001600160a01b03166104ed565b610123836001600160a01b03166104ed565b60c881556103e860018201556004810180546001600160a01b039485166001600160a01b03199182168117909255600583018054949095169381169390931790935560068101805483168417905560070180549091169091179055565b73b4d05063a4cf978446181002cb524fb3bcfe9d9463e936856e6040518163ffffffff1660e01b815260040160006040518083038186803b1580156101c457600080fd5b505af41580156101d8573d6000803e3d6000fd5b505050506101f16103e88561051490919063ffffffff16565b6101fd83611388610514565b6102088260c8610514565b6102138160c8610514565b600061021d61048f565b85815560018101859055600281018490556003810183905560408051868152602081018890529081018590526060810184905290915033907f5f2d34db37673c76336cfc64681f5c1a6cfa935d2ae793d8aa50087c7866ca72906080015b60405180910390a25050505050565b73b4d05063a4cf978446181002cb524fb3bcfe9d9463e936856e6040518163ffffffff1660e01b815260040160006040518083038186803b1580156102ce57600080fd5b505af41580156102e2573d6000803e3d6000fd5b505050506102f8846001600160a01b03166104ed565b61030a836001600160a01b03166104ed565b61031c826001600160a01b03166104ed565b61032e816001600160a01b03166104ed565b600061033861048f565b6004810180546001600160a01b038881166001600160a01b0319928316811790935560058401805489831690841681179091556006850180548984169085168117909155600786018054938916939094168317909355604080519485526020850191909152830191909152606082015290915033907f7614398c3070b4a77711359e13f3674b00c619a2eb1bb9b88096abae2148cae69060800161027b565b6040805161010081018252600080825260208201819052918101829052606081018290526080810182905260a0810182905260c0810182905260e081019190915261042061048f565b604080516101008101825282548152600183015460208201526002830154918101919091526003820154606082015260048201546001600160a01b0390811660808301526005830154811660a08301526006830154811660c083015260079092015490911660e0820152919050565b6000806104bd60017f21ed9a785c302bedfa8829b3aecb49c9bc01bd5c546da527d2074d82232decd8610693565b92915050565b6001600160a01b038116156104ea5760405162dc149f60e41b815260040160405180910390fd5b50565b6001600160a01b0381166104ea5760405163d92e233d60e01b815260040160405180910390fd5b808211156105355760405163e3ca8ad560e01b815260040160405180910390fd5b5050565b80356001600160a01b038116811461055057600080fd5b919050565b6000806040838503121561056857600080fd5b61057183610539565b915061057f60208401610539565b90509250929050565b6000806000806080858703121561059e57600080fd5b5050823594602084013594506040840135936060013592509050565b600080600080608085870312156105d057600080fd5b6105d985610539565b93506105e760208601610539565b92506105f560408601610539565b915061060360608601610539565b905092959194509250565b600061010082019050825182526020830151602083015260408301516040830152606083015160608301526001600160a01b0360808401511660808301526001600160a01b0360a08401511660a08301526001600160a01b0360c08401511660c083015260e083015161068c60e08401826001600160a01b03169052565b5092915050565b818103818111156104bd57634e487b7160e01b600052601160045260246000fdfea2646970667358221220886551daf2491bcb4d8e1770e369035ac4194dd3a40556f58f7d27cc167e688e64736f6c634300081a0033",
+  "observedBlock": {
+    "number": "45183966",
+    "hash": "0x6e14a76f94c6d568d6a866aa6c97e24e3aea5dd7d28fd01db91407f8eb199e9f",
+    "time": "2026-04-25T22:47:59.000Z"
+  },
+  "source": {
+    "provider": "blockscout",
+    "url": "https://base.blockscout.com/api?module=contract&action=getsourcecode&address=0xb130375b543Bd919D85351B73636439C28D90Db6",
+    "address": "0xb130375b543Bd919D85351B73636439C28D90Db6",
+    "contractName": "VaultFeesLib",
+    "abi": [
+      {
+        "inputs": [],
+        "name": "AlreadyInitialized",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "MaxFee",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "ZeroAddress",
+        "type": "error"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caller",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "managementFeeWallet",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "performanceFeeWallet",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "depositFeeWallet",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "redemptionFeeWallet",
+            "type": "address"
+          }
+        ],
+        "name": "UpdatedFeeWallets",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caller",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "performanceFee",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "managementFee",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "depositFee",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "redemptionFee",
+            "type": "uint256"
+          }
+        ],
+        "name": "UpdatedFees",
+        "type": "event"
+      },
+      {
+        "inputs": [],
+        "name": "getFees",
+        "outputs": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "managementFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "performanceFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "depositFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "redemptionFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "managementFeeWallet",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "performanceFeeWallet",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "depositFeeWallet",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "redemptionFeeWallet",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct VaultFeesLib.FeesStorage",
+            "name": "",
+            "type": "tuple"
+          }
+        ],
+        "stateMutability": "pure",
+        "type": "function"
+      }
+    ],
+    "sources": {
+      "contracts/dynavaults/VaultFeesLib.sol": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.26;\n\nimport \"./utils/Checks.sol\";\nimport \"./VaultGovernanceLib.sol\";\n\n/**\n * @notice This contract is responsible for initializing and updating vault fees and vault fee recipient wallets.\n * We charge management fees on the assets under management and performance fees on the realized profits.\n * The strategy performance and strategy management fees are implemented elsewhere in the BaseStrategy.\n * Performance and management fees are not transferring underlying tokens, but are taken by diluting\n * extra vault shares representing the fees to be taken.\n * We also charge vault deposit and redemption fees on an ERC4626 vault as described by openzeppelin.\n * https://docs.openzeppelin.com/contracts/4.x/erc4626#fees\n * Vault deposit and redemption fees are taken by transferring deposit tokens from/towards fee recipient wallets.\n * The vault itself can be recipient of deposit and redemption fees to be processed as profits for all shareholders.\n */\nlibrary VaultFeesLib {\n\tusing Checks for address;\n\tusing Checks for uint256;\n\n\taddress private constant ZERO_ADDRESS = address(0);\n\t/// @dev The storage slot follows EIP1967 to avoid storage collision\n\tbytes32 private constant FEES_STORAGE_POSITION = bytes32(uint256(keccak256(\"VaultFees.FeesStorage\")) - 1);\n\tuint256 private constant DEFAULT_MANAGEMENT_FEE = 200; /* 2.00% per year */\n\tuint256 private constant DEFAULT_PERFORMANCE_FEE = 1000; /* 10.00% of yield (per Strategy)*/\n\tuint256 private constant MAX_MANAGEMENT_FEE = 1000; // 10.00%\n\tuint256 private constant MAX_PERFORMANCE_FEE = 5000; // 50.00%\n\tuint256 private constant MAX_DEPOSIT_FEE = 200; // 2.00%\n\tuint256 private constant MAX_REDEMPTION_FEE = 200; // 2.00%\n\n\t/**\n\t * @dev Struct to store fee-related information\n\t * @param managementFee Governance Fee for management of Vault\n\t * @param performanceFee Governance Fee for performance of Vault\n\t * @param depositFee Fee charged on deposits\n\t * @param redemptionFee Fee charged on redemptions\n\t * @param managementFeeWallet The address that receives the management fees\n\t * @param performanceFeeWallet The address that receives the performance fees\n\t * @param depositFeeWallet The address that receives the deposit fees\n\t * @param redemptionFeeWallet The address that receives the redemption fees\n\t */\n\tstruct FeesStorage {\n\t\tuint256 managementFee;\n\t\tuint256 performanceFee;\n\t\tuint256 depositFee;\n\t\tuint256 redemptionFee;\n\t\taddress managementFeeWallet;\n\t\taddress performanceFeeWallet;\n\t\taddress depositFeeWallet;\n\t\taddress redemptionFeeWallet;\n\t}\n\n\t/**\n\t * @dev Emitted when fees are updated\n\t * @param caller Address of the account that called the function\n\t * @param performanceFee New performance fee\n\t * @param managementFee New management fee\n\t * @param depositFee New deposit fee\n\t * @param redemptionFee New redemption fee\n\t */\n\tevent UpdatedFees(address indexed caller, uint256 performanceFee, uint256 managementFee, uint256 depositFee, uint256 redemptionFee);\n\n\t/**\n\t * @dev Emitted when fee wallets are updated\n\t * @param caller Address of the account that called the function\n\t * @param managementFeeWallet New management fee wallet\n\t * @param performanceFeeWallet New performance fee wallet\n\t * @param depositFeeWallet New deposit fee wallet\n\t * @param redemptionFeeWallet New redemption fee wallet\n\t */\n\tevent UpdatedFeeWallets(\n\t\taddress indexed caller,\n\t\taddress managementFeeWallet,\n\t\taddress performanceFeeWallet,\n\t\taddress depositFeeWallet,\n\t\taddress redemptionFeeWallet\n\t);\n\n\t/**\n\t * @dev Returns a storage pointer to the FeesStorage struct\n\t * @return fs Storage pointer to FeesStorage\n\t */\n\tfunction feesStorage() private pure returns (FeesStorage storage fs) {\n\t\tbytes32 position = FEES_STORAGE_POSITION;\n\t\tassembly {\n\t\t\tfs.slot := position\n\t\t}\n\t}\n\n\t/**\n\t * @dev Retrieves the current fee structure\n\t * @return Current FeesStorage struct\n\t */\n\tfunction getFees() external pure returns (FeesStorage memory) {\n\t\treturn feesStorage();\n\t}\n\n\t/**\n\t * @dev Initializes the fee structure with default values and provided wallets\n\t * @param managementFeeWallet Address to receive management fees\n\t * @param performanceFeeWallet Address to receive performance fees\n\t */\n\tfunction initializeFees(address managementFeeWallet, address performanceFeeWallet) external {\n\t\tFeesStorage storage _storage = feesStorage();\n\t\t_storage.managementFeeWallet.isNotAlreadyInitialized();\n\t\tperformanceFeeWallet.requireNonZeroAddress();\n\t\tmanagementFeeWallet.requireNonZeroAddress();\n\t\t_storage.managementFee = DEFAULT_MANAGEMENT_FEE;\n\t\t_storage.performanceFee = DEFAULT_PERFORMANCE_FEE;\n\t\t_storage.managementFeeWallet = managementFeeWallet;\n\t\t_storage.performanceFeeWallet = performanceFeeWallet;\n\t\t_storage.depositFeeWallet = managementFeeWallet;\n\t\t_storage.redemptionFeeWallet = managementFeeWallet;\n\t}\n\n\t/**\n\t * @dev Updates the fee structure\n\t * @param managementFee New management fee\n\t * @param performanceFee New performance fee\n\t * @param depositFee New deposit fee\n\t * @param redemptionFee New redemption fee\n\t */\n\tfunction updateFees(uint256 managementFee, uint256 performanceFee, uint256 depositFee, uint256 redemptionFee) external {\n\t\tVaultGovernanceLib.onlyManagementOrGovernance();\n\t\tmanagementFee.requireMaxFee(MAX_MANAGEMENT_FEE);\n\t\tperformanceFee.requireMaxFee(MAX_PERFORMANCE_FEE);\n\t\tdepositFee.requireMaxFee(MAX_DEPOSIT_FEE);\n\t\tredemptionFee.requireMaxFee(MAX_REDEMPTION_FEE);\n\t\tFeesStorage storage _storage = feesStorage();\n\t\t_storage.managementFee = managementFee;\n\t\t_storage.performanceFee = performanceFee;\n\t\t_storage.depositFee = depositFee;\n\t\t_storage.redemptionFee = redemptionFee;\n\t\temit UpdatedFees(msg.sender, performanceFee, managementFee, depositFee, redemptionFee);\n\t}\n\n\t/**\n\t * @dev Updates the fee wallet addresses\n\t * @param managementFeeWallet New management fee wallet\n\t * @param performanceFeeWallet New performance fee wallet\n\t * @param depositFeeWallet New deposit fee wallet\n\t * @param redemptionFeeWallet New redemption fee wallet\n\t */\n\tfunction updateFeeWallets(address managementFeeWallet, address performanceFeeWallet, address depositFeeWallet, address redemptionFeeWallet) external {\n\t\tVaultGovernanceLib.onlyManagementOrGovernance();\n\t\tmanagementFeeWallet.requireNonZeroAddress();\n\t\tperformanceFeeWallet.requireNonZeroAddress();\n\t\tdepositFeeWallet.requireNonZeroAddress();\n\t\tredemptionFeeWallet.requireNonZeroAddress();\n\t\tFeesStorage storage _storage = feesStorage();\n\t\t_storage.managementFeeWallet = managementFeeWallet;\n\t\t_storage.performanceFeeWallet = performanceFeeWallet;\n\t\t_storage.depositFeeWallet = depositFeeWallet;\n\t\t_storage.redemptionFeeWallet = redemptionFeeWallet;\n\t\temit UpdatedFeeWallets(msg.sender, managementFeeWallet, performanceFeeWallet, depositFeeWallet, redemptionFeeWallet);\n\t}\n}\n",
+      "contracts/dynavaults/DynaVaultErrors.sol": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.26;\n\nlibrary DynaVaultErrors {\n\t// Vault Lib\n\terror MaxMint();\n\terror MaxDeposit();\n\terror MinDeposit();\n\terror MaxRedeem();\n\terror MinRedeem();\n\terror MaxWithdraw();\n\terror MinWithdraw();\n\terror StrategyLossProtection(uint256 toWithdraw, uint256 totalLoss, uint256 maxLoss);\n\terror ArrayMismatch();\n\terror ZeroShares();\n\n\t// Vault Token Lib\n\terror MaxTokens();\n\terror AmountInMoreThanTokenIdle(uint256 amountIn, address tokenIn, uint256 tokenIdle);\n\terror TokenIdle();\n\terror TokenDebt();\n\terror ERC20InsufficientBalance();\n\terror ERC20InsufficientAllowance();\n\terror InvalidToken();\n\terror MaxWatermarkDuration();\n\n\t// Vault Strategies Lib\n\terror UnableToChangeDebtRatioOnRevokedStrategy();\n\n\t// Vault Lib\n\terror MinAboveMax();\n\terror MaxTotalAssets();\n\n\t// Vault Config Lib\n\terror MaxLossLimit();\n\terror NotSameReferenceAsset();\n\n\t// Registry\n\terror NotRegistered(); // liq reg, vault reg\n\terror AlreadyRegistered(); // liq reg, vault reg , tokens lib\n\n\t// Vault Manager Lib\n\terror UpdateFeeOverTimeLimit();\n\terror IncorrectStrategyReport(uint256 strategyBalance, uint256 reportedGain, uint256 reportedDebtPayment);\n\terror LockedProfitDegradationCoefficient(uint256 newCoefficient, uint256 minimumCoefficient, uint256 maximumCoefficient);\n\n\t// Vault Router Lib\n\terror DynaVaultSwapUnsupportedToken(address token);\n\terror DynaVaultSwapLackingAmountIn(address tokenIn, uint256 amountIn, uint256 tokenInBalance);\n\terror DynaVaultSwapSlippageProtection(address tokenIn, uint256 amountIn, address tokenOut, uint256 amountOut, uint256 minAmountOut);\n\terror DynaRouterInactive(address router);\n\n\t// Config Lib, Gov Lib, Base Strategy, Vault\n\terror NotAuthorized();\n\n\t// Errors Lib\n\terror ERC5143_SlippageProtection();\n\n\tfunction checkSlippageBelow(uint256 value, uint256 maxValue) internal pure {\n\t\tif (value > maxValue) revert ERC5143_SlippageProtection();\n\t}\n\n\tfunction checkSlippageAbove(uint256 value, uint256 minValue) internal pure {\n\t\tif (value < minValue) revert ERC5143_SlippageProtection();\n\t}\n\n\tfunction checkSlippageAbove(uint256[] memory values, uint256[] memory minValues) internal pure {\n\t\tif (values.length != minValues.length) revert ArrayMismatch();\n\t\tfor (uint256 i = 0; i < values.length; ++i) {\n\t\t\tcheckSlippageAbove(values[i], minValues[i]);\n\t\t}\n\t}\n}",
+      "contracts/dynavaults/VaultGovernanceLib.sol": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.26;\n\nimport \"./DynaVaultErrors.sol\";\nimport \"./utils/Checks.sol\";\n\n/**\n * @title The VaultGovernance sub-module is part of the manager contract and is a simple access control contract with different functions and privileges.\n * @notice It keeps track of the following addresses:\n * - Vault: Represents the address of the vault, cannot be changed.\n * - Governance: A privileged address, can be changed by itself.\n *   Governance is authorized to add/remove tokens and strategies.\n * - Management: A privileged address, can be changed by governance.\n *   Management is authorized to swap assets and invest/liquidate into/from strategies.\n * - Guardian: A privileged address, can be changed by governance.\n *   Guardian is authorized to signal a security risk and put the vault in an emergencyShutdown,\n *   but doesn't immediately liquidate funds in strategies.\n */\nlibrary VaultGovernanceLib {\n\tusing Checks for address;\n\n\t/// @dev The storage slot follows EIP1967 to avoid storage collision\n\tbytes32 private constant GOVERNANCE_STORAGE_POSITION = bytes32(uint256(keccak256(\"VaultGovernance.GovernanceStorage\")) - 1);\n\taddress private constant ZERO_ADDRESS = address(0);\n\n\t/**\n\t * @dev Struct to store governance-related addresses\n\t * @param vault Address of the vault\n\t * @param governance Address of the governance\n\t * @param management Address of the management\n\t * @param guardian Address of the guardian\n\t */\n\tstruct GovernanceStorage {\n\t\taddress vault;\n\t\taddress governance;\n\t\taddress management;\n\t\taddress guardian;\n\t}\n\n\t/**\n\t * @dev Emitted when the governance address is updated\n\t * @param caller Address of the account that called the function\n\t * @param governance New governance address\n\t */\n\tevent UpdatedGovernance(address indexed caller, address governance);\n\n\t/**\n\t * @dev Emitted when the management address is updated\n\t * @param caller Address of the account that called the function\n\t * @param management New management address\n\t */\n\tevent UpdatedManagement(address indexed caller, address management);\n\n\t/**\n\t * @dev Emitted when the guardian address is updated\n\t * @param caller Address of the account that called the function\n\t * @param guardian New guardian address\n\t */\n\tevent UpdatedGuardian(address indexed caller, address guardian);\n\n\t/**\n\t * @dev Returns a storage pointer to the GovernanceStorage struct\n\t * @return gs Storage pointer to GovernanceStorage\n\t */\n\tfunction governanceStorage() private pure returns (GovernanceStorage storage gs) {\n\t\tbytes32 position = GOVERNANCE_STORAGE_POSITION;\n\t\tassembly {\n\t\t\tgs.slot := position\n\t\t}\n\t}\n\n\t/**\n\t * @dev Initializes the governance structure with provided addresses\n\t * @param vaultAddress Address of the vault\n\t * @param governanceAddress Address of the governance\n\t * @param managementAddress Address of the management\n\t * @param guardianAddress Address of the guardian\n\t */\n\tfunction initializeGovernance(address vaultAddress, address governanceAddress, address managementAddress, address guardianAddress) external {\n\t\tvaultAddress.requireNonZeroAddress();\n\t\tgovernanceAddress.requireNonZeroAddress();\n\t\tmanagementAddress.requireNonZeroAddress();\n\t\tguardianAddress.requireNonZeroAddress();\n\t\tGovernanceStorage storage _storage = governanceStorage();\n\t\t_storage.vault.isNotAlreadyInitialized();\n\t\t_storage.vault = vaultAddress;\n\t\t_storage.governance = governanceAddress;\n\t\t_storage.management = managementAddress;\n\t\t_storage.guardian = guardianAddress;\n\t}\n\n\t/**\n\t * @dev Returns the address of the vault\n\t * @return Address of the vault\n\t */\n\tfunction vault() public view returns (address) {\n\t\treturn governanceStorage().vault;\n\t}\n\n\t/**\n\t * @dev Returns the address of the governance\n\t * @return Address of the governance\n\t */\n\tfunction governance() public view returns (address) {\n\t\treturn governanceStorage().governance;\n\t}\n\n\t/**\n\t * @dev Returns the address of the management\n\t * @return Address of the management\n\t */\n\tfunction management() public view returns (address) {\n\t\treturn governanceStorage().management;\n\t}\n\n\t/**\n\t * @dev Returns the address of the guardian\n\t * @return Address of the guardian\n\t */\n\tfunction guardian() public view returns (address) {\n\t\treturn governanceStorage().guardian;\n\t}\n\n\t/**\n\t * @dev Sets a new governance address\n\t * @param _governance New governance address\n\t */\n\tfunction setGovernance(address _governance) external {\n\t\tonlyGovernance();\n\t\t_governance.requireNonZeroAddress();\n\t\tgovernanceStorage().governance = _governance;\n\t\temit UpdatedGovernance(msg.sender, _governance);\n\t}\n\n\t/**\n\t * @dev Sets a new management address\n\t * @param _management New management address\n\t */\n\tfunction setManagement(address _management) external {\n\t\tonlyGovernance();\n\t\t_management.requireNonZeroAddress();\n\t\tgovernanceStorage().management = _management;\n\t\temit UpdatedManagement(msg.sender, _management);\n\t}\n\n\t/**\n\t * @dev Sets a new guardian address\n\t * @param _guardian New guardian address\n\t */\n\tfunction setGuardian(address _guardian) external {\n\t\tonlyGovernance();\n\t\t_guardian.requireNonZeroAddress();\n\t\tgovernanceStorage().guardian = _guardian;\n\t\temit UpdatedGuardian(msg.sender, _guardian);\n\t}\n\n\t/**\n\t * @dev Modifier to restrict access to only the vault\n\t */\n\tfunction onlyVault() external view {\n\t\tif (msg.sender != governanceStorage().vault) {\n\t\t\trevert DynaVaultErrors.NotAuthorized();\n\t\t}\n\t}\n\n\t/**\n\t * @dev Modifier to restrict access to only the governance\n\t */\n\tfunction onlyGovernance() public view {\n\t\tif (msg.sender != governanceStorage().governance) {\n\t\t\trevert DynaVaultErrors.NotAuthorized();\n\t\t}\n\t}\n\n\t/**\n\t * @dev Checks if the given address is the governance\n\t * @param user Address to check\n\t */\n\tfunction checkGovernance(address user) public view {\n\t\tif (user != governanceStorage().governance) {\n\t\t\trevert DynaVaultErrors.NotAuthorized();\n\t\t}\n\t}\n\n\t/**\n\t * @dev Modifier to restrict access to only the governance or a specific strategy\n\t * @param strategy Address of the strategy\n\t */\n\tfunction onlyGovernanceOrStrategy(address strategy) public view {\n\t\tif (!(msg.sender == governanceStorage().governance || msg.sender == strategy)) {\n\t\t\trevert DynaVaultErrors.NotAuthorized();\n\t\t}\n\t}\n\n\t/**\n\t * @dev Modifier to restrict access to only the management or governance\n\t */\n\tfunction onlyManagementOrGovernance() external view {\n\t\tGovernanceStorage storage _storage = governanceStorage();\n\t\tif (!(msg.sender == _storage.governance || msg.sender == _storage.management)) {\n\t\t\trevert DynaVaultErrors.NotAuthorized();\n\t\t}\n\t}\n\n\t/**\n\t * @dev Modifier to restrict access to only the vault or management\n\t */\n\tfunction onlyVaultOrManagement() external view {\n\t\tGovernanceStorage storage _storage = governanceStorage();\n\t\tif (!(msg.sender == _storage.vault || msg.sender == _storage.management)) {\n\t\t\trevert DynaVaultErrors.NotAuthorized();\n\t\t}\n\t}\n\n\t/**\n\t * @dev Checks if the given address is the management or governance\n\t * @param user Address to check\n\t */\n\tfunction checkManagementOrGovernance(address user) external view {\n\t\tGovernanceStorage storage _storage = governanceStorage();\n\t\tif (!(user == _storage.governance || user == _storage.management)) {\n\t\t\trevert DynaVaultErrors.NotAuthorized();\n\t\t}\n\t}\n\n\t/**\n\t * @dev Modifier to restrict access to only addresses authorized for emergency actions\n\t */\n\tfunction onlyEmergencyAuthorized() external view {\n\t\tGovernanceStorage storage _storage = governanceStorage();\n\t\tif (!(msg.sender == _storage.management || msg.sender == _storage.governance || msg.sender == _storage.guardian)) {\n\t\t\trevert DynaVaultErrors.NotAuthorized();\n\t\t}\n\t}\n}",
+      "contracts/dynavaults/utils/Checks.sol": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.26;\n\nlibrary Checks {\n\terror MaxFee();\n\terror ZeroAddress();\n\terror AlreadyInitialized();\n\n\tfunction isNotAlreadyInitialized(address _address) internal pure {\n\t\tif (_address != address(0)) revert AlreadyInitialized();\n\t}\n\n\tfunction requireNonZeroAddress(address _address) internal pure {\n\t\tif (_address == address(0)) revert ZeroAddress();\n\t}\n\n\tfunction requireMaxFee(uint256 _fee, uint256 _maxFee) internal pure {\n\t\tif (_fee > _maxFee) revert MaxFee();\n\t}\n}"
+    },
+    "compiler": {
+      "version": "0.8.26+commit.8a97fa7a",
+      "optimizationUsed": "true",
+      "runs": 250,
+      "evmVersion": "paris",
+      "settings": {
+        "evmVersion": "paris",
+        "libraries": {
+          "contracts/dynavaults/VaultGovernanceLib.sol:VaultGovernanceLib": "0xb4d05063a4cf978446181002cb524fb3bcfe9d94"
+        },
+        "metadata": {
+          "bytecodeHash": "ipfs"
+        },
+        "optimizer": {
+          "enabled": true,
+          "runs": 250
+        },
+        "remappings": []
+      },
+      "fileName": "contracts/dynavaults/VaultFeesLib.sol"
+    },
+    "libraries": ["0xb4d05063A4Cf978446181002cb524Fb3bCFe9D94"],
+    "proxy": false,
+    "retrievedAt": "2026-09-08T12:07:31.067Z"
+  }
+}

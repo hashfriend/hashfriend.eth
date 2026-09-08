@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "chainId": 8453,
+  "address": "0xb4d05063A4Cf978446181002cb524Fb3bCFe9D94",
+  "codeHash": "0xea26d30d5d1a0b1c9384dca1f700f70e98155c9d08764cd439391aef5de90157",
+  "runtimeBytecode": "0x73b4d05063a4cf978446181002cb524fb3bcfe9d94301460806040526004361061010a5760003560e01c8063ab033ea9116100a1578063f05d21bd11610070578063f05d21bd14610203578063f267bc841461020b578063f63080e41461021e578063fbfa77cf1461022657600080fd5b8063ab033ea9146101b3578063b3a9c91c146101d3578063d4a22bde146101db578063e936856e146101fb57600080fd5b80638a0dac4a116100dd5780638a0dac4a146101585780639cea90dc14610178578063a021560414610180578063a79015191461019357600080fd5b80630ab4a1a81461010f578063452a9320146101245780635aa6e6751461014857806388a8d60214610150575b600080fd5b61012261011d3660046107a0565b61022e565b005b61012c610278565b6040516001600160a01b03909116815260200160405180910390f35b61012c610294565b61012c6102b0565b81801561016457600080fd5b506101226101733660046107a0565b6102cc565b610122610347565b61012261018e3660046107a0565b6103ae565b81801561019f57600080fd5b506101226101ae3660046107c2565b610409565b8180156101bf57600080fd5b506101226101ce3660046107a0565b6104c6565b61012261053a565b8180156101e757600080fd5b506101226101f63660046107a0565b61056d565b6101226105e1565b610122610631565b6101226102193660046107a0565b610665565b61012261069c565b61012c6106e9565b610236610702565b600101546001600160a01b03163314806102585750336001600160a01b038216145b6102755760405163ea8e4eb560e01b815260040160405180910390fd5b50565b6000610282610702565b600301546001600160a01b0316919050565b600061029e610702565b600101546001600160a01b0316919050565b60006102ba610702565b600201546001600160a01b0316919050565b6102d4610631565b6102e6816001600160a01b0316610736565b806102ef610702565b60030180546001600160a01b0319166001600160a01b03928316179055604051908216815233907ff4534bba0ae320ab5050fc20df81c7054a58b6a394184dc5c7390da72457c041906020015b60405180910390a250565b6000610351610702565b60028101549091506001600160a01b031633148061037b575060018101546001600160a01b031633145b80610258575060038101546001600160a01b031633146102755760405163ea8e4eb560e01b815260040160405180910390fd5b60006103b8610702565b60018101549091506001600160a01b03838116911614806103e8575060028101546001600160a01b038381169116145b6104055760405163ea8e4eb560e01b815260040160405180910390fd5b5050565b61041b846001600160a01b0316610736565b61042d836001600160a01b0316610736565b61043f826001600160a01b0316610736565b610451816001600160a01b0316610736565b600061045b610702565b8054909150610472906001600160a01b031661075d565b80546001600160a01b039586166001600160a01b0319918216178255600182018054958716958216959095179094556002810180549386169385169390931790925560039091018054919093169116179055565b6104ce610631565b6104e0816001600160a01b0316610736565b806104e9610702565b60010180546001600160a01b0319166001600160a01b03928316179055604051908216815233907fff0b32b909f3fb702fe6ac1f682adcca675b9dfaa03ad8f46b4b17c4058a93fc9060200161033c565b610542610702565b546001600160a01b0316331461056b5760405163ea8e4eb560e01b815260040160405180910390fd5b565b610575610631565b610587816001600160a01b0316610736565b80610590610702565b60020180546001600160a01b0319166001600160a01b03928316179055604051908216815233907f362736131c7f9ee6222457322ffc685f3f9dc2fd4b2ebcd28fd118926e04d7529060200161033c565b60006105eb610702565b60018101549091506001600160a01b0316331480610258575060028101546001600160a01b031633146102755760405163ea8e4eb560e01b815260040160405180910390fd5b610639610702565b600101546001600160a01b0316331461056b5760405163ea8e4eb560e01b815260040160405180910390fd5b61066d610702565b600101546001600160a01b038281169116146102755760405163ea8e4eb560e01b815260040160405180910390fd5b60006106a6610702565b80549091506001600160a01b0316331480610258575060028101546001600160a01b031633146102755760405163ea8e4eb560e01b815260040160405180910390fd5b60006106f3610702565b546001600160a01b0316919050565b60008061073060017f663b88f1fc98f15f4d8e004d98668c5f845abe7f7f53aab937d8682f948be7dd610816565b92915050565b6001600160a01b0381166102755760405163d92e233d60e01b815260040160405180910390fd5b6001600160a01b038116156102755760405162dc149f60e41b815260040160405180910390fd5b80356001600160a01b038116811461079b57600080fd5b919050565b6000602082840312156107b257600080fd5b6107bb82610784565b9392505050565b600080600080608085870312156107d857600080fd5b6107e185610784565b93506107ef60208601610784565b92506107fd60408601610784565b915061080b60608601610784565b905092959194509250565b8181038181111561073057634e487b7160e01b600052601160045260246000fdfea2646970667358221220780e38bd5291039385b32bf0bf502aabb9c5e1a8cbb8ecf8591a916109925ba664736f6c634300081a0033",
+  "observedBlock": {
+    "number": "45183966",
+    "hash": "0x6e14a76f94c6d568d6a866aa6c97e24e3aea5dd7d28fd01db91407f8eb199e9f",
+    "time": "2026-04-25T22:47:59.000Z"
+  },
+  "source": {
+    "provider": "blockscout",
+    "url": "https://base.blockscout.com/api?module=contract&action=getsourcecode&address=0xb4d05063A4Cf978446181002cb524Fb3bCFe9D94",
+    "address": "0xb4d05063A4Cf978446181002cb524Fb3bCFe9D94",
+    "contractName": "VaultGovernanceLib",
+    "abi": [
+      {
+        "inputs": [],
+        "name": "AlreadyInitialized",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "NotAuthorized",
+        "type": "error"
+      },
+      {
+        "inputs": [],
+        "name": "ZeroAddress",
+        "type": "error"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caller",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "governance",
+            "type": "address"
+          }
+        ],
+        "name": "UpdatedGovernance",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caller",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "guardian",
+            "type": "address"
+          }
+        ],
+        "name": "UpdatedGuardian",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caller",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "management",
+            "type": "address"
+          }
+        ],
+        "name": "UpdatedManagement",
+        "type": "event"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          }
+        ],
+        "name": "checkGovernance",
+        "outputs": [],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          }
+        ],
+        "name": "checkManagementOrGovernance",
+        "outputs": [],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "governance",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "guardian",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "management",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "onlyEmergencyAuthorized",
+        "outputs": [],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "onlyGovernance",
+        "outputs": [],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          }
+        ],
+        "name": "onlyGovernanceOrStrategy",
+        "outputs": [],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "onlyManagementOrGovernance",
+        "outputs": [],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "onlyVault",
+        "outputs": [],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "onlyVaultOrManagement",
+        "outputs": [],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "vault",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ],
+    "sources": {
+      "contracts/dynavaults/VaultGovernanceLib.sol": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.26;\n\nimport \"./DynaVaultErrors.sol\";\nimport \"./utils/Checks.sol\";\n\n/**\n * @title The VaultGovernance sub-module is part of the manager contract and is a simple access control contract with different functions and privileges.\n * @notice It keeps track of the following addresses:\n * - Vault: Represents the address of the vault, cannot be changed.\n * - Governance: A privileged address, can be changed by itself.\n *   Governance is authorized to add/remove tokens and strategies.\n * - Management: A privileged address, can be changed by governance.\n *   Management is authorized to swap assets and invest/liquidate into/from strategies.\n * - Guardian: A privileged address, can be changed by governance.\n *   Guardian is authorized to signal a security risk and put the vault in an emergencyShutdown,\n *   but doesn't immediately liquidate funds in strategies.\n */\nlibrary VaultGovernanceLib {\n\tusing Checks for address;\n\n\t/// @dev The storage slot follows EIP1967 to avoid storage collision\n\tbytes32 private constant GOVERNANCE_STORAGE_POSITION = bytes32(uint256(keccak256(\"VaultGovernance.GovernanceStorage\")) - 1);\n\taddress private constant ZERO_ADDRESS = address(0);\n\n\t/**\n\t * @dev Struct to store governance-related addresses\n\t * @param vault Address of the vault\n\t * @param governance Address of the governance\n\t * @param management Address of the management\n\t * @param guardian Address of the guardian\n\t */\n\tstruct GovernanceStorage {\n\t\taddress vault;\n\t\taddress governance;\n\t\taddress management;\n\t\taddress guardian;\n\t}\n\n\t/**\n\t * @dev Emitted when the governance address is updated\n\t * @param caller Address of the account that called the function\n\t * @param governance New governance address\n\t */\n\tevent UpdatedGovernance(address indexed caller, address governance);\n\n\t/**\n\t * @dev Emitted when the management address is updated\n\t * @param caller Address of the account that called the function\n\t * @param management New management address\n\t */\n\tevent UpdatedManagement(address indexed caller, address management);\n\n\t/**\n\t * @dev Emitted when the guardian address is updated\n\t * @param caller Address of the account that called the function\n\t * @param guardian New guardian address\n\t */\n\tevent UpdatedGuardian(address indexed caller, address guardian);\n\n\t/**\n\t * @dev Returns a storage pointer to the GovernanceStorage struct\n\t * @return gs Storage pointer to GovernanceStorage\n\t */\n\tfunction governanceStorage() private pure returns (GovernanceStorage storage gs) {\n\t\tbytes32 position = GOVERNANCE_STORAGE_POSITION;\n\t\tassembly {\n\t\t\tgs.slot := position\n\t\t}\n\t}\n\n\t/**\n\t * @dev Initializes the governance structure with provided addresses\n\t * @param vaultAddress Address of the vault\n\t * @param governanceAddress Address of the governance\n\t * @param managementAddress Address of the management\n\t * @param guardianAddress Address of the guardian\n\t */\n\tfunction initializeGovernance(address vaultAddress, address governanceAddress, address managementAddress, address guardianAddress) external {\n\t\tvaultAddress.requireNonZeroAddress();\n\t\tgovernanceAddress.requireNonZeroAddress();\n\t\tmanagementAddress.requireNonZeroAddress();\n\t\tguardianAddress.requireNonZeroAddress();\n\t\tGovernanceStorage storage _storage = governanceStorage();\n\t\t_storage.vault.isNotAlreadyInitialized();\n\t\t_storage.vault = vaultAddress;\n\t\t_storage.governance = governanceAddress;\n\t\t_storage.management = managementAddress;\n\t\t_storage.guardian = guardianAddress;\n\t}\n\n\t/**\n\t * @dev Returns the address of the vault\n\t * @return Address of the vault\n\t */\n\tfunction vault() public view returns (address) {\n\t\treturn governanceStorage().vault;\n\t}\n\n\t/**\n\t * @dev Returns the address of the governance\n\t * @return Address of the governance\n\t */\n\tfunction governance() public view returns (address) {\n\t\treturn governanceStorage().governance;\n\t}\n\n\t/**\n\t * @dev Returns the address of the management\n\t * @return Address of the management\n\t */\n\tfunction management() public view returns (address) {\n\t\treturn governanceStorage().management;\n\t}\n\n\t/**\n\t * @dev Returns the address of the guardian\n\t * @return Address of the guardian\n\t */\n\tfunction guardian() public view returns (address) {\n\t\treturn governanceStorage().guardian;\n\t}\n\n\t/**\n\t * @dev Sets a new governance address\n\t * @param _governance New governance address\n\t */\n\tfunction setGovernance(address _governance) external {\n\t\tonlyGovernance();\n\t\t_governance.requireNonZeroAddress();\n\t\tgovernanceStorage().governance = _governance;\n\t\temit UpdatedGovernance(msg.sender, _governance);\n\t}\n\n\t/**\n\t * @dev Sets a new management address\n\t * @param _management New management address\n\t */\n\tfunction setManagement(address _management) external {\n\t\tonlyGovernance();\n\t\t_management.requireNonZeroAddress();\n\t\tgovernanceStorage().management = _management;\n\t\temit UpdatedManagement(msg.sender, _management);\n\t}\n\n\t/**\n\t * @dev Sets a new guardian address\n\t * @param _guardian New guardian address\n\t */\n\tfunction setGuardian(address _guardian) external {\n\t\tonlyGovernance();\n\t\t_guardian.requireNonZeroAddress();\n\t\tgovernanceStorage().guardian = _guardian;\n\t\temit UpdatedGuardian(msg.sender, _guardian);\n\t}\n\n\t/**\n\t * @dev Modifier to restrict access to only the vault\n\t */\n\tfunction onlyVault() external view {\n\t\tif (msg.sender != governanceStorage().vault) {\n\t\t\trevert DynaVaultErrors.NotAuthorized();\n\t\t}\n\t}\n\n\t/**\n\t * @dev Modifier to restrict access to only the governance\n\t */\n\tfunction onlyGovernance() public view {\n\t\tif (msg.sender != governanceStorage().governance) {\n\t\t\trevert DynaVaultErrors.NotAuthorized();\n\t\t}\n\t}\n\n\t/**\n\t * @dev Checks if the given address is the governance\n\t * @param user Address to check\n\t */\n\tfunction checkGovernance(address user) public view {\n\t\tif (user != governanceStorage().governance) {\n\t\t\trevert DynaVaultErrors.NotAuthorized();\n\t\t}\n\t}\n\n\t/**\n\t * @dev Modifier to restrict access to only the governance or a specific strategy\n\t * @param strategy Address of the strategy\n\t */\n\tfunction onlyGovernanceOrStrategy(address strategy) public view {\n\t\tif (!(msg.sender == governanceStorage().governance || msg.sender == strategy)) {\n\t\t\trevert DynaVaultErrors.NotAuthorized();\n\t\t}\n\t}\n\n\t/**\n\t * @dev Modifier to restrict access to only the management or governance\n\t */\n\tfunction onlyManagementOrGovernance() external view {\n\t\tGovernanceStorage storage _storage = governanceStorage();\n\t\tif (!(msg.sender == _storage.governance || msg.sender == _storage.management)) {\n\t\t\trevert DynaVaultErrors.NotAuthorized();\n\t\t}\n\t}\n\n\t/**\n\t * @dev Modifier to restrict access to only the vault or management\n\t */\n\tfunction onlyVaultOrManagement() external view {\n\t\tGovernanceStorage storage _storage = governanceStorage();\n\t\tif (!(msg.sender == _storage.vault || msg.sender == _storage.management)) {\n\t\t\trevert DynaVaultErrors.NotAuthorized();\n\t\t}\n\t}\n\n\t/**\n\t * @dev Checks if the given address is the management or governance\n\t * @param user Address to check\n\t */\n\tfunction checkManagementOrGovernance(address user) external view {\n\t\tGovernanceStorage storage _storage = governanceStorage();\n\t\tif (!(user == _storage.governance || user == _storage.management)) {\n\t\t\trevert DynaVaultErrors.NotAuthorized();\n\t\t}\n\t}\n\n\t/**\n\t * @dev Modifier to restrict access to only addresses authorized for emergency actions\n\t */\n\tfunction onlyEmergencyAuthorized() external view {\n\t\tGovernanceStorage storage _storage = governanceStorage();\n\t\tif (!(msg.sender == _storage.management || msg.sender == _storage.governance || msg.sender == _storage.guardian)) {\n\t\t\trevert DynaVaultErrors.NotAuthorized();\n\t\t}\n\t}\n}\n",
+      "contracts/dynavaults/DynaVaultErrors.sol": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.26;\n\nlibrary DynaVaultErrors {\n\t// Vault Lib\n\terror MaxMint();\n\terror MaxDeposit();\n\terror MinDeposit();\n\terror MaxRedeem();\n\terror MinRedeem();\n\terror MaxWithdraw();\n\terror MinWithdraw();\n\terror StrategyLossProtection(uint256 toWithdraw, uint256 totalLoss, uint256 maxLoss);\n\terror ArrayMismatch();\n\terror ZeroShares();\n\n\t// Vault Token Lib\n\terror MaxTokens();\n\terror AmountInMoreThanTokenIdle(uint256 amountIn, address tokenIn, uint256 tokenIdle);\n\terror TokenIdle();\n\terror TokenDebt();\n\terror ERC20InsufficientBalance();\n\terror ERC20InsufficientAllowance();\n\terror InvalidToken();\n\terror MaxWatermarkDuration();\n\n\t// Vault Strategies Lib\n\terror UnableToChangeDebtRatioOnRevokedStrategy();\n\n\t// Vault Lib\n\terror MinAboveMax();\n\terror MaxTotalAssets();\n\n\t// Vault Config Lib\n\terror MaxLossLimit();\n\terror NotSameReferenceAsset();\n\n\t// Registry\n\terror NotRegistered(); // liq reg, vault reg\n\terror AlreadyRegistered(); // liq reg, vault reg , tokens lib\n\n\t// Vault Manager Lib\n\terror UpdateFeeOverTimeLimit();\n\terror IncorrectStrategyReport(uint256 strategyBalance, uint256 reportedGain, uint256 reportedDebtPayment);\n\terror LockedProfitDegradationCoefficient(uint256 newCoefficient, uint256 minimumCoefficient, uint256 maximumCoefficient);\n\n\t// Vault Router Lib\n\terror DynaVaultSwapUnsupportedToken(address token);\n\terror DynaVaultSwapLackingAmountIn(address tokenIn, uint256 amountIn, uint256 tokenInBalance);\n\terror DynaVaultSwapSlippageProtection(address tokenIn, uint256 amountIn, address tokenOut, uint256 amountOut, uint256 minAmountOut);\n\terror DynaRouterInactive(address router);\n\n\t// Config Lib, Gov Lib, Base Strategy, Vault\n\terror NotAuthorized();\n\n\t// Errors Lib\n\terror ERC5143_SlippageProtection();\n\n\tfunction checkSlippageBelow(uint256 value, uint256 maxValue) internal pure {\n\t\tif (value > maxValue) revert ERC5143_SlippageProtection();\n\t}\n\n\tfunction checkSlippageAbove(uint256 value, uint256 minValue) internal pure {\n\t\tif (value < minValue) revert ERC5143_SlippageProtection();\n\t}\n\n\tfunction checkSlippageAbove(uint256[] memory values, uint256[] memory minValues) internal pure {\n\t\tif (values.length != minValues.length) revert ArrayMismatch();\n\t\tfor (uint256 i = 0; i < values.length; ++i) {\n\t\t\tcheckSlippageAbove(values[i], minValues[i]);\n\t\t}\n\t}\n}",
+      "contracts/dynavaults/utils/Checks.sol": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.26;\n\nlibrary Checks {\n\terror MaxFee();\n\terror ZeroAddress();\n\terror AlreadyInitialized();\n\n\tfunction isNotAlreadyInitialized(address _address) internal pure {\n\t\tif (_address != address(0)) revert AlreadyInitialized();\n\t}\n\n\tfunction requireNonZeroAddress(address _address) internal pure {\n\t\tif (_address == address(0)) revert ZeroAddress();\n\t}\n\n\tfunction requireMaxFee(uint256 _fee, uint256 _maxFee) internal pure {\n\t\tif (_fee > _maxFee) revert MaxFee();\n\t}\n}"
+    },
+    "compiler": {
+      "version": "v0.8.26+commit.8a97fa7a",
+      "optimizationUsed": "true",
+      "runs": 250,
+      "evmVersion": "paris",
+      "settings": {
+        "evmVersion": "paris",
+        "libraries": {},
+        "optimizer": {
+          "enabled": true,
+          "runs": 250
+        },
+        "outputSelection": {
+          "*": {
+            "": ["*"],
+            "*": ["*"]
+          }
+        }
+      },
+      "fileName": "contracts/dynavaults/VaultGovernanceLib.sol"
+    },
+    "libraries": [],
+    "proxy": false,
+    "retrievedAt": "2026-09-08T12:07:31.851Z"
+  }
+}

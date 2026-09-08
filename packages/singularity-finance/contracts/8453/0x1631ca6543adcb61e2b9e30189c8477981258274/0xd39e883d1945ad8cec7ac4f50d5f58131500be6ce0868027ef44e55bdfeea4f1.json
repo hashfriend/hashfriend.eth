@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "chainId": 8453,
+  "address": "0x1631CA6543adcB61e2B9e30189c8477981258274",
+  "codeHash": "0xd39e883d1945ad8cec7ac4f50d5f58131500be6ce0868027ef44e55bdfeea4f1",
+  "runtimeBytecode": "0x363d3d373d3d3d363d738bb92d108d957810fc048d8aee346336925d507e5af43d82803e903d91602b57fd5bf3",
+  "observedBlock": {
+    "number": "51039978",
+    "hash": "0xd8e975ecdefd75fbf18520e046a70982c0a25da99d3dfc77f9a18d96f44d5f22",
+    "time": "2026-09-08T12:08:23.000Z"
+  },
+  "source": null
+}
