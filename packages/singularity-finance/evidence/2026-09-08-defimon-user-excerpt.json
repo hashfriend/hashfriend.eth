@@ -1,0 +1,6 @@
+{
+  "url": "https://x.com/DefimonAlerts/status/2048698708309705069",
+  "suppliedOn": "2026-09-08",
+  "provenance": "Text supplied by the post author in this review conversation. Not retrieved from X; the prior direct request returned HTTP 403.",
+  "text": "Type: Oracle Misconfiguration / Share Inflation\n\nThe dynBaseUSDCv3 vault on Base prices its non-USDC reserves via UniswapV3Oracle. On 2026-01-19 the protocol admin registered the six yield-token oracle routes with a Uniswap V3 fee tier of 42. Uniswap V3 only enables fee tiers 100/500/3000/10000, so factory.getPool(USDC, X, 42) returns address(0) for every token - silently killing the direct price path. The WETH-fallback pools that did exist had zero liquidity, as a result VaultTokensLib.totalAssets() only counted the ~$100 idle USDC.\n\nThe attacker flash-loaned 100k USDC from Morpho, deposited into the vault to mint ~99.99% of supply at the broken ratio, then redeemed the tokens to get a proportional cut of every actual token balance independently of the oracle, draining the underlying yield tokens.\n\nThis is a preliminary research, the official post-mortem to follow as per announcement in Telegram"
+}

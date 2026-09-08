@@ -16,7 +16,7 @@ Resolve abbreviated addresses from evidence before making calls.
 
 ## August governance and vault state
 
-Vault state below is as of 31 August 2026. Transaction links are in the [post timeline](https://hashfriend.eth.limo/singularity-finance-exploit/#timeline); a complete raw August snapshot is not included in this package.
+Vault state below is as of 31 August 2026. Transaction links are in the [post timeline](https://hashfriend.eth.limo/singularity-finance-exploit/#timeline). A complete raw August snapshot is not included in this package.
 
 - On 15 August, governance moved to a Safe initially configured with two owners and a threshold of one. The fee Safe had three owners and a threshold of two.
 - On 18 August, `DEFAULT_ADMIN_ROLE` moved from the admin account to the governance Safe on OracleRegistry `0x184b2217…0be877` and ReferenceAssetOracle `0x6e03c0b5…bfc0f1`; `ORACLE_ADMIN` on the reference oracle moved too. The replacement UniswapV3Oracle `0x566bb935…c581fb` retained both roles with the admin account.
@@ -39,7 +39,7 @@ Evidence: [registry and vault state](evidence/2026-09-08-original.jsonl), [vault
 
 ## Project documentation
 
-The official docs do mention DynaVaults. [Architecture](https://docs.singularityfinance.ai/sfi-value-proposition/core-pillars-of-the-sfi-l2/sfi-vaults/architecture) describes the vault framework. [Execution Engine](https://docs.singularityfinance.ai/sfi-value-proposition/core-pillars-of-the-sfi-l2/sfi-vaults/features/execution-engine) describes human or algorithmic orders executed through an offchain server. Their publication or revision dates were not established.
+The official [Architecture](https://docs.singularityfinance.ai/sfi-value-proposition/core-pillars-of-the-sfi-l2/sfi-vaults/architecture) and [Execution Engine](https://docs.singularityfinance.ai/sfi-value-proposition/core-pillars-of-the-sfi-l2/sfi-vaults/features/execution-engine) pages describe vaults on SFI L2. The deployed production DynaVaults run on Base, Ethereum, Arbitrum and BNB Chain, not SFI L2. Those pages do not document the deployed vaults or establish how their trades are chosen. The pages' publication or revision dates were not established.
 
 The team also points to two 2023 SingularityDAO Medium posts, [From DynaSets to DynaVaults](https://medium.com/singularitydao/singularitydao-pv2-from-dynasets-to-dynavaults-18de22f4d372) and the [Deep Dive](https://medium.com/singularitydao/singularitydaos-pv2-new-dynavaults-deep-dive-9ad296383adc). They describe separate strategy contracts and Keeper execution after a technical audit and community vote. The onchain snapshot above found no configured strategies.
 
@@ -82,6 +82,10 @@ The drain receipt and trace reproduce the 100,000 USDC Morpho loan, deposit of `
 
 Evidence: [raw drain trace](evidence/2026-04-25-drain-trace.json), [drain receipt, decoded core calls and pre/post state](evidence/2026-04-25-drain-tenderly.jsonl), [raw pool-setup trace](evidence/2026-04-25-pool-setup-trace.json), [setup receipt, verified pool calls and pricing reads](evidence/2026-04-25-pricing-retry.jsonl), [58-second read](evidence/2026-04-25-price-58s.json), [60-second read](evidence/2026-04-25-price-60s.json). Both main analysis runs completed without errors. Blockscout traces were matched to RPC transaction inputs, senders, targets and receipts. The original helper entrypoints remain undecoded. Factory sources came from Blockscout; the five pools have address-specific Sourcify matches in `contracts/8453/`. Neither source provider substitutes for an independent compiler reproduction.
 
+The [DarkNavy account](https://www.darknavy.org/web3/exploits/singularity-fi-dynbaseusdcv3-oracle-share-inflation/), saved in the [8 September source capture](evidence/2026-09-08-darknavy-review.json), omits the attacker's pool-creation transaction and says the oracle returned `(0, 0)` through missing or empty routes. The historical reads above instead establish prices rounded to zero with nonzero timestamps after the attacker-created pools had 60 seconds of history. The configuration alone did not reduce the vault to $100. The capture date does not establish DarkNavy's publication or revision date.
+
+The post author subsequently supplied the [DefimonAlerts text](evidence/2026-09-08-defimon-user-excerpt.json). This is a user-supplied excerpt, not an independently retrieved X capture; the direct request returned HTTP 403. Defimon labels its research preliminary. Its account also omits the pool-creation step and attributes the low valuation to the disabled direct routes and zero-liquidity fallback pools. It lists only tiers 100, 500, 3000 and 10000, while the saved Base factory reads also found 200 and 400 enabled. Its approximate 99.99% share figure differs from the approximately 99.9% supported by the drain trace.
+
 ### Oracle configurations
 
 The [two-page oracle history](evidence/2025-06-27_to_2026-01-19-oracle-history.json) contains a creation transaction and 60 direct configuration transactions. [Transaction checks](evidence/2025-06-27_to_2026-04-25-oracle-tenderly.jsonl) checked all 60 receipts, inputs, block identities and historical oracle bytecode. Fourteen initial calls used enabled tiers. The subsequent 46 calls set 46 distinct pairs to 42, all from the admin EOA: two on 13 September 2025, 24 on 4 December, 14 on 17 December, and six on 19 January 2026. The six January calls ran from 06:37:03 to 06:37:51 UTC. All 46 pair settings remained 42 at block 45,183,966.
@@ -107,6 +111,8 @@ The original numerators reproduce exactly in truncated latest-call windows. Call
 [Base governance reads](evidence/2026-08-15_to_2026-08-24-governance-retry.jsonl) confirms the v3/v4 manager handovers on 15 August, the Safe's initial two owners and threshold one, and its change to three owners and threshold two in block 50,394,905 on 24 August. The managers' guardian remained the original EOA. [Oracle-role reads](evidence/2026-08-18_to_2026-09-08-roles.jsonl) verify the cited August revocations and the retained single-account roles on the replacement Uniswap oracle. These runs completed without errors, using the actual Safe implementation and oracle sources, filling the earlier Base cache gaps.
 
 [Fee-Safe reads](evidence/2026-01-16_to_2026-09-08-fees.jsonl) at block 51,038,969 confirm four owners, threshold two and a drained-vault share valuation of 1.364935 USDC. January reads confirm an owner addition and removal on 16 January, ending with three owners then. [Incoming fee-Safe transactions](evidence/2026-01-16-fee-safe-history.json) alone do not establish all Safe activity, and cannot prove the absence of share redemptions.
+
+The 16 January addition raised the owner count from three to four at block 40,889,668, but the removal at block 40,889,696 returned it to three. The September owner list adds `0xB10E5A27A9f4c8eFdeB1AE1B415A0fBa019a609E` to those remaining January owners. The saved evidence does not date that later addition. The post's former three-owner description was therefore wrong for the verified September state; the four-owner read does not establish an appointment on 8 September.
 
 The all-history fee-share audit remains incomplete. Explorer results hit a 1,000-log cap and then HTTP 429; the [split-range retry](evidence/2026-01-16_to_2026-09-08-fees-retry.jsonl) also retains HTTP 429 errors. Public RPCs rejected wide log ranges. No failed query was interpreted as zero transfers. The dated share valuation and enabled fee settings do not establish cash recoverability or a reimbursement fund.
 
