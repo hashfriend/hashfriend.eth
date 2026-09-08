@@ -239,7 +239,6 @@ export function verifiedSourceUrl(chainId: number, address: Address): string {
 }
 
 export function parseVerifiedSource(
-  _chainId: number,
   address: Address,
   url: string,
   raw: unknown,
@@ -297,5 +296,5 @@ export async function fetchVerifiedSource(
   const normalized = parseAddress(address, 'address')
   const url = verifiedSourceUrl(chainId, normalized)
   const raw = await requestJson(url)
-  return parseVerifiedSource(chainId, normalized, url, raw)
+  return parseVerifiedSource(normalized, url, raw)
 }

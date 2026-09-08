@@ -5,7 +5,6 @@
   "version": "0.0.1",
   "scripts": {
     "research": "bun src/cli.ts",
-    "test": "bun test",
     "lint": "biome check --error-on-warnings .",
     "format": "biome check --write .",
     "typecheck": "tsc --noEmit"

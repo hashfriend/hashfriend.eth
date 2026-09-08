@@ -39,7 +39,7 @@ export async function transaction(chain: Chain, hash: Hex) {
       )
     decoded = decodeInput((await cache.resolve(tx.to)).abi, tx.input)
   } catch (error) {
-    return normalize({
+    return {
       chain: chain.name,
       block,
       transaction: tx,
@@ -47,9 +47,9 @@ export async function transaction(chain: Chain, hash: Hex) {
       complete: false,
       decodingError: errorMessage(error),
       abiEvidence: cache.evidence()
-    })
+    }
   }
-  return normalize({
+  return {
     chain: chain.name,
     block,
     transaction: tx,
@@ -57,5 +57,5 @@ export async function transaction(chain: Chain, hash: Hex) {
     complete: true,
     abiEvidence: cache.evidence(),
     decoded
-  })
+  }
 }

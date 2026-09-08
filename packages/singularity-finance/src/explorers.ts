@@ -4,7 +4,6 @@ import { requestJson, requestText } from './http'
 
 const MAX_PAGES = 50
 const BASE_TRANSACTIONS = 'https://base.blockscout.com/api/v2/addresses'
-const BASE_SOURCE = 'https://base.blockscout.com/api'
 const THREE_XPL = 'https://api.3xpl.com/bnb/address'
 
 export type HistoryResult = {
@@ -145,42 +144,6 @@ export async function bnbHistory(
     results.push(page)
   }
   return { pages: results, hasMore: count > 0, complete: false }
-}
-
-export function hasVerifiedSource(value: unknown): boolean {
-  if (
-    !isRecord(value) ||
-    value.status !== '1' ||
-    !Array.isArray(value.result) ||
-    value.result.length === 0
-  ) {
-    return false
-  }
-  return value.result.some((entry) => {
-    if (!isRecord(entry)) return false
-    const source =
-      typeof entry.SourceCode === 'string' ? entry.SourceCode.trim() : ''
-    const additional = Array.isArray(entry.AdditionalSources)
-      ? entry.AdditionalSources.some(
-          (item) =>
-            isRecord(item) &&
-            typeof item.SourceCode === 'string' &&
-            item.SourceCode.trim() !== ''
-        )
-      : false
-    return source !== '' || additional
-  })
-}
-
-export async function baseSource(address: string): Promise<unknown> {
-  const url = new URL(BASE_SOURCE)
-  url.searchParams.set('module', 'contract')
-  url.searchParams.set('action', 'getsourcecode')
-  url.searchParams.set('address', addressOf(address))
-  const response = await requestJson(url.toString())
-  if (!hasVerifiedSource(response))
-    throw new Error('Blockscout returned no verified source')
-  return response
 }
 
 export function documentUrl(value: string): string {

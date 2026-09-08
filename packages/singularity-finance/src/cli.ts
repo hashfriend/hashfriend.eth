@@ -4,13 +4,7 @@ import { parseArgs } from 'node:util'
 import { getAddress, type Hex, toFunctionSelector } from 'viem'
 import { chains, getChain } from './config'
 import { ContractCache } from './contracts'
-import { diffSnapshots } from './diff'
-import {
-  baseHistory,
-  baseSource,
-  bnbHistory,
-  documentSource
-} from './explorers'
+import { baseHistory, bnbHistory, documentSource } from './explorers'
 import {
   assertChain,
   clientFor,
@@ -21,6 +15,7 @@ import {
 import { readGates, snapshot } from './snapshot'
 import { transaction } from './transactions'
 import {
+  fetchVerifiedSource,
   parseVerifiedSource,
   type VerifiedSource,
   verifiedSourceUrl
@@ -28,10 +23,8 @@ import {
 
 const usage = `Read-only DynaVault research. Run from packages/singularity-finance:
 
-  bun run research snapshot [--chain base] [--block NUMBER] [--out FILE]
-  bun run research cache-snapshot [--chain base] [--block NUMBER] [--out FILE]
+  bun run research snapshot --chain base|all [--fetch] [--block NUMBER] [--out FILE]
   bun run research cache ADDRESS --chain base [--block NUMBER] [--source FILE ...] [--out FILE]
-  bun run research diff BEFORE.json AFTER.json [--out FILE]
   bun run research gates ADDRESS --chain bnb [--block NUMBER] [--out FILE]
   bun run research tx HASH --chain bnb [--out FILE]
   bun run research block --chain bnb --block NUMBER [--out FILE]
@@ -41,18 +34,18 @@ const usage = `Read-only DynaVault research. Run from packages/singularity-finan
   bun run research document URL [--out FILE]      Preserve a documentation page
   bun run research selector 'setPermissionDisabled(bool)'
 
-Chains: ethereum, optimism, arbitrum, bnb, polygon, base. Default snapshot: all six.
+Chains: ethereum, optimism, arbitrum, bnb, polygon, base. Only snapshot accepts all.
+--fetch caches missing verified sources. Otherwise reads require existing artifacts.
+BNB source fetching is unavailable; snapshots there require a populated cache.
 JSON goes to stdout or a new --out file. Existing files are never overwritten.
---block requires --chain. Incomplete snapshots are saved and exit 1; diff rejects them.
+--block requires --chain. Incomplete snapshots are saved and exit 1.
 History is bounded indexer evidence, never a complete chain scan.
 Use SFI_RPC_<chainId> for RPC overrides and SFI_3XPL_TOKEN for BNB history.
 See README.md for the investigation workflow. -h, --help prints this help.`
 
 const allowed: Record<string, string[]> = {
-  snapshot: ['chain', 'block'],
-  'cache-snapshot': ['chain', 'block'],
+  snapshot: ['chain', 'block', 'fetch'],
   cache: ['chain', 'block', 'source'],
-  diff: [],
   gates: ['chain', 'block'],
   tx: ['chain'],
   block: ['chain', 'block'],
@@ -98,7 +91,8 @@ export async function main(args: string[]) {
       pages: { type: 'string' },
       direction: { type: 'string' },
       args: { type: 'string' },
-      source: { type: 'string', multiple: true }
+      source: { type: 'string', multiple: true },
+      fetch: { type: 'boolean' }
     }
   })
   if (values.help || positionals.length === 0) {
@@ -111,9 +105,9 @@ export async function main(args: string[]) {
   for (const option of Object.keys(values))
     if (!['out', ...allowed[command]].includes(option))
       throw new Error(`--${option} is not valid for ${command}`)
-  const count = ['snapshot', 'cache-snapshot', 'block'].includes(command)
+  const count = ['snapshot', 'block'].includes(command)
     ? 0
-    : ['diff', 'call'].includes(command)
+    : command === 'call'
       ? 2
       : 1
   if (inputs.length !== count)
@@ -121,28 +115,47 @@ export async function main(args: string[]) {
       `${command} requires ${count} positional arguments; use --help`
     )
   if (
-    ['gates', 'tx', 'history', 'block', 'call', 'cache'].includes(command) &&
+    ['snapshot', 'gates', 'tx', 'history', 'block', 'call', 'cache'].includes(
+      command
+    ) &&
     !values.chain
   )
     throw new Error(`${command} requires --chain`)
   if (values.block && !values.chain) throw new Error('--block requires --chain')
-  const chain = values.chain ? getChain(values.chain) : undefined
+  if (
+    values.chain === 'all' &&
+    (command !== 'snapshot' || values.block !== undefined)
+  )
+    throw new Error('--chain all is only valid for snapshot without --block')
+  const chain =
+    values.chain && values.chain !== 'all' ? getChain(values.chain) : undefined
   const blockNumber = blockArgument(values.block)
+  if (values.out && (await Bun.file(values.out).exists()))
+    throw new Error(
+      `Output already exists: ${values.out}; choose a new --out file`
+    )
   let result: unknown
   switch (command) {
-    case 'cache-snapshot':
     case 'snapshot': {
       const data = await snapshot(
         chain ? [chain] : chains,
         blockNumber,
-        command === 'cache-snapshot'
+        values.fetch ?? false
       )
       result = data
       if (data.chains.some((item) => !item.complete)) process.exitCode = 1
       break
     }
+    case 'gates':
+    case 'call':
     case 'cache': {
       if (!chain) throw new Error('Missing chain')
+      const address = getAddress(inputs[0])
+      const args: unknown = JSON.parse(values.args ?? '[]')
+      if (!Array.isArray(args))
+        throw new Error(
+          '--args must be a JSON array; encode large integers as strings'
+        )
       const client = clientFor(chain)
       await assertChain(client, chain.id)
       const block = await pinnedBlock(client, blockNumber)
@@ -153,7 +166,6 @@ export async function main(args: string[]) {
           throw new Error('Imported source chain mismatch')
         const address = getAddress(bundle.address)
         const parsed = parseVerifiedSource(
-          chain.id,
           address,
           verifiedSourceUrl(chain.id, address),
           bundle.response
@@ -174,42 +186,38 @@ export async function main(args: string[]) {
         chain.id,
         block.number,
         undefined,
-        true,
+        command === 'cache',
         imported
       )
-      const address = getAddress(inputs[0])
-      await cache.resolve(address)
-      if ((await pinnedBlock(client, block.number)).hash !== block.hash)
-        throw new Error('Block changed while caching')
-      result = {
-        chain: chain.name,
-        block,
-        address,
-        abiEvidence: cache.evidence()
+      let details: Record<string, unknown> = {}
+      if (command === 'cache') await cache.resolve(address)
+      else if (command === 'gates') details = await readGates(cache, address)
+      else {
+        const { abi } = await cache.resolve(address)
+        if (
+          !abi.some(
+            (entry) =>
+              entry.type === 'function' &&
+              entry.name === inputs[1] &&
+              ['view', 'pure'].includes(entry.stateMutability)
+          )
+        )
+          throw new Error(
+            'call requires a view or pure function in the verified ABI'
+          )
+        details = {
+          functionName: inputs[1],
+          args,
+          result: await cache.read(address, inputs[1], args)
+        }
       }
-      break
-    }
-    case 'diff':
-      result = diffSnapshots(
-        await Bun.file(inputs[0]).json(),
-        await Bun.file(inputs[1]).json()
-      )
-      break
-    case 'gates': {
-      if (!chain) throw new Error('Missing chain')
-      const client = clientFor(chain)
-      await assertChain(client, chain.id)
-      const block = await pinnedBlock(client, blockNumber)
-      const address = getAddress(inputs[0])
-      const cache = new ContractCache(client, chain.id, block.number)
-      const gates = await readGates(cache, address)
       if ((await pinnedBlock(client, block.number)).hash !== block.hash)
-        throw new Error('Block changed during read')
+        throw new Error('Block changed during contract read')
       result = {
         chain: chain.name,
         block,
         address,
-        ...gates,
+        ...details,
         abiEvidence: cache.evidence()
       }
       break
@@ -218,13 +226,7 @@ export async function main(args: string[]) {
       if (!chain) throw new Error('Missing chain')
       const data = await transaction(chain, inputs[0] as Hex)
       result = data
-      if (
-        data &&
-        typeof data === 'object' &&
-        !Array.isArray(data) &&
-        data.complete === false
-      )
-        process.exitCode = 1
+      if (!data.complete) process.exitCode = 1
       break
     }
     case 'block': {
@@ -235,44 +237,6 @@ export async function main(args: string[]) {
       result = {
         chain: chain.name,
         block: await client.getBlock({ blockNumber, includeTransactions: true })
-      }
-      break
-    }
-    case 'call': {
-      if (!chain) throw new Error('Missing chain')
-      const args: unknown = JSON.parse(values.args ?? '[]')
-      if (!Array.isArray(args))
-        throw new Error(
-          '--args must be a JSON array; encode large integers as strings'
-        )
-      const client = clientFor(chain)
-      await assertChain(client, chain.id)
-      const block = await pinnedBlock(client, blockNumber)
-      const address = getAddress(inputs[0])
-      const cache = new ContractCache(client, chain.id, block.number)
-      const { abi } = await cache.resolve(address)
-      if (
-        !abi.some(
-          (entry) =>
-            entry.type === 'function' &&
-            entry.name === inputs[1] &&
-            ['view', 'pure'].includes(entry.stateMutability)
-        )
-      )
-        throw new Error(
-          'call requires a view or pure function in the verified ABI'
-        )
-      const value = await cache.read(address, inputs[1], args)
-      if ((await pinnedBlock(client, block.number)).hash !== block.hash)
-        throw new Error('Block changed during read')
-      result = {
-        chain: chain.name,
-        block,
-        address,
-        functionName: inputs[1],
-        args,
-        result: value,
-        abiEvidence: cache.evidence()
       }
       break
     }
@@ -302,7 +266,7 @@ export async function main(args: string[]) {
         chain: 'base',
         address: getAddress(inputs[0]),
         retrievedAt: new Date().toISOString(),
-        response: await baseSource(inputs[0])
+        response: (await fetchVerifiedSource(8453, getAddress(inputs[0]))).raw
       }
       break
     case 'document':
