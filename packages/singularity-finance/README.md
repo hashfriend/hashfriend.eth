@@ -28,6 +28,7 @@ SFI_RPC_8453=https://mainnet.base.org bun run research call 0x67b93f6676bd1911c5
 - Exit 1 means a failed command or incomplete snapshot/transaction decoding. Inspect the saved errors before retrying. Older evidence remains unchanged in `evidence/`.
 - History always reports `complete: false`, even on exit 0: successful page retrieval never establishes a complete chain scan. `document.retrievedAt` is a retrieval time, not a publication date.
 - For RPC failures, override `SFI_RPC_<chainId>` with an archive-capable endpoint. BNB history requires `SFI_3XPL_TOKEN`. Keep credentials out of commands, output and commits. Rate-limited runs can reuse cached contracts on retry; choose a new output filename.
+- RPC requests are spaced 250 milliseconds apart across clients in each process. Temporary failures use exponential backoff with up to five retries.
 
 ## Verified contract cache
 
@@ -39,4 +40,4 @@ Transaction decoding uses end-of-block proxy state. Intra-block upgrades and int
 
 The production filter counts Base registry types 3/4, then symbols starting with `dyn` and excluding `Test` on every chain. Inactive entries remain counted. A sender address does not establish human versus algorithmic trading; zero strategies, guardian authority and oracle roles are separate observations. Asset changes alone do not establish theft or reimbursement.
 
-Keep dated findings in the notebook and editorial rules in [post memory](../../memory/singularity-finance-post.md). Validate tooling changes with `bun run lint` and `bun run typecheck`.
+Keep dated findings in the notebook and editorial rules in [post memory](../../memory/singularity-finance-post.md). Validate tooling changes with `bun test`, `bun run lint` and `bun run typecheck`.

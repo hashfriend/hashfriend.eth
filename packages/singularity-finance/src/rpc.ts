@@ -2,11 +2,20 @@ import { createPublicClient, http } from 'viem'
 import { type Chain, rpcUrl } from './config'
 import { userAgent } from './http'
 
+let nextRequestAt = 0
+
 export function clientFor(chain: Chain, receipt = false) {
   return createPublicClient({
     transport: http(rpcUrl(chain, receipt), {
+      fetchFn: async (input, init) => {
+        const delay = Math.max(0, nextRequestAt - Date.now())
+        nextRequestAt = Date.now() + delay + 250
+        if (delay) await Bun.sleep(delay)
+        return fetch(input, init)
+      },
       fetchOptions: { headers: { 'User-Agent': userAgent } },
-      retryCount: 2,
+      retryCount: 5,
+      retryDelay: 1000,
       timeout: 20_000
     })
   })

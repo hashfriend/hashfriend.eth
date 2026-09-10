@@ -1,0 +1,387 @@
+{
+  "capturedAt": "2026-09-10T10:43:34.258Z",
+  "chainId": 8453,
+  "complete": true,
+  "scope": "Replacement-oracle settings for every distinct pair in the old oracle indexed configuration history",
+  "block": {
+    "number": "48858126",
+    "hash": "0xc82931cc9284e3927e77c86590f442d480da2a41856feac5e18f8e4b974de223",
+    "time": "2026-07-19T23:59:59.000Z"
+  },
+  "oracle": "0x566bb935a22f6b18f351d79ea54e9fa83fc581fb",
+  "factory": "0x33128a8fC17869897dcE68Ed026d694621f6FDfD",
+  "routes": [
+    {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "quote": "0x0FF79b6D6c0FB5faf54BD26db5Ce97062A105f81",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "quote": "0xee05dbdcAf0CA060b973D5FC5B31e9B8327EDB39",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "quote": "0x3094b241AaDe60F91f1c82b0628A10d9501462F9",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "quote": "0xC8adBFCFaC975583c8684C4e12633907315Ca610",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "quote": "0xEbC997B855B9a4E0b6cd06E4758801E6Ff068e07",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "quote": "0x19f233B2953275196e6343F17b76dA098c478E21",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "quote": "0x98C49e13bf99D7CAd8069faa2A370933EC9EcF17",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "quote": "0x0000000f2eB9f69274678c76222B35eEc7588a65",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "quote": "0xB99B6dF96d4d5448cC0a5B3e0ef7896df9507Cf5",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x4200000000000000000000000000000000000006",
+      "quote": "0x197D5C29072C1444Acb4F0935C219738A47E4a18",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x4200000000000000000000000000000000000006",
+      "quote": "0xD82BFa27D49e5a394ba371B293DaE65E9B7a8C60",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x4200000000000000000000000000000000000006",
+      "quote": "0x2bb9ad69FEBA5547b7cD57aAfe8457D40bF834af",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x4200000000000000000000000000000000000006",
+      "quote": "0x3A43AEC53490CB9Fa922847385D82fe25d0E9De7",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "quote": "0xb152E957ab1210153BA0ef07c52f5B559f1Ad8c9",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "quote": "0xbCbc8cb4D1e8ED048a6276a5E94A3e952660BcbC",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+      "quote": "0x5c9258FFBb93d0d99e18b5e72aF6C19B579806B0",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+      "quote": "0xd4401d8bEA82E4e6C40BB26AE3a04D2fb7cA4550",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+      "quote": "0xeb042DEE6f7Ff3B45eF0A71686653D168FB02477",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+      "quote": "0x50c749aE210D3977ADC824AE11F3c7fd10c871e9",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+      "quote": "0x64Db8f51f1bf7064BB5A361a7265F602d348E0f0",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+      "quote": "0x1943FA26360f038230442525Cf1B9125b5DCB401",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+      "quote": "0xf24608E0CCb972b0b0f4A6446a0BBf58c701a026",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+      "quote": "0x9ECD9fbbdA32b81dee51AdAed28c5C5039c87117",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+      "quote": "0x1c155be6bC51F2c37d472d4C2Eba7a637806e122",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+      "quote": "0x985CC9c306Bfe075F7c67EC275fb0b80F0b21976",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "quote": "0x5a47C803488FE2BB0A0EAaf346b420e4dF22F3C7",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "quote": "0x6770216aC60F634483Ec073cBABC4011c94307Cb",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "quote": "0x7Cc8013e784418dc9771403DD057f55cEb34Ba3A",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "quote": "0x31A421271414641cb5063B71594b642D2666dB6B",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x4200000000000000000000000000000000000006",
+      "quote": "0x7FcD174E80f264448ebeE8c88a7C4476AAF58Ea6",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x4200000000000000000000000000000000000006",
+      "quote": "0x6b13c060F13Af1fdB319F52315BbbF3fb1D88844",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x4200000000000000000000000000000000000006",
+      "quote": "0x27D8c7273fd3fcC6956a0B370cE5Fd4A7fc65c18",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x4200000000000000000000000000000000000006",
+      "quote": "0x859160DB5841E5cfB8D3f144C6b3381A85A4b410",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x4200000000000000000000000000000000000006",
+      "quote": "0x7872893e528Fe2c0829e405960db5B742112aa97",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x4200000000000000000000000000000000000006",
+      "quote": "0x468973e3264F2aEba0417A8f2cD0Ec397E738898",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "quote": "0xe9F2a5F9f3c846f29066d7fB3564F8E6B6b2D65b",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "quote": "0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "quote": "0xcdDCDd18A16ED441F6CB10c3909e5e7ec2B9e8f3",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "quote": "0x1D3b1Cd0a0f242d598834b3F2d126dC6bd774657",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "quote": "0x1C4a802FD6B591BB71dAA01D8335e43719048B24",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "quote": "0xd5428B889621Eee8060fc105AA0AB0Fa2e344468",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "quote": "0xbc10718571fcB3c3F67800e7C0887E450D2Ff398",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "quote": "0x0A1a3b5f2041F33522C4efc754a7D096f880eE16",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "quote": "0x0d877Dc7C8Fa3aD980DfDb18B48eC9F8768359C4",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0xDBFeFD2e8460a6Ee4955A68582F85708BAEA60A3",
+      "quote": "0x4200000000000000000000000000000000000006",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0xDBFeFD2e8460a6Ee4955A68582F85708BAEA60A3",
+      "quote": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x0b3e328455c4059EEb9e3f84b5543F74E24e7E1b",
+      "quote": "0x4200000000000000000000000000000000000006",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x0b3e328455c4059EEb9e3f84b5543F74E24e7E1b",
+      "quote": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x4F9Fd6Be4a90f2620860d680c0d4d5Fb53d1A825",
+      "quote": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x6B2504A03ca4D43d0D73776F6aD46dAb2F2a4cFD",
+      "quote": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
+      "quote": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "fee": 100,
+      "tickSpacing": 1
+    },
+    {
+      "base": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "quote": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "fee": 500,
+      "tickSpacing": 10
+    },
+    {
+      "base": "0xCc7FF230365bD730eE4B352cC2492CEdAC49383e",
+      "quote": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0xC1E02884AF4A283cA25ab63C45360d220d69DA52",
+      "quote": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0xB79DD08EA68A908A97220C76d19A6aA9cBDE4376",
+      "quote": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x85483696Cc9970Ad9EdD786b2C5ef735F38D156f",
+      "quote": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x04D5ddf5f3a8939889F11E97f8c4BB48317F1938",
+      "quote": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x0000206329b97DB379d5E1Bf586BbDB969C63274",
+      "quote": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x4200000000000000000000000000000000000006",
+      "quote": "0xB79DD08EA68A908A97220C76d19A6aA9cBDE4376",
+      "fee": 0,
+      "tickSpacing": null
+    },
+    {
+      "base": "0x4200000000000000000000000000000000000006",
+      "quote": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "fee": 100,
+      "tickSpacing": 1
+    }
+  ],
+  "abiEvidence": [
+    {
+      "address": "0x566bb935a22F6B18f351D79Ea54e9fa83Fc581fb",
+      "codeHash": "0xf8b7d832214e2d3f5feb53409e760341702c5cc7402b17d5741a5a6e595b9eb3",
+      "sourceAddress": "0x566bb935a22F6B18f351D79Ea54e9fa83Fc581fb"
+    },
+    {
+      "address": "0x33128a8fC17869897dcE68Ed026d694621f6FDfD",
+      "codeHash": "0x95707a4ac71f20181a63ef7d180e3c625be5d20fc8f6f980befa966bad568132",
+      "sourceAddress": "0x33128a8fC17869897dcE68Ed026d694621f6FDfD"
+    }
+  ]
+}
