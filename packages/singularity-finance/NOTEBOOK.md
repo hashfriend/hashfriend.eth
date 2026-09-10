@@ -14,6 +14,33 @@ The admin account, governance and fee Safes, oracle addresses and role-hash enco
 
 Resolve abbreviated addresses from evidence before making calls.
 
+## April freeze and July reopening
+
+The [post timeline](https://hashfriend.eth.limo/singularity-finance-exploit/#timeline) and [The Silent Reopening](https://hashfriend.eth.limo/singularity-finance-exploit/#the-silent-reopening) document the freeze, the July unfreezes and the team's replies. Dates below refer to events in 2026.
+
+- On 26 April, the team [announced the exploit and freeze](https://t.me/Singularity_Fi/262366). Deposits and withdrawals on the other DynaVaults were disabled after the 25 April drain.
+- On 18 and 19 July, the team deployed replacement oracles and repointed the existing Base vaults. The [drained vault's repointing](https://basescan.org/tx/0x79eae91125498eb97936ecb1679e12e20ca34e6368662d3f95a1ed7ab5193a94) appears in the [saved v3 history](evidence/2026-01-17_to_2026-08-15-v3-history.json) at block 48,834,245 on 19 July. The post also records dynBaseWETHv2 being [pointed at the USDC oracle](https://basescan.org/tx/0x506263bbc9546b1ccca82894dedc543dfe7b68fb45a883b1c7481187234b2b03) before a [correction](https://basescan.org/tx/0xf98247c447093e069185516e44f371c67c33e4a8076db4904efc36b7af4d3126).
+- On 20 July, the admin disabled the permission check on seven existing Base vaults, including the drained dynBaseUSDCv3. On 22 July, it did the same for dynBaseBTC. These are the eight vault unfreezes described in the post. The permission changes did not restore the drained vault's lost assets.
+
+The [reopening evidence](evidence/2026-07-20_to_2026-07-22-base-reopenings.json) records each vault address, transaction, successful receipt and canonical block identity, with input decoding against its deployed ABI. Every transaction came from admin account `0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db` and called `setPermissionDisabled(true)`. In the cached `PermissionedDynaVault` source, this disables the `PERMITTED_USER` check on deposits, withdrawals and redemptions.
+
+| Vault | Reopening date | Base block | Transaction |
+| --- | --- | ---: | --- |
+| dynBaseWETH | 20 July | 48,876,670 | [0x3f398104…e74e33e0](https://basescan.org/tx/0x3f3981041b1b5a8f83934cb2e226c88a506ecb1b77d0b937a976ce5ae74e33e0) |
+| dynBaseUSDCv2 | 20 July | 48,876,716 | [0x5df40ab0…70179c24](https://basescan.org/tx/0x5df40ab0a6102e8ff4e4a8575863a080e8c75a0a26a732d0de48270670179c24) |
+| dynBaseUSDC | 20 July | 48,876,745 | [0xe9d6c1cd…d6cfd24e](https://basescan.org/tx/0xe9d6c1cde2796b45bc05c630d9434fe28724057328935842f6533549d6cfd24e) |
+| dynBaseEURC | 20 July | 48,876,767 | [0x55dc1e2b…a26bab89](https://basescan.org/tx/0x55dc1e2b91f58abae045cf35ae5f54ce0da97a4916428406cfbfb212a26bab89) |
+| dynBaseEURCv2 | 20 July | 48,876,795 | [0x546586e7…8eb4f627](https://basescan.org/tx/0x546586e74b0308b308c87e7b49f21e26e9afd2d4ab5dfaa0687b239c8eb4f627) |
+| dynBaseWETHv2 | 20 July | 48,876,825 | [0x305301ed…0628050d](https://basescan.org/tx/0x305301ed4d3c5de58f3d434adfaf9f77ffd0b420df16a6595c2377db0628050d) |
+| dynBaseUSDCv3 | 20 July | 48,876,853 | [0xce2d9004…5861e452](https://basescan.org/tx/0xce2d900424f166db5bbd51178b6d8dde134f51fc839cb92602341b525861e452) |
+| dynBaseBTC | 22 July | 48,983,079 | [0x94c78b7e…9ffa321e](https://basescan.org/tx/0x94c78b7ef373a1a4b8c209a451155235857997ceb5331bcaa324c5de9ffa321e) |
+
+- On 24 July, the replacement dynBaseUSDCv4 began accruing fees while remaining permissioned. Its [thirteen-wallet whitelist grant](https://basescan.org/tx/0x82667746d48c6b46d614f49a45aaeb09bfe03d0a30453ccda890cd3aa0df8078) was separate from reopening the eight existing vaults. It held none of the funds frozen in April.
+- On 30 and 31 July, the team cited [whitelisted oracle testers](https://t.me/Singularity_Fi/264052), [the replacement vault](https://t.me/Singularity_Fi/264060), [beta testing](https://t.me/Singularity_Fi/264063) and [frontend fixes](https://t.me/Singularity_Fi/264067) when asked about reopening. The permission grant cited in the first explanation went to [the team's zapper](https://basescan.org/tx/0xb5bde9f190f240aa54b676af79f30eca5cc5007f0e914adc507bbbde13a41303). The team [acknowledged delaying the reopening announcement](https://t.me/Singularity_Fi/264060) so it could accompany the post-mortem, which it promised for early the following week.
+- On 2 August, a user in the unofficial price channel asked when the vaults would reopen. The team [confirmed they had reopened](https://t.me/SFIprice/18484), thirteen days after the first unfreezes, and repeated the post-mortem promise. By 10 August, the promised publication windows had passed without the report or a general reopening announcement, as recorded in the post.
+
+The receipts establish the eight permission-opening transactions. The event-discovery scan retains rate-limit errors for some ranges and is incomplete; it is not an exhaustive permission history. The April freeze and Telegram chronology above follow the post's cited sources, which have no raw captures here. The onchain opening dates do not establish when the closed-source frontend enabled withdrawals. The July reopenings concern the original Base vaults; the later BNB openings are recorded below.
+
 ## August governance and vault state
 
 Vault state below is as of 31 August 2026. Transaction links are in the [post timeline](https://hashfriend.eth.limo/singularity-finance-exploit/#timeline). A complete raw August snapshot is not included in this package.
