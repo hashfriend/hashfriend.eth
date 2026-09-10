@@ -1,5 +1,7 @@
 # Agent instructions
 
+- consult all README.md files first
+
 ## Project memory
 
 - The canonical place for all your memory is `memory/` within this repository.
