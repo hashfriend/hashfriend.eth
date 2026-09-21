@@ -1,0 +1,1246 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-21T13:26:47.143Z",
+  "scope": [
+    "ethereum",
+    "arbitrum",
+    "bnb",
+    "optimism",
+    "polygon"
+  ],
+  "method": {
+    "client": "viem eth_call against each chain public RPC, with the Safari User-Agent from src/http.ts",
+    "blockPolicy": "Each chain was read at one pinned block. The RPC chain ID and pinned block hash were checked before and after state reads.",
+    "registryPolicy": "Read allVaults, then kept symbols starting with dyn and excluded symbols containing Test. Base-only type filtering did not apply to these chains.",
+    "abiPolicy": "ABI fragments came from the listed local Base verified-source cache artifacts. Successful decoding shows call compatibility only. This run did not verify that the non-Base deployments share those source builds.",
+    "abiArtifacts": {
+      "registry": {
+        "path": "packages/singularity-finance/contracts/8453/0xe260c97949bb01e49c0af64a3525458197851657/0xa61b4b487cc0472596c91e3c4ca78f5523505189fe9fc19efd600fa5e9ff6297.json",
+        "chainId": 8453,
+        "address": "0xe260c97949bB01E49c0af64a3525458197851657",
+        "codeHash": "0xa61b4b487cc0472596c91e3c4ca78f5523505189fe9fc19efd600fa5e9ff6297",
+        "contractName": "VaultRegistry"
+      },
+      "vault": {
+        "path": "packages/singularity-finance/contracts/8453/0x1f1933984a5e7f36a6fa8a454224d568ab2ba257/0xcff8b7b7a62349fff1bfd4129804e5788cd1b49fc8be5813a297168196c6d638.json",
+        "chainId": 8453,
+        "address": "0x1f1933984A5e7f36A6fa8A454224d568Ab2bA257",
+        "codeHash": "0xcff8b7b7a62349fff1bfd4129804e5788cd1b49fc8be5813a297168196c6d638",
+        "contractName": "PermissionedDynaVault"
+      },
+      "manager": {
+        "path": "packages/singularity-finance/contracts/8453/0x95cf606f7e499549d83bd3c8a1e5d97fdf36688b/0x186932b809c0aac756ab1e481c54ca91260302790bbfa58833dbef91f45153de.json",
+        "chainId": 8453,
+        "address": "0x95cF606f7e499549D83BD3c8a1e5D97FDF36688B",
+        "codeHash": "0x186932b809c0aac756ab1e481c54ca91260302790bbfa58833dbef91f45153de",
+        "contractName": "DynaVaultManager"
+      },
+      "safe": {
+        "path": "packages/singularity-finance/contracts/8453/0x29fcb43b46531bca003ddc8fcb67ffe91900c762/0xb1f926978a0f44a2c0ec8fe822418ae969bd8c3f18d61e5103100339894f81ff.json",
+        "chainId": 8453,
+        "address": "0x29fcB43b46531BcA003ddC8FCB67FFE91900C762",
+        "codeHash": "0xb1f926978a0f44a2c0ec8fe822418ae969bd8c3f18d61e5103100339894f81ff",
+        "contractName": "SafeL2"
+      }
+    },
+    "limitations": [
+      "No explorer source was fetched for non-Base deployments.",
+      "The public RPC responses and local Base explorer artifacts were not independently reproduced from a node or compiler build.",
+      "An empty registry is a pinned allVaults result, not proof that no related contracts exist outside the registry."
+    ]
+  },
+  "chains": [
+    {
+      "chain": "ethereum",
+      "chainId": 1,
+      "complete": true,
+      "rpcVerification": {
+        "initialChainId": 1,
+        "finalChainId": 1,
+        "pinnedBlock": {
+          "number": "26026170",
+          "hash": "0x1e8e711ac1f19c91c5640e4784b80c7402bfbeb3ca76283e0c357b6a1f54b2ca",
+          "time": "2026-09-21T13:25:35.000Z"
+        },
+        "confirmedBlock": {
+          "number": "26026170",
+          "hash": "0x1e8e711ac1f19c91c5640e4784b80c7402bfbeb3ca76283e0c357b6a1f54b2ca",
+          "time": "2026-09-21T13:25:35.000Z"
+        }
+      },
+      "registry": "0x97C46cE66Ec71559DbF43fF9E5D110C3657C1ca4",
+      "entries": [
+        {
+          "vault": "0x0fC20308bC9C2E79302CcaC3735D1E9626baDA30",
+          "vaultType": 3,
+          "active": true
+        },
+        {
+          "vault": "0xabB91c92CB0e604Cd471A379B444CcA4daa23E5E",
+          "vaultType": 3,
+          "active": true
+        },
+        {
+          "vault": "0x9757515d91BD7C095f7AaC9cAD3d5Fb32f759E76",
+          "vaultType": 1,
+          "active": true
+        }
+      ],
+      "excluded": [],
+      "vaults": [
+        {
+          "address": "0x0fC20308bC9C2E79302CcaC3735D1E9626baDA30",
+          "vaultType": 3,
+          "active": true,
+          "symbol": "dynMainUSDC",
+          "manager": "0x4011012DCA1b9A038c59702889c4c02277574999",
+          "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "permissionDisabled": false,
+          "assetSymbol": "USDC",
+          "assetDecimals": 6,
+          "formattedAssets": "32.568028",
+          "formattedSupply": "31.998241172247460156",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "tokens": [
+            {
+              "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+              "tokenIdle": "10000",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1786826291",
+              "lastReportedValue": "1000000",
+              "watermark": "1000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786826291",
+              "strategies": []
+            },
+            {
+              "address": "0xBEEF01735c132Ada46AA9aA4c54623cAA92A64CB",
+              "tokenIdle": "2760380894757730171",
+              "tokenDebt": "0",
+              "depositDebt": "3134611",
+              "depositDebtRatio": "277566521048451151",
+              "totalProfit": "2433",
+              "totalLoss": "0",
+              "lastReport": "1786826291",
+              "lastReportedValue": "1136399",
+              "watermark": "1136399",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786826291",
+              "strategies": []
+            },
+            {
+              "address": "0x68Aea7b82Df6CcdF76235D46445Ed83f85F845A3",
+              "tokenIdle": "2999214586056740766",
+              "tokenDebt": "0",
+              "depositDebt": "3134611",
+              "depositDebtRatio": "277566521048451151",
+              "totalProfit": "2513",
+              "totalLoss": "0",
+              "lastReport": "1786826291",
+              "lastReportedValue": "1045930",
+              "watermark": "1045930",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786826291",
+              "strategies": []
+            },
+            {
+              "address": "0x73edDFa87C71ADdC275c2b9890f5c3a8480bC9E6",
+              "tokenIdle": "3252728",
+              "tokenDebt": "0",
+              "depositDebt": "3842442",
+              "depositDebtRatio": "294340904517015087",
+              "totalProfit": "2720",
+              "totalLoss": "0",
+              "lastReport": "1786826291",
+              "lastReportedValue": "1182081",
+              "watermark": "1182081",
+              "watermarkDuration": "0",
+              "lastWatermark": "1786826291",
+              "strategies": []
+            },
+            {
+              "address": "0x797DD80692c3b2dAdabCe8e30C07fDE5307D48a9",
+              "tokenIdle": "20036104",
+              "tokenDebt": "0",
+              "depositDebt": "22158736",
+              "depositDebtRatio": "150526053386082611",
+              "totalProfit": "242706",
+              "totalLoss": "0",
+              "lastReport": "1789721627",
+              "lastReportedValue": "1116925",
+              "watermark": "1116925",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789721627",
+              "strategies": []
+            }
+          ],
+          "gov": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "emergency": false,
+          "fees": {
+            "managementFee": "200",
+            "performanceFee": "2000",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0x0e06fD53A3a99e40337e9e7Ca52Ae8B7c25a712a",
+          "assets": "32568028",
+          "supply": "31998241172247460156",
+          "shareDecimals": 18
+        },
+        {
+          "address": "0xabB91c92CB0e604Cd471A379B444CcA4daa23E5E",
+          "vaultType": 3,
+          "active": true,
+          "symbol": "dynMainUSDCv2",
+          "manager": "0xc2Ff3Bf7128345099514E592866210Ff6789583F",
+          "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "permissionDisabled": false,
+          "assetSymbol": "USDC",
+          "assetDecimals": 6,
+          "formattedAssets": "16.365905",
+          "formattedSupply": "16.047006479953729193",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "tokens": [
+            {
+              "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+              "tokenIdle": "10000",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1789721663",
+              "lastReportedValue": "1000000",
+              "watermark": "1000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789721663",
+              "strategies": []
+            },
+            {
+              "address": "0x797DD80692c3b2dAdabCe8e30C07fDE5307D48a9",
+              "tokenIdle": "13402226",
+              "tokenDebt": "0",
+              "depositDebt": "14822188",
+              "depositDebtRatio": "400000000000000000",
+              "totalProfit": "177948",
+              "totalLoss": "0",
+              "lastReport": "1789721663",
+              "lastReportedValue": "1116925",
+              "watermark": "1116925",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789721663",
+              "strategies": []
+            },
+            {
+              "address": "0xF9bdDd4A9b3A45f980e11fDDE96e16364dDBEc49",
+              "tokenIdle": "521567719768864668",
+              "tokenDebt": "0",
+              "depositDebt": "556247",
+              "depositDebtRatio": "200000000000000000",
+              "totalProfit": "4430",
+              "totalLoss": "0",
+              "lastReport": "1789721663",
+              "lastReportedValue": "1073669",
+              "watermark": "1073669",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789721663",
+              "strategies": []
+            },
+            {
+              "address": "0xBe53A109B494E5c9f97b9Cd39Fe969BE68BF6204",
+              "tokenIdle": "363085",
+              "tokenDebt": "0",
+              "depositDebt": "404405",
+              "depositDebtRatio": "200000000000000000",
+              "totalProfit": "2128",
+              "totalLoss": "0",
+              "lastReport": "1789721663",
+              "lastReportedValue": "1118549",
+              "watermark": "1118549",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789721663",
+              "strategies": []
+            },
+            {
+              "address": "0xdd0f28e19C1780eb6396170735D45153D261490d",
+              "tokenIdle": "359287460417921947",
+              "tokenDebt": "0",
+              "depositDebt": "404404",
+              "depositDebtRatio": "200000000000000000",
+              "totalProfit": "2361",
+              "totalLoss": "0",
+              "lastReport": "1789721663",
+              "lastReportedValue": "1131043",
+              "watermark": "1131043",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789721663",
+              "strategies": []
+            }
+          ],
+          "gov": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "emergency": false,
+          "fees": {
+            "managementFee": "200",
+            "performanceFee": "2000",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0x0e06fD53A3a99e40337e9e7Ca52Ae8B7c25a712a",
+          "assets": "16365905",
+          "supply": "16047006479953729193",
+          "shareDecimals": 18
+        },
+        {
+          "address": "0x9757515d91BD7C095f7AaC9cAD3d5Fb32f759E76",
+          "vaultType": 1,
+          "active": true,
+          "symbol": "dynMainUSDCv3",
+          "manager": "0x4B4e926aC571b153970f045E15D8deB09EAE598D",
+          "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "permissionDisabled": false,
+          "assetSymbol": "USDC",
+          "assetDecimals": 6,
+          "formattedAssets": "43.599971",
+          "formattedSupply": "26.948225164469100076",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "tokens": [
+            {
+              "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+              "tokenIdle": "10000",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "0",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1787648879",
+              "lastReportedValue": "1000000",
+              "watermark": "1000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1787648879",
+              "strategies": []
+            },
+            {
+              "address": "0x660e2fC185a9fFE722aF253329CEaAD4C9F6F928",
+              "tokenIdle": "1568673",
+              "tokenDebt": "0",
+              "depositDebt": "24564966",
+              "depositDebtRatio": "623294991393168953",
+              "totalProfit": "14687280",
+              "totalLoss": "0",
+              "lastReport": "1789721591",
+              "lastReportedValue": "24770440",
+              "watermark": "24770440",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789721591",
+              "strategies": []
+            },
+            {
+              "address": "0x0eecBDbF7331B8a50FCd0Bf2C267Bf47BD876054",
+              "tokenIdle": "2118767",
+              "tokenDebt": "0",
+              "depositDebt": "2118768",
+              "depositDebtRatio": "210000000000000000",
+              "totalProfit": "35841",
+              "totalLoss": "0",
+              "lastReport": "1787648879",
+              "lastReportedValue": "1146553",
+              "watermark": "1146553",
+              "watermarkDuration": "0",
+              "lastWatermark": "1787648879",
+              "strategies": []
+            },
+            {
+              "address": "0x7fAb04FF2717d9A6B71A51c56c29697179597D40",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "76705008606831047",
+              "totalProfit": "1234",
+              "totalLoss": "0",
+              "lastReport": "1787648879",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1787648879",
+              "strategies": []
+            },
+            {
+              "address": "0x797DD80692c3b2dAdabCe8e30C07fDE5307D48a9",
+              "tokenIdle": "805807",
+              "tokenDebt": "0",
+              "depositDebt": "891449",
+              "depositDebtRatio": "90000000000000000",
+              "totalProfit": "3071",
+              "totalLoss": "0",
+              "lastReport": "1787648879",
+              "lastReportedValue": "1109786",
+              "watermark": "1109786",
+              "watermarkDuration": "0",
+              "lastWatermark": "1787648879",
+              "strategies": []
+            }
+          ],
+          "gov": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "emergency": false,
+          "fees": {
+            "managementFee": "200",
+            "performanceFee": "2000",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0x0e06fD53A3a99e40337e9e7Ca52Ae8B7c25a712a",
+          "assets": "43599971",
+          "supply": "26948225164469100076",
+          "shareDecimals": 18
+        }
+      ],
+      "safes": [],
+      "errors": []
+    },
+    {
+      "chain": "optimism",
+      "chainId": 10,
+      "complete": true,
+      "rpcVerification": {
+        "initialChainId": 10,
+        "finalChainId": 10,
+        "pinnedBlock": {
+          "number": "157199192",
+          "hash": "0x6e8f6abdc00e8e0c88ff797e6d213dd2d93898bea44b5468d91a7112ff0977f5",
+          "time": "2026-09-21T13:26:01.000Z"
+        },
+        "confirmedBlock": {
+          "number": "157199192",
+          "hash": "0x6e8f6abdc00e8e0c88ff797e6d213dd2d93898bea44b5468d91a7112ff0977f5",
+          "time": "2026-09-21T13:26:01.000Z"
+        }
+      },
+      "registry": "0x45585Acb41829139C7606ed6C4c5eaEC2DC50029",
+      "entries": [],
+      "excluded": [],
+      "vaults": [],
+      "safes": [],
+      "errors": []
+    },
+    {
+      "chain": "arbitrum",
+      "chainId": 42161,
+      "complete": true,
+      "rpcVerification": {
+        "initialChainId": 42161,
+        "finalChainId": 42161,
+        "pinnedBlock": {
+          "number": "507455487",
+          "hash": "0x31631455bbf3c45bf96c6ef5a7aababc8ec0254e224fb6ac6ecd73796812148d",
+          "time": "2026-09-21T13:26:03.000Z"
+        },
+        "confirmedBlock": {
+          "number": "507455487",
+          "hash": "0x31631455bbf3c45bf96c6ef5a7aababc8ec0254e224fb6ac6ecd73796812148d",
+          "time": "2026-09-21T13:26:03.000Z"
+        }
+      },
+      "registry": "0x44921e42017316F89C1DEdd70a3A017d4c5162c3",
+      "entries": [
+        {
+          "vault": "0x70b6C8a39385a811Bbb741b2ADE2DB27B418F091",
+          "vaultType": 3,
+          "active": true
+        },
+        {
+          "vault": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+          "vaultType": 3,
+          "active": true
+        }
+      ],
+      "excluded": [],
+      "vaults": [
+        {
+          "address": "0x70b6C8a39385a811Bbb741b2ADE2DB27B418F091",
+          "vaultType": 3,
+          "active": true,
+          "symbol": "dynArbETH",
+          "manager": "0x2FDFfBD80a2d6DB2c253A52081669b09FFf0121F",
+          "asset": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+          "permissionDisabled": false,
+          "assetSymbol": "WETH",
+          "assetDecimals": 18,
+          "formattedAssets": "0.018719823317848009",
+          "formattedSupply": "0.018648810682751679",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "tokens": [
+            {
+              "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+              "tokenIdle": "10000000000000",
+              "tokenDebt": "0",
+              "depositDebt": "9945109434534",
+              "depositDebtRatio": "480589634068690",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1788988785",
+              "lastReportedValue": "1000000000000000000",
+              "watermark": "1000000000000000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788988785",
+              "strategies": []
+            },
+            {
+              "address": "0x4cE13a79f45C1Be00BdABD38B764aC28C082704E",
+              "tokenIdle": "100000000000000",
+              "tokenDebt": "0",
+              "depositDebt": "106634126841008",
+              "depositDebtRatio": "57307622932561633",
+              "totalProfit": "127272443134",
+              "totalLoss": "0",
+              "lastReport": "1788988785",
+              "lastReportedValue": "1067098171296799601",
+              "watermark": "1067098171296799601",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788988785",
+              "strategies": []
+            },
+            {
+              "address": "0xf7b5127B510E568fdC39e6Bb54e2081BFaD489AF",
+              "tokenIdle": "6636489641203673",
+              "tokenDebt": "0",
+              "depositDebt": "7326477254896778",
+              "depositDebtRatio": "260621392826869396",
+              "totalProfit": "18914233662313",
+              "totalLoss": "0",
+              "lastReport": "1789989852",
+              "lastReportedValue": "1106815350936595600",
+              "watermark": "1106815350936595600",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789989852",
+              "strategies": []
+            },
+            {
+              "address": "0x45Df0656F8aDf017590009d2f1898eeca4F0a205",
+              "tokenIdle": "297000000000000",
+              "tokenDebt": "0",
+              "depositDebt": "306600190890148",
+              "depositDebtRatio": "79594807548000098",
+              "totalProfit": "279405255873",
+              "totalLoss": "0",
+              "lastReport": "1788988785",
+              "lastReportedValue": "1033246383274000000",
+              "watermark": "1033246383274000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788988785",
+              "strategies": []
+            },
+            {
+              "address": "0x78E3E051D32157AACD550fBB78458762d8f7edFF",
+              "tokenIdle": "10411584738979158",
+              "tokenDebt": "0",
+              "depositDebt": "10884707607720203",
+              "depositDebtRatio": "601995587058500183",
+              "totalProfit": "61546072529223",
+              "totalLoss": "0",
+              "lastReport": "1789721461",
+              "lastReportedValue": "1051353271828886007",
+              "watermark": "1051353271828886007",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789721461",
+              "strategies": []
+            }
+          ],
+          "gov": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "emergency": false,
+          "fees": {
+            "managementFee": "25",
+            "performanceFee": "2000",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0xd3681548191f8B25331a1d0AEfc90E62e8083274",
+          "assets": "18719823317848009",
+          "supply": "18648810682751679",
+          "shareDecimals": 18
+        },
+        {
+          "address": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+          "vaultType": 3,
+          "active": true,
+          "symbol": "dynArbBTC",
+          "manager": "0xbC4E5e2922D126e22daB13c169f40534c73e999b",
+          "asset": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
+          "permissionDisabled": false,
+          "assetSymbol": "WBTC",
+          "assetDecimals": 8,
+          "formattedAssets": "0.00873942",
+          "formattedSupply": "0.00874068670905001",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "tokens": [
+            {
+              "address": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
+              "tokenIdle": "10",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "1119900015164",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1789204103",
+              "lastReportedValue": "100000000",
+              "watermark": "100000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789204103",
+              "strategies": []
+            },
+            {
+              "address": "0x52Dc1FEeFA4f9a99221F93D79da46Ae89b8c0967",
+              "tokenIdle": "20000",
+              "tokenDebt": "0",
+              "depositDebt": "20138",
+              "depositDebtRatio": "138837008101051013",
+              "totalProfit": "0",
+              "totalLoss": "1",
+              "lastReport": "1789204103",
+              "lastReportedValue": "100685917",
+              "watermark": "100685917",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789204103",
+              "strategies": []
+            },
+            {
+              "address": "0x29cF6e8eCeFb8d3c9dd2b727C1b7d1df1a754F6f",
+              "tokenIdle": "566689",
+              "tokenDebt": "0",
+              "depositDebt": "603040",
+              "depositDebtRatio": "625079622016640527",
+              "totalProfit": "1267",
+              "totalLoss": "0",
+              "lastReport": "1789989841",
+              "lastReportedValue": "106640417",
+              "watermark": "106640417",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789989841",
+              "strategies": []
+            },
+            {
+              "address": "0x49b2248f7a7a703731852db0b2217f40da75B8aB",
+              "tokenIdle": "20014909",
+              "tokenDebt": "0",
+              "depositDebt": "201326",
+              "depositDebtRatio": "43880163216779842",
+              "totalProfit": "268",
+              "totalLoss": "0",
+              "lastReport": "1789204103",
+              "lastReportedValue": "100713350",
+              "watermark": "100713350",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789204103",
+              "strategies": []
+            },
+            {
+              "address": "0x889E1c458B2469b70aCcdfb5B59726dC1668896C",
+              "tokenIdle": "47558",
+              "tokenDebt": "0",
+              "depositDebt": "47809",
+              "depositDebtRatio": "192202086765513454",
+              "totalProfit": "1",
+              "totalLoss": "0",
+              "lastReport": "1789204103",
+              "lastReportedValue": "100529901",
+              "watermark": "100529901",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789204103",
+              "strategies": []
+            }
+          ],
+          "gov": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "emergency": false,
+          "fees": {
+            "managementFee": "25",
+            "performanceFee": "2000",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0x512014e9a8753c654a21E2e1d9b5522808D11ad0",
+          "assets": "873942",
+          "supply": "8740686709050010",
+          "shareDecimals": 18
+        }
+      ],
+      "safes": [],
+      "errors": []
+    },
+    {
+      "chain": "bnb",
+      "chainId": 56,
+      "complete": true,
+      "rpcVerification": {
+        "initialChainId": 56,
+        "finalChainId": 56,
+        "pinnedBlock": {
+          "number": "123188921",
+          "hash": "0xe76fee29f4c68e65ac50687e064f7c7097e291bc80fb184cce65c8c017f72972",
+          "time": "2026-09-21T13:26:15.000Z"
+        },
+        "confirmedBlock": {
+          "number": "123188921",
+          "hash": "0xe76fee29f4c68e65ac50687e064f7c7097e291bc80fb184cce65c8c017f72972",
+          "time": "2026-09-21T13:26:15.000Z"
+        }
+      },
+      "registry": "0xBCCa741996196462480108BCEf7561C0aB3Fdb04",
+      "entries": [
+        {
+          "vault": "0xa42c06E4700280330DCC1Ac9E2b37fd3159200B7",
+          "vaultType": 3,
+          "active": true
+        },
+        {
+          "vault": "0x7eAa42F5138CA7d8c710C4238E590FA2d5623220",
+          "vaultType": 3,
+          "active": true
+        },
+        {
+          "vault": "0x937E581Fc4d38C87AE7E5033dB09CFadD37E3eB9",
+          "vaultType": 3,
+          "active": true
+        },
+        {
+          "vault": "0xb6d476a6723061ad9EFd896099ACc1874D38e0F5",
+          "vaultType": 3,
+          "active": true
+        },
+        {
+          "vault": "0x2AbE7468F45a16e83fF6A3783180e9c532Bad197",
+          "vaultType": 1,
+          "active": true
+        }
+      ],
+      "excluded": [],
+      "vaults": [
+        {
+          "address": "0xa42c06E4700280330DCC1Ac9E2b37fd3159200B7",
+          "vaultType": 3,
+          "active": true,
+          "symbol": "dynBnbUSDC",
+          "manager": "0x7276a8592E3dB41C6670C423012Fb727FadB970b",
+          "asset": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+          "permissionDisabled": true,
+          "assetSymbol": "USDC",
+          "assetDecimals": 18,
+          "formattedAssets": "574.437733468723851659",
+          "formattedSupply": "539.270961161822903119",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "tokens": [
+            {
+              "address": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+              "tokenIdle": "1000000000000000000",
+              "tokenDebt": "0",
+              "depositDebt": "44135618374188121",
+              "depositDebtRatio": "0",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1789989727",
+              "lastReportedValue": "1000000000000000000",
+              "watermark": "1000000000000000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789989727",
+              "strategies": []
+            },
+            {
+              "address": "0x8a06Ac91265dBEBE6D4606f45b10993E9a571869",
+              "tokenIdle": "153998697359297071328",
+              "tokenDebt": "0",
+              "depositDebt": "155002197227266549622",
+              "depositDebtRatio": "277196679192994005",
+              "totalProfit": "889292639229996606",
+              "totalLoss": "0",
+              "lastReport": "1789989727",
+              "lastReportedValue": "1008429200198196943",
+              "watermark": "1008429200198196943",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789989727",
+              "strategies": []
+            },
+            {
+              "address": "0xfE60462E93cee34319F48Cfc6AcFbc13c2882Df9",
+              "tokenIdle": "406053458944927918208",
+              "tokenDebt": "0",
+              "depositDebt": "417764170562202957877",
+              "depositDebtRatio": "722803320807005995",
+              "totalProfit": "737037074378417227",
+              "totalLoss": "0",
+              "lastReport": "1789989727",
+              "lastReportedValue": "1029760212630000000",
+              "watermark": "1029760212630000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789989727",
+              "strategies": []
+            }
+          ],
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "emergency": false,
+          "fees": {
+            "managementFee": "50",
+            "performanceFee": "2000",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0x5f349008BDAFAF158877cFa29C23d2E19EA0F30B",
+          "assets": "574437733468723851659",
+          "supply": "539270961161822903119",
+          "shareDecimals": 18
+        },
+        {
+          "address": "0x7eAa42F5138CA7d8c710C4238E590FA2d5623220",
+          "vaultType": 3,
+          "active": true,
+          "symbol": "dynBnbUSDT",
+          "manager": "0x9DCBa5dFe6c9f07b547aAf814745d82A810bdEFa",
+          "asset": "0x55d398326f99059fF775485246999027B3197955",
+          "permissionDisabled": true,
+          "assetSymbol": "USDT",
+          "assetDecimals": 18,
+          "formattedAssets": "61.180689982193453611",
+          "formattedSupply": "59.764889165118858141",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "tokens": [
+            {
+              "address": "0x55d398326f99059fF775485246999027B3197955",
+              "tokenIdle": "1000000000000000000",
+              "tokenDebt": "0",
+              "depositDebt": "201314811621997433",
+              "depositDebtRatio": "0",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1789989764",
+              "lastReportedValue": "1000000000000000000",
+              "watermark": "1000000000000000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789989764",
+              "strategies": []
+            },
+            {
+              "address": "0x95C5Fd8618C68D6156A739C1EAb5aA7c807ff148",
+              "tokenIdle": "1664213609439959849",
+              "tokenDebt": "0",
+              "depositDebt": "1768932100748182250",
+              "depositDebtRatio": "0",
+              "totalProfit": "20550202291604574",
+              "totalLoss": "0",
+              "lastReport": "1789989764",
+              "lastReportedValue": "1064719393319016108",
+              "watermark": "1064719393319016108",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789989764",
+              "strategies": []
+            },
+            {
+              "address": "0xb5a30E1FA2CF3C8DEA882124B3AB5A47A27C5dd2",
+              "tokenIdle": "25059138177185623765",
+              "tokenDebt": "0",
+              "depositDebt": "25547954969945477606",
+              "depositDebtRatio": "338663977917672366",
+              "totalProfit": "40810628841278871",
+              "totalLoss": "0",
+              "lastReport": "1789989764",
+              "lastReportedValue": "1019931397281648407",
+              "watermark": "1019931397281648407",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789989764",
+              "strategies": []
+            },
+            {
+              "address": "0x3bD8BdaaA1AFF2bb17866FC897BbA5adD9b64E3a",
+              "tokenIdle": "31621215898031478405",
+              "tokenDebt": "0",
+              "depositDebt": "32616957306237930360",
+              "depositDebtRatio": "405405068756904080",
+              "totalProfit": "254792288194730580",
+              "totalLoss": "0",
+              "lastReport": "1789989764",
+              "lastReportedValue": "1036343969362991525",
+              "watermark": "1036343969362991525",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789989764",
+              "strategies": []
+            },
+            {
+              "address": "0x6d6783C146F2B0B2774C1725297f1845dc502525",
+              "tokenIdle": "75714183661849907",
+              "tokenDebt": "0",
+              "depositDebt": "78468750287209078",
+              "depositDebtRatio": "255930953325423554",
+              "totalProfit": "292878918731827",
+              "totalLoss": "0",
+              "lastReport": "1789989764",
+              "lastReportedValue": "1039276321130414421",
+              "watermark": "1039276321130414421",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789989764",
+              "strategies": []
+            }
+          ],
+          "gov": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "emergency": false,
+          "fees": {
+            "managementFee": "100",
+            "performanceFee": "2000",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0x41bcB90dF4533fdb433F3B69b7868DbCf1E9bbBD",
+          "assets": "61180689982193453611",
+          "supply": "59764889165118858141",
+          "shareDecimals": 18
+        },
+        {
+          "address": "0x937E581Fc4d38C87AE7E5033dB09CFadD37E3eB9",
+          "vaultType": 3,
+          "active": true,
+          "symbol": "dynBnbBNB",
+          "manager": "0x22c313FBe4e1931Abf27C9338Fdf06dD5D221dA2",
+          "asset": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+          "permissionDisabled": true,
+          "assetSymbol": "WBNB",
+          "assetDecimals": 18,
+          "formattedAssets": "0.020452639041235217",
+          "formattedSupply": "0.020433773742382038",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "tokens": [
+            {
+              "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+              "tokenIdle": "100000000000000",
+              "tokenDebt": "0",
+              "depositDebt": "99683929050171",
+              "depositDebtRatio": "4882659733436519",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1788646793",
+              "lastReportedValue": "1000000000000000000",
+              "watermark": "1000000000000000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788646793",
+              "strategies": []
+            },
+            {
+              "address": "0x436baCb4C66583de4Cb16e13a1A0D9A3075DE425",
+              "tokenIdle": "1000000000000000",
+              "tokenDebt": "0",
+              "depositDebt": "1034175196817285",
+              "depositDebtRatio": "50660802281722561",
+              "totalProfit": "74642711856",
+              "totalLoss": "0",
+              "lastReport": "1788646793",
+              "lastReportedValue": "1034182607768426095",
+              "watermark": "1034182607768426095",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788646793",
+              "strategies": []
+            },
+            {
+              "address": "0x57134a64B7cD9F9eb72F8255A671F5Bf2fe3E2d0",
+              "tokenIdle": "1000000000000000",
+              "tokenDebt": "0",
+              "depositDebt": "1016344276660188",
+              "depositDebtRatio": "49611415606580935",
+              "totalProfit": "164072989472",
+              "totalLoss": "0",
+              "lastReport": "1788646793",
+              "lastReportedValue": "1016356345765674561",
+              "watermark": "1016356345765674561",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788646793",
+              "strategies": []
+            },
+            {
+              "address": "0x8E01DB38a409D6E6B8A81fd21d84E05912e8730A",
+              "tokenIdle": "0",
+              "tokenDebt": "0",
+              "depositDebt": "0",
+              "depositDebtRatio": "78122496227810",
+              "totalProfit": "14279994",
+              "totalLoss": "0",
+              "lastReport": "1788646793",
+              "lastReportedValue": "0",
+              "watermark": "0",
+              "watermarkDuration": "0",
+              "lastWatermark": "1788646793",
+              "strategies": []
+            },
+            {
+              "address": "0xd5cfc0f894bA77e95E3325Aa53Eb3e6CBBb5A81E",
+              "tokenIdle": "17204114384051582",
+              "tokenDebt": "0",
+              "depositDebt": "18285019562008161",
+              "depositDebtRatio": "894766999882032175",
+              "totalProfit": "16963166801755",
+              "totalLoss": "0",
+              "lastReport": "1789989776",
+              "lastReportedValue": "1063814290015188187",
+              "watermark": "1063814290015188187",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789989776",
+              "strategies": []
+            }
+          ],
+          "gov": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "emergency": false,
+          "fees": {
+            "managementFee": "0",
+            "performanceFee": "2000",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0x2683767Eeb7099A142BC3616C52d4529Cd8eb554",
+          "assets": "20452639041235217",
+          "supply": "20433773742382038",
+          "shareDecimals": 18
+        },
+        {
+          "address": "0xb6d476a6723061ad9EFd896099ACc1874D38e0F5",
+          "vaultType": 3,
+          "active": true,
+          "symbol": "dynBnbBTCB",
+          "manager": "0xD6FC952a059B69150561aC8c377e9b36465DA789",
+          "asset": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+          "permissionDisabled": true,
+          "assetSymbol": "BTCB",
+          "assetDecimals": 18,
+          "formattedAssets": "0.01679272917726535",
+          "formattedSupply": "0.016743603575773824",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "tokens": [
+            {
+              "address": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+              "tokenIdle": "11238254927410",
+              "tokenDebt": "0",
+              "depositDebt": "5855214601461",
+              "depositDebtRatio": "0",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1789993454",
+              "lastReportedValue": "1000000000000000000",
+              "watermark": "1000000000000000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789993454",
+              "strategies": []
+            },
+            {
+              "address": "0x1F66b530084079d35478A069d9c4424F9c9C320c",
+              "tokenIdle": "1859480327540392",
+              "tokenDebt": "0",
+              "depositDebt": "1860894240893933",
+              "depositDebtRatio": "143108897825169537",
+              "totalProfit": "24785005247",
+              "totalLoss": "0",
+              "lastReport": "1789993454",
+              "lastReportedValue": "1000772332475315096",
+              "watermark": "1000772332475315096",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789993454",
+              "strategies": []
+            },
+            {
+              "address": "0xE46b8E65006e6450bdd8cb7D3274AB4F76f4C705",
+              "tokenIdle": "13165759214009321",
+              "tokenDebt": "0",
+              "depositDebt": "13215339687355426",
+              "depositDebtRatio": "718230921056667196",
+              "totalProfit": "5464174006671",
+              "totalLoss": "0",
+              "lastReport": "1789993454",
+              "lastReportedValue": "1004067705002497765",
+              "watermark": "1004067705002497765",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789993454",
+              "strategies": []
+            },
+            {
+              "address": "0x777C95b204E2Ed3906885eF09f4531882587B52C",
+              "tokenIdle": "1553618375013649",
+              "tokenDebt": "0",
+              "depositDebt": "1701144053286042",
+              "depositDebtRatio": "138660181118163267",
+              "totalProfit": "153204930594",
+              "totalLoss": "0",
+              "lastReport": "1789993454",
+              "lastReportedValue": "1095027782141897367",
+              "watermark": "1095027782141897367",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789993454",
+              "strategies": []
+            }
+          ],
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "emergency": false,
+          "fees": {
+            "managementFee": "10",
+            "performanceFee": "2000",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0x32952F15fFB15066921272beE1570767D5ac0E67",
+          "assets": "16792729177265350",
+          "supply": "16743603575773824",
+          "shareDecimals": 18
+        },
+        {
+          "address": "0x2AbE7468F45a16e83fF6A3783180e9c532Bad197",
+          "vaultType": 1,
+          "active": true,
+          "symbol": "dynBnbGold",
+          "manager": "0x5E9359db317e1918B7FB4A4dc5083c156cC4d82D",
+          "asset": "0x21cAef8A43163Eea865baeE23b9C2E327696A3bf",
+          "permissionDisabled": true,
+          "assetSymbol": "XAUt",
+          "assetDecimals": 6,
+          "formattedAssets": "0.010999",
+          "formattedSupply": "0.011049000391170841",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "tokens": [
+            {
+              "address": "0x21cAef8A43163Eea865baeE23b9C2E327696A3bf",
+              "tokenIdle": "1000",
+              "tokenDebt": "0",
+              "depositDebt": "1000",
+              "depositDebtRatio": "0",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1789989810",
+              "lastReportedValue": "1000000",
+              "watermark": "1000000",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789989810",
+              "strategies": []
+            },
+            {
+              "address": "0x4109415DE2271097FB5fa16aF8A753aab8c46D6f",
+              "tokenIdle": "9945429412539356",
+              "tokenDebt": "0",
+              "depositDebt": "9996",
+              "depositDebtRatio": "1000000000000000000",
+              "totalProfit": "0",
+              "totalLoss": "0",
+              "lastReport": "1789989810",
+              "lastReportedValue": "1005385",
+              "watermark": "1005385",
+              "watermarkDuration": "0",
+              "lastWatermark": "1789989810",
+              "strategies": []
+            }
+          ],
+          "gov": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "emergency": false,
+          "fees": {
+            "managementFee": "25",
+            "performanceFee": "2000",
+            "depositFee": "0",
+            "redemptionFee": "0",
+            "managementFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "performanceFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "depositFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+            "redemptionFeeWallet": "0x03301480Ab204c92C8927d76Bba989c6400860C6"
+          },
+          "oracle": "0x7548ff249eDE2e175d857DD5099000Df93408DA3",
+          "assets": "10999",
+          "supply": "11049000391170841",
+          "shareDecimals": 18
+        }
+      ],
+      "safes": [
+        {
+          "address": "0x5bfc34fba904b7d93a13c381adcc47de657599ff",
+          "threshold": "2",
+          "owners": [
+            "0xB10E5A27A9f4c8eFdeB1AE1B415A0fBa019a609E",
+            "0x8C26B989c81d298CD4FEA49732bd7b3155aCFfc9",
+            "0xc114d7a75b20Df6222b86D552c53de754D965834"
+          ],
+          "nonce": "1"
+        },
+        {
+          "address": "0x03301480Ab204c92C8927d76Bba989c6400860C6",
+          "threshold": "2",
+          "owners": [
+            "0xB10E5A27A9f4c8eFdeB1AE1B415A0fBa019a609E",
+            "0xc114d7a75b20Df6222b86D552c53de754D965834",
+            "0x8C26B989c81d298CD4FEA49732bd7b3155aCFfc9"
+          ],
+          "nonce": "2"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "chain": "polygon",
+      "chainId": 137,
+      "complete": true,
+      "rpcVerification": {
+        "initialChainId": 137,
+        "finalChainId": 137,
+        "pinnedBlock": {
+          "number": "94194748",
+          "hash": "0xce2e071faed7e90297b4cb3f58a132f6717a503f37a2ce4487d2b43f7df4b64f",
+          "time": "2026-09-21T13:26:45.000Z"
+        },
+        "confirmedBlock": {
+          "number": "94194748",
+          "hash": "0xce2e071faed7e90297b4cb3f58a132f6717a503f37a2ce4487d2b43f7df4b64f",
+          "time": "2026-09-21T13:26:45.000Z"
+        }
+      },
+      "registry": "0x3Bfdf549881bFD92D4cce82e6C28f5391408B4cc",
+      "entries": [],
+      "excluded": [],
+      "vaults": [],
+      "safes": [],
+      "errors": []
+    }
+  ]
+}

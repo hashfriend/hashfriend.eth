@@ -1,0 +1,1185 @@
+{
+  "scope": "Base-only validation of the 6 September 2026 outgoing transfers from the known DynaVault drain payout and linked redemption receiver. Destination follow-up is capped at three latest outgoing transaction pages and three latest outgoing ERC-20 transfer pages per address. No unrelated-address tracing or ownership attribution.",
+  "retrievedAt": "2026-09-21T13:30:52.967Z",
+  "chain": {
+    "id": 8453,
+    "name": "base"
+  },
+  "sources": [
+    {
+      "type": "rpc",
+      "url": "https://base.gateway.tenderly.co",
+      "retrievedAt": "2026-09-21T13:30:52.967Z",
+      "use": "Transactions, receipts, canonical block identities, token metadata, balances and ERC-4626 reads."
+    },
+    {
+      "type": "indexer",
+      "provider": "Base Blockscout",
+      "retrievedAt": [
+        "2026-09-21T13:30:52.187Z",
+        "2026-09-21T13:30:52.691Z"
+      ],
+      "use": "Capped outgoing transaction and ERC-20 transfer histories for the two destinations."
+    },
+    {
+      "type": "saved-evidence",
+      "path": "evidence/2026-04-25-drain-tenderly.jsonl",
+      "retrievedAt": "2026-09-08T13:27:36.845Z",
+      "use": "April drain RPC transaction and receipt, decoded ERC-20 logs and Blockscout trace provenance."
+    },
+    {
+      "type": "saved-evidence",
+      "path": "evidence/2026-09-21-attacker-base-history.json",
+      "retrievedAt": [
+        "2026-09-21T13:25:06.782Z",
+        "2026-09-21T13:25:07.203Z",
+        "2026-09-21T13:25:07.362Z",
+        "2026-09-21T13:25:07.425Z",
+        "2026-09-21T13:25:07.566Z",
+        "2026-09-21T13:25:07.895Z",
+        "2026-09-21T13:25:07.955Z",
+        "2026-09-21T13:25:08.012Z"
+      ],
+      "use": "Initial indexed discovery of the September 6 payout and executor transactions."
+    },
+    {
+      "type": "indexer",
+      "provider": "Base Blockscout",
+      "url": "https://base.blockscout.com/api/v2/addresses/0x25c08505b6c5eba2d6c5d97c9e9a7f5f58d9a079/token-transfers?type=ERC-20&filter=to&token=0x3094b241AaDe60F91f1c82b0628A10d9501462F9",
+      "retrievedAt": "2026-09-21T13:34:10.349Z",
+      "use": "Token-filtered inbound maxUSD history for the payout address; one item and no pagination cursor."
+    }
+  ],
+  "knownAddressLinks": [
+    {
+      "address": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+      "role": "payout",
+      "basis": "Drain receipt logs 590 through 594 transfer USDC and residual vault tokens from attacker contract 0x9ad48257024f8cd3ab7fde97c95950159fcaefae to this address."
+    },
+    {
+      "address": "0x5C2cbe53f2CE1b58532D4985A9b9d3db87d3Af4c",
+      "role": "linked-redemption-receiver",
+      "basis": "The saved payout history decodes repeated maxUSD redeem calls with this address as receiver and the payout address as owner. This observed link does not identify a person or make every executor balance exploit proceeds."
+    }
+  ],
+  "drainEvidence": {
+    "transaction": {
+      "hash": "0x00b949bc3ed3edb58b04faedfbd8eb1db2edceae761382e80fe012919f8d3732",
+      "block": {
+        "number": "45183967",
+        "hash": "0x4c2befcd333a7d2dd5a9bc46247d8697094c29c310aac7db36f110502ee884c5",
+        "time": "2026-04-25T22:48:01.000Z"
+      },
+      "from": "0x5c2cbe53f2ce1b58532d4985a9b9d3db87d3af4c",
+      "to": "0x9ad48257024f8cd3ab7fde97c95950159fcaefae",
+      "receiptStatus": "success",
+      "blockHash": "0x4c2befcd333a7d2dd5a9bc46247d8697094c29c310aac7db36f110502ee884c5"
+    },
+    "traceSource": {
+      "url": "https://base.blockscout.com/api/v2/transactions/0x00b949bc3ed3edb58b04faedfbd8eb1db2edceae761382e80fe012919f8d3732/raw-trace",
+      "retrievedAt": "2026-09-08T13:27:36.845Z",
+      "transactionHash": "0x00b949bc3ed3edb58b04faedfbd8eb1db2edceae761382e80fe012919f8d3732",
+      "block": {
+        "number": "45183967",
+        "hash": "0x4c2befcd333a7d2dd5a9bc46247d8697094c29c310aac7db36f110502ee884c5",
+        "time": "2026-04-25T22:48:01.000Z"
+      },
+      "trust": "Blockscout call trace, cross-checked against RPC transaction and receipt"
+    },
+    "payoutTokenTransfers": [
+      {
+        "transactionHash": "0x00b949bc3ed3edb58b04faedfbd8eb1db2edceae761382e80fe012919f8d3732",
+        "logIndex": 591,
+        "token": "0x3094b241aade60f91f1c82b0628a10d9501462f9",
+        "name": "Earn Max USDC by Mo Wallet",
+        "symbol": "maxUSD",
+        "decimals": 18,
+        "from": "0x9AD48257024F8Cd3AB7FDE97c95950159FCaEfAe",
+        "to": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+        "rawAmount": "31174292353430123175500",
+        "formattedAmount": "31174.2923534301231755"
+      },
+      {
+        "transactionHash": "0x00b949bc3ed3edb58b04faedfbd8eb1db2edceae761382e80fe012919f8d3732",
+        "logIndex": 592,
+        "token": "0xc8adbfcfac975583c8684c4e12633907315ca610",
+        "name": "CPT48 Selection",
+        "symbol": "CPT48",
+        "decimals": 18,
+        "from": "0x9AD48257024F8Cd3AB7FDE97c95950159FCaEfAe",
+        "to": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+        "rawAmount": "650641057299",
+        "formattedAmount": "0.000000650641057299"
+      },
+      {
+        "transactionHash": "0x00b949bc3ed3edb58b04faedfbd8eb1db2edceae761382e80fe012919f8d3732",
+        "logIndex": 593,
+        "token": "0xebc997b855b9a4e0b6cd06e4758801e6ff068e07",
+        "name": "Pocky's High Yield USDC - Personal Vault",
+        "symbol": "PUSDCHY",
+        "decimals": 18,
+        "from": "0x9AD48257024F8Cd3AB7FDE97c95950159FCaEfAe",
+        "to": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+        "rawAmount": "443437805297",
+        "formattedAmount": "0.000000443437805297"
+      },
+      {
+        "transactionHash": "0x00b949bc3ed3edb58b04faedfbd8eb1db2edceae761382e80fe012919f8d3732",
+        "logIndex": 594,
+        "token": "0xee05dbdcaf0ca060b973d5fc5b31e9b8327edb39",
+        "name": "Chimi Strategy USDC AvantisSeniorNew",
+        "symbol": "ysUSDC",
+        "decimals": 6,
+        "from": "0x9AD48257024F8Cd3AB7FDE97c95950159FCaEfAe",
+        "to": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+        "rawAmount": "1347499541",
+        "formattedAmount": "1347.499541"
+      }
+    ]
+  },
+  "blockIdentities": {
+    "metadata": {
+      "number": "50936951",
+      "hash": "0xe8d8496b7bc598643504866e77af4aba571f48ecc72c6afeb420d7a059522e13",
+      "time": "2026-09-06T02:54:09.000Z"
+    },
+    "latestBalanceRead": {
+      "number": "51604052",
+      "hash": "0x0a8e1d9d39e613791937faf235177938f2abb5052d8d4b77562b0fb04937f473",
+      "time": "2026-09-21T13:30:51.000Z"
+    },
+    "ysUsdcLatestValuation": {
+      "number": "51604100",
+      "hash": "0xea9714f45c5cc9811b5e6af2e356a4c5016d5613eb3f38d91f84b01b6cb83ce4",
+      "time": "2026-09-21T13:32:27.000Z"
+    }
+  },
+  "tokenMetadata": [
+    {
+      "address": "0xee05dbdcAf0CA060b973D5FC5B31e9B8327EDB39",
+      "name": "Chimi Strategy USDC AvantisSeniorNew",
+      "symbol": "ysUSDC",
+      "decimals": 6,
+      "sourceBlock": {
+        "number": "50936951",
+        "hash": "0xe8d8496b7bc598643504866e77af4aba571f48ecc72c6afeb420d7a059522e13",
+        "time": "2026-09-06T02:54:09.000Z"
+      }
+    },
+    {
+      "address": "0x3094b241AaDe60F91f1c82b0628A10d9501462F9",
+      "name": "Earn Max USDC by Mo Wallet",
+      "symbol": "maxUSD",
+      "decimals": 18,
+      "sourceBlock": {
+        "number": "50936951",
+        "hash": "0xe8d8496b7bc598643504866e77af4aba571f48ecc72c6afeb420d7a059522e13",
+        "time": "2026-09-06T02:54:09.000Z"
+      }
+    },
+    {
+      "address": "0xC8adBFCFaC975583c8684C4e12633907315Ca610",
+      "name": "CPT48 Selection",
+      "symbol": "CPT48",
+      "decimals": 18,
+      "sourceBlock": {
+        "number": "50936951",
+        "hash": "0xe8d8496b7bc598643504866e77af4aba571f48ecc72c6afeb420d7a059522e13",
+        "time": "2026-09-06T02:54:09.000Z"
+      }
+    },
+    {
+      "address": "0xEbC997B855B9a4E0b6cd06E4758801E6Ff068e07",
+      "name": "Pocky's High Yield USDC - Personal Vault",
+      "symbol": "PUSDCHY",
+      "decimals": 18,
+      "sourceBlock": {
+        "number": "50936951",
+        "hash": "0xe8d8496b7bc598643504866e77af4aba571f48ecc72c6afeb420d7a059522e13",
+        "time": "2026-09-06T02:54:09.000Z"
+      }
+    },
+    {
+      "address": "0xe96c54ea9FB4E373dcEfa7DB2E7A3ebe2Fefa46a",
+      "name": "Base Finance Depository",
+      "symbol": "BASCETORY",
+      "decimals": 18,
+      "sourceBlock": {
+        "number": "50936951",
+        "hash": "0xe8d8496b7bc598643504866e77af4aba571f48ecc72c6afeb420d7a059522e13",
+        "time": "2026-09-06T02:54:09.000Z"
+      }
+    },
+    {
+      "address": "0x3368bFb035f52011D2bEFdC95d460352FB0ac0b5",
+      "name": "$8bitbase",
+      "symbol": "8BITBASE",
+      "decimals": 18,
+      "sourceBlock": {
+        "number": "50936951",
+        "hash": "0xe8d8496b7bc598643504866e77af4aba571f48ecc72c6afeb420d7a059522e13",
+        "time": "2026-09-06T02:54:09.000Z"
+      }
+    },
+    {
+      "address": "0xe2aDB24d44B03dA658661890c65a8d01d4cBC5fa",
+      "name": "0xDirectPing",
+      "symbol": "0xDP",
+      "decimals": 18,
+      "sourceBlock": {
+        "number": "50936951",
+        "hash": "0xe8d8496b7bc598643504866e77af4aba571f48ecc72c6afeb420d7a059522e13",
+        "time": "2026-09-06T02:54:09.000Z"
+      }
+    },
+    {
+      "address": "0x35C0bB7AC52Cb5c26BCEc234A90bb24A5D31fC6f",
+      "name": "Donald Trollp",
+      "symbol": "TROLLP",
+      "decimals": 18,
+      "sourceBlock": {
+        "number": "50936951",
+        "hash": "0xe8d8496b7bc598643504866e77af4aba571f48ecc72c6afeb420d7a059522e13",
+        "time": "2026-09-06T02:54:09.000Z"
+      }
+    }
+  ],
+  "receipts": [
+    {
+      "transactionHash": "0xd4b2d3509933800635f9d72e517e87edc73b0716cb735167fffd0ca37d9f9a5a",
+      "block": {
+        "number": "50932951",
+        "hash": "0x64eee48b492cec150470a92afa8c0d8fd81ff243fb0a346634b50def86ccd7f1",
+        "time": "2026-09-06T00:40:49.000Z"
+      },
+      "from": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+      "to": "0xee05dbdcAf0CA060b973D5FC5B31e9B8327EDB39",
+      "nativeValueRaw": "0",
+      "nativeValueEth": "0",
+      "input": "0xa9059cbb000000000000000000000000396134838da76b63d797c5f32d0bc35a49e8ac1a0000000000000000000000000000000000000000000000000000000050513615",
+      "decodedInput": {
+        "functionName": "transfer",
+        "args": [
+          "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+          "1347499541"
+        ]
+      },
+      "receipt": {
+        "status": "success",
+        "transactionIndex": 76,
+        "gasUsed": "49708",
+        "effectiveGasPrice": "6000000",
+        "blockNumber": "50932951",
+        "blockHash": "0x64eee48b492cec150470a92afa8c0d8fd81ff243fb0a346634b50def86ccd7f1",
+        "decodedTransferLogs": [
+          {
+            "address": "0xee05dbdcAf0CA060b973D5FC5B31e9B8327EDB39",
+            "logIndex": 242,
+            "eventName": "Transfer",
+            "args": {
+              "from": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+              "to": "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+              "value": "1347499541"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "transactionHash": "0x3c87a577fec576a92be103cb4f8a0a106e71199f043e8dbdc6eac01ef7ee0234",
+      "block": {
+        "number": "50932982",
+        "hash": "0xcda2f970abb34eb15d6eba164290632248719b934d68396f1f85bb0419ce9b5a",
+        "time": "2026-09-06T00:41:51.000Z"
+      },
+      "from": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+      "to": "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+      "nativeValueRaw": "830000000000000",
+      "nativeValueEth": "0.00083",
+      "input": "0x",
+      "decodedInput": null,
+      "receipt": {
+        "status": "success",
+        "transactionIndex": 104,
+        "gasUsed": "21000",
+        "effectiveGasPrice": "6000000",
+        "blockNumber": "50932982",
+        "blockHash": "0xcda2f970abb34eb15d6eba164290632248719b934d68396f1f85bb0419ce9b5a",
+        "decodedTransferLogs": []
+      }
+    },
+    {
+      "transactionHash": "0x6704b24d58044571ab52c9de584288d5c1378efcd37e6928357cf138f59b82ac",
+      "block": {
+        "number": "50936275",
+        "hash": "0x42010352a9c74dd8cfc02be229fd6b2edfd3017abb816c4b3845f323127c0b53",
+        "time": "2026-09-06T02:31:37.000Z"
+      },
+      "from": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+      "to": "0x3094b241AaDe60F91f1c82b0628A10d9501462F9",
+      "nativeValueRaw": "0",
+      "nativeValueEth": "0",
+      "input": "0xa9059cbb000000000000000000000000e0065b760cc949f709359276d4105d6754041dbb000000000000000000000000000000000000000000000000000000cb58dd1d47",
+      "decodedInput": {
+        "functionName": "transfer",
+        "args": [
+          "0xE0065B760Cc949f709359276D4105D6754041DbB",
+          "873369247047"
+        ]
+      },
+      "receipt": {
+        "status": "success",
+        "transactionIndex": 166,
+        "gasUsed": "47344",
+        "effectiveGasPrice": "7500000",
+        "blockNumber": "50936275",
+        "blockHash": "0x42010352a9c74dd8cfc02be229fd6b2edfd3017abb816c4b3845f323127c0b53",
+        "decodedTransferLogs": [
+          {
+            "address": "0x3094b241AaDe60F91f1c82b0628A10d9501462F9",
+            "logIndex": 725,
+            "eventName": "Transfer",
+            "args": {
+              "from": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+              "to": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+              "value": "873369247047"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "transactionHash": "0x6405850abb0540a0aaf6370b9a996db9744e93002e5d947d4948cdd107ed023d",
+      "block": {
+        "number": "50936480",
+        "hash": "0x3002eaa36b4587ce02dec08910efeac3f383a44e0fa78b77b61e6b13df0aff08",
+        "time": "2026-09-06T02:38:27.000Z"
+      },
+      "from": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+      "to": "0xC8adBFCFaC975583c8684C4e12633907315Ca610",
+      "nativeValueRaw": "0",
+      "nativeValueEth": "0",
+      "input": "0xa9059cbb000000000000000000000000e0065b760cc949f709359276d4105d6754041dbb000000000000000000000000000000000000000000000000000000977d3aa613",
+      "decodedInput": {
+        "functionName": "transfer",
+        "args": [
+          "0xE0065B760Cc949f709359276D4105D6754041DbB",
+          "650641057299"
+        ]
+      },
+      "receipt": {
+        "status": "success",
+        "transactionIndex": 75,
+        "gasUsed": "47344",
+        "effectiveGasPrice": "7200000",
+        "blockNumber": "50936480",
+        "blockHash": "0x3002eaa36b4587ce02dec08910efeac3f383a44e0fa78b77b61e6b13df0aff08",
+        "decodedTransferLogs": [
+          {
+            "address": "0xC8adBFCFaC975583c8684C4e12633907315Ca610",
+            "logIndex": 419,
+            "eventName": "Transfer",
+            "args": {
+              "from": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+              "to": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+              "value": "650641057299"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "transactionHash": "0x8dca0d4fdd904fad22da65cc9d1f139257869780759978bea6672283363f83b8",
+      "block": {
+        "number": "50936482",
+        "hash": "0x4dcd37a32f39991cc115c7d7e59642ecbcf9983c19f12e320847e06b429295de",
+        "time": "2026-09-06T02:38:31.000Z"
+      },
+      "from": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+      "to": "0xEbC997B855B9a4E0b6cd06E4758801E6Ff068e07",
+      "nativeValueRaw": "0",
+      "nativeValueEth": "0",
+      "input": "0xa9059cbb000000000000000000000000e0065b760cc949f709359276d4105d6754041dbb000000000000000000000000000000000000000000000000000000673ef3eef1",
+      "decodedInput": {
+        "functionName": "transfer",
+        "args": [
+          "0xE0065B760Cc949f709359276D4105D6754041DbB",
+          "443437805297"
+        ]
+      },
+      "receipt": {
+        "status": "success",
+        "transactionIndex": 70,
+        "gasUsed": "47344",
+        "effectiveGasPrice": "7200000",
+        "blockNumber": "50936482",
+        "blockHash": "0x4dcd37a32f39991cc115c7d7e59642ecbcf9983c19f12e320847e06b429295de",
+        "decodedTransferLogs": [
+          {
+            "address": "0xEbC997B855B9a4E0b6cd06E4758801E6Ff068e07",
+            "logIndex": 190,
+            "eventName": "Transfer",
+            "args": {
+              "from": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+              "to": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+              "value": "443437805297"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "transactionHash": "0xe7d8eaadbb0e583503dd39f4438e49df9b41ac3103cc22da8b165bb46696b1b0",
+      "block": {
+        "number": "50936492",
+        "hash": "0xb04b00592e1114e93d79945f46ab1fdec863aa82c5c540b63b6e35bbeacea250",
+        "time": "2026-09-06T02:38:51.000Z"
+      },
+      "from": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+      "to": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+      "nativeValueRaw": "15618379055101",
+      "nativeValueEth": "0.000015618379055101",
+      "input": "0x",
+      "decodedInput": null,
+      "receipt": {
+        "status": "success",
+        "transactionIndex": 112,
+        "gasUsed": "21000",
+        "effectiveGasPrice": "7200000",
+        "blockNumber": "50936492",
+        "blockHash": "0xb04b00592e1114e93d79945f46ab1fdec863aa82c5c540b63b6e35bbeacea250",
+        "decodedTransferLogs": []
+      }
+    },
+    {
+      "transactionHash": "0x104d987a52374a8a34e548c88151ab419411fc85164b7ab8def2f0ed0d53276e",
+      "block": {
+        "number": "50936480",
+        "hash": "0x3002eaa36b4587ce02dec08910efeac3f383a44e0fa78b77b61e6b13df0aff08",
+        "time": "2026-09-06T02:38:27.000Z"
+      },
+      "from": "0x5C2cbe53f2CE1b58532D4985A9b9d3db87d3Af4c",
+      "to": "0xe96c54ea9FB4E373dcEfa7DB2E7A3ebe2Fefa46a",
+      "nativeValueRaw": "0",
+      "nativeValueEth": "0",
+      "input": "0xa9059cbb000000000000000000000000e0065b760cc949f709359276d4105d6754041dbb0000000000000000000000000000000000000000000000015af1d78b58c40000",
+      "decodedInput": {
+        "functionName": "transfer",
+        "args": [
+          "0xE0065B760Cc949f709359276D4105D6754041DbB",
+          "25000000000000000000"
+        ]
+      },
+      "receipt": {
+        "status": "success",
+        "transactionIndex": 61,
+        "gasUsed": "43965",
+        "effectiveGasPrice": "7200000",
+        "blockNumber": "50936480",
+        "blockHash": "0x3002eaa36b4587ce02dec08910efeac3f383a44e0fa78b77b61e6b13df0aff08",
+        "decodedTransferLogs": [
+          {
+            "address": "0xe96c54ea9FB4E373dcEfa7DB2E7A3ebe2Fefa46a",
+            "logIndex": 359,
+            "eventName": "Transfer",
+            "args": {
+              "from": "0x5C2cbe53f2CE1b58532D4985A9b9d3db87d3Af4c",
+              "to": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+              "value": "25000000000000000000"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "transactionHash": "0x4e64e7443fb00f45dbd7646959fdf811a5311b8a93ea00b5ebb5a3784865ef44",
+      "block": {
+        "number": "50936482",
+        "hash": "0x4dcd37a32f39991cc115c7d7e59642ecbcf9983c19f12e320847e06b429295de",
+        "time": "2026-09-06T02:38:31.000Z"
+      },
+      "from": "0x5C2cbe53f2CE1b58532D4985A9b9d3db87d3Af4c",
+      "to": "0x3368bFb035f52011D2bEFdC95d460352FB0ac0b5",
+      "nativeValueRaw": "0",
+      "nativeValueEth": "0",
+      "input": "0xa9059cbb000000000000000000000000e0065b760cc949f709359276d4105d6754041dbb0000000000000000000000000000000000000000000000015af1d78b58c40000",
+      "decodedInput": {
+        "functionName": "transfer",
+        "args": [
+          "0xE0065B760Cc949f709359276D4105D6754041DbB",
+          "25000000000000000000"
+        ]
+      },
+      "receipt": {
+        "status": "success",
+        "transactionIndex": 33,
+        "gasUsed": "43965",
+        "effectiveGasPrice": "7200000",
+        "blockNumber": "50936482",
+        "blockHash": "0x4dcd37a32f39991cc115c7d7e59642ecbcf9983c19f12e320847e06b429295de",
+        "decodedTransferLogs": [
+          {
+            "address": "0x3368bFb035f52011D2bEFdC95d460352FB0ac0b5",
+            "logIndex": 129,
+            "eventName": "Transfer",
+            "args": {
+              "from": "0x5C2cbe53f2CE1b58532D4985A9b9d3db87d3Af4c",
+              "to": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+              "value": "25000000000000000000"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "transactionHash": "0x43a3135d6db4eb89ed2460e71c96c8b25581fd59be0f07dd1dcd6e2a04a42e51",
+      "block": {
+        "number": "50936484",
+        "hash": "0x40f532996d96dde99036c04432bcd457ec6b8b268613e3d8ec40628f5f008aff",
+        "time": "2026-09-06T02:38:35.000Z"
+      },
+      "from": "0x5C2cbe53f2CE1b58532D4985A9b9d3db87d3Af4c",
+      "to": "0xe2aDB24d44B03dA658661890c65a8d01d4cBC5fa",
+      "nativeValueRaw": "0",
+      "nativeValueEth": "0",
+      "input": "0xa9059cbb000000000000000000000000e0065b760cc949f709359276d4105d6754041dbb000000000000000000000000000000000000000000000001158e460913d00000",
+      "decodedInput": {
+        "functionName": "transfer",
+        "args": [
+          "0xE0065B760Cc949f709359276D4105D6754041DbB",
+          "20000000000000000000"
+        ]
+      },
+      "receipt": {
+        "status": "success",
+        "transactionIndex": 17,
+        "gasUsed": "41867",
+        "effectiveGasPrice": "7200000",
+        "blockNumber": "50936484",
+        "blockHash": "0x40f532996d96dde99036c04432bcd457ec6b8b268613e3d8ec40628f5f008aff",
+        "decodedTransferLogs": [
+          {
+            "address": "0xe2aDB24d44B03dA658661890c65a8d01d4cBC5fa",
+            "logIndex": 3,
+            "eventName": "Transfer",
+            "args": {
+              "from": "0x5C2cbe53f2CE1b58532D4985A9b9d3db87d3Af4c",
+              "to": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+              "value": "20000000000000000000"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "transactionHash": "0x3b7d9df794ae994848f78ae120a3c1adad508aa2d3b1fa2f5a5e4b25576d4246",
+      "block": {
+        "number": "50936485",
+        "hash": "0x866b6be8e9884b71a0fcf1a0172d8a8f9c789941e04901518b0ee81a1fe52650",
+        "time": "2026-09-06T02:38:37.000Z"
+      },
+      "from": "0x5C2cbe53f2CE1b58532D4985A9b9d3db87d3Af4c",
+      "to": "0x35C0bB7AC52Cb5c26BCEc234A90bb24A5D31fC6f",
+      "nativeValueRaw": "0",
+      "nativeValueEth": "0",
+      "input": "0xa9059cbb000000000000000000000000e0065b760cc949f709359276d4105d6754041dbb000000000000000000000000000000000000000000000001158e460913d00000",
+      "decodedInput": {
+        "functionName": "transfer",
+        "args": [
+          "0xE0065B760Cc949f709359276D4105D6754041DbB",
+          "20000000000000000000"
+        ]
+      },
+      "receipt": {
+        "status": "success",
+        "transactionIndex": 121,
+        "gasUsed": "41867",
+        "effectiveGasPrice": "7200000",
+        "blockNumber": "50936485",
+        "blockHash": "0x866b6be8e9884b71a0fcf1a0172d8a8f9c789941e04901518b0ee81a1fe52650",
+        "decodedTransferLogs": [
+          {
+            "address": "0x35C0bB7AC52Cb5c26BCEc234A90bb24A5D31fC6f",
+            "logIndex": 409,
+            "eventName": "Transfer",
+            "args": {
+              "from": "0x5C2cbe53f2CE1b58532D4985A9b9d3db87d3Af4c",
+              "to": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+              "value": "20000000000000000000"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "transactionHash": "0x1cb0edb9ffaa15a24aa4d0e96f5601e873d626aa1e3dd4b1bbd06042cb108979",
+      "block": {
+        "number": "50936489",
+        "hash": "0x243b0dca93002fbd572e82e4b7c751d6c49a282f1b0c265fb94e2646fa3f3965",
+        "time": "2026-09-06T02:38:45.000Z"
+      },
+      "from": "0x5C2cbe53f2CE1b58532D4985A9b9d3db87d3Af4c",
+      "to": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+      "nativeValueRaw": "5602537789646357",
+      "nativeValueEth": "0.005602537789646357",
+      "input": "0x",
+      "decodedInput": null,
+      "receipt": {
+        "status": "success",
+        "transactionIndex": 116,
+        "gasUsed": "21000",
+        "effectiveGasPrice": "7200000",
+        "blockNumber": "50936489",
+        "blockHash": "0x243b0dca93002fbd572e82e4b7c751d6c49a282f1b0c265fb94e2646fa3f3965",
+        "decodedTransferLogs": []
+      }
+    }
+  ],
+  "movements": [
+    {
+      "transactionHash": "0xd4b2d3509933800635f9d72e517e87edc73b0716cb735167fffd0ca37d9f9a5a",
+      "block": {
+        "number": "50932951",
+        "hash": "0x64eee48b492cec150470a92afa8c0d8fd81ff243fb0a346634b50def86ccd7f1",
+        "time": "2026-09-06T00:40:49.000Z"
+      },
+      "from": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+      "destination": "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+      "receiptStatus": "success",
+      "asset": {
+        "address": "0xee05dbdcAf0CA060b973D5FC5B31e9B8327EDB39",
+        "name": "Chimi Strategy USDC AvantisSeniorNew",
+        "symbol": "ysUSDC",
+        "decimals": 6
+      },
+      "rawAmount": "1347499541",
+      "formattedAmount": "1347.499541",
+      "drainAttribution": {
+        "status": "exact-drain-receipt-match",
+        "basis": "Raw amount and token match drain receipt log 594, which transferred the token from the attacker contract to the payout address.",
+        "drainReceiptLogIndex": 594
+      }
+    },
+    {
+      "transactionHash": "0x3c87a577fec576a92be103cb4f8a0a106e71199f043e8dbdc6eac01ef7ee0234",
+      "block": {
+        "number": "50932982",
+        "hash": "0xcda2f970abb34eb15d6eba164290632248719b934d68396f1f85bb0419ce9b5a",
+        "time": "2026-09-06T00:41:51.000Z"
+      },
+      "from": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+      "destination": "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+      "receiptStatus": "success",
+      "asset": "ETH",
+      "rawAmount": "830000000000000",
+      "formattedAmount": "0.00083",
+      "drainAttribution": {
+        "status": "not-established",
+        "basis": "The April drain evidence used here does not establish the source of this native ETH."
+      }
+    },
+    {
+      "transactionHash": "0x6704b24d58044571ab52c9de584288d5c1378efcd37e6928357cf138f59b82ac",
+      "block": {
+        "number": "50936275",
+        "hash": "0x42010352a9c74dd8cfc02be229fd6b2edfd3017abb816c4b3845f323127c0b53",
+        "time": "2026-09-06T02:31:37.000Z"
+      },
+      "from": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+      "destination": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+      "receiptStatus": "success",
+      "asset": {
+        "address": "0x3094b241AaDe60F91f1c82b0628A10d9501462F9",
+        "name": "Earn Max USDC by Mo Wallet",
+        "symbol": "maxUSD",
+        "decimals": 18
+      },
+      "rawAmount": "873369247047",
+      "formattedAmount": "0.000000873369247047",
+      "drainAttribution": {
+        "status": "indexed-drain-derived-residual",
+        "basis": "The transfer is smaller than the drain receipt inflow. The token-filtered payout history returned one inbound maxUSD transfer, the drain receipt transfer, and no pagination cursor. This is bounded indexer evidence, not a complete chain proof.",
+        "drainReceiptLogIndex": 591,
+        "drainReceiptRawAmount": "31174292353430123175500",
+        "indexedInboundSource": "https://base.blockscout.com/api/v2/addresses/0x25c08505b6c5eba2d6c5d97c9e9a7f5f58d9a079/token-transfers?type=ERC-20&filter=to&token=0x3094b241AaDe60F91f1c82b0628A10d9501462F9"
+      }
+    },
+    {
+      "transactionHash": "0x6405850abb0540a0aaf6370b9a996db9744e93002e5d947d4948cdd107ed023d",
+      "block": {
+        "number": "50936480",
+        "hash": "0x3002eaa36b4587ce02dec08910efeac3f383a44e0fa78b77b61e6b13df0aff08",
+        "time": "2026-09-06T02:38:27.000Z"
+      },
+      "from": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+      "destination": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+      "receiptStatus": "success",
+      "asset": {
+        "address": "0xC8adBFCFaC975583c8684C4e12633907315Ca610",
+        "name": "CPT48 Selection",
+        "symbol": "CPT48",
+        "decimals": 18
+      },
+      "rawAmount": "650641057299",
+      "formattedAmount": "0.000000650641057299",
+      "drainAttribution": {
+        "status": "exact-drain-receipt-match",
+        "basis": "Raw amount and token match drain receipt log 592, which transferred the token from the attacker contract to the payout address.",
+        "drainReceiptLogIndex": 592
+      }
+    },
+    {
+      "transactionHash": "0x8dca0d4fdd904fad22da65cc9d1f139257869780759978bea6672283363f83b8",
+      "block": {
+        "number": "50936482",
+        "hash": "0x4dcd37a32f39991cc115c7d7e59642ecbcf9983c19f12e320847e06b429295de",
+        "time": "2026-09-06T02:38:31.000Z"
+      },
+      "from": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+      "destination": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+      "receiptStatus": "success",
+      "asset": {
+        "address": "0xEbC997B855B9a4E0b6cd06E4758801E6Ff068e07",
+        "name": "Pocky's High Yield USDC - Personal Vault",
+        "symbol": "PUSDCHY",
+        "decimals": 18
+      },
+      "rawAmount": "443437805297",
+      "formattedAmount": "0.000000443437805297",
+      "drainAttribution": {
+        "status": "exact-drain-receipt-match",
+        "basis": "Raw amount and token match drain receipt log 593, which transferred the token from the attacker contract to the payout address.",
+        "drainReceiptLogIndex": 593
+      }
+    },
+    {
+      "transactionHash": "0xe7d8eaadbb0e583503dd39f4438e49df9b41ac3103cc22da8b165bb46696b1b0",
+      "block": {
+        "number": "50936492",
+        "hash": "0xb04b00592e1114e93d79945f46ab1fdec863aa82c5c540b63b6e35bbeacea250",
+        "time": "2026-09-06T02:38:51.000Z"
+      },
+      "from": "0x25C08505b6c5Eba2D6C5d97c9E9a7F5f58d9A079",
+      "destination": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+      "receiptStatus": "success",
+      "asset": "ETH",
+      "rawAmount": "15618379055101",
+      "formattedAmount": "0.000015618379055101",
+      "drainAttribution": {
+        "status": "not-established",
+        "basis": "The April drain evidence used here does not establish the source of this native ETH."
+      }
+    },
+    {
+      "transactionHash": "0x104d987a52374a8a34e548c88151ab419411fc85164b7ab8def2f0ed0d53276e",
+      "block": {
+        "number": "50936480",
+        "hash": "0x3002eaa36b4587ce02dec08910efeac3f383a44e0fa78b77b61e6b13df0aff08",
+        "time": "2026-09-06T02:38:27.000Z"
+      },
+      "from": "0x5C2cbe53f2CE1b58532D4985A9b9d3db87d3Af4c",
+      "destination": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+      "receiptStatus": "success",
+      "asset": {
+        "address": "0xe96c54ea9FB4E373dcEfa7DB2E7A3ebe2Fefa46a",
+        "name": "Base Finance Depository",
+        "symbol": "BASCETORY",
+        "decimals": 18
+      },
+      "rawAmount": "25000000000000000000",
+      "formattedAmount": "25",
+      "drainAttribution": {
+        "status": "not-attributed",
+        "basis": "This token address does not appear among the April drain receipt transfers to the payout address. The executor link alone does not establish that the token was exploit proceeds."
+      }
+    },
+    {
+      "transactionHash": "0x4e64e7443fb00f45dbd7646959fdf811a5311b8a93ea00b5ebb5a3784865ef44",
+      "block": {
+        "number": "50936482",
+        "hash": "0x4dcd37a32f39991cc115c7d7e59642ecbcf9983c19f12e320847e06b429295de",
+        "time": "2026-09-06T02:38:31.000Z"
+      },
+      "from": "0x5C2cbe53f2CE1b58532D4985A9b9d3db87d3Af4c",
+      "destination": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+      "receiptStatus": "success",
+      "asset": {
+        "address": "0x3368bFb035f52011D2bEFdC95d460352FB0ac0b5",
+        "name": "$8bitbase",
+        "symbol": "8BITBASE",
+        "decimals": 18
+      },
+      "rawAmount": "25000000000000000000",
+      "formattedAmount": "25",
+      "drainAttribution": {
+        "status": "not-attributed",
+        "basis": "This token address does not appear among the April drain receipt transfers to the payout address. The executor link alone does not establish that the token was exploit proceeds."
+      }
+    },
+    {
+      "transactionHash": "0x43a3135d6db4eb89ed2460e71c96c8b25581fd59be0f07dd1dcd6e2a04a42e51",
+      "block": {
+        "number": "50936484",
+        "hash": "0x40f532996d96dde99036c04432bcd457ec6b8b268613e3d8ec40628f5f008aff",
+        "time": "2026-09-06T02:38:35.000Z"
+      },
+      "from": "0x5C2cbe53f2CE1b58532D4985A9b9d3db87d3Af4c",
+      "destination": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+      "receiptStatus": "success",
+      "asset": {
+        "address": "0xe2aDB24d44B03dA658661890c65a8d01d4cBC5fa",
+        "name": "0xDirectPing",
+        "symbol": "0xDP",
+        "decimals": 18
+      },
+      "rawAmount": "20000000000000000000",
+      "formattedAmount": "20",
+      "drainAttribution": {
+        "status": "not-attributed",
+        "basis": "This token address does not appear among the April drain receipt transfers to the payout address. The executor link alone does not establish that the token was exploit proceeds."
+      }
+    },
+    {
+      "transactionHash": "0x3b7d9df794ae994848f78ae120a3c1adad508aa2d3b1fa2f5a5e4b25576d4246",
+      "block": {
+        "number": "50936485",
+        "hash": "0x866b6be8e9884b71a0fcf1a0172d8a8f9c789941e04901518b0ee81a1fe52650",
+        "time": "2026-09-06T02:38:37.000Z"
+      },
+      "from": "0x5C2cbe53f2CE1b58532D4985A9b9d3db87d3Af4c",
+      "destination": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+      "receiptStatus": "success",
+      "asset": {
+        "address": "0x35C0bB7AC52Cb5c26BCEc234A90bb24A5D31fC6f",
+        "name": "Donald Trollp",
+        "symbol": "TROLLP",
+        "decimals": 18
+      },
+      "rawAmount": "20000000000000000000",
+      "formattedAmount": "20",
+      "drainAttribution": {
+        "status": "not-attributed",
+        "basis": "This token address does not appear among the April drain receipt transfers to the payout address. The executor link alone does not establish that the token was exploit proceeds."
+      }
+    },
+    {
+      "transactionHash": "0x1cb0edb9ffaa15a24aa4d0e96f5601e873d626aa1e3dd4b1bbd06042cb108979",
+      "block": {
+        "number": "50936489",
+        "hash": "0x243b0dca93002fbd572e82e4b7c751d6c49a282f1b0c265fb94e2646fa3f3965",
+        "time": "2026-09-06T02:38:45.000Z"
+      },
+      "from": "0x5C2cbe53f2CE1b58532D4985A9b9d3db87d3Af4c",
+      "destination": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+      "receiptStatus": "success",
+      "asset": "ETH",
+      "rawAmount": "5602537789646357",
+      "formattedAmount": "0.005602537789646357",
+      "drainAttribution": {
+        "status": "not-established",
+        "basis": "The April drain evidence used here does not establish the source of this native ETH."
+      }
+    }
+  ],
+  "destinationDisposition": [
+    {
+      "address": "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+      "received": [
+        "1347.499541 ysUSDC",
+        "0.00083 ETH"
+      ],
+      "history": {
+        "address": "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+        "retrievedAt": "2026-09-21T13:30:52.187Z",
+        "directOutgoing": {
+          "pagesRequestedMaximum": 3,
+          "pagesRetrieved": 1,
+          "hasMore": false,
+          "complete": false,
+          "source": "https://base.blockscout.com/api/v2/addresses/0x396134838Da76b63d797C5f32D0bC35A49e8ac1A/transactions?filter=from",
+          "items": [
+            {
+              "transactionHash": "0xbee916e8f4dd917d1ee6c9a5638a869728ec5377cf44a18a8f26d70757fee2c9",
+              "blockNumber": 51314144,
+              "timestamp": "2026-09-14T20:27:15.000000Z",
+              "from": "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+              "to": "0x4cD00E387622C35bDDB9b4c962C136462338BC31",
+              "nativeValueRaw": "0",
+              "nativeValueEth": "0",
+              "status": "ok",
+              "method": "depositErc20"
+            },
+            {
+              "transactionHash": "0x35ed12f50fe4ab361ca38caaf59ec404092c6b05ce166cd53832b943c81d41e5",
+              "blockNumber": 51314138,
+              "timestamp": "2026-09-14T20:27:03.000000Z",
+              "from": "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+              "to": "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
+              "nativeValueRaw": "0",
+              "nativeValueEth": "0",
+              "status": "ok",
+              "method": "approve"
+            },
+            {
+              "transactionHash": "0xe2a37a295ccb05ae1b89ef2c29413aa2c1bd3ea0291b164069de628e386335e7",
+              "blockNumber": 51301091,
+              "timestamp": "2026-09-14T13:12:09.000000Z",
+              "from": "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+              "to": "0x4cD00E387622C35bDDB9b4c962C136462338BC31",
+              "nativeValueRaw": "0",
+              "nativeValueEth": "0",
+              "status": "ok",
+              "method": "depositErc20"
+            },
+            {
+              "transactionHash": "0xb2c4d3371cd798f86408eecb011bcef9aa31bdc3646d75c9b0b816544c8f8758",
+              "blockNumber": 51300939,
+              "timestamp": "2026-09-14T13:07:05.000000Z",
+              "from": "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+              "to": "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
+              "nativeValueRaw": "0",
+              "nativeValueEth": "0",
+              "status": "ok",
+              "method": "approve"
+            },
+            {
+              "transactionHash": "0x26a76b60f52aef64a3f794dab7ad0890c36a4a540ae29f4604d254427fe9f2dd",
+              "blockNumber": 51278420,
+              "timestamp": "2026-09-14T00:36:27.000000Z",
+              "from": "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+              "to": "0x4cD00E387622C35bDDB9b4c962C136462338BC31",
+              "nativeValueRaw": "0",
+              "nativeValueEth": "0",
+              "status": "ok",
+              "method": "depositErc20"
+            },
+            {
+              "transactionHash": "0x1449144c6c192e5449d19a55a8d19616a54c1830b0eea60739b4830abf39453f",
+              "blockNumber": 51278414,
+              "timestamp": "2026-09-14T00:36:15.000000Z",
+              "from": "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+              "to": "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
+              "nativeValueRaw": "0",
+              "nativeValueEth": "0",
+              "status": "ok",
+              "method": "approve"
+            },
+            {
+              "transactionHash": "0x697848c37f875fd31545028da512123caa4a085dd0518f5f080dba604f622740",
+              "blockNumber": 51014209,
+              "timestamp": "2026-09-07T21:49:25.000000Z",
+              "from": "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+              "to": "0x4cD00E387622C35bDDB9b4c962C136462338BC31",
+              "nativeValueRaw": "0",
+              "nativeValueEth": "0",
+              "status": "ok",
+              "method": "depositErc20"
+            },
+            {
+              "transactionHash": "0x7868724a41e84803436c7f39eaca0d35148dbf30aeb434a0bfaacb13dfe7d873",
+              "blockNumber": 51014204,
+              "timestamp": "2026-09-07T21:49:15.000000Z",
+              "from": "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+              "to": "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
+              "nativeValueRaw": "0",
+              "nativeValueEth": "0",
+              "status": "ok",
+              "method": "approve"
+            }
+          ]
+        },
+        "erc20Outgoing": {
+          "pagesRequestedMaximum": 3,
+          "pagesRetrieved": 1,
+          "hasMore": false,
+          "complete": false,
+          "source": "https://base.blockscout.com/api/v2/addresses/0x396134838Da76b63d797C5f32D0bC35A49e8ac1A/token-transfers?filter=from&type=ERC-20",
+          "items": [
+            {
+              "transactionHash": "0xbee916e8f4dd917d1ee6c9a5638a869728ec5377cf44a18a8f26d70757fee2c9",
+              "timestamp": "2026-09-14T20:27:15.000000Z",
+              "from": "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+              "to": "0x4cD00E387622C35bDDB9b4c962C136462338BC31",
+              "token": {
+                "address": "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
+                "name": "L2 Standard Bridged USDT (Base)",
+                "symbol": "USDT",
+                "decimals": 6
+              },
+              "rawAmount": "30898943",
+              "formattedAmount": "30.898943"
+            },
+            {
+              "transactionHash": "0xe2a37a295ccb05ae1b89ef2c29413aa2c1bd3ea0291b164069de628e386335e7",
+              "timestamp": "2026-09-14T13:12:09.000000Z",
+              "from": "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+              "to": "0x4cD00E387622C35bDDB9b4c962C136462338BC31",
+              "token": {
+                "address": "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
+                "name": "L2 Standard Bridged USDT (Base)",
+                "symbol": "USDT",
+                "decimals": 6
+              },
+              "rawAmount": "24000000",
+              "formattedAmount": "24"
+            },
+            {
+              "transactionHash": "0x26a76b60f52aef64a3f794dab7ad0890c36a4a540ae29f4604d254427fe9f2dd",
+              "timestamp": "2026-09-14T00:36:27.000000Z",
+              "from": "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+              "to": "0x4cD00E387622C35bDDB9b4c962C136462338BC31",
+              "token": {
+                "address": "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
+                "name": "L2 Standard Bridged USDT (Base)",
+                "symbol": "USDT",
+                "decimals": 6
+              },
+              "rawAmount": "52000000",
+              "formattedAmount": "52"
+            },
+            {
+              "transactionHash": "0x697848c37f875fd31545028da512123caa4a085dd0518f5f080dba604f622740",
+              "timestamp": "2026-09-07T21:49:25.000000Z",
+              "from": "0x396134838Da76b63d797C5f32D0bC35A49e8ac1A",
+              "to": "0x4cD00E387622C35bDDB9b4c962C136462338BC31",
+              "token": {
+                "address": "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
+                "name": "L2 Standard Bridged USDT (Base)",
+                "symbol": "USDT",
+                "decimals": 6
+              },
+              "rawAmount": "20000000",
+              "formattedAmount": "20"
+            }
+          ]
+        }
+      },
+      "ysUsdc": {
+        "token": "0xee05dbdcAf0CA060b973D5FC5B31e9B8327EDB39",
+        "balanceAtTransferBlock": {
+          "raw": "1347499541",
+          "formatted": "1347.499541"
+        },
+        "balanceAtLatestRead": {
+          "raw": "1347499541",
+          "formatted": "1347.499541"
+        },
+        "underlying": {
+          "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+          "name": "USD Coin",
+          "symbol": "USDC",
+          "decimals": 6
+        },
+        "convertToAssetsAtTransferBlock": {
+          "raw": "1422793535",
+          "formatted": "1422.793535"
+        },
+        "previewRedeemAtTransferBlock": {
+          "raw": "1422793535",
+          "formatted": "1422.793535"
+        },
+        "maxRedeemAtTransferBlock": {
+          "raw": "0",
+          "formatted": "0"
+        },
+        "convertToAssetsAtLatestRead": {
+          "raw": "1422793535",
+          "formatted": "1422.793535"
+        },
+        "previewRedeemAtLatestRead": {
+          "raw": "1422793535",
+          "formatted": "1422.793535"
+        },
+        "maxRedeemAtLatestRead": {
+          "raw": "0",
+          "formatted": "0"
+        },
+        "conclusion": "The full ysUSDC amount remained at the destination through the latest balance block. No ysUSDC outgoing transfer appears in the exhausted one-page outgoing ERC-20 history. The ERC-4626 quote is economically material, but maxRedeem was zero at both checked blocks, so the quote does not prove immediate realizability or a cash-out."
+      }
+    },
+    {
+      "address": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+      "receivedFromPayout": [
+        "0.000000873369247047 maxUSD",
+        "0.000000650641057299 CPT48",
+        "0.000000443437805297 PUSDCHY",
+        "0.000015618379055101 ETH"
+      ],
+      "receivedFromExecutor": [
+        "25 BASCETORY",
+        "25 8BITBASE",
+        "20 0xDP",
+        "20 TROLLP",
+        "0.005602537789646357 ETH"
+      ],
+      "history": {
+        "address": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+        "retrievedAt": "2026-09-21T13:30:52.691Z",
+        "directOutgoing": {
+          "pagesRequestedMaximum": 3,
+          "pagesRetrieved": 1,
+          "hasMore": false,
+          "complete": false,
+          "source": "https://base.blockscout.com/api/v2/addresses/0xE0065B760Cc949f709359276D4105D6754041DbB/transactions?filter=from",
+          "items": [
+            {
+              "transactionHash": "0xd4c49998cfdc3ee5c4c5b94d2ea28dd41076253288b5dfb65fb436b9a1b100a0",
+              "blockNumber": 51062365,
+              "timestamp": "2026-09-09T00:34:37.000000Z",
+              "from": "0xE0065B760Cc949f709359276D4105D6754041DbB",
+              "to": "0x1231DEB6f5749EF6cE6943a275A1D3E7486F4EaE",
+              "nativeValueRaw": "9907036031804649",
+              "nativeValueEth": "0.009907036031804649",
+              "status": "ok",
+              "method": "swapAndStartBridgeTokensViaMayan"
+            }
+          ]
+        },
+        "erc20Outgoing": {
+          "pagesRequestedMaximum": 3,
+          "pagesRetrieved": 1,
+          "hasMore": false,
+          "complete": false,
+          "source": "https://base.blockscout.com/api/v2/addresses/0xE0065B760Cc949f709359276D4105D6754041DbB/token-transfers?filter=from&type=ERC-20",
+          "items": []
+        }
+      },
+      "drainLinkedTokenBalancesAtLatestRead": [
+        {
+          "token": "0x3094b241AaDe60F91f1c82b0628A10d9501462F9",
+          "symbol": "maxUSD",
+          "rawBalance": "873369247047",
+          "formattedBalance": "0.000000873369247047"
+        },
+        {
+          "token": "0xC8adBFCFaC975583c8684C4e12633907315Ca610",
+          "symbol": "CPT48",
+          "rawBalance": "650641057299",
+          "formattedBalance": "0.000000650641057299"
+        },
+        {
+          "token": "0xEbC997B855B9a4E0b6cd06E4758801E6Ff068e07",
+          "symbol": "PUSDCHY",
+          "rawBalance": "443437805297",
+          "formattedBalance": "0.000000443437805297"
+        }
+      ],
+      "conclusion": "The three drain-linked payout tokens remained at the destination through the latest balance block. The outgoing ERC-20 history had no items. A September 9 bridge transaction spent native ETH, but fungibility and other funding prevent attribution of any part of that spend to the September 6 receipts."
+    }
+  ],
+  "findings": [
+    "Transaction 0xd4b2d3509933800635f9d72e517e87edc73b0716cb735167fffd0ca37d9f9a5a transferred exactly 1,347.499541 ysUSDC from the payout address to 0x396134838Da76b63d797C5f32D0bC35A49e8ac1A. The raw amount exactly matches drain receipt log 594.",
+    "The ysUSDC balance was not dust. ERC-4626 convertToAssets and previewRedeem quoted 1,422.793535 USDC at the transfer block and latest block, while maxRedeem for the holder was zero at both blocks.",
+    "The CPT48 and PUSDCHY transfers to 0xE0065B760Cc949f709359276D4105D6754041DbB exactly match their drain receipt raw amounts, but both are sub-millionth-token dust at 18 decimals. The maxUSD transfer was also sub-millionth-token dust and the token-filtered indexed inbound history links its balance to the drain, subject to the indexer limitation.",
+    "The four executor-token transfers are observed movements from a linked redemption receiver. Their token addresses do not match the April drain payout tokens, so this evidence does not call them exploit proceeds.",
+    "The native ETH transfers are observed but their source is not established by the April ERC-20 drain evidence."
+  ],
+  "limitations": [
+    "Blockscout history pages report complete=false by design. Both destination queries exhausted after one page, but indexer coverage is not a complete chain scan.",
+    "The maxUSD attribution uses a token-filtered indexed inbound history with one result and no cursor. It is stronger than address linkage alone but remains subject to indexer coverage.",
+    "Token names and symbols are contract-returned metadata pinned at Base block 50,936,951.",
+    "convertToAssets and previewRedeem are contract quotes. maxRedeem=0 means this evidence does not establish immediate redemption or realized proceeds.",
+    "Latest balances are observations at the listed blocks and can change later.",
+    "No human identity, common ownership or relationship beyond the listed onchain links is asserted. No unrelated destination was traced further."
+  ]
+}
