@@ -9,6 +9,9 @@ export default defineConfig({
   // Canonical public URL; only used to build absolute sitemap entries. Pages
   // still link relatively (astro-relative-links) so they work on any gateway.
   site: 'https://hashfriend.eth.limo',
+  redirects: {
+    '/singularity-fi': '/singularity-finance-exploit/'
+  },
   integrations: [mdx(), sitemap(), relativeLinks()],
   fonts: [
     {
