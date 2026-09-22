@@ -63,11 +63,12 @@ The [governance transactions](evidence/2026-08-15_to_2026-08-24-governance-retry
 
 ## September ASI bridge incident
 
-The five X posts below were retrieved through the public FxTwitter API mirror on 21 September 2026. They are attributed reports, not an independently reproduced investigation of the September attack.
+The X posts below were retrieved through the public FxTwitter API mirror, the first five on 21 September 2026 and SingularityNET's statement on 22 September. They are attributed reports, not an independently reproduced investigation of the September attack.
 
 - [ASI Alliance, 20 September](https://x.com/ASI_Alliance/status/2101567173189656791), reports approximately $1.56 million in FET withdrawn from the converter. [Fetch.ai's statement that day](https://x.com/Fetch_ai/status/2101595159054131393) identifies a compromised signing key, says affected wallets and a contract were deactivated with SingularityNET, and labels its [linked analysis](https://asi1.ai/artifact/a7e8d9b0-de17-4646-a82b-3d56299022f7) preliminary.
 - [PeckShield, 19 September](https://x.com/PeckShieldAlert/status/2101457227379044822), attributes the Fetch.ai and NuNet incidents to the same exploiter and reports 408.5 million NTX minted. Its roughly $2 million estimate combines drained assets with a valuation of minted NTX. Its [20 September follow-up](https://x.com/PeckShieldAlert/status/2101602701251334368) reports unauthorized minting of 260 million AGIX and 53.838 million WMTx on Ethereum. The follow-up's $16.77 million figure values the attacker's reported holdings, including unsold tokens; it is not a verified cash-out total.
 - [Sprunky, 20 September](https://x.com/sprunky_eth/status/2101628187318857986), alleges single-EOA authorization and missing amount-limit checks in `conversionIn()`. Those implementation claims were not independently verified here. Its $8.87 million recipient-wallet estimate covers a different set of holdings from PeckShield's figure.
+- [SingularityNET, 22 September](https://x.com/SingularityNET/status/2102221596752482469), says an unauthorized party used access to part of its cloud infrastructure on 19 September to mint tokens and withdraw assets through its bridges. Its attached preliminary report lists a compromised AWS IAM deployment role, EKS node credentials, Jenkins, Secrets Manager, Cognito user pools and a GitHub repository. The bridges stay deactivated until an independent security review.
 
 These sources establish no direct connection to April's DynaVault drain. The April evidence identifies an oracle-pricing exploit, with no established key compromise. The comparison concerns the single-account powers documented under [Governance and retained admin powers](#governance-and-retained-admin-powers).
 
