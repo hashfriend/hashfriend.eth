@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-23T11:17:20.551Z",
+  "chain": "bnb",
+  "chainId": 56,
+  "rpc": "https://bsc-rpc.publicnode.com",
+  "vault": "0x2AbE7468F45a16e83fF6A3783180e9c532Bad197",
+  "symbol": "dynBnbGold",
+  "manager": "0x5E9359db317e1918B7FB4A4dc5083c156cC4d82D",
+  "method": {
+    "reads": "Direct eth_call reads of the vault and its manager at one pinned block, plus eth_getCode for the governance and guardian accounts at the same block",
+    "abiPolicy": "The ABI fragments came from the listed local Base verified-source cache artifacts. Successful decoding shows call compatibility only. This run did not verify that the BNB deployment shares those source builds.",
+    "abiArtifacts": [
+      {
+        "path": "packages/singularity-finance/contracts/8453/0x1f1933984a5e7f36a6fa8a454224d568ab2ba257/0xcff8b7b7a62349fff1bfd4129804e5788cd1b49fc8be5813a297168196c6d638.json",
+        "chainId": 8453,
+        "address": "0x1f1933984A5e7f36A6fa8A454224d568Ab2bA257",
+        "codeHash": "0xcff8b7b7a62349fff1bfd4129804e5788cd1b49fc8be5813a297168196c6d638",
+        "contractName": "PermissionedDynaVault"
+      },
+      {
+        "path": "packages/singularity-finance/contracts/8453/0x95cf606f7e499549d83bd3c8a1e5d97fdf36688b/0x186932b809c0aac756ab1e481c54ca91260302790bbfa58833dbef91f45153de.json",
+        "chainId": 8453,
+        "address": "0x95cF606f7e499549D83BD3c8a1e5D97FDF36688B",
+        "codeHash": "0x186932b809c0aac756ab1e481c54ca91260302790bbfa58833dbef91f45153de",
+        "contractName": "DynaVaultManager"
+      }
+    ],
+    "probe": "maxDeposit and hasRole(PERMITTED_USER) are read for 0x0000000000000000000000000000000000000001, an address that holds no role",
+    "limitation": "A single-block read. It does not identify depositors or establish when the governance or guardian accounts were assigned."
+  },
+  "block": {
+    "number": "123555598",
+    "hash": "0x9591565cbea4815c9a67ca5efa6c0f2ad74c800be779abb94df718e6427ad4e3",
+    "time": "2026-09-23T11:17:20.000Z"
+  },
+  "reads": {
+    "permissionDisabled": true,
+    "probe": {
+      "address": "0x0000000000000000000000000000000000000001",
+      "maxDeposit": "6277101735386680763835789423207666416102355444464034270572",
+      "permitted": false
+    },
+    "governance": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+    "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+    "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+    "isEmergencyShutdown": false,
+    "asset": "0x21cAef8A43163Eea865baeE23b9C2E327696A3bf",
+    "totalAssets": "242323",
+    "totalSupply": "243407495462224744",
+    "accountCode": {
+      "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db": "0x"
+    }
+  }
+}
