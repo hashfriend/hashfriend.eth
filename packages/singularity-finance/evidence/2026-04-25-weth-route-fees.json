@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1",
+  "capturedAt": "2026-09-23T20:43:19.000Z",
+  "chain": "base",
+  "chainId": "8453",
+  "rpc": "https://mainnet.base.org",
+  "oracle": "0x73b8c192bfc323c3ea224c88219d55dfc319e89f",
+  "method": "research call uniV3fee(base, quote) on the abandoned UniswapV3Oracle at the block before the drain, using its cached verified ABI. In that source, getPrice substitutes tier 3000 when uniV3fee returns 0.",
+  "block": {
+    "number": "45183966",
+    "hash": "0x6e14a76f94c6d568d6a866aa6c97e24e3aea5dd7d28fd01db91407f8eb199e9f",
+    "time": "2026-04-25T22:47:59.000Z"
+  },
+  "reads": [
+    {
+      "route": "tUSDC/WETH",
+      "base": "0x19f233B2953275196e6343F17b76dA098c478E21",
+      "quote": "0x4200000000000000000000000000000000000006",
+      "uniV3fee": 0
+    },
+    {
+      "route": "PUSDCHY/WETH",
+      "base": "0xEbC997B855B9a4E0b6cd06E4758801E6Ff068e07",
+      "quote": "0x4200000000000000000000000000000000000006",
+      "uniV3fee": 0
+    },
+    {
+      "route": "CPT48/WETH",
+      "base": "0xC8adBFCFaC975583c8684C4e12633907315Ca610",
+      "quote": "0x4200000000000000000000000000000000000006",
+      "uniV3fee": 0
+    },
+    {
+      "route": "maxUSD/WETH",
+      "base": "0x3094b241AaDe60F91f1c82b0628A10d9501462F9",
+      "quote": "0x4200000000000000000000000000000000000006",
+      "uniV3fee": 0
+    },
+    {
+      "route": "ysUSDC/WETH",
+      "base": "0xee05dbdcAf0CA060b973D5FC5B31e9B8327EDB39",
+      "quote": "0x4200000000000000000000000000000000000006",
+      "uniV3fee": 0
+    },
+    {
+      "route": "REN-USDC-B/WETH",
+      "base": "0x0FF79b6D6c0FB5faf54BD26db5Ce97062A105f81",
+      "quote": "0x4200000000000000000000000000000000000006",
+      "uniV3fee": 0
+    },
+    {
+      "route": "WETH/USDC",
+      "base": "0x4200000000000000000000000000000000000006",
+      "quote": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "uniV3fee": 100
+    }
+  ]
+}
