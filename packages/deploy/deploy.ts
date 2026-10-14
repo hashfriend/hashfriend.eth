@@ -221,7 +221,13 @@ async function shipToHost(cid: string) {
       .nothrow()
 
   if (shipped.exitCode !== 0) {
-    console.warn(`⚠️  Could not reach ${HOST}. The deploy stands without it.`)
+    // ssh exits 255 on its own failures; any other code is the remote ipfs.
+    const problem =
+      shipped.exitCode === 255
+        ? `Could not reach ${HOST}`
+        : `${HOST} did not import ${cid}`
+    console.warn(`⚠️  ${problem}: ${shipped.stderr.toString().trim()}`)
+    console.warn('   The deploy stands without it.')
     return
   }
 
