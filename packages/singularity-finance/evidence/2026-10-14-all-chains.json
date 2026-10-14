@@ -1,0 +1,2911 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-14T15:25:35.561Z",
+  "scope": [
+    "ethereum",
+    "arbitrum",
+    "bnb",
+    "optimism",
+    "polygon",
+    "base"
+  ],
+  "method": {
+    "client": "viem eth_call against each chain public RPC with the Safari User-Agent from src/http.ts",
+    "blockPolicy": "Each chain was read at one pinned block. The RPC chain ID and pinned block hash were checked before and after state reads.",
+    "registryPolicy": "Read allVaults and kept symbols starting with dyn, excluding symbols containing Test. On Base, only registry types 3 and 4 count, as in the research CLI.",
+    "abiPolicy": "Hand-written ABI fragments. The circuit-breaker getters match IDynaVaultManager in the cached PermissionedDynaVault source at contracts/8453/0x1f1933984a5e7f36a6fa8a454224d568ab2ba257. Successful decoding shows call compatibility only.",
+    "roleHashes": {
+      "DEFAULT_ADMIN_ROLE": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "PERMISSION_ADMIN": "0x00badfd1fe8cd7e23fdb6864e683e579d109e7de38e0632962093fe5a72ba86f",
+      "PERMITTED_USER": "0x4df3817562f6aefe3deb80604fbb8ba365320192d77c7a202383bff3ef9ba3b5"
+    },
+    "limitations": [
+      "No explorer source was fetched for non-Base deployments.",
+      "An error result for the circuit-breaker getters means the call reverted; it does not identify the deployed implementation.",
+      "Role holders were checked only for the listed accounts, not enumerated."
+    ]
+  },
+  "chains": [
+    {
+      "chain": "ethereum",
+      "chainId": 1,
+      "rpcVerification": {
+        "initialChainId": 1,
+        "finalChainId": 1,
+        "pinnedBlock": {
+          "number": "26191622",
+          "hash": "0x0c6b16d72b65b846e7f258aa90cada34d152cddc6414b3422302bf2c672feb60",
+          "time": "2026-10-14T15:25:23.000Z"
+        },
+        "confirmedBlock": {
+          "number": "26191622",
+          "hash": "0x0c6b16d72b65b846e7f258aa90cada34d152cddc6414b3422302bf2c672feb60",
+          "time": "2026-10-14T15:25:23.000Z"
+        }
+      },
+      "registry": "0x97C46cE66Ec71559DbF43fF9E5D110C3657C1ca4",
+      "entries": [
+        {
+          "vault": "0x0fC20308bC9C2E79302CcaC3735D1E9626baDA30",
+          "vaultType": 3,
+          "active": true
+        },
+        {
+          "vault": "0xabB91c92CB0e604Cd471A379B444CcA4daa23E5E",
+          "vaultType": 3,
+          "active": true
+        },
+        {
+          "vault": "0x9757515d91BD7C095f7AaC9cAD3d5Fb32f759E76",
+          "vaultType": 3,
+          "active": true
+        }
+      ],
+      "excluded": [],
+      "vaults": [
+        {
+          "symbol": "dynMainUSDC",
+          "address": "0x0fC20308bC9C2E79302CcaC3735D1E9626baDA30",
+          "vaultType": 3,
+          "active": true,
+          "manager": "0x4011012DCA1b9A038c59702889c4c02277574999",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "value": false
+          },
+          "maxReferenceValueDropBps": {
+            "value": "1"
+          },
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444461080619016"
+          },
+          "oracle": "0x0e06fD53A3a99e40337e9e7Ca52Ae8B7c25a712a",
+          "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "assetDecimals": 6,
+          "assets": "2953893879",
+          "supply": "2897286462351299293387",
+          "formattedAssets": "2953.893879",
+          "formattedSupply": "2897.286462351299293387",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [
+              "governanceSafe"
+            ],
+            "PERMISSION_ADMIN": [
+              "admin",
+              "governanceSafe"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        },
+        {
+          "symbol": "dynMainUSDCv2",
+          "address": "0xabB91c92CB0e604Cd471A379B444CcA4daa23E5E",
+          "vaultType": 3,
+          "active": true,
+          "manager": "0xc2Ff3Bf7128345099514E592866210Ff6789583F",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "value": false
+          },
+          "maxReferenceValueDropBps": {
+            "value": "1"
+          },
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444464015939290"
+          },
+          "oracle": "0x0e06fD53A3a99e40337e9e7Ca52Ae8B7c25a712a",
+          "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "assetDecimals": 6,
+          "assets": "18573605",
+          "supply": "16601000683751865136",
+          "formattedAssets": "18.573605",
+          "formattedSupply": "16.601000683751865136",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [
+              "governanceSafe"
+            ],
+            "PERMISSION_ADMIN": [
+              "admin",
+              "governanceSafe"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        },
+        {
+          "symbol": "dynMainUSDCv3",
+          "address": "0x9757515d91BD7C095f7AaC9cAD3d5Fb32f759E76",
+          "vaultType": 3,
+          "active": true,
+          "manager": "0x4B4e926aC571b153970f045E15D8deB09EAE598D",
+          "gov": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "value": false
+          },
+          "maxReferenceValueDropBps": {
+            "value": "1"
+          },
+          "permissionDisabled": false,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444463841674015"
+          },
+          "oracle": "0x0e06fD53A3a99e40337e9e7Ca52Ae8B7c25a712a",
+          "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "assetDecimals": 6,
+          "assets": "192838880",
+          "supply": "107069418268966501379",
+          "formattedAssets": "192.83888",
+          "formattedSupply": "107.069418268966501379",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [
+              "governanceSafe"
+            ],
+            "PERMISSION_ADMIN": [
+              "admin",
+              "governanceSafe"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "chain": "arbitrum",
+      "chainId": 42161,
+      "rpcVerification": {
+        "initialChainId": 42161,
+        "finalChainId": 42161,
+        "pinnedBlock": {
+          "number": "514780815",
+          "hash": "0x51ccd597bc3786396a2afc4b95aec92ac05ade8d5a546fc04b099b01469bcbc7",
+          "time": "2026-10-14T15:25:38.000Z"
+        },
+        "confirmedBlock": {
+          "number": "514780815",
+          "hash": "0x51ccd597bc3786396a2afc4b95aec92ac05ade8d5a546fc04b099b01469bcbc7",
+          "time": "2026-10-14T15:25:38.000Z"
+        }
+      },
+      "registry": "0x44921e42017316F89C1DEdd70a3A017d4c5162c3",
+      "entries": [
+        {
+          "vault": "0x70b6C8a39385a811Bbb741b2ADE2DB27B418F091",
+          "vaultType": 3,
+          "active": true
+        },
+        {
+          "vault": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+          "vaultType": 3,
+          "active": true
+        }
+      ],
+      "excluded": [],
+      "vaults": [
+        {
+          "symbol": "dynArbETH",
+          "address": "0x70b6C8a39385a811Bbb741b2ADE2DB27B418F091",
+          "vaultType": 3,
+          "active": true,
+          "manager": "0x2FDFfBD80a2d6DB2c253A52081669b09FFf0121F",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "value": false
+          },
+          "maxReferenceValueDropBps": {
+            "value": "1"
+          },
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416101231258318172885093"
+          },
+          "oracle": "0xd3681548191f8B25331a1d0AEfc90E62e8083274",
+          "asset": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+          "assetDecimals": 18,
+          "assets": "1124186145861627802",
+          "supply": "1118571112370242754",
+          "formattedAssets": "1.124186145861627802",
+          "formattedSupply": "1.118571112370242754",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [
+              "governanceSafe"
+            ],
+            "PERMISSION_ADMIN": [
+              "admin",
+              "governanceSafe"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        },
+        {
+          "symbol": "dynArbBTC",
+          "address": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+          "vaultType": 3,
+          "active": true,
+          "manager": "0xbC4E5e2922D126e22daB13c169f40534c73e999b",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "value": false
+          },
+          "maxReferenceValueDropBps": {
+            "value": "1"
+          },
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444464026702763"
+          },
+          "oracle": "0x512014e9a8753c654a21E2e1d9b5522808D11ad0",
+          "asset": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
+          "assetDecimals": 8,
+          "assets": "7810132",
+          "supply": "78097945343907572",
+          "formattedAssets": "0.07810132",
+          "formattedSupply": "0.078097945343907572",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [
+              "governanceSafe"
+            ],
+            "PERMISSION_ADMIN": [
+              "admin",
+              "governanceSafe"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "chain": "bnb",
+      "chainId": 56,
+      "rpcVerification": {
+        "initialChainId": 56,
+        "finalChainId": 56,
+        "pinnedBlock": {
+          "number": "127618318",
+          "hash": "0xc06e24a07ac6ded1ae9d880260f665f7095c15e95709db269fe3e38e163a2b1e",
+          "time": "2026-10-14T15:25:41.000Z"
+        },
+        "confirmedBlock": {
+          "number": "127618318",
+          "hash": "0xc06e24a07ac6ded1ae9d880260f665f7095c15e95709db269fe3e38e163a2b1e",
+          "time": "2026-10-14T15:25:41.000Z"
+        }
+      },
+      "registry": "0xBCCa741996196462480108BCEf7561C0aB3Fdb04",
+      "entries": [
+        {
+          "vault": "0xa42c06E4700280330DCC1Ac9E2b37fd3159200B7",
+          "vaultType": 3,
+          "active": true
+        },
+        {
+          "vault": "0x7eAa42F5138CA7d8c710C4238E590FA2d5623220",
+          "vaultType": 3,
+          "active": true
+        },
+        {
+          "vault": "0x937E581Fc4d38C87AE7E5033dB09CFadD37E3eB9",
+          "vaultType": 3,
+          "active": true
+        },
+        {
+          "vault": "0xb6d476a6723061ad9EFd896099ACc1874D38e0F5",
+          "vaultType": 3,
+          "active": true
+        },
+        {
+          "vault": "0x2AbE7468F45a16e83fF6A3783180e9c532Bad197",
+          "vaultType": 3,
+          "active": true
+        }
+      ],
+      "excluded": [],
+      "vaults": [
+        {
+          "symbol": "dynBnbUSDC",
+          "address": "0xa42c06E4700280330DCC1Ac9E2b37fd3159200B7",
+          "vaultType": 3,
+          "active": true,
+          "manager": "0x7276a8592E3dB41C6670C423012Fb727FadB970b",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "value": false
+          },
+          "maxReferenceValueDropBps": {
+            "value": "1"
+          },
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666415925468136500404027434"
+          },
+          "oracle": "0x5f349008BDAFAF158877cFa29C23d2E19EA0F30B",
+          "asset": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+          "assetDecimals": 18,
+          "assets": "176887307963630485461",
+          "supply": "165706564511072759473",
+          "formattedAssets": "176.887307963630485461",
+          "formattedSupply": "165.706564511072759473",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [
+              "governanceSafe"
+            ],
+            "PERMISSION_ADMIN": [
+              "admin"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        },
+        {
+          "symbol": "dynBnbUSDT",
+          "address": "0x7eAa42F5138CA7d8c710C4238E590FA2d5623220",
+          "vaultType": 3,
+          "active": true,
+          "manager": "0x9DCBa5dFe6c9f07b547aAf814745d82A810bdEFa",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "value": false
+          },
+          "maxReferenceValueDropBps": {
+            "value": "1"
+          },
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416030387854257779881122"
+          },
+          "oracle": "0x41bcB90dF4533fdb433F3B69b7868DbCf1E9bbBD",
+          "asset": "0x55d398326f99059fF775485246999027B3197955",
+          "assetDecimals": 18,
+          "assets": "71967590206254631773",
+          "supply": "70133251177346659098",
+          "formattedAssets": "71.967590206254631773",
+          "formattedSupply": "70.133251177346659098",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [
+              "admin"
+            ],
+            "PERMISSION_ADMIN": [
+              "admin"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        },
+        {
+          "symbol": "dynBnbBNB",
+          "address": "0x937E581Fc4d38C87AE7E5033dB09CFadD37E3eB9",
+          "vaultType": 3,
+          "active": true,
+          "manager": "0x22c313FBe4e1931Abf27C9338Fdf06dD5D221dA2",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "value": false
+          },
+          "maxReferenceValueDropBps": {
+            "value": "1"
+          },
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416100999429761581255848"
+          },
+          "oracle": "0x2683767Eeb7099A142BC3616C52d4529Cd8eb554",
+          "asset": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+          "assetDecimals": 18,
+          "assets": "1356014702453257047",
+          "supply": "1353871564116471093",
+          "formattedAssets": "1.356014702453257047",
+          "formattedSupply": "1.353871564116471093",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [
+              "admin"
+            ],
+            "PERMISSION_ADMIN": [
+              "admin"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        },
+        {
+          "symbol": "dynBnbBTCB",
+          "address": "0xb6d476a6723061ad9EFd896099ACc1874D38e0F5",
+          "vaultType": 3,
+          "active": true,
+          "manager": "0xD6FC952a059B69150561aC8c377e9b36465DA789",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "value": false
+          },
+          "maxReferenceValueDropBps": {
+            "value": "1"
+          },
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102351511014280938333"
+          },
+          "oracle": "0x32952F15fFB15066921272beE1570767D5ac0E67",
+          "asset": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+          "assetDecimals": 18,
+          "assets": "3933449753574562",
+          "supply": "3921201953302072",
+          "formattedAssets": "0.003933449753574562",
+          "formattedSupply": "0.003921201953302072",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [
+              "governanceSafe"
+            ],
+            "PERMISSION_ADMIN": [
+              "governanceSafe"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        },
+        {
+          "symbol": "dynBnbGold",
+          "address": "0x2AbE7468F45a16e83fF6A3783180e9c532Bad197",
+          "vaultType": 3,
+          "active": true,
+          "manager": "0x5E9359db317e1918B7FB4A4dc5083c156cC4d82D",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "value": false
+          },
+          "maxReferenceValueDropBps": {
+            "value": "1"
+          },
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444464034026467"
+          },
+          "oracle": "0x7548ff249eDE2e175d857DD5099000Df93408DA3",
+          "asset": "0x21cAef8A43163Eea865baeE23b9C2E327696A3bf",
+          "assetDecimals": 6,
+          "assets": "486428",
+          "supply": "488226271461614425",
+          "formattedAssets": "0.486428",
+          "formattedSupply": "0.488226271461614425",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [
+              "governanceSafe"
+            ],
+            "PERMISSION_ADMIN": [
+              "governanceSafe"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "chain": "optimism",
+      "chainId": 10,
+      "rpcVerification": {
+        "initialChainId": 10,
+        "finalChainId": 10,
+        "pinnedBlock": {
+          "number": "158196386",
+          "hash": "0x52448d235d1f834ce7340d6ff240caff86d14d7ab15583a3522e3f2214fc4af7",
+          "time": "2026-10-14T15:25:49.000Z"
+        },
+        "confirmedBlock": {
+          "number": "158196386",
+          "hash": "0x52448d235d1f834ce7340d6ff240caff86d14d7ab15583a3522e3f2214fc4af7",
+          "time": "2026-10-14T15:25:49.000Z"
+        }
+      },
+      "registry": "0x45585Acb41829139C7606ed6C4c5eaEC2DC50029",
+      "entries": [],
+      "excluded": [],
+      "vaults": []
+    },
+    {
+      "chain": "polygon",
+      "chainId": 137,
+      "rpcVerification": {
+        "initialChainId": 137,
+        "finalChainId": 137,
+        "pinnedBlock": {
+          "number": "95524150",
+          "hash": "0xef5b278dbdefb333d1f946768be1a6379c69d8c3f6d02e7290fb91cbdb3a593c",
+          "time": "2026-10-14T15:25:49.000Z"
+        },
+        "confirmedBlock": {
+          "number": "95524150",
+          "hash": "0xef5b278dbdefb333d1f946768be1a6379c69d8c3f6d02e7290fb91cbdb3a593c",
+          "time": "2026-10-14T15:25:49.000Z"
+        }
+      },
+      "registry": "0x3Bfdf549881bFD92D4cce82e6C28f5391408B4cc",
+      "entries": [],
+      "excluded": [],
+      "vaults": []
+    },
+    {
+      "chain": "base",
+      "chainId": 8453,
+      "rpcVerification": {
+        "initialChainId": 8453,
+        "finalChainId": 8453,
+        "pinnedBlock": {
+          "number": "52601101",
+          "hash": "0x0c849955102803e8b1c019bbeb9bba534f4c56b46aa9d703b1c7a173e4a015a5",
+          "time": "2026-10-14T15:25:49.000Z"
+        },
+        "confirmedBlock": {
+          "number": "52601101",
+          "hash": "0x0c849955102803e8b1c019bbeb9bba534f4c56b46aa9d703b1c7a173e4a015a5",
+          "time": "2026-10-14T15:25:49.000Z"
+        }
+      },
+      "registry": "0xe260c97949bB01E49c0af64a3525458197851657",
+      "entries": [
+        {
+          "vault": "0x1631CA6543adcB61e2B9e30189c8477981258274",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0xdf71487381Ab5bD5a6B17eAa61FE2E6045A0e805",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0xcb87331fd24000C70eF6b041DCdcBc3Ef824ea9e",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xE641e8B18ad842617a956a29A0b2c485Bd6871c0",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x460328F1fcb4E53e6E9BB8A5F4ec15dD724394af",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x5AE57ffedd7C250561C719097a4Ed41EAD98267B",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x619DD881EC9E5E08E67e641b9ab5Af3079DEfe11",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x44eE1F61045C389042C68d212074ef34d88679B9",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xCEDF4ee912d8469CBDd2Ab83b6Ca45aF2537a983",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x1ea76183a439802f588e859d7e1Cee71A3D6eE11",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xFc289A892f0423Dc9BB9Fe6c06fffaD71aA31aCE",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x40DcEE4d781e4e528C85DeA0ABb868C5639850dd",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x9bD997af11622FA6Cf2f9ab3ca4308E92c6C720c",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x718056B80316b65F0Cfaf671aD1155EE81c4C753",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x2F4dCE56eB89753988cdb158E3ce8641a00315C6",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6E0b01b992BB07a6C29e354ee766db81256C1B2D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xFB215556BcF1a1c97dCe3c35ED545F1540752Ca6",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xA775Fd0764b67D3509B309ca325615E73EAee76F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6AE9750De1e7eD6994d3Eae208a44e4b1f061D3C",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x977e337fFB8918a58bcC97C0CA5CDA08766F1467",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xD34bF8FBeb1c4E514B76449BBC0850D5A80c1632",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x12101d8B87838CDB0f8Fe61Fc4612c4809A01654",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xE35c3B16fe78a5eD30516b0EB34e0e69909CBA16",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x90315aa41162a0e3e398239C5CB36E789281039D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xAa6A5F4beA9762cF9052dFCb8B2FcA7A0692A364",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xD7ac3E4CFF0E8cc65aEf7646a0bB22F1a73aB2bb",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xA319a910B908E2Dd249fd6a87E257623A82a636E",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x029b7BEfa2BB385C263AD6Ba9917c859799801Ed",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x61D5478d803703B48390Be6C5D25Bb7250580114",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xDDCf6F2Fc1925Dd9AE77D403bDd0B95720CD133d",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x699be0f9ce812b454A53846e8E3B158bB8411A50",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x04C398001eafe1a464f7F9F4dD4426d345f2Ed0D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6AE40a99Fa21eEFD2C92CE40862BD2222347061f",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xbDc8B2ac60f3832adC4C2D0330395aBFdD45fEc0",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xddeD0699A5D3beA40179731EE9F87E95b0b6fF5A",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x9ABef9A578a46A76F161d9daAa77339Fd07da04E",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xC15e973120417894361A3E558D7CC7C1EEA29E72",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xC2D22feC220DeD0Ae9805d9e9B7C4DD93Ca91A64",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x559997E4a0346754D4f9e6f4E4F0C2c69085b970",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x11a50B418cd568dAB622Fe38517cfA9db9Cd86b8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x1ce983aA38728b1e7A08030072DB02102E392969",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x9A3fBa281B004882497D29B863c244619f2574b7",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xc9A736085e997B173228887B214Eb588eF7b693E",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x579E1f12e56C15e59862EBB4A7aA9609B4aD461F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x4F621a7C559869fE30f8b709FCaBb8049F17C13B",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x9803eb951930499BbDfD923d2e0C1b7625034Eb0",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x29e98D226eeaa20fbEcD6b6c668850BcaEac8628",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xB950D80C6759977Bb53d97B3a226c9B345247c82",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x1022E0D4B36EDf9Cf552FdC260101130ef1Dc131",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x75E0d5d511f663a4Def1B28d1226664ea3a72a15",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xA7Ad32028C7048d4BF2dc0A376cA94AB91F3A544",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x227DC2bdc5f747A58eeb79a182Dd5b296E90f22F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x0cd1CF79905897a50C45aaDE3A966eBcC46c991B",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xD536Db3A4e49189641B27Ed92C491eBF18792D7a",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xfD6CFF4Cc3BCbA7FBe1BACDc57B77DA5668Fc049",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xFBbfd4DAb5dd56909992cA077a807b72993461Db",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x108A5b19Ab08CD3b291e7B54A7878aDfa48FaB6D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xddcc531D07Cf068BE4619b8DA376f2a3729e3548",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6EAD885993A8b85558b52d3575eb4aaFb4E804a1",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xd41b1AB87C4B715E4D7001eddE32D79ee4eBa4Cb",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x675Ba680EbB61bDFa529Ec41094F08B36eBe2fAa",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xe087bAf104B316128eA2E140ee315d70865f14E8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x5B6f5890940228cdcFf682Ca17425977B235Ca45",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x26a17427532904650fda16B3472F98e891F34bC0",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xC30E55955262f5B714A2F14F63e17459c1722253",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x88DAa16322a456C3B193EDe94f10302762A10f5B",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x548bA2f92522391a4F88C0121C6f071A5807F665",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xaB58506555be5E09c8462850D8266619fC0eF014",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x302b232F45813E88539FFD7a8E9D28Df78c0b627",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x9065BdE967aE20819c5fA75731883c9c32fC60E8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xF0F1760E9E130508381cDc10FeEc09764a38e967",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x354F151248caF9DedE4Edf22f6954097E0755035",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x36237bae6CaCD057cC00b598182FD58785873D02",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x696A4ba5cFF354573CFE95647724068534CeD464",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xb4C000769f5fa257f975016611Bc508c662fC7BE",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf7C1592D0A32d1811A2261A407E8443c7a075153",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xd3647C178d8d7d6dF4a557bFCE73F4bBc406bED0",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xD1D2d7910A71bD7930A559885B82785e7A82B9CD",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xbDF03f4AD5085c59834C44430557D9Af05104b39",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x1fbae77255D572Baee0a1b274752e9a7b3b98110",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xaaF6fCB8285F7d8c12fd7eee98bc817198B7dACf",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x94847659F7f1eA5636eD9f988027bc926735aB89",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x42Ef6351AcC5d64a82d16057EC2091bCECCf3477",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x06205A5695f9eB3f1199fA81aD3231b3d122C26D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x717E8bD2Fa819427f969020fD7DB63644ce8c7ee",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xA532301b8fE1c08b512c4D3D2c4aB406a431cabc",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x0C3a5248c9133BFeD55676174bf454c087365583",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x7B67ab3600eff6BD2B593Bb9d8A7a310ed71126e",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x0Fbfd59a8b05296D881552f9472e82F3CeE531F5",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x8Ab531916036D47e8ADC2E4414597C75E80305EA",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x9DFa22d57A3374Da0e87EA95d98776cC19C5aEd3",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x36773Cc216D75EDf151fC0C86883941102d0da03",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x42AF46BEFb77fb0be58A44Bc24f7d9e2Bb141F96",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xcb3Fc245c3747d29e6b32dF0042aE911c28b3A8B",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x04fa389515f93D9627D56665060E8CA59f28dEcd",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xB15a805B086a8eDc15f172210e47BA17BA88baa7",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf2781389D9d84661fD8BBe047688d643C10133c1",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf3f81d261BBaEb82212211A15eb8eec616B1443D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x5CB8E906cB82b9e72f20FE163662de4b4f51699f",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xC12358718FFAd2257282Ab016bb08D6AD143291C",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x7278D0B023511D9C19a3131B28189600cc318c47",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x05185E9f9d50ad549Ec76d9B6D5F8273b078d7B8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x150817259ED6642a8eDdE674d81ba16603f4A7df",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xAc5A277789f9474849A10394fD19dbbB1Fe96d83",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6cf1Bb33632fe8BC9227882DdB72Dd44Ebda127c",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf9D6173d05cBa9f2a0C0Ab8fFDDe3bAe6a7ABB22",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xe4F5099c7123dDFf15C5bb73037c38d7bbDcE77b",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x1706dE48cd3C9fE05E8549b7247ffd99ce71Dc55",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x7a72f61ebb0785fdF35debEf36C6e77EDaa0cc53",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6FEA7Bfd2aF766Af59Aa80f3782f015a1af77A46",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xF4D10370EdB9Ab6EDA23c0e2Bb96c76Ac656c247",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x68C550549b6A07F36E441Ad1655F8909DA8B6e6A",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x01720FfEB0D461A0eF782ab18DAC905d745E6606",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x648f68110F636925eE62622e6A31b3BDC8118157",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x86Bcd704dBA9621d738Ef1f7Da8AbB500AF1B7f6",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x2f87c40F72CaAa0b25Ba60dB9c48905CFCf456B5",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xaA458849e891D005Bdbe66CBA2bFA45715dDA429",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xE185439fDEb25975261111183d55a1d828a17068",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xa2256FD892ABC7c8F75287cf0344788363e959B3",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xCc9f9F387da56436394285c990E7C17486dD1dA2",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x087350729F7A0cbDf89E87f963Cb2C659d476e69",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf8fAC7eF2069258857DA17D910F062F22054ec16",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xc0dbf664A8D78E2CE10556C75C0AF6a6c3d5A547",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf39f3c323F630104FF9eBa2AF4349F03CDd46A68",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x87C9a9Af4ed863976fEecf122c808Ab27AC7d8F5",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x7F7C24EB5Ce929fB22992C61F1094CAfd118878D",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xBDD5CE32AC0cC91ECa83c93FFD0418f1Be258caE",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xEd7B0c1b0B3e85208373F053c06f6D6963C71F13",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6dEDda9FD0cABB03Ebd1e4dFb4644E7a99583772",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x01252a5c4Ac3Db15F59Bf0a3673297C3A3149363",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x0e7DB96384C4b4B34F450fdB2004bc1e46fD5ca8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x76097f2DCA682F32631462e16EA34FF72DdeB8eE",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xe978c334A3AB6269988Af138559aB1504a3Ec495",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x96E10Eb4c4595607FC2F6A04807eD198BF73Cf8E",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x8CF32aaDcD40C2Fd9a2E68Cb4Bd08Cd97610772F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xec65a3aA34f41abFa666EC856D357e26db52119c",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x84cF84540cbe519762f96D5CF48612da3Df29feb",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xFca3d4128308350ae7552A17ea0D177a5631e8Ba",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xe79cAF4a4e700F8e3430310322d2191eb0DEb628",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x135cc13Cc88e489eFF42C0ee4Bb056f541AA04eb",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x529Ff57FFeD5f65c57716d4268CF720d447Eb48F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x630257c5b7c4E8E62cb058890ae7Ca07BB268999",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xfa54Ed23af65DF421Db2ad8e131741e260328050",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x533b49485734bEb0A4B2BDA4d900466F6A85cb24",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x19110f157Abb7d53C14558336657DBA20574D49c",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x25b422BDad72Aab642E9820374C6fF90eBaD3c1f",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x1c9184818c7C53b23C4fA2D51fcb6CD6892D7DC0",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x117dF3B0E9DeE5C7A61638513E65bA902025E1c8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xb630e190f2A38F2e7fF0618facA270f67B69f10a",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x6496D00D79F7068310a08e505488Dc6eee225fFd",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x8212e64a3F5A962F07f0d6781b8329bF4351A90F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x4cF17Ea9A9c14Ee26DE625Ea490f77E7a241b197",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xDe1Ed32576F5cAf7F54DF3Ec85fa6d5A5341E2F2",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x51296Fe764A2D1Ba1Bc35f759567d648951564b8",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x5F932753F0725b3cE75CED6aFC921B410c0513E6",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x7b6eB9E0df27Dad9eae430CeEd0A6C4A019d301C",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xcFfDDAf09c8883cC6311179283aFb13124a32899",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xbD037d71B530a00faDAF8181fA4c66a9446D415B",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x326bd604E7c7c8e4Df759698e214243A1ac2Fffd",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xFE7a32a7e43dD6a852eB75CC1AADC194e7331e01",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x0bd1121d624a89B38dF103006b10995F540A6B7A",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xbF4Eeb9f9F97B71BA89e0B30CaD0f9F59756fBa9",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x2447D1be86b0C8C57241750b9DF49f318c623E2A",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x8cA4818876835A402588BA02b77545d8E581e7d3",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xCEbF4f02D8C5d9391255e9b954C69b2D40665403",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xbe6D22D314c2A055feaa1178b73A5372CBe15Cd7",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x8C7cfaC3baDFb7fD61f84441B4DbE1904968a840",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xe55709b0E6888961a61C6B43f17757d453fF31f3",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xcE1Aa9653481C0064342f2470a3Be7a043a95076",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x2311EB9425b19205e3cFcFd4B2016358CC8159c5",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xf7386b6580744736c7218D876fa17Caf79d5dCE4",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x0D6862C7896233D4244cE746c368049B87c98B37",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0x792c1438356128f882340880f2f4d8e7a7912dAc",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0x22097a0B69b72b960D107aCa280755C5b447508F",
+          "vaultType": 0,
+          "active": true
+        },
+        {
+          "vault": "0xd8d294714F5b1A1104CFE75C0Bb4ceF547a05124",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0x7Fe44a8305df0d8F8d25f66cBd4212eA570c7882",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0xBba362347a4C2acCe05228b01249c42Ee0BEe29C",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0x5e0EA8c9801497758294755f6e85724b41417667",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0x67b93f6676bd1911c5FAe7Ffa90fFf5f35E14dCd",
+          "vaultType": 4,
+          "active": true
+        },
+        {
+          "vault": "0x4C1fa73Ebc7Aa7C88006D51414fC5387dE3bfE26",
+          "vaultType": 3,
+          "active": true
+        }
+      ],
+      "excluded": [
+        {
+          "vault": "0xcb87331fd24000C70eF6b041DCdcBc3Ef824ea9e",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "dynCLTestv1"
+        },
+        {
+          "vault": "0xE641e8B18ad842617a956a29A0b2c485Bd6871c0",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "dynCLTestv1"
+        },
+        {
+          "vault": "0x460328F1fcb4E53e6E9BB8A5F4ec15dD724394af",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "dynCLTestv2"
+        },
+        {
+          "vault": "0x5AE57ffedd7C250561C719097a4Ed41EAD98267B",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TV"
+        },
+        {
+          "vault": "0x619DD881EC9E5E08E67e641b9ab5Af3079DEfe11",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TV"
+        },
+        {
+          "vault": "0x44eE1F61045C389042C68d212074ef34d88679B9",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "dynCLTestv2"
+        },
+        {
+          "vault": "0xCEDF4ee912d8469CBDd2Ab83b6Ca45aF2537a983",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "dynCLTestv2"
+        },
+        {
+          "vault": "0x1ea76183a439802f588e859d7e1Cee71A3D6eE11",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xFc289A892f0423Dc9BB9Fe6c06fffaD71aA31aCE",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x40DcEE4d781e4e528C85DeA0ABb868C5639850dd",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x9bD997af11622FA6Cf2f9ab3ca4308E92c6C720c",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x718056B80316b65F0Cfaf671aD1155EE81c4C753",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x2F4dCE56eB89753988cdb158E3ce8641a00315C6",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x6E0b01b992BB07a6C29e354ee766db81256C1B2D",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xFB215556BcF1a1c97dCe3c35ED545F1540752Ca6",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xA775Fd0764b67D3509B309ca325615E73EAee76F",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x6AE9750De1e7eD6994d3Eae208a44e4b1f061D3C",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x977e337fFB8918a58bcC97C0CA5CDA08766F1467",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xD34bF8FBeb1c4E514B76449BBC0850D5A80c1632",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x12101d8B87838CDB0f8Fe61Fc4612c4809A01654",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xE35c3B16fe78a5eD30516b0EB34e0e69909CBA16",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x90315aa41162a0e3e398239C5CB36E789281039D",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xAa6A5F4beA9762cF9052dFCb8B2FcA7A0692A364",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xD7ac3E4CFF0E8cc65aEf7646a0bB22F1a73aB2bb",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xA319a910B908E2Dd249fd6a87E257623A82a636E",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x029b7BEfa2BB385C263AD6Ba9917c859799801Ed",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x61D5478d803703B48390Be6C5D25Bb7250580114",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xDDCf6F2Fc1925Dd9AE77D403bDd0B95720CD133d",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x699be0f9ce812b454A53846e8E3B158bB8411A50",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x04C398001eafe1a464f7F9F4dD4426d345f2Ed0D",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x6AE40a99Fa21eEFD2C92CE40862BD2222347061f",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xbDc8B2ac60f3832adC4C2D0330395aBFdD45fEc0",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xddeD0699A5D3beA40179731EE9F87E95b0b6fF5A",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x9ABef9A578a46A76F161d9daAa77339Fd07da04E",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xC15e973120417894361A3E558D7CC7C1EEA29E72",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xC2D22feC220DeD0Ae9805d9e9B7C4DD93Ca91A64",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x559997E4a0346754D4f9e6f4E4F0C2c69085b970",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x11a50B418cd568dAB622Fe38517cfA9db9Cd86b8",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x1ce983aA38728b1e7A08030072DB02102E392969",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x9A3fBa281B004882497D29B863c244619f2574b7",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xc9A736085e997B173228887B214Eb588eF7b693E",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x579E1f12e56C15e59862EBB4A7aA9609B4aD461F",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x4F621a7C559869fE30f8b709FCaBb8049F17C13B",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x9803eb951930499BbDfD923d2e0C1b7625034Eb0",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x29e98D226eeaa20fbEcD6b6c668850BcaEac8628",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xB950D80C6759977Bb53d97B3a226c9B345247c82",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x1022E0D4B36EDf9Cf552FdC260101130ef1Dc131",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x75E0d5d511f663a4Def1B28d1226664ea3a72a15",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "dynCLTestv2"
+        },
+        {
+          "vault": "0xA7Ad32028C7048d4BF2dc0A376cA94AB91F3A544",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x227DC2bdc5f747A58eeb79a182Dd5b296E90f22F",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x0cd1CF79905897a50C45aaDE3A966eBcC46c991B",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xD536Db3A4e49189641B27Ed92C491eBF18792D7a",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xfD6CFF4Cc3BCbA7FBe1BACDc57B77DA5668Fc049",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xFBbfd4DAb5dd56909992cA077a807b72993461Db",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x108A5b19Ab08CD3b291e7B54A7878aDfa48FaB6D",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xddcc531D07Cf068BE4619b8DA376f2a3729e3548",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x6EAD885993A8b85558b52d3575eb4aaFb4E804a1",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xd41b1AB87C4B715E4D7001eddE32D79ee4eBa4Cb",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x675Ba680EbB61bDFa529Ec41094F08B36eBe2fAa",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xe087bAf104B316128eA2E140ee315d70865f14E8",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x5B6f5890940228cdcFf682Ca17425977B235Ca45",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x26a17427532904650fda16B3472F98e891F34bC0",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xC30E55955262f5B714A2F14F63e17459c1722253",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x88DAa16322a456C3B193EDe94f10302762A10f5B",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x548bA2f92522391a4F88C0121C6f071A5807F665",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xaB58506555be5E09c8462850D8266619fC0eF014",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x302b232F45813E88539FFD7a8E9D28Df78c0b627",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x9065BdE967aE20819c5fA75731883c9c32fC60E8",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xF0F1760E9E130508381cDc10FeEc09764a38e967",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x354F151248caF9DedE4Edf22f6954097E0755035",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x36237bae6CaCD057cC00b598182FD58785873D02",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x696A4ba5cFF354573CFE95647724068534CeD464",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xb4C000769f5fa257f975016611Bc508c662fC7BE",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xf7C1592D0A32d1811A2261A407E8443c7a075153",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xd3647C178d8d7d6dF4a557bFCE73F4bBc406bED0",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xD1D2d7910A71bD7930A559885B82785e7A82B9CD",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xbDF03f4AD5085c59834C44430557D9Af05104b39",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x1fbae77255D572Baee0a1b274752e9a7b3b98110",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xaaF6fCB8285F7d8c12fd7eee98bc817198B7dACf",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x94847659F7f1eA5636eD9f988027bc926735aB89",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x42Ef6351AcC5d64a82d16057EC2091bCECCf3477",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x06205A5695f9eB3f1199fA81aD3231b3d122C26D",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x717E8bD2Fa819427f969020fD7DB63644ce8c7ee",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xA532301b8fE1c08b512c4D3D2c4aB406a431cabc",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x0C3a5248c9133BFeD55676174bf454c087365583",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x7B67ab3600eff6BD2B593Bb9d8A7a310ed71126e",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x0Fbfd59a8b05296D881552f9472e82F3CeE531F5",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x8Ab531916036D47e8ADC2E4414597C75E80305EA",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x9DFa22d57A3374Da0e87EA95d98776cC19C5aEd3",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x36773Cc216D75EDf151fC0C86883941102d0da03",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x42AF46BEFb77fb0be58A44Bc24f7d9e2Bb141F96",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xcb3Fc245c3747d29e6b32dF0042aE911c28b3A8B",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x04fa389515f93D9627D56665060E8CA59f28dEcd",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xB15a805B086a8eDc15f172210e47BA17BA88baa7",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xf2781389D9d84661fD8BBe047688d643C10133c1",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xf3f81d261BBaEb82212211A15eb8eec616B1443D",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x5CB8E906cB82b9e72f20FE163662de4b4f51699f",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xC12358718FFAd2257282Ab016bb08D6AD143291C",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x7278D0B023511D9C19a3131B28189600cc318c47",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x05185E9f9d50ad549Ec76d9B6D5F8273b078d7B8",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x150817259ED6642a8eDdE674d81ba16603f4A7df",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xAc5A277789f9474849A10394fD19dbbB1Fe96d83",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x6cf1Bb33632fe8BC9227882DdB72Dd44Ebda127c",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xf9D6173d05cBa9f2a0C0Ab8fFDDe3bAe6a7ABB22",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xe4F5099c7123dDFf15C5bb73037c38d7bbDcE77b",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x1706dE48cd3C9fE05E8549b7247ffd99ce71Dc55",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x7a72f61ebb0785fdF35debEf36C6e77EDaa0cc53",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x6FEA7Bfd2aF766Af59Aa80f3782f015a1af77A46",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xF4D10370EdB9Ab6EDA23c0e2Bb96c76Ac656c247",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x68C550549b6A07F36E441Ad1655F8909DA8B6e6A",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x01720FfEB0D461A0eF782ab18DAC905d745E6606",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x648f68110F636925eE62622e6A31b3BDC8118157",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x86Bcd704dBA9621d738Ef1f7Da8AbB500AF1B7f6",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x2f87c40F72CaAa0b25Ba60dB9c48905CFCf456B5",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xaA458849e891D005Bdbe66CBA2bFA45715dDA429",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xE185439fDEb25975261111183d55a1d828a17068",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xa2256FD892ABC7c8F75287cf0344788363e959B3",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xCc9f9F387da56436394285c990E7C17486dD1dA2",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x087350729F7A0cbDf89E87f963Cb2C659d476e69",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xf8fAC7eF2069258857DA17D910F062F22054ec16",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xc0dbf664A8D78E2CE10556C75C0AF6a6c3d5A547",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xf39f3c323F630104FF9eBa2AF4349F03CDd46A68",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x87C9a9Af4ed863976fEecf122c808Ab27AC7d8F5",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x7F7C24EB5Ce929fB22992C61F1094CAfd118878D",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xBDD5CE32AC0cC91ECa83c93FFD0418f1Be258caE",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xEd7B0c1b0B3e85208373F053c06f6D6963C71F13",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x6dEDda9FD0cABB03Ebd1e4dFb4644E7a99583772",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x01252a5c4Ac3Db15F59Bf0a3673297C3A3149363",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x0e7DB96384C4b4B34F450fdB2004bc1e46fD5ca8",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x76097f2DCA682F32631462e16EA34FF72DdeB8eE",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xe978c334A3AB6269988Af138559aB1504a3Ec495",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x96E10Eb4c4595607FC2F6A04807eD198BF73Cf8E",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x8CF32aaDcD40C2Fd9a2E68Cb4Bd08Cd97610772F",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xec65a3aA34f41abFa666EC856D357e26db52119c",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x84cF84540cbe519762f96D5CF48612da3Df29feb",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xFca3d4128308350ae7552A17ea0D177a5631e8Ba",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xe79cAF4a4e700F8e3430310322d2191eb0DEb628",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x135cc13Cc88e489eFF42C0ee4Bb056f541AA04eb",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "dynCLTestv2"
+        },
+        {
+          "vault": "0x529Ff57FFeD5f65c57716d4268CF720d447Eb48F",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x630257c5b7c4E8E62cb058890ae7Ca07BB268999",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xfa54Ed23af65DF421Db2ad8e131741e260328050",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x533b49485734bEb0A4B2BDA4d900466F6A85cb24",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x19110f157Abb7d53C14558336657DBA20574D49c",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x25b422BDad72Aab642E9820374C6fF90eBaD3c1f",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x1c9184818c7C53b23C4fA2D51fcb6CD6892D7DC0",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x117dF3B0E9DeE5C7A61638513E65bA902025E1c8",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xb630e190f2A38F2e7fF0618facA270f67B69f10a",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x6496D00D79F7068310a08e505488Dc6eee225fFd",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x8212e64a3F5A962F07f0d6781b8329bF4351A90F",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x4cF17Ea9A9c14Ee26DE625Ea490f77E7a241b197",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xDe1Ed32576F5cAf7F54DF3Ec85fa6d5A5341E2F2",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x51296Fe764A2D1Ba1Bc35f759567d648951564b8",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x5F932753F0725b3cE75CED6aFC921B410c0513E6",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x7b6eB9E0df27Dad9eae430CeEd0A6C4A019d301C",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xcFfDDAf09c8883cC6311179283aFb13124a32899",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xbD037d71B530a00faDAF8181fA4c66a9446D415B",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x326bd604E7c7c8e4Df759698e214243A1ac2Fffd",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xFE7a32a7e43dD6a852eB75CC1AADC194e7331e01",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x0bd1121d624a89B38dF103006b10995F540A6B7A",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xbF4Eeb9f9F97B71BA89e0B30CaD0f9F59756fBa9",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x2447D1be86b0C8C57241750b9DF49f318c623E2A",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x8cA4818876835A402588BA02b77545d8E581e7d3",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xCEbF4f02D8C5d9391255e9b954C69b2D40665403",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xbe6D22D314c2A055feaa1178b73A5372CBe15Cd7",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x8C7cfaC3baDFb7fD61f84441B4DbE1904968a840",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xe55709b0E6888961a61C6B43f17757d453fF31f3",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xcE1Aa9653481C0064342f2470a3Be7a043a95076",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x2311EB9425b19205e3cFcFd4B2016358CC8159c5",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0xf7386b6580744736c7218D876fa17Caf79d5dCE4",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "TEST"
+        },
+        {
+          "vault": "0x792c1438356128f882340880f2f4d8e7a7912dAc",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "dynBasecbBTC"
+        },
+        {
+          "vault": "0x22097a0B69b72b960D107aCa280755C5b447508F",
+          "vaultType": 0,
+          "active": true,
+          "symbol": "dynBaseBTC"
+        }
+      ],
+      "vaults": [
+        {
+          "symbol": "dynBaseUSDC",
+          "address": "0x1631CA6543adcB61e2B9e30189c8477981258274",
+          "vaultType": 4,
+          "active": true,
+          "manager": "0xa41263d0910e2daEDC993a8ac31c2b7A9f931A66",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "error": "The contract function \"depositMintCircuitBreakerActive\" reverted."
+          },
+          "maxReferenceValueDropBps": {
+            "error": "The contract function \"maxReferenceValueDropBps\" reverted."
+          },
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444463873885918"
+          },
+          "oracle": "0x6E03c0B5ed1B16a8fD3F04346846EF986CbfC0F1",
+          "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+          "assetDecimals": 6,
+          "assets": "160626977",
+          "supply": "152051061643884115585",
+          "formattedAssets": "160.626977",
+          "formattedSupply": "152.051061643884115585",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [
+              "governanceSafe"
+            ],
+            "PERMISSION_ADMIN": [
+              "admin"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        },
+        {
+          "symbol": "dynBaseUSDCv2",
+          "address": "0xdf71487381Ab5bD5a6B17eAa61FE2E6045A0e805",
+          "vaultType": 4,
+          "active": true,
+          "manager": "0xa2B5F4eAb526f0Bc2BA394345b76CC737988242F",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "error": "The contract function \"depositMintCircuitBreakerActive\" reverted."
+          },
+          "maxReferenceValueDropBps": {
+            "error": "The contract function \"maxReferenceValueDropBps\" reverted."
+          },
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444462429988522"
+          },
+          "oracle": "0x6E03c0B5ed1B16a8fD3F04346846EF986CbfC0F1",
+          "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+          "assetDecimals": 6,
+          "assets": "1604524373",
+          "supply": "1378573455638598052037",
+          "formattedAssets": "1604.524373",
+          "formattedSupply": "1378.573455638598052037",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [],
+            "PERMISSION_ADMIN": [
+              "admin"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        },
+        {
+          "symbol": "dynBaseWETH",
+          "address": "0x0D6862C7896233D4244cE746c368049B87c98B37",
+          "vaultType": 4,
+          "active": true,
+          "manager": "0x799B6778D7148e25D5f90A8aaC47981D25a6c337",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "error": "The contract function \"depositMintCircuitBreakerActive\" reverted."
+          },
+          "maxReferenceValueDropBps": {
+            "error": "The contract function \"maxReferenceValueDropBps\" reverted."
+          },
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416101680210518181114215"
+          },
+          "oracle": "0x9dDC18BF74b47458F790c11d0810886A15BA8652",
+          "asset": "0x4200000000000000000000000000000000000006",
+          "assetDecimals": 18,
+          "assets": "675233945853398680",
+          "supply": "657940272752809256",
+          "formattedAssets": "0.67523394585339868",
+          "formattedSupply": "0.657940272752809256",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [
+              "governanceSafe"
+            ],
+            "PERMISSION_ADMIN": [
+              "admin"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        },
+        {
+          "symbol": "dynBaseBTC",
+          "address": "0xd8d294714F5b1A1104CFE75C0Bb4ceF547a05124",
+          "vaultType": 4,
+          "active": true,
+          "manager": "0x8A6B10e614228D80F69E2E50780e2FA3878f1AF3",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "error": "The contract function \"depositMintCircuitBreakerActive\" reverted."
+          },
+          "maxReferenceValueDropBps": {
+            "error": "The contract function \"maxReferenceValueDropBps\" reverted."
+          },
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444464031689878"
+          },
+          "oracle": "0x00De8B6953b6C15684c9a20528Dd0a61c8C54482",
+          "asset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+          "assetDecimals": 8,
+          "assets": "2823017",
+          "supply": "27237866442286093",
+          "formattedAssets": "0.02823017",
+          "formattedSupply": "0.027237866442286093",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [
+              "governanceSafe"
+            ],
+            "PERMISSION_ADMIN": [
+              "admin"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        },
+        {
+          "symbol": "dynBaseEURC",
+          "address": "0x7Fe44a8305df0d8F8d25f66cBd4212eA570c7882",
+          "vaultType": 4,
+          "active": true,
+          "manager": "0x4a82DCe425C1e4725B780742Ef95510BD6DB60aD",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "error": "The contract function \"depositMintCircuitBreakerActive\" reverted."
+          },
+          "maxReferenceValueDropBps": {
+            "error": "The contract function \"maxReferenceValueDropBps\" reverted."
+          },
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444463820638687"
+          },
+          "oracle": "0x158961d88aD551585Bda75f42e484A30371793dC",
+          "asset": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+          "assetDecimals": 6,
+          "assets": "213874208",
+          "supply": "200579716199664131657",
+          "formattedAssets": "213.874208",
+          "formattedSupply": "200.579716199664131657",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [
+              "governanceSafe"
+            ],
+            "PERMISSION_ADMIN": [
+              "admin"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        },
+        {
+          "symbol": "dynBaseEURCv2",
+          "address": "0xBba362347a4C2acCe05228b01249c42Ee0BEe29C",
+          "vaultType": 4,
+          "active": true,
+          "manager": "0xBF081c322c8E51Cda77048Abfe895968f5822bA7",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "error": "The contract function \"depositMintCircuitBreakerActive\" reverted."
+          },
+          "maxReferenceValueDropBps": {
+            "error": "The contract function \"maxReferenceValueDropBps\" reverted."
+          },
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444463792228903"
+          },
+          "oracle": "0x158961d88aD551585Bda75f42e484A30371793dC",
+          "asset": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+          "assetDecimals": 6,
+          "assets": "242283992",
+          "supply": "228204758834296397699",
+          "formattedAssets": "242.283992",
+          "formattedSupply": "228.204758834296397699",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [
+              "governanceSafe"
+            ],
+            "PERMISSION_ADMIN": [
+              "admin"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        },
+        {
+          "symbol": "dynBaseWETHv2",
+          "address": "0x5e0EA8c9801497758294755f6e85724b41417667",
+          "vaultType": 4,
+          "active": true,
+          "manager": "0x94FbD5fCecAEe13a1f4B52846Bcb605297974F30",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "error": "The contract function \"depositMintCircuitBreakerActive\" reverted."
+          },
+          "maxReferenceValueDropBps": {
+            "error": "The contract function \"maxReferenceValueDropBps\" reverted."
+          },
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416101968152450542662185"
+          },
+          "oracle": "0x9dDC18BF74b47458F790c11d0810886A15BA8652",
+          "asset": "0x4200000000000000000000000000000000000006",
+          "assetDecimals": 18,
+          "assets": "387292013491850710",
+          "supply": "352342852259718308",
+          "formattedAssets": "0.38729201349185071",
+          "formattedSupply": "0.352342852259718308",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [
+              "governanceSafe"
+            ],
+            "PERMISSION_ADMIN": [
+              "admin"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        },
+        {
+          "symbol": "dynBaseUSDCv3",
+          "address": "0x67b93f6676bd1911c5FAe7Ffa90fFf5f35E14dCd",
+          "vaultType": 4,
+          "active": true,
+          "manager": "0x478675aA4121c07825167bBB25A44AADD22bEf7F",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "error": "The contract function \"depositMintCircuitBreakerActive\" reverted."
+          },
+          "maxReferenceValueDropBps": {
+            "error": "The contract function \"maxReferenceValueDropBps\" reverted."
+          },
+          "permissionDisabled": true,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444463931434524"
+          },
+          "oracle": "0x6E03c0B5ed1B16a8fD3F04346846EF986CbfC0F1",
+          "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+          "assetDecimals": 6,
+          "assets": "103078371",
+          "supply": "428293164241436980542863",
+          "formattedAssets": "103.078371",
+          "formattedSupply": "428293.164241436980542863",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [
+              "governanceSafe"
+            ],
+            "PERMISSION_ADMIN": [
+              "admin"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        },
+        {
+          "symbol": "dynBaseUSDCv4",
+          "address": "0x4C1fa73Ebc7Aa7C88006D51414fC5387dE3bfE26",
+          "vaultType": 3,
+          "active": true,
+          "manager": "0x077Fb8b4b5a749CF9Ea922373F3cbCc46aD4b9C6",
+          "gov": "0x5bfc34fBa904b7d93a13c381aDcC47DE657599Ff",
+          "guardian": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+          "management": "0x4dd226D874bdA38a2FFd55f39acE3829b0217CF0",
+          "emergency": false,
+          "depositMintCircuitBreakerActive": {
+            "value": false
+          },
+          "maxReferenceValueDropBps": {
+            "value": "1"
+          },
+          "permissionDisabled": false,
+          "probe": {
+            "address": "0x0000000000000000000000000000000000000001",
+            "maxDeposit": "6277101735386680763835789423207666416102355444463969447350"
+          },
+          "oracle": "0x6E03c0B5ed1B16a8fD3F04346846EF986CbfC0F1",
+          "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+          "assetDecimals": 6,
+          "assets": "65065545",
+          "supply": "56647029274974621951",
+          "formattedAssets": "65.065545",
+          "formattedSupply": "56.647029274974621951",
+          "roleHolders": {
+            "DEFAULT_ADMIN_ROLE": [
+              "governanceSafe"
+            ],
+            "PERMISSION_ADMIN": [
+              "admin",
+              "governanceSafe"
+            ],
+            "PERMITTED_USER": [
+              "admin"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

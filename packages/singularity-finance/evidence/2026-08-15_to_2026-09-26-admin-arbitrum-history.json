@@ -1,0 +1,4052 @@
+{
+  "chain": "arbitrum",
+  "address": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+  "source": "https://arbitrum.blockscout.com/api/v2/addresses/0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db/transactions?filter=from",
+  "retrievedAt": "2026-10-14T15:16:38Z",
+  "complete": false,
+  "note": "Newest pages of transactions sent by the admin account, paginated until an item predated 14 September 2026.",
+  "items": [
+    {
+      "priority_fee": "0",
+      "raw_input": "0xab033ea90000000000000000000000005bfc34fba904b7d93a13c381adcc47de657599ff",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x0dd943b5d0402e80060f60569117c4a46cdaccc35a5d52b11b968628a5c07ce2",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "700520000000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 5734044,
+      "position": 2,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "35026",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xbC4E5e2922D126e22daB13c169f40534c73e999b",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0xab033ea9",
+      "fee": {
+        "type": "actual",
+        "value": "700520000000"
+      },
+      "gas_limit": "53070",
+      "gas_price": "20000000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20000000",
+      "timestamp": "2026-09-26T09:45:08.000000Z",
+      "nonce": 250,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 509044668,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x44fab89d000000000000000000000000000000000000000000000000000000ad3cb1abe5",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0xd5f9d980597e7b3227c1e0e7dd48e8cb0c09695a9b06e8d66fb595fbf3b0d8ec",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "791973072000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 5734090,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "39567",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xbC4E5e2922D126e22daB13c169f40534c73e999b",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x44fab89d",
+      "fee": {
+        "type": "actual",
+        "value": "791973072000"
+      },
+      "gas_limit": "59895",
+      "gas_price": "20016000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20016000",
+      "timestamp": "2026-09-26T09:44:56.000000Z",
+      "nonce": 249,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 509044622,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0xd547741f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000cd231d4ba7b15a4722ac057419d9cd7689e7b8db",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x132bff5fddf2c6328d74657e2fe05d7071eea9d704aae599c57611447025fd7e",
+      "max_fee_per_gas": "25090000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "602860548000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 5734516,
+      "position": 5,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "30137",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-BTC Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0xd547741f",
+      "fee": {
+        "type": "actual",
+        "value": "602860548000"
+      },
+      "gas_limit": "53108",
+      "gas_price": "20004000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20004000",
+      "timestamp": "2026-09-26T09:43:02.000000Z",
+      "nonce": 248,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 509044196,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0xd547741f00badfd1fe8cd7e23fdb6864e683e579d109e7de38e0632962093fe5a72ba86f0000000000000000000000005bf7051c25698c82bffad975a1da8a272ac9a112",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x3c2eb85c957642ce92aa7c0158b7361142a3a07bee2da32390778107acf227c9",
+      "max_fee_per_gas": "25030000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "650940192000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 5734552,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "32508",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-BTC Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0xd547741f",
+      "fee": {
+        "type": "actual",
+        "value": "650940192000"
+      },
+      "gas_limit": "56706",
+      "gas_price": "20024000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20024000",
+      "timestamp": "2026-09-26T09:42:53.000000Z",
+      "nonce": 247,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 509044160,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0xd547741f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000005bf7051c25698c82bffad975a1da8a272ac9a112",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x93ffdd733e2b0e1e10861785cacf5d66876d4b73083952611527b2cd828119d1",
+      "max_fee_per_gas": "25010000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "643748352000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 5734579,
+      "position": 3,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "32136",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-BTC Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0xd547741f",
+      "fee": {
+        "type": "actual",
+        "value": "643748352000"
+      },
+      "gas_limit": "56142",
+      "gas_price": "20032000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20032000",
+      "timestamp": "2026-09-26T09:42:46.000000Z",
+      "nonce": 246,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 509044133,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x2f2ff15d00badfd1fe8cd7e23fdb6864e683e579d109e7de38e0632962093fe5a72ba86f0000000000000000000000005bfc34fba904b7d93a13c381adcc47de657599ff",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x207ca6fa84111c1a48610a0d8a8c501bdfe55a643e7561db50a4059a64ffd5ab",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "1091450360000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 5734624,
+      "position": 2,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "54518",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-BTC Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x2f2ff15d",
+      "fee": {
+        "type": "actual",
+        "value": "1091450360000"
+      },
+      "gas_limit": "82949",
+      "gas_price": "20020000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20020000",
+      "timestamp": "2026-09-26T09:42:34.000000Z",
+      "nonce": 245,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 509044088,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x2f2ff15d00000000000000000000000000000000000000000000000000000000000000000000000000000000000000005bfc34fba904b7d93a13c381adcc47de657599ff",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x421643b511cb789fe5320cfdef4462f52017a46116682541c107b2bf83767952",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "1082940000000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 5734648,
+      "position": 3,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "54147",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-BTC Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x2f2ff15d",
+      "fee": {
+        "type": "actual",
+        "value": "1082940000000"
+      },
+      "gas_limit": "82389",
+      "gas_price": "20000000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20000000",
+      "timestamp": "2026-09-26T09:42:27.000000Z",
+      "nonce": 244,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 509044064,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0xab033ea90000000000000000000000005bfc34fba904b7d93a13c381adcc47de657599ff",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0xa2e306fc5b0824c3751d97535dec9751fb98bb612d3ec65d50c46b31d3d188b1",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "700660104000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 5734716,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "35026",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x2FDFfBD80a2d6DB2c253A52081669b09FFf0121F",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0xab033ea9",
+      "fee": {
+        "type": "actual",
+        "value": "700660104000"
+      },
+      "gas_limit": "53070",
+      "gas_price": "20004000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20004000",
+      "timestamp": "2026-09-26T09:42:08.000000Z",
+      "nonce": 243,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 509043996,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x44fab89d000000000000000000000000000000000000000000000000000000ad3cb1abe5",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x1ca39e9e6b913bd0a2e828656d6048bbc5cbd6e9b44a67322c3260ee64987bfd",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "792981772000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 5734791,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "39566",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x2FDFfBD80a2d6DB2c253A52081669b09FFf0121F",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x44fab89d",
+      "fee": {
+        "type": "actual",
+        "value": "792981772000"
+      },
+      "gas_limit": "59895",
+      "gas_price": "20042000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20042000",
+      "timestamp": "2026-09-26T09:41:46.000000Z",
+      "nonce": 242,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 509043921,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0xd547741f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000cd231d4ba7b15a4722ac057419d9cd7689e7b8db",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x56408e9adfd8ec57e6b8a3b9341300e91341423aef72c7050710db6dda9ad07d",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "607019296000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 5735072,
+      "position": 3,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "30134",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x70b6C8a39385a811Bbb741b2ADE2DB27B418F091",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-ETH Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0xd547741f",
+      "fee": {
+        "type": "actual",
+        "value": "607019296000"
+      },
+      "gas_limit": "53109",
+      "gas_price": "20144000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20144000",
+      "timestamp": "2026-09-26T09:40:28.000000Z",
+      "nonce": 241,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 509043640,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0xd547741f00badfd1fe8cd7e23fdb6864e683e579d109e7de38e0632962093fe5a72ba86f0000000000000000000000005bf7051c25698c82bffad975a1da8a272ac9a112",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x5c452b55c6458a7d999128204f8832e17ce7a0c39b6b4b17b3da9ec5f200a0b3",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "650310036000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 5735102,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "32509",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x70b6C8a39385a811Bbb741b2ADE2DB27B418F091",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-ETH Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0xd547741f",
+      "fee": {
+        "type": "actual",
+        "value": "650310036000"
+      },
+      "gas_limit": "56706",
+      "gas_price": "20004000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20004000",
+      "timestamp": "2026-09-26T09:40:18.000000Z",
+      "nonce": 240,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 509043610,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0xd547741f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000005bf7051c25698c82bffad975a1da8a272ac9a112",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x2d91956c20ffbb8f2f15e9a9173cd775282e27d66db1c7ddef87ff2591c8f121",
+      "max_fee_per_gas": "25030000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "642740000000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 5735129,
+      "position": 3,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "32137",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x70b6C8a39385a811Bbb741b2ADE2DB27B418F091",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-ETH Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0xd547741f",
+      "fee": {
+        "type": "actual",
+        "value": "642740000000"
+      },
+      "gas_limit": "56142",
+      "gas_price": "20000000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20000000",
+      "timestamp": "2026-09-26T09:40:10.000000Z",
+      "nonce": 239,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 509043583,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x2f2ff15d00badfd1fe8cd7e23fdb6864e683e579d109e7de38e0632962093fe5a72ba86f0000000000000000000000005bfc34fba904b7d93a13c381adcc47de657599ff",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x89a7a5bbd96d397b0ebb7070d9bfa623d2a53e296d23a32a7d8c2eb2eb26e516",
+      "max_fee_per_gas": "25030000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "1091509140000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 5735167,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "54570",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x70b6C8a39385a811Bbb741b2ADE2DB27B418F091",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-ETH Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x2f2ff15d",
+      "fee": {
+        "type": "actual",
+        "value": "1091509140000"
+      },
+      "gas_limit": "83021",
+      "gas_price": "20002000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20002000",
+      "timestamp": "2026-09-26T09:40:00.000000Z",
+      "nonce": 238,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 509043545,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x2f2ff15d00000000000000000000000000000000000000000000000000000000000000000000000000000000000000005bfc34fba904b7d93a13c381adcc47de657599ff",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x2310702c0afd184b21153d96242528103a3c9baade97f0a72ebc1a2564d88262",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "1083960000000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 5735190,
+      "position": 4,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "54198",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x70b6C8a39385a811Bbb741b2ADE2DB27B418F091",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-ETH Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x2f2ff15d",
+      "fee": {
+        "type": "actual",
+        "value": "1083960000000"
+      },
+      "gas_limit": "82463",
+      "gas_price": "20000000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20000000",
+      "timestamp": "2026-09-26T09:39:53.000000Z",
+      "nonce": 237,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 509043522,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x23447d4e0000000000000000000000000000000000000000000000000000000000000001",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0xe74667f0df9544cca60b033a16c655eaa9aeb7a4aa8c181af9561fdfe09e7751",
+      "max_fee_per_gas": "25310000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "1018151224000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 7290069,
+      "position": 7,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "50614",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-BTC Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x23447d4e",
+      "fee": {
+        "type": "actual",
+        "value": "1018151224000"
+      },
+      "gas_limit": "78140",
+      "gas_price": "20116000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20116000",
+      "timestamp": "2026-09-21T15:44:04.000000Z",
+      "nonce": 236,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 507488643,
+      "has_error_in_internal_transactions": null
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x23447d4e0000000000000000000000000000000000000000000000000000000000000001",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x26e9be26f6bb9f0d6c98429b842ff2e955f80ac304e22b9b149aebfb9cc958e3",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "1013126310000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 7290104,
+      "position": 5,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "50631",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x70b6C8a39385a811Bbb741b2ADE2DB27B418F091",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-ETH Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x23447d4e",
+      "fee": {
+        "type": "actual",
+        "value": "1013126310000"
+      },
+      "gas_limit": "78140",
+      "gas_price": "20010000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20010000",
+      "timestamp": "2026-09-21T15:43:55.000000Z",
+      "nonce": 235,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 507488608,
+      "has_error_in_internal_transactions": null
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x12f8480c000000000000000000000000f7b5127b510e568fdc39e6bb54e2081bfad489af",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0xaa3879ec10867f719840cdc6aba1f05d5f55ed019b77cc1197ba6e9317ca9205",
+      "max_fee_per_gas": "25080000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "13799332000000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 7352432,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "683000",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x2FDFfBD80a2d6DB2c253A52081669b09FFf0121F",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x12f8480c",
+      "fee": {
+        "type": "actual",
+        "value": "13799332000000"
+      },
+      "gas_limit": "7500000",
+      "gas_price": "20204000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20204000",
+      "timestamp": "2026-09-21T11:24:12.000000Z",
+      "nonce": 234,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 507426280,
+      "has_error_in_internal_transactions": null
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x12f8480c00000000000000000000000029cf6e8ecefb8d3c9dd2b727c1b7d1df1a754f6f",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x8daeec79fd8942f074fa61fe661dff9d70bee63b99779f1097121b8f357b9a58",
+      "max_fee_per_gas": "25210000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "14539078216000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 7352474,
+      "position": 2,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "726518",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xbC4E5e2922D126e22daB13c169f40534c73e999b",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x12f8480c",
+      "fee": {
+        "type": "actual",
+        "value": "14539078216000"
+      },
+      "gas_limit": "7500000",
+      "gas_price": "20012000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20012000",
+      "timestamp": "2026-09-21T11:24:01.000000Z",
+      "nonce": 233,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 507426238,
+      "has_error_in_internal_transactions": null
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x12f8480c00000000000000000000000029cf6e8ecefb8d3c9dd2b727c1b7d1df1a754f6f",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0xd15587a8fc92e59395617091b1d5c110a8ad505669e6a94ff715bbe6d6714f85",
+      "max_fee_per_gas": "25040000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "14112660000000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 8394438,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "705633",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xbC4E5e2922D126e22daB13c169f40534c73e999b",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x12f8480c",
+      "fee": {
+        "type": "actual",
+        "value": "14112660000000"
+      },
+      "gas_limit": "7500000",
+      "gas_price": "20000000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20000000",
+      "timestamp": "2026-09-18T08:51:16.000000Z",
+      "nonce": 232,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 506384274,
+      "has_error_in_internal_transactions": null
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x12f8480c00000000000000000000000078e3e051d32157aacd550fbb78458762d8f7edff",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0xba1e27ec56dc141d9259cd2af9fcf1cc03efd6a8df547c864b4a3f7d7996a0ea",
+      "max_fee_per_gas": "25010000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "12885015864000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 8394495,
+      "position": 6,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "642516",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x2FDFfBD80a2d6DB2c253A52081669b09FFf0121F",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x12f8480c",
+      "fee": {
+        "type": "actual",
+        "value": "12885015864000"
+      },
+      "gas_limit": "7500000",
+      "gas_price": "20054000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20054000",
+      "timestamp": "2026-09-18T08:51:01.000000Z",
+      "nonce": 231,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 506384217,
+      "has_error_in_internal_transactions": null
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x12f8480c00000000000000000000000029cf6e8ecefb8d3c9dd2b727c1b7d1df1a754f6f",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x3762e55e3cf906ec78d249eeea4d5670e9d2aa0d684d3d35d9f51645e55bb649",
+      "max_fee_per_gas": "25050000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "14559420000000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 10047533,
+      "position": 4,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "727971",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xbC4E5e2922D126e22daB13c169f40534c73e999b",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x12f8480c",
+      "fee": {
+        "type": "actual",
+        "value": "14559420000000"
+      },
+      "gas_limit": "7500000",
+      "gas_price": "20000000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20000000",
+      "timestamp": "2026-09-13T12:14:47.000000Z",
+      "nonce": 230,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 504731179,
+      "has_error_in_internal_transactions": null
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x12f8480c00000000000000000000000078e3e051d32157aacd550fbb78458762d8f7edff",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x207fc15f3da89c5d75878cbc9b9f0c6cce7962b05e9c1f141b6f25f7d03d25d0",
+      "max_fee_per_gas": "25030000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "13324618664000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 10047578,
+      "position": 2,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "664172",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x2FDFfBD80a2d6DB2c253A52081669b09FFf0121F",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x12f8480c",
+      "fee": {
+        "type": "actual",
+        "value": "13324618664000"
+      },
+      "gas_limit": "7500000",
+      "gas_price": "20062000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20062000",
+      "timestamp": "2026-09-13T12:14:36.000000Z",
+      "nonce": 229,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 504731134,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x0b2fbca10000000000000000000000002f2a2543b76a4166549f7aab2e75bef0aefc5b0f000000000000000000000000000000000000000000000000000000000000005a00000000000000000000000029cf6e8ecefb8d3c9dd2b727c1b7d1df1a754f6f0000000000000000000000000000000000000000000000000000000000000053000000000000000000000000cd45c864df59731100f2dde7b04ab0403ab22da100000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x80fa62f0e980a366eb0a5cc892578cd4f7e0c6c40910e030df5dd0a48c0d8452",
+      "max_fee_per_gas": "25140000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "37157660000000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 10432750,
+      "position": 3,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "1857883",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-BTC Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x0b2fbca1",
+      "fee": {
+        "type": "actual",
+        "value": "37157660000000"
+      },
+      "gas_limit": "3165861",
+      "gas_price": "20000000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20000000",
+      "timestamp": "2026-09-12T09:08:23.000000Z",
+      "nonce": 228,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 504345962,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x12f8480c00000000000000000000000078e3e051d32157aacd550fbb78458762d8f7edff",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x312178ee667db33275a7ca70ca73bb352c181ce98213b10adacc98af1d6513d0",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "12832545996000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 10432844,
+      "position": 4,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "641499",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x2FDFfBD80a2d6DB2c253A52081669b09FFf0121F",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x12f8480c",
+      "fee": {
+        "type": "actual",
+        "value": "12832545996000"
+      },
+      "gas_limit": "7500000",
+      "gas_price": "20004000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20004000",
+      "timestamp": "2026-09-12T09:07:59.000000Z",
+      "nonce": 227,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 504345868,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x0b2fbca10000000000000000000000002f2a2543b76a4166549f7aab2e75bef0aefc5b0f0000000000000000000000000000000000000000000000000000000000004e4f00000000000000000000000029cf6e8ecefb8d3c9dd2b727c1b7d1df1a754f6f000000000000000000000000000000000000000000000000000000000000491d000000000000000000000000cd45c864df59731100f2dde7b04ab0403ab22da100000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x5d0335c4c8967a8749adecaa1c0f428bb1a99f59aac0934ea1d3246b1a923450",
+      "max_fee_per_gas": "25070000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "33597229540000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 11285719,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "1674670",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-BTC Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x0b2fbca1",
+      "fee": {
+        "type": "actual",
+        "value": "33597229540000"
+      },
+      "gas_limit": "2844815",
+      "gas_price": "20062000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20062000",
+      "timestamp": "2026-09-09T21:20:48.000000Z",
+      "nonce": 226,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 503492993,
+      "has_error_in_internal_transactions": null
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x0b2fbca100000000000000000000000052dc1feefa4f9a99221f93d79da46ae89b8c09670000000000000000000000000000000000000000000000000000000000004e200000000000000000000000002f2a2543b76a4166549f7aab2e75bef0aefc5b0f0000000000000000000000000000000000000000000000000000000000004e44000000000000000000000000cd45c864df59731100f2dde7b04ab0403ab22da100000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000000",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0xaf9dad36d8f9b9c06fb9ffc221d16e14c4d503b3743d888f3924f59870a5d2ac",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "32366833648000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 11285779,
+      "position": 3,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "1616402",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-BTC Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x0b2fbca1",
+      "fee": {
+        "type": "actual",
+        "value": "32366833648000"
+      },
+      "gas_limit": "2668697",
+      "gas_price": "20024000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20024000",
+      "timestamp": "2026-09-09T21:20:33.000000Z",
+      "nonce": 225,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 503492933,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x0b2fbca100000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab10000000000000000000000000000000000000000000000000000246139ca800000000000000000000000000078e3e051d32157aacd550fbb78458762d8f7edff000000000000000000000000000000000000000000000000000022791a60a9cd000000000000000000000000cd45c864df59731100f2dde7b04ab0403ab22da100000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0xf9142c171c35b0a1357388ddad01a9769f152059a0e877ecc95d54099ed241db",
+      "max_fee_per_gas": "25010000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "28760680000000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 11285965,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "1438034",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x70b6C8a39385a811Bbb741b2ADE2DB27B418F091",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-ETH Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x0b2fbca1",
+      "fee": {
+        "type": "actual",
+        "value": "28760680000000"
+      },
+      "gas_limit": "2433305",
+      "gas_price": "20000000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20000000",
+      "timestamp": "2026-09-09T21:19:45.000000Z",
+      "nonce": 224,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 503492747,
+      "has_error_in_internal_transactions": null
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x12f8480c00000000000000000000000078e3e051d32157aacd550fbb78458762d8f7edff",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x849304cbd1bc9d9d0b5f5f74438bc9e77965a297ef630a26113a17afafc8155b",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "12850400000000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 11858316,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "642520",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x2FDFfBD80a2d6DB2c253A52081669b09FFf0121F",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x12f8480c",
+      "fee": {
+        "type": "actual",
+        "value": "12850400000000"
+      },
+      "gas_limit": "7500000",
+      "gas_price": "20000000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20000000",
+      "timestamp": "2026-09-08T05:25:04.000000Z",
+      "nonce": 223,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 502920396,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x12f8480c00000000000000000000000029cf6e8ecefb8d3c9dd2b727c1b7d1df1a754f6f",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x8a2126337f1bc2ac8b05a6a43cafdd5cc9303f5b0cd5494f04759c7e25a68581",
+      "max_fee_per_gas": "25030000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "14103380000000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 11858391,
+      "position": 2,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "705169",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xbC4E5e2922D126e22daB13c169f40534c73e999b",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x12f8480c",
+      "fee": {
+        "type": "actual",
+        "value": "14103380000000"
+      },
+      "gas_limit": "7500000",
+      "gas_price": "20000000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20000000",
+      "timestamp": "2026-09-08T05:24:45.000000Z",
+      "nonce": 222,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 502920321,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x0b2fbca100000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab10000000000000000000000000000000000000000000000000000347568ceefdb00000000000000000000000078e3e051d32157aacd550fbb78458762d8f7edff000000000000000000000000000000000000000000000000000031c5d43ae857000000000000000000000000cd45c864df59731100f2dde7b04ab0403ab22da100000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x88ec8301db3236eac36595d9e9b54c314e19acec2888b67230a7a9bdb5fed7a4",
+      "max_fee_per_gas": "25030000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "28544167692000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 13390409,
+      "position": 5,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "1426923",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x70b6C8a39385a811Bbb741b2ADE2DB27B418F091",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-ETH Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x0b2fbca1",
+      "fee": {
+        "type": "actual",
+        "value": "28544167692000"
+      },
+      "gas_limit": "2417129",
+      "gas_price": "20004000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20004000",
+      "timestamp": "2026-09-03T17:14:21.000000Z",
+      "nonce": 221,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 501388303,
+      "has_error_in_internal_transactions": true
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x12f8480c00000000000000000000000078e3e051d32157aacd550fbb78458762d8f7edff",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0xbe9bb468b8975fae97ac331e8194465c8360be947ea8a924467c3aa7c78b291b",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "13352990656000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 13789217,
+      "position": 2,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "666583",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x2FDFfBD80a2d6DB2c253A52081669b09FFf0121F",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x12f8480c",
+      "fee": {
+        "type": "actual",
+        "value": "13352990656000"
+      },
+      "gas_limit": "7500000",
+      "gas_price": "20032000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20032000",
+      "timestamp": "2026-09-02T13:20:43.000000Z",
+      "nonce": 220,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 500989495,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x12f8480c00000000000000000000000029cf6e8ecefb8d3c9dd2b727c1b7d1df1a754f6f",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x40933d28e115aa263d5fde5f724ec53a6fe5685a25d36b045d222d0c85535fcc",
+      "max_fee_per_gas": "25010000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "14592004308000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 13789292,
+      "position": 3,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "728362",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xbC4E5e2922D126e22daB13c169f40534c73e999b",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x12f8480c",
+      "fee": {
+        "type": "actual",
+        "value": "14592004308000"
+      },
+      "gas_limit": "7500000",
+      "gas_price": "20034000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20034000",
+      "timestamp": "2026-09-02T13:20:24.000000Z",
+      "nonce": 219,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 500989420,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0xbfc1640100000000000000000000000070b6c8a39385a811bbb741b2ade2db27b418f0910000000000000000000000000000000000000000000000000000000000000003",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0xb1faebab9b61a7dba271d100793a5c1ec648dae0f9437d177b26a2c5abfcc22f",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "697212728000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 15031253,
+      "position": 6,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "34798",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x44921e42017316F89C1DEdd70a3A017d4c5162c3",
+        "implementations": [],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "VaultRegistry",
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "setVaultType",
+      "fee": {
+        "type": "actual",
+        "value": "697212728000"
+      },
+      "gas_limit": "52811",
+      "gas_price": "20036000",
+      "decoded_input": {
+        "method_call": "setVaultType(address vaultAddress, uint8 vaultType)",
+        "method_id": "bfc16401",
+        "parameters": [
+          {
+            "name": "vaultAddress",
+            "type": "address",
+            "value": "0x70b6C8a39385a811Bbb741b2ADE2DB27B418F091"
+          },
+          {
+            "name": "vaultType",
+            "type": "uint8",
+            "value": "3"
+          }
+        ]
+      },
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20036000",
+      "timestamp": "2026-08-29T22:30:13.000000Z",
+      "nonce": 218,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 499747459,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x0b2fbca10000000000000000000000004ce13a79f45c1be00bdabd38b764ac28c082704e00000000000000000000000000000000000000000000000000005af3107a400000000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab100000000000000000000000000000000000000000000000000006089eb9bff86000000000000000000000000cd45c864df59731100f2dde7b04ab0403ab22da100000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000000",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0xd8b826a7b93ee07e1e1894a0b0036172b7a9ea7af34104b530fffe8f6e433dae",
+      "max_fee_per_gas": "25030000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "29399304378000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 15032427,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "1466007",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x70b6C8a39385a811Bbb741b2ADE2DB27B418F091",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-ETH Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x0b2fbca1",
+      "fee": {
+        "type": "actual",
+        "value": "29399304378000"
+      },
+      "gas_limit": "2440902",
+      "gas_price": "20054000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20054000",
+      "timestamp": "2026-08-29T22:25:16.000000Z",
+      "nonce": 217,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 499746285,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x0b2fbca10000000000000000000000002f2a2543b76a4166549f7aab2e75bef0aefc5b0f000000000000000000000000000000000000000000000000000000000000000a00000000000000000000000029cf6e8ecefb8d3c9dd2b727c1b7d1df1a754f6f0000000000000000000000000000000000000000000000000000000000000008000000000000000000000000cd45c864df59731100f2dde7b04ab0403ab22da100000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0xf77446551b2d7715757f170e4a9fd14e51480091516af51c1cc8e515f136337a",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "37085960000000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 15032593,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "1854298",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-BTC Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x0b2fbca1",
+      "fee": {
+        "type": "actual",
+        "value": "37085960000000"
+      },
+      "gas_limit": "3151997",
+      "gas_price": "20000000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20000000",
+      "timestamp": "2026-08-29T22:24:34.000000Z",
+      "nonce": 216,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 499746119,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x12f8480c00000000000000000000000049b2248f7a7a703731852db0b2217f40da75b8ab",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0xe1c5ef23c5da89e3e23e9f67fd82efb05620cc41e59228309211c2a73c2d3b15",
+      "max_fee_per_gas": "25200000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "13846787640000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 16544886,
+      "position": 26,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "665455",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xbC4E5e2922D126e22daB13c169f40534c73e999b",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x12f8480c",
+      "fee": {
+        "type": "actual",
+        "value": "13846787640000"
+      },
+      "gas_limit": "7500000",
+      "gas_price": "20808000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20808000",
+      "timestamp": "2026-08-25T12:26:17.000000Z",
+      "nonce": 215,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 498233826,
+      "has_error_in_internal_transactions": null
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x12f8480c00000000000000000000000078e3e051d32157aacd550fbb78458762d8f7edff",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x3670bf45188d405e17b7ecc61f5d39ad94c2d8db52e94c72a6dcd851f7cf3258",
+      "max_fee_per_gas": "25010000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "12946521360000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 16592423,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "646034",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x2FDFfBD80a2d6DB2c253A52081669b09FFf0121F",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x12f8480c",
+      "fee": {
+        "type": "actual",
+        "value": "12946521360000"
+      },
+      "gas_limit": "7500000",
+      "gas_price": "20040000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20040000",
+      "timestamp": "2026-08-25T09:07:15.000000Z",
+      "nonce": 214,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 498186289,
+      "has_error_in_internal_transactions": null
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x0b2fbca10000000000000000000000002f2a2543b76a4166549f7aab2e75bef0aefc5b0f000000000000000000000000000000000000000000000000000000000000000a00000000000000000000000029cf6e8ecefb8d3c9dd2b727c1b7d1df1a754f6f0000000000000000000000000000000000000000000000000000000000000008000000000000000000000000cd45c864df59731100f2dde7b04ab0403ab22da100000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x619fdb458a9ab066730790c6c920406a269a8876032f5005e1098de13d389de5",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "37274312340000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 16592488,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "1853890",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-BTC Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x0b2fbca1",
+      "fee": {
+        "type": "actual",
+        "value": "37274312340000"
+      },
+      "gas_limit": "7500000",
+      "gas_price": "20106000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20106000",
+      "timestamp": "2026-08-25T09:06:57.000000Z",
+      "nonce": 213,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 498186224,
+      "has_error_in_internal_transactions": null
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x12f8480c00000000000000000000000078e3e051d32157aacd550fbb78458762d8f7edff",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x6261424cafacb80b24fcebb6a8743617ef2511d7811a0d89a99419d88aff3478",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "12950760000000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 17496074,
+      "position": 5,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "647538",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x2FDFfBD80a2d6DB2c253A52081669b09FFf0121F",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x12f8480c",
+      "fee": {
+        "type": "actual",
+        "value": "12950760000000"
+      },
+      "gas_limit": "7500000",
+      "gas_price": "20000000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20000000",
+      "timestamp": "2026-08-22T17:56:24.000000Z",
+      "nonce": 212,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 497282638,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x0b2fbca10000000000000000000000002f2a2543b76a4166549f7aab2e75bef0aefc5b0f000000000000000000000000000000000000000000000000000000000000001400000000000000000000000029cf6e8ecefb8d3c9dd2b727c1b7d1df1a754f6f0000000000000000000000000000000000000000000000000000000000000012000000000000000000000000cd45c864df59731100f2dde7b04ab0403ab22da100000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x09426ff2ce7eb1c40b0b2a685350e883dc2fbf4bce74302b36ca91e187630a1b",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "37339065620000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 17496158,
+      "position": 2,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "1862855",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-BTC Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x0b2fbca1",
+      "fee": {
+        "type": "actual",
+        "value": "37339065620000"
+      },
+      "gas_limit": "3166070",
+      "gas_price": "20044000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20044000",
+      "timestamp": "2026-08-22T17:56:03.000000Z",
+      "nonce": 211,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 497282554,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x12f8480c00000000000000000000000078e3e051d32157aacd550fbb78458762d8f7edff",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x643e2536d96801078ab0dae1ccecb4a7c621e86af9d9ed9de30d998ba33ae5e9",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "12959525352000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 18362809,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "646167",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x2FDFfBD80a2d6DB2c253A52081669b09FFf0121F",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x12f8480c",
+      "fee": {
+        "type": "actual",
+        "value": "12959525352000"
+      },
+      "gas_limit": "7500000",
+      "gas_price": "20056000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20056000",
+      "timestamp": "2026-08-20T05:42:27.000000Z",
+      "nonce": 210,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 496415903,
+      "has_error_in_internal_transactions": null
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x12f8480c00000000000000000000000029cf6e8ecefb8d3c9dd2b727c1b7d1df1a754f6f",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0xe4d903f6009ffd93fc40dd9ca414bf555b9e70f46bf74f34150769cebf417112",
+      "max_fee_per_gas": "25080000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "14236518592000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 18362872,
+      "position": 5,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "711328",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xbC4E5e2922D126e22daB13c169f40534c73e999b",
+        "implementations": [
+          {
+            "address_hash": "0xb31adbD2F0090BD826f93E8105F3752581bcc7A0",
+            "name": "DynaVaultManager"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x12f8480c",
+      "fee": {
+        "type": "actual",
+        "value": "14236518592000"
+      },
+      "gas_limit": "7500000",
+      "gas_price": "20014000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20014000",
+      "timestamp": "2026-08-20T05:42:11.000000Z",
+      "nonce": 209,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 496415840,
+      "has_error_in_internal_transactions": null
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x0b2fbca10000000000000000000000002f2a2543b76a4166549f7aab2e75bef0aefc5b0f000000000000000000000000000000000000000000000000000000000000009600000000000000000000000049b2248f7a7a703731852db0b2217f40da75b8ab00000000000000000000000000000000000000000000000000000000000039f2000000000000000000000000cd45c864df59731100f2dde7b04ab0403ab22da100000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x97fce0c4d5e9264c1491abb2264b2d278dc4627d2d0c7ccd3e138c996cf79c00",
+      "max_fee_per_gas": "25160000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "31107050394000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 18646098,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "1555197",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-BTC Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x0b2fbca1",
+      "fee": {
+        "type": "actual",
+        "value": "31107050394000"
+      },
+      "gas_limit": "2643204",
+      "gas_price": "20002000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20002000",
+      "timestamp": "2026-08-19T09:59:20.000000Z",
+      "nonce": 208,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 496132614,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x0b2fbca10000000000000000000000002f2a2543b76a4166549f7aab2e75bef0aefc5b0f000000000000000000000000000000000000000000000000000000000002573c00000000000000000000000029cf6e8ecefb8d3c9dd2b727c1b7d1df1a754f6f000000000000000000000000000000000000000000000000000000000002303f000000000000000000000000cd45c864df59731100f2dde7b04ab0403ab22da100000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x51005ee2c112a7f6a81c26c9df6e392bb10b524028e846a0459689aec30948be",
+      "max_fee_per_gas": "25000000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "33583507658000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 18805438,
+      "position": 5,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "1675991",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-BTC Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x0b2fbca1",
+      "fee": {
+        "type": "actual",
+        "value": "33583507658000"
+      },
+      "gas_limit": "2846862",
+      "gas_price": "20038000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20038000",
+      "timestamp": "2026-08-18T22:49:39.000000Z",
+      "nonce": 207,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 495973274,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x0b2fbca100000000000000000000000049b2248f7a7a703731852db0b2217f40da75b8ab0000000000000000000000000000000000000000000000000000000000e8efad0000000000000000000000002f2a2543b76a4166549f7aab2e75bef0aefc5b0f00000000000000000000000000000000000000000000000000000000000254e6000000000000000000000000cd45c864df59731100f2dde7b04ab0403ab22da100000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000000",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x577549a3cf99f511f343a8bf389f7227297d2b1a930f3b533be4ee15ba3f62e6",
+      "max_fee_per_gas": "25080000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "33841524514000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 18805509,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "1686847",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-BTC Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x0b2fbca1",
+      "fee": {
+        "type": "actual",
+        "value": "33841524514000"
+      },
+      "gas_limit": "2816142",
+      "gas_price": "20062000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20062000",
+      "timestamp": "2026-08-18T22:49:21.000000Z",
+      "nonce": 206,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 495973203,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x0b2fbca100000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab10000000000000000000000000000000000000000000000000018de76816d800000000000000000000000000078e3e051d32157aacd550fbb78458762d8f7edff0000000000000000000000000000000000000000000000000017aa67804ff0d3000000000000000000000000cd45c864df59731100f2dde7b04ab0403ab22da100000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x1b67466972d716b52982467f76147b2b8831f63341b1cf812fc8e92dea2af5ca",
+      "max_fee_per_gas": "25080000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "28448594532000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 18805697,
+      "position": 6,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "1418741",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x70b6C8a39385a811Bbb741b2ADE2DB27B418F091",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-ETH Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x0b2fbca1",
+      "fee": {
+        "type": "actual",
+        "value": "28448594532000"
+      },
+      "gas_limit": "2402921",
+      "gas_price": "20052000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20052000",
+      "timestamp": "2026-08-18T22:48:34.000000Z",
+      "nonce": 205,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 495973015,
+      "has_error_in_internal_transactions": true
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x0b2fbca100000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab1000000000000000000000000000000000000000000000000001552e2767b96f0000000000000000000000000f7b5127b510e568fdc39e6bb54e2081bfad489af000000000000000000000000000000000000000000000000001337bc7b0ba3f5000000000000000000000000cd45c864df59731100f2dde7b04ab0403ab22da100000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x6c0ba7a8f2e18f73671a7f3a41bd0352f369705f91d0b13409556c5e5373d4dd",
+      "max_fee_per_gas": "25270000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "36313238728000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 18805744,
+      "position": 5,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "1809149",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x70b6C8a39385a811Bbb741b2ADE2DB27B418F091",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-ETH Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x0b2fbca1",
+      "fee": {
+        "type": "actual",
+        "value": "36313238728000"
+      },
+      "gas_limit": "3081875",
+      "gas_price": "20072000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20072000",
+      "timestamp": "2026-08-18T22:48:23.000000Z",
+      "nonce": 204,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 495972968,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x2f2ff15d4df3817562f6aefe3deb80604fbb8ba365320192d77c7a202383bff3ef9ba3b5000000000000000000000000e0a1c8b2adb5d501f52d557d8508a867b658a696",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x6b503056e96e0f84268de514c959976cce6a79393537dbb869f797eff65caf18",
+      "max_fee_per_gas": "25020000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "1089980000000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 18806522,
+      "position": 1,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "54499",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0x70b6C8a39385a811Bbb741b2ADE2DB27B418F091",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-ETH Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x2f2ff15d",
+      "fee": {
+        "type": "actual",
+        "value": "1089980000000"
+      },
+      "gas_limit": "83072",
+      "gas_price": "20000000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20000000",
+      "timestamp": "2026-08-18T22:45:06.000000Z",
+      "nonce": 203,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 495972190,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x0b2fbca10000000000000000000000002f2a2543b76a4166549f7aab2e75bef0aefc5b0f00000000000000000000000000000000000000000000000000000000000493e000000000000000000000000049b2248f7a7a703731852db0b2217f40da75b8ab0000000000000000000000000000000000000000000000000000000001c4cdba000000000000000000000000cd45c864df59731100f2dde7b04ab0403ab22da100000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0xabf7bcacff4b2d094c5a5e2528c16925dab8982379e172af9fa0d1e4cc85ba84",
+      "max_fee_per_gas": "25140000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "27329056640000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 19864395,
+      "position": 3,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "1364270",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-BTC Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x0b2fbca1",
+      "fee": {
+        "type": "actual",
+        "value": "27329056640000"
+      },
+      "gas_limit": "2288501",
+      "gas_price": "20032000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20032000",
+      "timestamp": "2026-08-15T20:40:24.000000Z",
+      "nonce": 202,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 494914317,
+      "has_error_in_internal_transactions": false
+    },
+    {
+      "priority_fee": "0",
+      "raw_input": "0x0b2fbca10000000000000000000000002f2a2543b76a4166549f7aab2e75bef0aefc5b0f000000000000000000000000000000000000000000000000000000000004efa100000000000000000000000029cf6e8ecefb8d3c9dd2b727c1b7d1df1a754f6f0000000000000000000000000000000000000000000000000000000000049d9b000000000000000000000000cd45c864df59731100f2dde7b04ab0403ab22da100000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000",
+      "is_pending_update": false,
+      "result": "success",
+      "hash": "0x95af7fe85b78ae0e48f6ea5ace4be31b0f7d0c4823fee5d6d6c3f7b06e4716f9",
+      "max_fee_per_gas": "25050000",
+      "revert_reason": null,
+      "confirmation_duration": [
+        0,
+        263.0
+      ],
+      "transaction_burnt_fee": "33986495940000",
+      "type": 2,
+      "token_transfers_overflow": null,
+      "confirmations": 19864449,
+      "position": 4,
+      "max_priority_fee_per_gas": "0",
+      "transaction_tag": null,
+      "created_contract": null,
+      "value": "0",
+      "from": {
+        "ens_domain_name": null,
+        "hash": "0xcd231d4ba7B15A4722ac057419D9cd7689e7b8db",
+        "implementations": [],
+        "is_contract": false,
+        "is_scam": false,
+        "is_verified": false,
+        "metadata": null,
+        "name": null,
+        "private_tags": [],
+        "proxy_type": null,
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "gas_used": "1698985",
+      "status": "ok",
+      "to": {
+        "ens_domain_name": null,
+        "hash": "0xab3eAaa90eA79aE3beC59CC0Ac65c6641f172EB4",
+        "implementations": [
+          {
+            "address_hash": "0x5C79c949457067f72290E43Ca7Fb05C47693608C",
+            "name": "PermissionedDynaVault"
+          }
+        ],
+        "is_contract": true,
+        "is_scam": false,
+        "is_verified": true,
+        "metadata": null,
+        "name": "Arbitrum-BTC Yield-DynaVault",
+        "private_tags": [],
+        "proxy_type": "eip1167",
+        "public_tags": [],
+        "reputation": "ok",
+        "watchlist_names": []
+      },
+      "authorization_list": [],
+      "method": "0x0b2fbca1",
+      "fee": {
+        "type": "actual",
+        "value": "33986495940000"
+      },
+      "gas_limit": "2864708",
+      "gas_price": "20004000",
+      "decoded_input": null,
+      "fhe_operations_count": 0,
+      "token_transfers": null,
+      "base_fee_per_gas": "20004000",
+      "timestamp": "2026-08-15T20:40:11.000000Z",
+      "nonce": 201,
+      "historic_exchange_rate": null,
+      "transaction_types": [
+        "contract_call",
+        "token_transfer"
+      ],
+      "exchange_rate": "2427.14",
+      "block_number": 494914263,
+      "has_error_in_internal_transactions": false
+    }
+  ]
+}
